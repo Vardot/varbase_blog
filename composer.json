@@ -1,0 +1,31 @@
+{
+  "name": "drupal/varbase_blog",
+  "description": "Provides Blog post content type and related configuration. Use Blog to publish blog post by different authors in the Blog section of the site.",
+  "type": "drupal-module",
+  "homepage": "https://www.drupal.org/project/varbase_blog",
+  "license": "GPL-2.0-or-later",
+  "minimum-stability": "dev",
+  "authors": [
+    {
+      "name": "Vardot",
+      "homepage": "https://www.drupal.org/vardot",
+      "role": "Maintainer"
+    }
+  ],
+  "support": {
+    "issues": "https://www.drupal.org/project/issues/varbase_blog",
+    "source": "http://cgit.drupalcode.org/varbase_blog"
+  },
+  "repositories": [
+    {
+      "type": "composer",
+      "url": "https://packages.drupal.org/8"
+    }
+  ],
+  "require": {},
+  "extra": {
+    "branch-alias": {
+      "dev-8.x-4.x": "8.4.x-dev"
+    }
+  }
+}
