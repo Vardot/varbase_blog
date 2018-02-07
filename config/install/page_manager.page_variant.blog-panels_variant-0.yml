@@ -4,7 +4,7 @@ dependencies:
   config:
     - page_manager.page.blog
     - system.menu.blog-menu
-    - views.view.blog_entry
+    - views.view.varbase_blog
   module:
     - menu_block
     - panels
@@ -29,7 +29,7 @@ variant_settings:
       uuid: 5c3a518c-3c89-4349-8527-d6b8efcd38e8
       context_mapping: {  }
     b9a22e9c-b220-4065-82d6-747b4c9142d3:
-      id: 'views_block:blog_entry-blog_listing_block'
+      id: 'views_block:varbase_blog-blog_listing_block'
       label: ''
       provider: views
       label_display: '0'

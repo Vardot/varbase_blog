@@ -15,7 +15,7 @@ dependencies:
     - taxonomy
     - user
     - views_bootstrap
-id: blog_entry
+id: varbase_blog
 label: 'Varbase Blog'
 module: views
 description: ''

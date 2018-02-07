@@ -4,7 +4,7 @@ dependencies:
   config:
     - page_manager.page.term_view
     - system.menu.blog-menu
-    - views.view.blog_entry
+    - views.view.varbase_blog
   module:
     - ctools
     - menu_block
@@ -30,7 +30,7 @@ variant_settings:
       uuid: 30550b6f-3c0a-442f-a4f2-328386a287a7
       context_mapping: {  }
     5cad43fc-d935-4a97-be6f-31cfbab3d65d:
-      id: 'views_block:blog_entry-blog_listing_by_term_block'
+      id: 'views_block:varbase_blog-blog_listing_by_term_block'
       label: ''
       provider: views
       label_display: '0'

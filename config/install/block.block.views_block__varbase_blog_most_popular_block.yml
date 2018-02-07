@@ -2,7 +2,7 @@ langcode: en
 status: true
 dependencies:
   config:
-    - views.view.blog_entry
+    - views.view.varbase_blog
   module:
     - block_class
     - system
@@ -12,14 +12,14 @@ dependencies:
 third_party_settings:
   block_class:
     classes: ''
-id: views_block__blog_entry_most_recent_block
+id: views_block__varbase_blog_most_popular_block
 theme: vartheme_material
 region: sidebar_second
-weight: -5
+weight: -6
 provider: null
-plugin: 'views_block:blog_entry-most_recent_block'
+plugin: 'views_block:varbase_blog-most_popular_block'
 settings:
-  id: 'views_block:blog_entry-most_recent_block'
+  id: 'views_block:varbase_blog-most_popular_block'
   label: ''
   provider: views
   label_display: visible
