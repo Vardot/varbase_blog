@@ -24,8 +24,8 @@ variant_settings:
       uuid: c105e14e-08ed-4fa4-a772-e4804f037d89
       context_mapping:
         entity: node
-    39ef7088-0505-45f5-8e35-35e69b275fb1:
-      id: 'views_block:blog_entry-related_blogs'
+    517915e9-fbba-4821-87f9-982852b5d05f:
+      id: 'views_block:blog_entry-related_blogs_block'
       label: ''
       provider: views
       label_display: visible
@@ -33,7 +33,7 @@ variant_settings:
       items_per_page: none
       region: main
       weight: 0
-      uuid: 39ef7088-0505-45f5-8e35-35e69b275fb1
+      uuid: 517915e9-fbba-4821-87f9-982852b5d05f
       context_mapping: {  }
   id: panels_variant
   uuid: c6b40163-8926-46e8-88dc-e19df2a93db2

@@ -9,7 +9,7 @@ dependencies:
     - taxonomy
     - user
 id: blog_terms
-label: 'Blog terms'
+label: 'Varbase Blog Terms'
 module: views
 description: ''
 tag: ''
