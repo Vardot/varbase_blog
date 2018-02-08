@@ -15,8 +15,8 @@ dependencies:
     - taxonomy
     - user
     - views_bootstrap
-id: blog_entry
-label: 'Blog entry'
+id: varbase_blog
+label: 'Varbase Blog'
 module: views
 description: ''
 tag: ''
@@ -223,9 +223,9 @@ display:
         - 'user.node_grants:view'
         - user.permissions
       tags: {  }
-  blog_listing:
+  blog_listing_block:
     display_plugin: block
-    id: blog_listing
+    id: blog_listing_block
     display_title: Listing
     position: 1
     display_options:
@@ -313,9 +313,9 @@ display:
         - 'user.node_grants:view'
         - user.permissions
       tags: {  }
-  blog_listing_by_term:
+  blog_listing_by_term_block:
     display_plugin: block
-    id: blog_listing_by_term
+    id: blog_listing_by_term_block
     display_title: 'Listing blog by term'
     position: 7
     display_options:
@@ -455,9 +455,9 @@ display:
         - 'user.node_grants:view'
         - user.permissions
       tags: {  }
-  homepage_blog:
+  homepage_blog_block:
     display_plugin: block
-    id: homepage_blog
+    id: homepage_blog_block
     display_title: 'Homepage blog'
     position: 2
     display_options:
@@ -522,9 +522,9 @@ display:
         - 'user.node_grants:view'
         - user.permissions
       tags: {  }
-  most_popular:
+  most_popular_block:
     display_plugin: block
-    id: most_popular
+    id: most_popular_block
     display_title: 'Most popular'
     position: 3
     display_options:
@@ -787,9 +787,9 @@ display:
         - 'user.node_grants:view'
         - user.permissions
       tags: {  }
-  most_recent_blog:
+  most_recent_block:
     display_plugin: block
-    id: most_recent_blog
+    id: most_recent_block
     display_title: 'Most Recent'
     position: 4
     display_options:
@@ -893,9 +893,9 @@ display:
         - 'user.node_grants:view'
         - user.permissions
       tags: {  }
-  related_blogs:
+  related_blogs_block:
     display_plugin: block
-    id: related_blogs
+    id: related_blogs_block
     display_title: 'Related blogs'
     position: 5
     display_options:

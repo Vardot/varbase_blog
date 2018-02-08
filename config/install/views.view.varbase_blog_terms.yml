@@ -8,8 +8,8 @@ dependencies:
     - node
     - taxonomy
     - user
-id: blog_terms
-label: 'Blog terms'
+id: varbase_blog_terms
+label: 'Varbase Blog Terms'
 module: views
 description: ''
 tag: ''
@@ -227,7 +227,7 @@ display:
       tags: {  }
   categories:
     display_plugin: block
-    id: categories
+    id: blog_categories_block
     display_title: Categories
     position: 2
     display_options:
@@ -358,7 +358,7 @@ display:
       tags: {  }
   tags:
     display_plugin: block
-    id: tags
+    id: tags_block
     display_title: 'Tags listing'
     position: 1
     display_options:
