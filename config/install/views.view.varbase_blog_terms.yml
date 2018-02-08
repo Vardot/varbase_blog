@@ -8,7 +8,7 @@ dependencies:
     - node
     - taxonomy
     - user
-id: blog_terms
+id: varbase_blog_terms
 label: 'Varbase Blog Terms'
 module: views
 description: ''
