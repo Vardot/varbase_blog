@@ -11,7 +11,7 @@ dependencies:
     - panels
     - views
 id: term_view-panels_variant-0
-label: 'Blog terms'
+label: 'Blog categories'
 variant: panels_variant
 variant_settings:
   blocks:
@@ -51,13 +51,12 @@ variant_settings:
   storage_id: term_view-panels_variant-0
   builder: standard
 page: term_view
-weight: 0
+weight: -10
 selection_criteria:
   -
     id: 'entity_bundle:taxonomy_term'
     bundles:
       blog_categories: blog_categories
-      tags: tags
     negate: false
     context_mapping:
       taxonomy_term: taxonomy_term
