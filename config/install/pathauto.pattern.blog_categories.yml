@@ -7,7 +7,7 @@ dependencies:
 id: blog_categories
 label: 'Blog categories'
 type: 'canonical_entities:taxonomy_term'
-pattern: 'blog/blog_categories/[term:name]'
+pattern: 'blog/categories/[term:name]'
 selection_criteria:
   a352f2a3-fc08-4a3e-b764-1a8b8f5c05b7:
     id: 'entity_bundle:taxonomy_term'
