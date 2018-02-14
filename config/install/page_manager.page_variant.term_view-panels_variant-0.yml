@@ -29,16 +29,16 @@ variant_settings:
       weight: 0
       uuid: 30550b6f-3c0a-442f-a4f2-328386a287a7
       context_mapping: {  }
-    5cad43fc-d935-4a97-be6f-31cfbab3d65d:
-      id: 'views_block:varbase_blog-blog_listing_by_term_block'
+    c9ca8302-235b-4893-84c4-6b44f7e4ccbe:
+      id: 'views_block:varbase_blog-blog_listing_by_blog_category_block'
       label: ''
       provider: views
       label_display: '0'
       views_label: ''
       items_per_page: none
       region: main
-      weight: 0
-      uuid: 5cad43fc-d935-4a97-be6f-31cfbab3d65d
+      weight: 1
+      uuid: c9ca8302-235b-4893-84c4-6b44f7e4ccbe
       context_mapping: {  }
   id: panels_variant
   uuid: 1b7acb0d-3c4d-4314-82f5-931eed2b0ecc

@@ -1,2 +1,4 @@
 bundle: varbase
+excluded:
+  - easy_breadcrumb.settings
 required: true

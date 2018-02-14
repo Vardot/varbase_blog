@@ -3,7 +3,7 @@ status: true
 dependencies: {  }
 id: blog
 label: Blog
-description: ''
+description: 'Blog section page in the site.'
 use_admin_theme: false
 path: /blog
 access_logic: and

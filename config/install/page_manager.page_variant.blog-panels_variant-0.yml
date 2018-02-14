@@ -10,7 +10,7 @@ dependencies:
     - panels
     - views
 id: blog-panels_variant-0
-label: Blog
+label: 'Blog section page'
 variant: panels_variant
 variant_settings:
   blocks:

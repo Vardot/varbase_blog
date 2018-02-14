@@ -32,27 +32,25 @@ third_party_settings:
         link_custom: ''
         classes:
           layout_class: {  }
-          ds_content: {  }
     regions:
       ds_content:
         - group_author_information
         - node_author
         - field_image
-        - links
         - node_post_date
         - body
         - field_tags
     fields:
-      node_post_date:
-        plugin_id: node_post_date
-        weight: 2
-        label: hidden
-        formatter: ds_post_date_medium
       node_author:
         plugin_id: node_author
         weight: 0
         label: hidden
         formatter: author
+      node_post_date:
+        plugin_id: node_post_date
+        weight: 2
+        label: hidden
+        formatter: ds_post_date_medium
   panelizer:
     enable: false
     custom: false
@@ -86,7 +84,7 @@ content:
   body:
     label: hidden
     type: text_default
-    weight: 3
+    weight: 2
     settings: {  }
     third_party_settings: {  }
     region: ds_content
@@ -107,7 +105,7 @@ content:
     type: entity_reference_entity_view
     region: ds_content
   field_tags:
-    weight: 5
+    weight: 3
     label: above
     settings:
       link: true
@@ -122,13 +120,9 @@ content:
             classes: {  }
     type: entity_reference_label
     region: ds_content
-  links:
-    weight: 2
-    region: ds_content
-    settings: {  }
-    third_party_settings: {  }
 hidden:
   field_categories: true
   field_meta_tags: true
   field_yoast_seo: true
   langcode: true
+  links: true
