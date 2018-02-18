@@ -4,7 +4,7 @@ dependencies:
   config:
     - core.entity_view_mode.node.vertical_media_teaser_medium
     - field.field.node.varbase_blog.body
-    - field.field.node.varbase_blog.field_categories
+    - field.field.node.varbase_blog.field_blog_categories
     - field.field.node.varbase_blog.field_image
     - field.field.node.varbase_blog.field_meta_tags
     - field.field.node.varbase_blog.field_tags
@@ -150,9 +150,8 @@ content:
     type: entity_reference_entity_view
     region: main
 hidden:
-  field_categories: true
+  field_blog_categories: true
   field_meta_tags: true
   field_tags: true
   field_yoast_seo: true
-  langcode: true
   links: true

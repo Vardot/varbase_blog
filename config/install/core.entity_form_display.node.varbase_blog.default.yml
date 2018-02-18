@@ -4,7 +4,7 @@ dependencies:
   config:
     - entity_browser.browser.image_browser
     - field.field.node.varbase_blog.body
-    - field.field.node.varbase_blog.field_categories
+    - field.field.node.varbase_blog.field_blog_categories
     - field.field.node.varbase_blog.field_image
     - field.field.node.varbase_blog.field_meta_tags
     - field.field.node.varbase_blog.field_tags
@@ -50,7 +50,7 @@ third_party_settings:
       region: content
     group_categories:
       children:
-        - field_categories
+        - field_blog_categories
         - field_tags
       parent_name: group_tabs
       weight: 16
@@ -83,7 +83,7 @@ content:
     region: content
     settings: {  }
     third_party_settings: {  }
-  field_categories:
+  field_blog_categories:
     weight: 26
     settings: {  }
     third_party_settings: {  }
@@ -133,13 +133,6 @@ content:
     third_party_settings: {  }
     type: yoast_seo_widget
     region: content
-  langcode:
-    type: language_select
-    weight: 2
-    region: content
-    settings:
-      include_locked: true
-    third_party_settings: {  }
   path:
     type: path
     weight: 4

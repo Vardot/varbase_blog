@@ -4,7 +4,7 @@ dependencies:
   config:
     - core.entity_view_mode.node.full
     - field.field.node.varbase_blog.body
-    - field.field.node.varbase_blog.field_categories
+    - field.field.node.varbase_blog.field_blog_categories
     - field.field.node.varbase_blog.field_image
     - field.field.node.varbase_blog.field_meta_tags
     - field.field.node.varbase_blog.field_tags
@@ -121,8 +121,7 @@ content:
     type: entity_reference_label
     region: ds_content
 hidden:
-  field_categories: true
+  field_blog_categories: true
   field_meta_tags: true
   field_yoast_seo: true
-  langcode: true
   links: true

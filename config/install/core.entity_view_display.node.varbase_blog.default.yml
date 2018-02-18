@@ -3,7 +3,7 @@ status: true
 dependencies:
   config:
     - field.field.node.varbase_blog.body
-    - field.field.node.varbase_blog.field_categories
+    - field.field.node.varbase_blog.field_blog_categories
     - field.field.node.varbase_blog.field_image
     - field.field.node.varbase_blog.field_meta_tags
     - field.field.node.varbase_blog.field_tags
@@ -78,9 +78,8 @@ content:
     region: ds_content
 hidden:
   body: true
-  field_categories: true
+  field_blog_categories: true
   field_meta_tags: true
   field_tags: true
   field_yoast_seo: true
-  langcode: true
   links: true

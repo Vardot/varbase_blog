@@ -4,7 +4,7 @@ dependencies:
   config:
     - core.entity_view_mode.node.text_teaser_small
     - field.field.node.varbase_blog.body
-    - field.field.node.varbase_blog.field_categories
+    - field.field.node.varbase_blog.field_blog_categories
     - field.field.node.varbase_blog.field_image
     - field.field.node.varbase_blog.field_meta_tags
     - field.field.node.varbase_blog.field_tags
@@ -62,10 +62,9 @@ mode: text_teaser_small
 content: {  }
 hidden:
   body: true
-  field_categories: true
+  field_blog_categories: true
   field_image: true
   field_meta_tags: true
   field_tags: true
   field_yoast_seo: true
-  langcode: true
   links: true
