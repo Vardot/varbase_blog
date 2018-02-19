@@ -2,6 +2,9 @@ name: 'Varbase blog'
 description: 'Provides Blog post content type and related configuration. Use Blog to publish blog post by different authors in the Blog section of the site.'
 type: module
 core: 8.x
+package: Varbase
+interface translation project: varbase_blog
+interface translation server pattern: translations/%language.po
 dependencies:
   - autocomplete_deluxe
   - block
@@ -34,4 +37,3 @@ dependencies:
   - vmi
   - yoast_seo
 version: 8.x-4.x-dev
-package: Varbase
