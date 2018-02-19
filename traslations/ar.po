@@ -112,7 +112,7 @@ msgstr ""
 "visible-admin\" href=\"[site:url]/node/add/varbase_blog/\"> اضف مدونة </a>\n"
 "</div>"
 msgid "Most popular"
-msgstr ""
+msgstr "اشهر"
 msgid "To list most popular blog posts in the website."
 msgstr "لعرض قائمة من اشهر المدونات في الموقع"
 
@@ -124,12 +124,12 @@ msgid_plural "@count"
 msgstr[0] ""
 
 msgid "Most Recent"
-msgstr ""
+msgstr "جديد"
 msgid "To list most recent created blog posts in the website."
 msgstr "لعرض آخر المدونات المنشورة في الموقع"
 
 msgid "Most Recent blog posts"
-msgstr "أشهر المدونات"
+msgstr "جديد المدونات"
 
 msgid "Related blog posts"
 msgstr "مدونات ذات علاقة"

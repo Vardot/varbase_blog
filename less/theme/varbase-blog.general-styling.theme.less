@@ -1,0 +1,61 @@
+// Varbase blog theme styling.
+// -----------------------------------------------------------------------------
+@import "../variables.less";
+// -----------------------------------------------------------------------------
+
+.node--type-varbase-blog {
+  .author-info {
+    color: @gray-light;
+
+    .field--name-node-author {
+      border-right: 1px solid @table-border-color;
+    }
+  }
+}
+
+[dir="rtl"] .node--type-varbase-blog {
+  .author-info {
+    .field--name-node-author {
+      border-right: 0;
+      border-left: 1px solid @table-border-color;
+    }
+  }
+}
+
+.blog-listing {
+  article {
+    border: solid 1px @table-border-color;
+  }
+
+  &.homepage-blog {
+    .more-link {
+      text-align: center;
+      
+      a {
+        background: @brand-primary;
+        color: @component-active-color;
+      }
+    }
+  }
+}
+
+.menu--blog-menu {
+  &.nav {
+    li {
+
+      a {
+        font-size: @font-size-h5;
+        border-bottom: solid 2px transparent;
+        color: @gray;
+
+        &:hover,
+        &:focus,
+        &.is-active {
+          border-bottom: solid 2px @brand-primary;
+          text-decoration: none;
+          background: transparent;
+        }
+      }
+    }
+  }
+}

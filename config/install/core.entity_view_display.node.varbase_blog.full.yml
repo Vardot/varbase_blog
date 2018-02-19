@@ -37,8 +37,8 @@ third_party_settings:
         - group_author_information
         - node_author
         - field_image
-        - node_post_date
         - body
+        - node_post_date
         - field_tags
     fields:
       node_author:
@@ -113,11 +113,32 @@ content:
       ds:
         ds_limit: ''
         ft:
-          id: default
+          id: expert
           settings:
             lb: ''
-            lb-col: true
-            classes: {  }
+            prefix: ''
+            lbw: true
+            lbw-el: ''
+            lbw-cl: bt-tags-label
+            lbw-at: ''
+            ow: true
+            ow-el: ''
+            ow-cl: ''
+            ow-at: ''
+            ow-def-at: true
+            ow-def-cl: true
+            fis: true
+            fis-el: ul
+            fis-cl: bt-tags
+            fis-at: ''
+            fi: true
+            fi-el: li
+            fi-cl: ''
+            fi-at: ''
+            suffix: ''
+            lb-col: false
+            fis-def-at: false
+            fi-def-at: false
     type: entity_reference_label
     region: ds_content
 hidden:
