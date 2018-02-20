@@ -118,8 +118,8 @@ content:
             lb: ''
             prefix: ''
             lbw: true
-            lbw-el: ''
-            lbw-cl: vb-tags-label
+            lbw-el: h4
+            lbw-cl: field--label
             lbw-at: ''
             ow: true
             ow-el: ''
