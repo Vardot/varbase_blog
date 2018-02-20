@@ -119,7 +119,7 @@ content:
             prefix: ''
             lbw: true
             lbw-el: ''
-            lbw-cl: bt-tags-label
+            lbw-cl: vb-tags-label
             lbw-at: ''
             ow: true
             ow-el: ''
@@ -129,7 +129,7 @@ content:
             ow-def-cl: true
             fis: true
             fis-el: ul
-            fis-cl: bt-tags
+            fis-cl: vb-tags
             fis-at: ''
             fi: true
             fi-el: li

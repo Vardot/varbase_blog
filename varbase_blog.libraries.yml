@@ -4,9 +4,3 @@ general-styling:
       css/layout/varbase-blog.general-styling.layout.css: {}
     theme:
       css/theme/varbase-blog.general-styling.theme.css: {}
-
-# Varbase blog custom bootstrap tags component.
-bt-tags:
-  css:
-    component:
-      css/component/bt-tags.component.css: {}
