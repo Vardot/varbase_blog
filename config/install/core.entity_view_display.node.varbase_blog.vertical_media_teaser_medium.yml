@@ -171,7 +171,7 @@ content:
     weight: 0
     label: hidden
     settings:
-      view_mode: s6_standard
+      view_mode: s8_standard
       link: false
     third_party_settings:
       ds:

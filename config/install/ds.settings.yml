@@ -1,0 +1,34 @@
+disabled: false
+field_template: true
+ft-default: default
+ft-show-colon: false
+classes:
+  region:
+    - card
+    - card-header
+    - card-body
+    - card-footer
+    - card-img-top
+    - card-img-bottom
+    - card-img-overlay
+    - card-title
+    - card-text
+    - card-subtitle
+    - card-link
+    - pull-right
+    - pull-left
+  field:
+    - card
+    - card-header
+    - card-body
+    - card-footer
+    - card-img-top
+    - card-img-bottom
+    - card-img-overlay
+    - card-title
+    - card-text
+    - card-subtitle
+    - card-link
+    - pull-right
+    - pull-left
+use_field_names: true
