@@ -38,65 +38,6 @@
   }
 }
 
-.blog-listing {
-  article {
-    .description {
-      padding: 15px 20px 44px 20px;
-    }
-
-    .field--name-field-image {
-      img {
-        width: 100%;
-      }
-    }
-
-    .field--name-node-link {
-      position: absolute;
-      bottom: 0;
-      right: 0;
-      padding: 5px 15px;
-    }
-  }
-
-  @media (min-width: @screen-md) {
-    .row {
-      display: flex;
-
-      .blog-item {
-        display: flex;
-
-        article {
-          display: flex;
-          flex-direction: column;
-          flex: 1 1 auto;
-        }
-      }
-    }
-  }
-
-  &.homepage-blog {
-    .more-link {
-      text-align: center;
-      
-      a {
-        padding: @padding-large-vertical;
-        display: inline-block;
-        margin-top: @line-height-computed;
-        margin-bottom: @line-height-computed;
-      }
-    }
-  }
-}
-
-[dir="rtl"] .blog-listing {
-  article {
-    .field--name-node-link {
-      right: auto;
-      left: 0;
-    }
-  }
-}
-
 .menu--blog-menu {
   text-align: center;
   margin: @line-height-computed auto;

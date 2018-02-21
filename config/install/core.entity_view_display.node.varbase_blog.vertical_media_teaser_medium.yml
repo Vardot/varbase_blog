@@ -31,7 +31,9 @@ third_party_settings:
         link_attribute: ''
         link_custom: ''
         classes:
-          layout_class: {  }
+          layout_class:
+            card: card
+          main: {  }
     regions:
       main:
         - field_image
@@ -43,11 +45,29 @@ third_party_settings:
         - node_link
         - node_post_date
     fields:
-      node_post_date:
-        plugin_id: node_post_date
+      node_link:
+        plugin_id: node_link
         weight: 11
         label: hidden
-        formatter: ds_post_date_short
+        formatter: default
+        settings:
+          'link text': 'Read more'
+          'link class': ''
+          wrapper: ''
+          class: ''
+        ft:
+          id: default
+          settings:
+            lb: ''
+            classes:
+              - card-link
+              - pull-right
+            lb-col: false
+      node_author:
+        plugin_id: node_author
+        weight: 10
+        label: hidden
+        formatter: author
       node_title:
         plugin_id: node_title
         weight: 9
@@ -57,16 +77,18 @@ third_party_settings:
           link: true
           wrapper: h3
           class: ''
-      node_author:
-        plugin_id: node_author
-        weight: 10
-        label: hidden
-        formatter: author
-      node_link:
-        plugin_id: node_link
+        ft:
+          id: default
+          settings:
+            lb: ''
+            classes:
+              - card-title
+            lb-col: false
+      node_post_date:
+        plugin_id: node_post_date
         weight: 11
         label: hidden
-        formatter: default
+        formatter: ds_post_date_short
   panelizer:
     enable: false
     custom: false
@@ -83,14 +105,15 @@ third_party_settings:
       weight: 1
       format_type: html_element
       format_settings:
-        id: ''
-        classes: description
+        label: Description
         element: div
         show_label: false
         label_element: h3
         attributes: ''
         effect: none
         speed: fast
+        id: ''
+        classes: card-body
       label: Description
       region: hidden
     group_author_info:
@@ -109,7 +132,7 @@ third_party_settings:
         effect: none
         speed: fast
         id: ''
-        classes: author-info
+        classes: 'author-info card-subtitle'
       label: 'Author info'
       region: hidden
 id: node.varbase_blog.vertical_media_teaser_medium
@@ -125,28 +148,40 @@ content:
       trim_length: 30
       trim_type: words
       trim_suffix: ' ...'
-      more_link: false
+      wrap_class: trimmed
       more_text: More
-      summary_handler: ignore
-      trim_options:
-        text: true
       more_class: more-link
+      summary_handler: ignore
+      wrap_output: false
+      more_link: false
+      trim_options:
+        text: false
+        trim_zero: false
     third_party_settings:
       ds:
         ft:
           id: default
           settings:
             lb: ''
+            classes:
+              - card-text
             lb-col: false
-            classes: {  }
     region: main
   field_image:
     weight: 0
     label: hidden
     settings:
-      view_mode: s4_standard
+      view_mode: s6_standard
       link: false
-    third_party_settings: {  }
+    third_party_settings:
+      ds:
+        ft:
+          id: default
+          settings:
+            lb: ''
+            classes:
+              - card-img-top
+            lb-col: false
     type: entity_reference_entity_view
     region: main
 hidden:

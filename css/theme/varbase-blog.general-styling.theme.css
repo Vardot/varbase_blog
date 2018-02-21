@@ -8,16 +8,6 @@
   border-right: 0;
   border-left: 1px solid #ddd;
 }
-.blog-listing article {
-  border: solid 1px #ddd;
-}
-.blog-listing.homepage-blog .more-link {
-  text-align: center;
-}
-.blog-listing.homepage-blog .more-link a {
-  background: #2196F3;
-  color: #fff;
-}
 .menu--blog-menu.nav li a {
   font-size: 20px;
   border-bottom: solid 2px transparent;

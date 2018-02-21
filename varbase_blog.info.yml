@@ -3,8 +3,8 @@ description: 'Provides Blog post content type and related configuration. Use Blo
 type: module
 core: 8.x
 package: Varbase
-interface translation project: varbase_blog
-interface translation server pattern: translations/%language.po
+'interface translation project': varbase_blog
+'interface translation server pattern': translations/%language.po
 dependencies:
   - autocomplete_deluxe
   - block
