@@ -1,6 +1,0 @@
-general-styling:
-  css:
-    layout:
-      css/layout/varbase-blog.general-styling.layout.css: {}
-    theme:
-      css/theme/varbase-blog.general-styling.theme.css: {}

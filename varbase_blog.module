@@ -6,9 +6,15 @@
  */
 
 /**
- * Implements hook_page_attachments().
+ * Implements hook_preprocess_HOOK() for menu.html.twig.
  */
-function varbase_blog_page_attachments(array &$page) {
-  // Attach the Varbase blog general styling library.
-  $page['#attached']['library'][] = 'varbase_blog/general-styling';
+function varbase_blog_preprocess_menu(&$variables) {
+  if(isset($variables['menu_name']) && $variables['menu_name'] == 'blog-menu') {
+    $variables['attributes']['class'] = [
+      'nav-pills',
+      'list-inline',
+      'center-block',
+      'justify-content-center',
+    ];
+  }
 }
