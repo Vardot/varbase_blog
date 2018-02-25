@@ -80,7 +80,7 @@ display:
         type: views_bootstrap_grid
         options:
           row_class: 'blog-item no-padding-h-sm'
-          default_row_class: true
+          default_row_class: false
           uses_fields: false
           alignment: horizontal
           columns: '3'
@@ -238,7 +238,7 @@ display:
         type: views_bootstrap_grid
         options:
           row_class: 'blog-item no-padding-h-sm'
-          default_row_class: true
+          default_row_class: false
           uses_fields: false
           alignment: horizontal
           columns: '2'
@@ -322,7 +322,7 @@ display:
             value: "<div class=\"jumbotron text-center\">\n  <p> There are no blog posts now! </p>\n  <a class=\"btn btn-primary hidden-anonymous visible-admin\" href=\"[site:url]/node/add/varbase_blog/\"> Add One Now </a>\n</div>"
             format: full_html
           plugin_id: text
-      css_class: 'blog-listing card-deck equal-height-sm'
+      css_class: 'blog-listing card-deck equal-height-sm container-fluid'
     cache_metadata:
       max-age: -1
       contexts:
@@ -400,7 +400,7 @@ display:
         type: views_bootstrap_grid
         options:
           row_class: 'blog-item no-padding-h-sm'
-          default_row_class: true
+          default_row_class: false
           uses_fields: false
           alignment: horizontal
           columns: '2'
@@ -452,7 +452,7 @@ display:
             value: "<div class=\"jumbotron text-center\">\n  <p>There are no blog posts in this category!</p>\n</div>"
             format: full_html
           plugin_id: text
-      css_class: 'blog-listing card-deck equal-height-sm'
+      css_class: 'blog-listing card-deck equal-height-sm container-fluid'
     cache_metadata:
       max-age: -1
       contexts:
@@ -531,7 +531,7 @@ display:
         type: views_bootstrap_grid
         options:
           row_class: 'blog-item no-padding-h-sm'
-          default_row_class: true
+          default_row_class: false
           uses_fields: false
           alignment: horizontal
           columns: '2'
@@ -583,7 +583,7 @@ display:
             value: "<div class=\"jumbotron text-center\">\n  <p> There are no blog posts tagged with this tag! </p>\n</div>"
             format: full_html
           plugin_id: text
-      css_class: 'blog-listing card-deck equal-height-sm'
+      css_class: 'blog-listing card-deck equal-height-sm container-fluid'
     cache_metadata:
       max-age: -1
       contexts:
@@ -645,11 +645,17 @@ display:
         css_class: false
         empty: false
       style:
-        type: default
+        type: views_bootstrap_grid
         options:
-          row_class: 'col-sm-12 col-md-4'
-          default_row_class: true
+          row_class: 'blog-item no-padding-h-sm'
+          default_row_class: false
           uses_fields: false
+          alignment: horizontal
+          columns: '3'
+          col_xs: col-xs-12
+          col_sm: col-sm-12
+          col_md: col-md-4
+          col_lg: col-lg-4
       row:
         type: 'ds_entity:node'
         options:
@@ -680,7 +686,7 @@ display:
       use_more_text: 'View all blogs'
       link_display: custom_url
       link_url: blog
-      css_class: 'blog-listing card-deck equal-height-sm'
+      css_class: 'blog-listing card-deck equal-height-md justify-content-center container-fluid'
       block_hide_empty: true
       empty:
         area:
@@ -992,9 +998,8 @@ display:
       style:
         type: default
         options:
-          grouping: {  }
           row_class: ''
-          default_row_class: true
+          default_row_class: false
           uses_fields: false
       row:
         type: 'ds_entity:node'
@@ -1208,7 +1213,7 @@ display:
           offset: 0
       block_hide_empty: true
       empty: {  }
-      css_class: 'blog-listing card-deck equal-height-sm'
+      css_class: 'blog-listing card-deck equal-height-sm container-fluid'
     cache_metadata:
       max-age: -1
       contexts:
