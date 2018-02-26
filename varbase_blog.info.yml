@@ -21,6 +21,7 @@ dependencies:
   - panels
   - path
   - pathauto
+  - rabbit_hole
   - smart_trim
   - statistics
   - system
