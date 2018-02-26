@@ -43,11 +43,6 @@ third_party_settings:
         weight: 2
         label: hidden
         formatter: default
-      node_links:
-        plugin_id: node_links
-        weight: 7
-        label: hidden
-        formatter: default
       node_title:
         plugin_id: node_title
         weight: 1
@@ -58,6 +53,11 @@ third_party_settings:
         weight: 3
         label: hidden
         formatter: ds_post_date_long
+      node_links:
+        plugin_id: node_links
+        weight: 7
+        label: hidden
+        formatter: default
   panelizer:
     enable: false
     custom: false

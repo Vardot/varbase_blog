@@ -79,8 +79,8 @@ display:
       style:
         type: views_bootstrap_grid
         options:
-          row_class: 'blog-item no-padding-h-sm'
-          default_row_class: false
+          row_class: no-padding-h-sm
+          default_row_class: true
           uses_fields: false
           alignment: horizontal
           columns: '3'
@@ -237,13 +237,13 @@ display:
       style:
         type: views_bootstrap_grid
         options:
-          row_class: 'blog-item no-padding-h-sm'
-          default_row_class: false
+          row_class: no-padding-h-sm
+          default_row_class: true
           uses_fields: false
           alignment: horizontal
           columns: '2'
           col_xs: col-xs-12
-          col_sm: col-sm-12
+          col_sm: col-sm-6
           col_md: col-md-6
           col_lg: col-lg-6
       defaults:
@@ -319,7 +319,7 @@ display:
           empty: true
           tokenize: false
           content:
-            value: "<div class=\"jumbotron text-center\">\n  <p> There are no blog posts now! </p>\n  <a class=\"btn btn-primary hidden-anonymous visible-admin\" href=\"[site:url]/node/add/varbase_blog/\"> Add One Now </a>\n</div>"
+            value: "<div class=\"row\">\n  <div class=\"col-sm-12\">\n    <div class=\"container\">\n      <div class=\"row\">\n        <div class=\"col-sm-12\">\n          <div class=\"jumbotron text-center\">\n           <p> There are no blog posts now! </p>\n           <a class=\"btn btn-primary hidden-anonymous visible-admin\" href=\"[site:url]/node/add/varbase_blog/\"> Add One Now </a>\n         </div>\n      </div>\n    </div>\n  </div>\n</div>"
             format: full_html
           plugin_id: text
       css_class: 'blog-listing card-deck equal-height-sm container-fluid'
@@ -399,13 +399,13 @@ display:
       style:
         type: views_bootstrap_grid
         options:
-          row_class: 'blog-item no-padding-h-sm'
-          default_row_class: false
+          row_class: no-padding-h-sm
+          default_row_class: true
           uses_fields: false
           alignment: horizontal
           columns: '2'
           col_xs: col-xs-12
-          col_sm: col-sm-12
+          col_sm: col-sm-6
           col_md: col-md-6
           col_lg: col-lg-6
       row:
@@ -449,7 +449,7 @@ display:
           empty: true
           tokenize: false
           content:
-            value: "<div class=\"jumbotron text-center\">\n  <p>There are no blog posts in this category!</p>\n</div>"
+            value: "<div class=\"row\">\n  <div class=\"col-sm-12\">\n    <div class=\"container\">\n      <div class=\"row\">\n        <div class=\"col-sm-12\">\n          <div class=\"jumbotron text-center\">\n            <p>There are no blog posts in this category!</p>\n          </div>\n      </div>\n    </div>\n  </div>\n</div>"
             format: full_html
           plugin_id: text
       css_class: 'blog-listing card-deck equal-height-sm container-fluid'
@@ -530,13 +530,13 @@ display:
       style:
         type: views_bootstrap_grid
         options:
-          row_class: 'blog-item no-padding-h-sm'
-          default_row_class: false
+          row_class: no-padding-h-sm
+          default_row_class: true
           uses_fields: false
           alignment: horizontal
           columns: '2'
           col_xs: col-xs-12
-          col_sm: col-sm-12
+          col_sm: col-sm-6
           col_md: col-md-6
           col_lg: col-lg-6
       row:
@@ -580,7 +580,7 @@ display:
           empty: true
           tokenize: false
           content:
-            value: "<div class=\"jumbotron text-center\">\n  <p> There are no blog posts tagged with this tag! </p>\n</div>"
+            value: "<div class=\"row\">\n  <div class=\"col-sm-12\">\n    <div class=\"container\">\n      <div class=\"row\">\n        <div class=\"col-sm-12\">\n          <div class=\"jumbotron text-center\">\n            <p>There are no blog posts tagged with this tag!</p>\n          </div>\n      </div>\n    </div>\n  </div>\n</div>"
             format: full_html
           plugin_id: text
       css_class: 'blog-listing card-deck equal-height-sm container-fluid'
@@ -647,8 +647,8 @@ display:
       style:
         type: views_bootstrap_grid
         options:
-          row_class: 'blog-item no-padding-h-sm'
-          default_row_class: false
+          row_class: no-padding-h-sm
+          default_row_class: true
           uses_fields: false
           alignment: horizontal
           columns: '3'
@@ -699,7 +699,7 @@ display:
           empty: true
           tokenize: false
           content:
-            value: "<div class=\"jumbotron text-center\">\n  <p> There are no blog posts now! </p>\n  <a class=\"btn btn-default hidden-anonymous visible-admin\" href=\"[site:url]/node/add/varbase_blog/\"> Add One Now </a>\n</div>"
+            value: "<div class=\"row\">\n  <div class=\"col-sm-12\">\n    <div class=\"container\">\n      <div class=\"row\">\n        <div class=\"col-sm-12\">\n          <div class=\"jumbotron text-center\">\n           <p> There are no blog posts now! </p>\n           <a class=\"btn btn-primary hidden-anonymous visible-admin\" href=\"[site:url]/node/add/varbase_blog/\"> Add One Now </a>\n         </div>\n      </div>\n    </div>\n  </div>\n</div>"
             format: full_html
           plugin_id: text
     cache_metadata:
@@ -999,7 +999,7 @@ display:
         type: default
         options:
           row_class: ''
-          default_row_class: false
+          default_row_class: true
           uses_fields: false
       row:
         type: 'ds_entity:node'

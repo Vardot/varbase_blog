@@ -25,7 +25,7 @@ third_party_settings:
         - group_basic_information
         - group_categories
       parent_name: ''
-      weight: 1
+      weight: 2
       format_type: tabs
       format_settings:
         id: ''
@@ -36,7 +36,6 @@ third_party_settings:
     group_basic_information:
       children:
         - body
-        - field_image
       parent_name: group_tabs
       weight: 15
       format_type: tab
@@ -79,7 +78,7 @@ content:
     region: content
   created:
     type: datetime_timestamp
-    weight: 6
+    weight: 7
     region: content
     settings: {  }
     third_party_settings: {  }
@@ -90,7 +89,7 @@ content:
     type: options_select
     region: content
   field_image:
-    weight: 10
+    weight: 1
     settings:
       entity_browser: image_browser
       field_widget_display: rendered_entity
@@ -104,7 +103,7 @@ content:
     type: entity_browser_entity_reference
     region: content
   field_meta_tags:
-    weight: 3
+    weight: 4
     settings: {  }
     third_party_settings: {  }
     type: metatag_firehose
@@ -127,7 +126,7 @@ content:
     type: autocomplete_deluxe
     region: content
   field_yoast_seo:
-    weight: 2
+    weight: 3
     settings:
       body: body
     third_party_settings: {  }
@@ -135,7 +134,7 @@ content:
     region: content
   path:
     type: path
-    weight: 4
+    weight: 5
     region: content
     settings: {  }
     third_party_settings: {  }
@@ -143,7 +142,7 @@ content:
     type: boolean_checkbox
     settings:
       display_label: true
-    weight: 7
+    weight: 8
     region: content
     third_party_settings: {  }
   title:
@@ -156,7 +155,7 @@ content:
     third_party_settings: {  }
   uid:
     type: entity_reference_autocomplete_tags
-    weight: 5
+    weight: 6
     settings:
       match_operator: CONTAINS
       size: 60
