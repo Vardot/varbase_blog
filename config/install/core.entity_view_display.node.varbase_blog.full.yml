@@ -62,7 +62,7 @@ third_party_settings:
             fis-at: ''
             fi: true
             fi-el: span
-            fi-cl: ''
+            fi-cl: 'h4 author-name'
             fi-at: ''
             fi-def-at: true
             suffix: ''
@@ -94,7 +94,7 @@ third_party_settings:
             fis-at: ''
             fi: true
             fi-el: span
-            fi-cl: ''
+            fi-cl: 'h5 post-date'
             fi-at: ''
             fi-def-at: true
             suffix: ''

@@ -81,9 +81,8 @@ third_party_settings:
             fis-at: ''
             fi: true
             fi-el: span
-            fi-cl: ''
+            fi-cl: 'h4 author-name'
             fi-at: ''
-            fi-def-at: true
             suffix: ''
             lbw: false
             lb-col: false
@@ -92,6 +91,7 @@ third_party_settings:
             ow-def-cl: false
             fis: false
             fis-def-at: false
+            fi-def-at: false
       node_title:
         plugin_id: node_title
         weight: 9
@@ -128,9 +128,8 @@ third_party_settings:
             fis-at: ''
             fi: true
             fi-el: span
-            fi-cl: ''
+            fi-cl: 'h5 post-date'
             fi-at: ''
-            fi-def-at: true
             suffix: ''
             lbw: false
             lb-col: false
@@ -139,6 +138,7 @@ third_party_settings:
             ow-def-cl: false
             fis: false
             fis-def-at: false
+            fi-def-at: false
   panelizer:
     enable: false
     custom: false
@@ -182,7 +182,7 @@ third_party_settings:
         effect: none
         speed: fast
         id: ''
-        classes: 'author-info card-subtitle'
+        classes: author-info
       label: 'Author info'
       region: hidden
     group_card:
@@ -260,7 +260,7 @@ content:
     weight: 1
     label: hidden
     settings:
-      view_mode: s8_standard
+      view_mode: s4_standard
       link: false
     third_party_settings:
       ds:

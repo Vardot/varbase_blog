@@ -85,7 +85,7 @@ display:
           alignment: horizontal
           columns: '3'
           col_xs: col-xs-12
-          col_sm: col-sm-12
+          col_sm: col-sm-4
           col_md: col-md-4
           col_lg: col-lg-4
       row:
@@ -241,11 +241,11 @@ display:
           default_row_class: true
           uses_fields: false
           alignment: horizontal
-          columns: '2'
+          columns: '3'
           col_xs: col-xs-12
-          col_sm: col-sm-6
-          col_md: col-md-6
-          col_lg: col-lg-6
+          col_sm: col-sm-4
+          col_md: col-md-4
+          col_lg: col-lg-4
       defaults:
         style: false
         row: false
@@ -319,7 +319,7 @@ display:
           empty: true
           tokenize: false
           content:
-            value: "<div class=\"row\">\n  <div class=\"col-sm-12\">\n    <div class=\"container\">\n      <div class=\"row\">\n        <div class=\"col-sm-12\">\n          <div class=\"jumbotron text-center\">\n           <p> There are no blog posts now! </p>\n           <a class=\"btn btn-primary hidden-anonymous visible-admin\" href=\"[site:url]/node/add/varbase_blog/\"> Add One Now </a>\n         </div>\n      </div>\n    </div>\n  </div>\n</div>"
+            value: "<div class=\"jumbotron text-center\">\n  <p> There are no blog posts now! </p>\n  <a class=\"btn btn-primary hidden-anonymous visible-admin\" href=\"[site:url]/node/add/varbase_blog/\"> Add One Now </a>\n</div>"
             format: full_html
           plugin_id: text
       css_class: 'blog-listing card-deck equal-height-sm container-fluid'
@@ -403,11 +403,11 @@ display:
           default_row_class: true
           uses_fields: false
           alignment: horizontal
-          columns: '2'
+          columns: '3'
           col_xs: col-xs-12
-          col_sm: col-sm-6
-          col_md: col-md-6
-          col_lg: col-lg-6
+          col_sm: col-sm-4
+          col_md: col-md-4
+          col_lg: col-lg-4
       row:
         type: 'ds_entity:node'
         options:
@@ -449,7 +449,7 @@ display:
           empty: true
           tokenize: false
           content:
-            value: "<div class=\"row\">\n  <div class=\"col-sm-12\">\n    <div class=\"container\">\n      <div class=\"row\">\n        <div class=\"col-sm-12\">\n          <div class=\"jumbotron text-center\">\n            <p>There are no blog posts in this category!</p>\n          </div>\n      </div>\n    </div>\n  </div>\n</div>"
+            value: "<div class=\"jumbotron text-center\">\n   <p>There are no blog posts in this category!</p>\n</div>"
             format: full_html
           plugin_id: text
       css_class: 'blog-listing card-deck equal-height-sm container-fluid'
@@ -534,11 +534,11 @@ display:
           default_row_class: true
           uses_fields: false
           alignment: horizontal
-          columns: '2'
+          columns: '3'
           col_xs: col-xs-12
-          col_sm: col-sm-6
-          col_md: col-md-6
-          col_lg: col-lg-6
+          col_sm: col-sm-4
+          col_md: col-md-4
+          col_lg: col-lg-4
       row:
         type: 'ds_entity:node'
         options:
@@ -580,7 +580,7 @@ display:
           empty: true
           tokenize: false
           content:
-            value: "<div class=\"row\">\n  <div class=\"col-sm-12\">\n    <div class=\"container\">\n      <div class=\"row\">\n        <div class=\"col-sm-12\">\n          <div class=\"jumbotron text-center\">\n            <p>There are no blog posts tagged with this tag!</p>\n          </div>\n      </div>\n    </div>\n  </div>\n</div>"
+            value: "<div class=\"jumbotron text-center\">\n  <p>There are no blog posts tagged with this tag!</p>\n</div>"
             format: full_html
           plugin_id: text
       css_class: 'blog-listing card-deck equal-height-sm container-fluid'
@@ -644,6 +644,7 @@ display:
         link_url: false
         css_class: false
         empty: false
+        footer: false
       style:
         type: views_bootstrap_grid
         options:
@@ -681,12 +682,12 @@ display:
         options:
           items_per_page: 3
           offset: 0
-      use_more: true
-      use_more_always: true
+      use_more: false
+      use_more_always: false
       use_more_text: 'View all blogs'
       link_display: custom_url
       link_url: blog
-      css_class: 'blog-listing card-deck equal-height-md justify-content-center container-fluid'
+      css_class: 'blog-listing card-deck equal-height-sm justify-content-center container-fluid'
       block_hide_empty: true
       empty:
         area:
@@ -699,7 +700,21 @@ display:
           empty: true
           tokenize: false
           content:
-            value: "<div class=\"row\">\n  <div class=\"col-sm-12\">\n    <div class=\"container\">\n      <div class=\"row\">\n        <div class=\"col-sm-12\">\n          <div class=\"jumbotron text-center\">\n           <p> There are no blog posts now! </p>\n           <a class=\"btn btn-primary hidden-anonymous visible-admin\" href=\"[site:url]/node/add/varbase_blog/\"> Add One Now </a>\n         </div>\n      </div>\n    </div>\n  </div>\n</div>"
+            value: "<div class=\"jumbotron text-center\">\n  <p> There are no blog posts now! </p>\n  <a class=\"btn btn-primary hidden-anonymous visible-admin\" href=\"[site:url]/node/add/varbase_blog/\"> Add One Now </a>\n</div>"
+            format: full_html
+          plugin_id: text
+      footer:
+        area:
+          id: area
+          table: views
+          field: area
+          relationship: none
+          group_type: group
+          admin_label: ''
+          empty: true
+          tokenize: false
+          content:
+            value: "<div class=\"more-link form-group text-center pager\">\n  <a href=\"[site:url]/blog\" class=\"btn btn-link btn-lg\">View all blogs</a>\n</div>"
             format: full_html
           plugin_id: text
     cache_metadata:
@@ -741,7 +756,7 @@ display:
           offset: 0
       link_display: custom_url
       link_url: /blog
-      css_class: sidebar-blog-block
+      css_class: blog-listing
       block_hide_empty: true
       filters:
         status:
@@ -1068,7 +1083,7 @@ display:
           entity_type: node
           entity_field: nid
           plugin_id: node_nid
-      css_class: sidebar-blog-block
+      css_class: blog-listing
       block_hide_empty: true
       use_ajax: true
     cache_metadata:
