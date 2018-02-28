@@ -53,7 +53,7 @@ third_party_settings:
           'link text': 'Read more'
           'link class': card-link
           wrapper: div
-          class: text-right
+          class: 'read-more pull-right'
         ft:
           id: minimal
           settings:
@@ -81,7 +81,7 @@ third_party_settings:
             fis-at: ''
             fi: true
             fi-el: span
-            fi-cl: 'h4 author-name'
+            fi-cl: author-name
             fi-at: ''
             suffix: ''
             lbw: false
@@ -128,7 +128,7 @@ third_party_settings:
             fis-at: ''
             fi: true
             fi-el: span
-            fi-cl: 'h5 post-date'
+            fi-cl: post-date
             fi-at: ''
             suffix: ''
             lbw: false
@@ -182,7 +182,7 @@ third_party_settings:
         effect: none
         speed: fast
         id: ''
-        classes: author-info
+        classes: 'author-info small'
       label: 'Author info'
       region: hidden
     group_card:
