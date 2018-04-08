@@ -199,4 +199,5 @@ hidden:
   field_blog_categories: true
   field_meta_tags: true
   field_yoast_seo: true
+  langcode: true
   links: true

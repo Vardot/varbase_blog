@@ -4,35 +4,10 @@ type: module
 core: 8.x
 package: Varbase
 dependencies:
-  - autocomplete_deluxe
-  - block
-  - block_class
-  - ctools
-  - ds
-  - entity_browser
-  - field
-  - field_group
-  - menu_block
-  - menu_ui
-  - metatag
-  - node
-  - page_manager
-  - panelizer
-  - panels
-  - path
-  - pathauto
-  - rabbit_hole
-  - smart_trim
-  - statistics
-  - system
-  - taxonomy
-  - taxonomy_menu
-  - text
-  - user
+  - varbase_core
   - varbase_media
   - varbase_seo
-  - views
-  - views_bootstrap
   - vmi
-  - yoast_seo
+  - taxonomy_menu
+  - statistics
 version: 8.x-5.x-dev
