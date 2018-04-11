@@ -4,8 +4,8 @@ type: module
 core: 8.x
 package: Varbase
 dependencies:
-  - varbase:varbase_media
-  - varbase:varbase_seo
+  - varbase_media
+  - varbase_seo
   - autocomplete_deluxe
   - block
   - block_class
