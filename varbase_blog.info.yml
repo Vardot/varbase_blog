@@ -4,9 +4,9 @@ type: module
 core: 8.x
 package: Varbase
 dependencies:
-  - varbase_core:varbase_core
-  - varbase_media:varbase_media
-  - varbase_seo:varbase_seo
+  - varbase_core
+  - varbase_media
+  - varbase_seo
   - vmi
   - taxonomy_menu
   - statistics
