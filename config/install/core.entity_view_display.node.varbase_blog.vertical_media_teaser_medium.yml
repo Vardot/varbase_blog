@@ -260,7 +260,7 @@ content:
     weight: 1
     label: hidden
     settings:
-      view_mode: s4_standard
+      view_mode: s04_standard
       link: false
     third_party_settings:
       ds:

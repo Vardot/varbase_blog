@@ -69,7 +69,7 @@ content:
     weight: 0
     label: hidden
     settings:
-      view_mode: s3_standard
+      view_mode: s03_standard
       link: false
     third_party_settings:
       ds:
