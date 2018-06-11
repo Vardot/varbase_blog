@@ -2,15 +2,17 @@ langcode: en
 status: true
 dependencies:
   config:
-    - field.storage.node.field_image
+    - field.storage.node.field_media
     - media.type.image
+    - media.type.video
+    - media.type.video_embed
     - node.type.varbase_blog
-id: node.varbase_blog.field_image
-field_name: field_image
+id: node.varbase_blog.field_media
+field_name: field_media
 entity_type: node
 bundle: varbase_blog
-label: 'Main image'
-description: ''
+label: 'Main media'
+description: 'Select a lead image or video for this blog post.'
 required: false
 translatable: true
 default_value: {  }
@@ -20,8 +22,10 @@ settings:
   handler_settings:
     target_bundles:
       image: image
+      video_embed: video_embed
+      video: video
     sort:
       field: _none
     auto_create: false
-    auto_create_bundle: ''
+    auto_create_bundle: image
 field_type: entity_reference

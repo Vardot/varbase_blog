@@ -2,10 +2,10 @@ langcode: en
 status: true
 dependencies:
   config:
-    - entity_browser.browser.image_browser
+    - entity_browser.browser.media_browser
     - field.field.node.varbase_blog.body
     - field.field.node.varbase_blog.field_blog_categories
-    - field.field.node.varbase_blog.field_image
+    - field.field.node.varbase_blog.field_media
     - field.field.node.varbase_blog.field_meta_tags
     - field.field.node.varbase_blog.field_tags
     - field.field.node.varbase_blog.field_yoast_seo
@@ -25,7 +25,7 @@ third_party_settings:
         - group_basic_information
         - group_categories
       parent_name: ''
-      weight: 2
+      weight: 4
       format_type: tabs
       format_settings:
         id: ''
@@ -78,7 +78,7 @@ content:
     region: content
   created:
     type: datetime_timestamp
-    weight: 7
+    weight: 10
     region: content
     settings: {  }
     third_party_settings: {  }
@@ -88,10 +88,10 @@ content:
     third_party_settings: {  }
     type: options_select
     region: content
-  field_image:
-    weight: 1
+  field_media:
+    weight: 3
     settings:
-      entity_browser: image_browser
+      entity_browser: media_browser
       field_widget_display: rendered_entity
       field_widget_edit: true
       field_widget_remove: true
@@ -99,11 +99,12 @@ content:
       selection_mode: selection_append
       field_widget_display_settings:
         view_mode: field_preview
+      field_widget_replace: false
     third_party_settings: {  }
     type: entity_browser_entity_reference
     region: content
   field_meta_tags:
-    weight: 4
+    weight: 6
     settings: {  }
     third_party_settings: {  }
     type: metatag_firehose
@@ -126,22 +127,23 @@ content:
     type: autocomplete_deluxe
     region: content
   field_yoast_seo:
-    weight: 3
+    weight: 5
     settings:
-      body: body
+      edit_title: false
+      edit_description: false
     third_party_settings: {  }
     type: yoast_seo_widget
     region: content
   langcode:
     type: language_select
-    weight: 2
+    weight: 0
     region: content
     settings:
       include_locked: true
     third_party_settings: {  }
   path:
     type: path
-    weight: 5
+    weight: 7
     region: content
     settings: {  }
     third_party_settings: {  }
@@ -149,12 +151,12 @@ content:
     type: boolean_checkbox
     settings:
       display_label: true
-    weight: 8
+    weight: 11
     region: content
     third_party_settings: {  }
   title:
     type: string_textfield
-    weight: 0
+    weight: 1
     region: content
     settings:
       size: 60
@@ -162,14 +164,18 @@ content:
     third_party_settings: {  }
   uid:
     type: entity_reference_autocomplete_tags
-    weight: 6
+    weight: 9
     settings:
       match_operator: CONTAINS
       size: 60
       placeholder: ''
     region: content
     third_party_settings: {  }
+  url_redirects:
+    weight: 8
+    region: content
+    settings: {  }
+    third_party_settings: {  }
 hidden:
   promote: true
   sticky: true
-  url_redirects: true

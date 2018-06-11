@@ -5,7 +5,7 @@ dependencies:
     - core.entity_view_mode.node.full
     - field.field.node.varbase_blog.body
     - field.field.node.varbase_blog.field_blog_categories
-    - field.field.node.varbase_blog.field_image
+    - field.field.node.varbase_blog.field_media
     - field.field.node.varbase_blog.field_meta_tags
     - field.field.node.varbase_blog.field_tags
     - field.field.node.varbase_blog.field_yoast_seo
@@ -37,8 +37,9 @@ third_party_settings:
         - group_author_information
         - node_author
         - field_image
-        - body
+        - field_media
         - node_post_date
+        - body
         - field_tags
     fields:
       node_author:
@@ -138,15 +139,17 @@ content:
   body:
     label: hidden
     type: text_default
-    weight: 2
+    weight: 3
     settings: {  }
     third_party_settings: {  }
     region: ds_content
-  field_image:
-    weight: 1
+  field_media:
+    type: entity_reference_entity_view
+    weight: 2
+    region: ds_content
     label: hidden
     settings:
-      view_mode: default
+      view_mode: se2e_standard
       link: false
     third_party_settings:
       ds:
@@ -156,10 +159,8 @@ content:
             lb: ''
             lb-col: false
             classes: {  }
-    type: entity_reference_entity_view
-    region: ds_content
   field_tags:
-    weight: 3
+    weight: 4
     label: above
     settings:
       link: true

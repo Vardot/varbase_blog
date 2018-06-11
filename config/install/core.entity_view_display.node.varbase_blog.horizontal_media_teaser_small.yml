@@ -5,7 +5,7 @@ dependencies:
     - core.entity_view_mode.node.horizontal_media_teaser_small
     - field.field.node.varbase_blog.body
     - field.field.node.varbase_blog.field_blog_categories
-    - field.field.node.varbase_blog.field_image
+    - field.field.node.varbase_blog.field_media
     - field.field.node.varbase_blog.field_meta_tags
     - field.field.node.varbase_blog.field_tags
     - field.field.node.varbase_blog.field_yoast_seo
@@ -31,18 +31,17 @@ third_party_settings:
         link_custom: ''
         classes:
           layout_class: {  }
-          left: {  }
-          right: {  }
     regions:
       left:
         - field_image
+        - field_media
       right:
         - node_title
         - node_post_date
     fields:
       node_title:
         plugin_id: node_title
-        weight: 1
+        weight: 2
         label: hidden
         formatter: default
         settings:
@@ -51,7 +50,7 @@ third_party_settings:
           class: ''
       node_post_date:
         plugin_id: node_post_date
-        weight: 2
+        weight: 3
         label: hidden
         formatter: ds_post_date_short
   panelizer:
@@ -64,9 +63,10 @@ targetEntityType: node
 bundle: varbase_blog
 mode: horizontal_media_teaser_small
 content:
-  field_image:
+  field_media:
     type: entity_reference_entity_view
-    weight: 0
+    weight: 1
+    region: left
     label: hidden
     settings:
       view_mode: s03_standard
@@ -74,33 +74,11 @@ content:
     third_party_settings:
       ds:
         ft:
-          id: expert
+          id: default
           settings:
             lb: ''
-            prefix: ''
-            lbw-el: ''
-            lbw-cl: ''
-            lbw-at: ''
-            ow: true
-            ow-el: a
-            ow-cl: ''
-            ow-at: 'href="[node:url]"'
-            ow-def-at: true
-            ow-def-cl: true
-            fis-el: ''
-            fis-cl: ''
-            fis-at: ''
-            fi-el: ''
-            fi-cl: ''
-            fi-at: ''
-            suffix: ''
-            lbw: false
             lb-col: false
-            fis: false
-            fis-def-at: false
-            fi: false
-            fi-def-at: false
-    region: left
+            classes: {  }
 hidden:
   body: true
   field_blog_categories: true
