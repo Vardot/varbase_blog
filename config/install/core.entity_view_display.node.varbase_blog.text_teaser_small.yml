@@ -12,7 +12,6 @@ dependencies:
     - node.type.varbase_blog
   module:
     - ds
-    - panelizer
     - user
 third_party_settings:
   ds:
@@ -50,11 +49,6 @@ third_party_settings:
         weight: 1
         label: hidden
         formatter: ds_post_date_short
-  panelizer:
-    enable: false
-    custom: false
-    allow: false
-    default: default
 id: node.varbase_blog.text_teaser_small
 targetEntityType: node
 bundle: varbase_blog

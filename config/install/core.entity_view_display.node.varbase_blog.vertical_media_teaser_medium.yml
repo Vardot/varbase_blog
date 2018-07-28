@@ -13,7 +13,6 @@ dependencies:
   module:
     - ds
     - field_group
-    - panelizer
     - smart_trim
     - user
 third_party_settings:
@@ -139,11 +138,6 @@ third_party_settings:
             fis: false
             fis-def-at: false
             fi-def-at: false
-  panelizer:
-    enable: false
-    custom: false
-    allow: false
-    default: default
   field_group:
     group_description:
       children:

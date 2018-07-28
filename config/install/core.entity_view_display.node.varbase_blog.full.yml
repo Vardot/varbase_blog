@@ -13,7 +13,6 @@ dependencies:
   module:
     - ds
     - field_group
-    - panelizer
     - text
     - user
 third_party_settings:
@@ -106,11 +105,6 @@ third_party_settings:
             ow-def-cl: false
             fis: false
             fis-def-at: false
-  panelizer:
-    enable: false
-    custom: false
-    allow: false
-    default: default
   field_group:
     group_author_information:
       children:
