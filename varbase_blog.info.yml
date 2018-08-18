@@ -10,4 +10,4 @@ dependencies:
   - vmi
   - taxonomy_menu
   - statistics
-version: 8.x-5.x-dev
+version: 8.x-6.x-dev
