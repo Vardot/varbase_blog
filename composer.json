@@ -30,7 +30,10 @@
     "composer/installers": "^1.5.0",
     "oomphinc/composer-installers-extender": "^1.1.2",
     "cweagans/composer-patches": "^1.6.4",
-    "drupal/drupal-library-installer-plugin": "^0.3"
+    "drupal/drupal-library-installer-plugin": "^0.3",
+    "drupal/varbase_media": "5.*",
+    "drupal/varbase_seo": "5.*",
+    "drupal/taxonomy_menu": "3.x-dev#1103ad0855de4d242364a5b7e74a5c5fc1ce9e02"
   },
   "extra": {
     "branch-alias": {
@@ -41,6 +44,12 @@
       "npm-asset"
     ],
     "enable-patching": true,
-    "composer-exit-on-patch-failure": true
+    "composer-exit-on-patch-failure": true,
+    "patches": {
+      "drupal/taxonomy_menu": {
+        "Issue #2939143: Fixed Undefined method TaxonomyMenu::generateTaxonomyLinks()":
+        "https://www.drupal.org/files/issues/2939143-2.patch"
+      }
+    }
   }
 }
