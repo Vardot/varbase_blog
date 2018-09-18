@@ -2,6 +2,7 @@ name: 'Varbase blog'
 description: 'Provides Blog post content type and related configuration. Use Blog to publish blog post by different authors in the Blog section of the site.'
 type: module
 core: 8.x
+version: 8.x-6.x-dev
 package: Varbase
 dependencies:
   - varbase_core
@@ -10,4 +11,3 @@ dependencies:
   - vmi
   - taxonomy_menu
   - statistics
-version: 8.x-6.x-dev
