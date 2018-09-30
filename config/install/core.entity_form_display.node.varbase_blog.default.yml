@@ -95,11 +95,11 @@ content:
       field_widget_display: rendered_entity
       field_widget_edit: true
       field_widget_remove: true
+      field_widget_replace: true
       open: true
       selection_mode: selection_append
       field_widget_display_settings:
         view_mode: field_preview
-      field_widget_replace: false
     third_party_settings: {  }
     type: entity_browser_entity_reference
     region: content
@@ -129,8 +129,7 @@ content:
   field_yoast_seo:
     weight: 5
     settings:
-      edit_title: false
-      edit_description: false
+      body: body
     third_party_settings: {  }
     type: yoast_seo_widget
     region: content

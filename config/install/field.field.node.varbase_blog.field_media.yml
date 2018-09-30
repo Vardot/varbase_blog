@@ -4,8 +4,8 @@ dependencies:
   config:
     - field.storage.node.field_media
     - media.type.image
+    - media.type.remote_video
     - media.type.video
-    - media.type.video_embed
     - node.type.varbase_blog
 id: node.varbase_blog.field_media
 field_name: field_media
@@ -22,7 +22,7 @@ settings:
   handler_settings:
     target_bundles:
       image: image
-      video_embed: video_embed
+      remote_video: remote_video
       video: video
     sort:
       field: _none
