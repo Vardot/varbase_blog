@@ -8,6 +8,6 @@ dependencies:
   - varbase_core:varbase_core
   - varbase_media:varbase_media
   - varbase_seo:varbase_seo
+  - drupal:statistics
   - vmi:vmi
   - taxonomy_menu:taxonomy_menu
-  - drupal:statistics
