@@ -23,8 +23,8 @@
     }
   ],
   "require": {
-    "drupal/varbase_media": "4.*",
-    "drupal/varbase_seo": "4.*"
+    "drupal/varbase_media": "~4",
+    "drupal/varbase_seo": "~4"
   },
   "extra": {
     "branch-alias": {
