@@ -27,12 +27,13 @@
     }
   },
   "require": {
-    "composer/installers": "~1",
-    "oomphinc/composer-installers-extender": "~1",
-    "cweagans/composer-patches": "~1",
+    "composer/installers": "~1.0",
+    "oomphinc/composer-installers-extender": "~1.0",
+    "cweagans/composer-patches": "~1.0",
     "drupal/drupal-library-installer-plugin": "^0.3",
-    "drupal/varbase_media": "~6",
-    "drupal/varbase_seo": "~6",
+    "drupal/varbase_core": "~6.0",
+    "drupal/varbase_media": "~6.0",
+    "drupal/varbase_seo": "~6.0",
     "drupal/taxonomy_menu": "3.x-dev#1103ad0855de4d242364a5b7e74a5c5fc1ce9e02"
   },
   "extra": {
