@@ -34,7 +34,10 @@
     "drupal/varbase_core": "~6.0",
     "drupal/varbase_media": "~6.0",
     "drupal/varbase_seo": "~6.0",
-    "drupal/taxonomy_menu": "3.4"
+    "drupal/taxonomy_menu": "3.4",
+    "drupal/length_indicator": "~1.0",
+    "drupal/advanced_text_formatter": "~1.0",
+    "drupal/maxlength": "~1.0"
   },
   "extra": {
     "branch-alias": {

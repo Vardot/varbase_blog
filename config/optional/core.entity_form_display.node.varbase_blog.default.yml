@@ -11,9 +11,12 @@ dependencies:
     - field.field.node.varbase_blog.field_yoast_seo
     - node.type.varbase_blog
   module:
+    - advanced_text_formatter
     - autocomplete_deluxe
     - entity_browser
     - field_group
+    - length_indicator
+    - maxlength
     - metatag
     - path
     - text
@@ -160,7 +163,18 @@ content:
     settings:
       size: 60
       placeholder: ''
-    third_party_settings: {  }
+    third_party_settings:
+      length_indicator:
+        indicator: true
+        indicator_opt:
+          optimin: 15
+          optimax: 50
+          tolerance: 10
+      maxlength:
+        maxlength_js: null
+        maxlength_js_label: 'Content limited to @limit characters, remaining: <strong>@remaining</strong>'
+      advanced_text_formatter:
+        show_token_tree: 0
   uid:
     type: entity_reference_autocomplete_tags
     weight: 9

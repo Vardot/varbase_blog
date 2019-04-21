@@ -11,3 +11,7 @@ dependencies:
   - drupal:statistics
   - vmi:vmi
   - taxonomy_menu:taxonomy_menu
+install:
+  - length_indicator
+  - advanced_text_formatter
+  - maxlength
