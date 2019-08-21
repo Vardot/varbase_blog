@@ -4,6 +4,7 @@ type: module
 core: 8.x
 version: 8.x-7.x-dev
 package: Varbase
+project: varbase_blog
 dependencies:
   - varbase_core:varbase_core
   - varbase_media:varbase_media
