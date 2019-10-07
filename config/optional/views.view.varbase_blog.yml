@@ -79,15 +79,14 @@ display:
       style:
         type: views_bootstrap_grid
         options:
-          row_class: no-padding-h-sm
+          row_class: px-md-0
           default_row_class: true
           uses_fields: false
-          alignment: horizontal
-          columns: '3'
-          col_xs: col-xs-12
-          col_sm: col-sm-4
+          col_xs: none
+          col_sm: col-sm-12
           col_md: col-md-4
           col_lg: col-lg-4
+          col_xl: col-xl-4
       row:
         type: 'ds_entity:node'
         options:
@@ -237,15 +236,14 @@ display:
       style:
         type: views_bootstrap_grid
         options:
-          row_class: no-padding-h-sm
+          row_class: px-md-0
           default_row_class: true
           uses_fields: false
-          alignment: horizontal
-          columns: '3'
-          col_xs: col-xs-12
-          col_sm: col-sm-4
+          col_xs: none
+          col_sm: col-sm-12
           col_md: col-md-4
           col_lg: col-lg-4
+          col_xl: col-xl-4
       defaults:
         style: false
         row: false
@@ -399,15 +397,14 @@ display:
       style:
         type: views_bootstrap_grid
         options:
-          row_class: no-padding-h-sm
+          row_class: px-md-0
           default_row_class: true
           uses_fields: false
-          alignment: horizontal
-          columns: '3'
-          col_xs: col-xs-12
-          col_sm: col-sm-4
+          col_xs: none
+          col_sm: col-sm-12
           col_md: col-md-4
           col_lg: col-lg-4
+          col_xl: col-xl-4
       row:
         type: 'ds_entity:node'
         options:
@@ -530,15 +527,14 @@ display:
       style:
         type: views_bootstrap_grid
         options:
-          row_class: no-padding-h-sm
+          row_class: px-md-0
           default_row_class: true
           uses_fields: false
-          alignment: horizontal
-          columns: '3'
-          col_xs: col-xs-12
-          col_sm: col-sm-4
+          col_xs: none
+          col_sm: col-sm-12
           col_md: col-md-4
           col_lg: col-lg-4
+          col_xl: col-xl-4
       row:
         type: 'ds_entity:node'
         options:
@@ -648,15 +644,14 @@ display:
       style:
         type: views_bootstrap_grid
         options:
-          row_class: no-padding-h-sm
+          row_class: px-md-0
           default_row_class: true
           uses_fields: false
-          alignment: horizontal
-          columns: '3'
-          col_xs: col-xs-12
+          col_xs: none
           col_sm: col-sm-12
           col_md: col-md-4
           col_lg: col-lg-4
+          col_xl: col-xl-4
       row:
         type: 'ds_entity:node'
         options:
