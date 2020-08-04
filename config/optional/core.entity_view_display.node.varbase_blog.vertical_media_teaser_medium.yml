@@ -294,3 +294,5 @@ hidden:
   field_yoast_seo: true
   langcode: true
   links: true
+  search_api_excerpt: true
+  content_moderation_control: true
