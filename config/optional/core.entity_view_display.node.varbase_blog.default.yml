@@ -62,6 +62,11 @@ targetEntityType: node
 bundle: varbase_blog
 mode: default
 content:
+  content_moderation_control:
+    weight: -20
+    settings: {  }
+    third_party_settings: {  }
+    region: content
   field_media:
     weight: 1
     label: hidden
@@ -86,3 +91,4 @@ hidden:
   field_yoast_seo: true
   langcode: true
   links: true
+  search_api_excerpt: true
