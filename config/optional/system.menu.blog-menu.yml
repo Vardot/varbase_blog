@@ -1,9 +1,6 @@
-uuid: fe5a4c94-efde-49e5-abb1-945c4505f683
 langcode: en
 status: true
 dependencies: {  }
-_core:
-  default_config_hash: iyV-00CNYHNW2wBK5mrYCDQYGmj4rU0I6NBrC4mKxds
 id: blog-menu
 label: 'Blog menu'
 description: ''

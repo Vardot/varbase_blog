@@ -1,4 +1,3 @@
-uuid: 1fe6b164-dbd7-4051-bd2c-030cccbad7fc
 langcode: en
 status: true
 dependencies:
@@ -7,8 +6,6 @@ dependencies:
     - node.type.varbase_blog
   module:
     - text
-_core:
-  default_config_hash: a5Khj2bb3TuvyEKcVsSq0Hr0P6bXpDiv02_khMu3CWU
 id: node.varbase_blog.body
 field_name: body
 entity_type: node

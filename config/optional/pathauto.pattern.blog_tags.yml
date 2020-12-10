@@ -1,12 +1,9 @@
-uuid: ab45a664-605f-4153-99c4-f5b1c706e49e
 langcode: en
 status: true
 dependencies:
   module:
     - ctools
     - taxonomy
-_core:
-  default_config_hash: T06K_Cwkj9fT_5kGUEEQUuBLx9mnsrys51YHR-cgpMM
 id: blog_tags
 label: 'Blog tags'
 type: 'canonical_entities:taxonomy_term'

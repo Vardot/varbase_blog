@@ -1,11 +1,8 @@
-uuid: ddb47814-1982-4e41-88f5-429505395650
 langcode: en
 status: true
 dependencies:
   module:
     - node
-_core:
-  default_config_hash: t6JNIyBzuWR6Rl_7vW3up5AsVaDxtdSQGdIONGw7_PU
 id: blog_aliases
 label: 'Blog aliases'
 type: 'canonical_entities:node'

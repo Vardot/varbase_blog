@@ -1,4 +1,3 @@
-uuid: 39752637-39da-4fe6-a995-ec0ffcc3a770
 langcode: en
 status: true
 dependencies:
@@ -54,8 +53,6 @@ third_party_settings:
         weight: 3
         label: hidden
         formatter: ds_post_date_short
-_core:
-  default_config_hash: cpM53WAvANZTB3KoNmWPCIOQCtPt6v2415IFkNChTbk
 id: node.varbase_blog.horizontal_media_teaser_small
 targetEntityType: node
 bundle: varbase_blog

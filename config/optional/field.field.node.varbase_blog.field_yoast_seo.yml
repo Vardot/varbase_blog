@@ -1,4 +1,3 @@
-uuid: 91949bef-2410-41c0-9f04-09112cb5377e
 langcode: en
 status: true
 dependencies:
@@ -7,8 +6,6 @@ dependencies:
     - node.type.varbase_blog
   module:
     - yoast_seo
-_core:
-  default_config_hash: Cy62EWPbxbbZGcrtU1m82Q5xoDeQFzWaxNbY4E4E2Hc
 id: node.varbase_blog.field_yoast_seo
 field_name: field_yoast_seo
 entity_type: node

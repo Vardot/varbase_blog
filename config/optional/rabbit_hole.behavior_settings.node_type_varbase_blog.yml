@@ -1,11 +1,8 @@
-uuid: d9784207-252a-4d89-80ab-e8fef05f8cbf
 langcode: en
 status: true
 dependencies:
   config:
     - node.type.varbase_blog
-_core:
-  default_config_hash: 1kCBUUv3usKZcPwSJ1cl1_S3-GsWsSz5h_p6zJM6Blc
 id: node_type_varbase_blog
 entity_type_id: node_type
 entity_id: varbase_blog

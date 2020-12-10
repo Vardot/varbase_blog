@@ -1,4 +1,3 @@
-uuid: 5a950f5e-616c-4c84-be9f-38fa624a41b0
 langcode: en
 status: true
 dependencies:
@@ -8,8 +7,6 @@ third_party_settings:
   menu_ui:
     available_menus: {  }
     parent: ''
-_core:
-  default_config_hash: uxMbYDSZzlv0Rp1-Dki45rR6qBQToWYEN8PE0K9xsVQ
 name: 'Blog post'
 type: varbase_blog
 description: 'Use <em>Blog</em> to publish blog post by different authors in the Blog section of the site.'

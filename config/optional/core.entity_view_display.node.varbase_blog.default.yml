@@ -1,4 +1,3 @@
-uuid: e5c8b18e-8d59-4be3-b002-cb54544da75d
 langcode: en
 status: true
 dependencies:
@@ -327,8 +326,6 @@ third_party_settings:
       whitelisted_blocks: {  }
       blacklisted_blocks: {  }
       allowed_layouts: {  }
-_core:
-  default_config_hash: Bxj0wOMN6F6j_K2qZoEJ08e5jfjbjVKDApaBiyj_fVM
 id: node.varbase_blog.default
 targetEntityType: node
 bundle: varbase_blog

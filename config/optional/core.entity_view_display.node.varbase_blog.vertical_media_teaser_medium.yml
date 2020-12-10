@@ -1,4 +1,3 @@
-uuid: e9952ef2-a5b8-44b1-a4c1-87486891fa9e
 langcode: en
 status: true
 dependencies:
@@ -200,8 +199,6 @@ third_party_settings:
         classes: card
       label: Card
       region: hidden
-_core:
-  default_config_hash: novtbkmfWGUvoZ5ztDcK3olN9MgccA5W4MBRSNlQvng
 id: node.varbase_blog.vertical_media_teaser_medium
 targetEntityType: node
 bundle: varbase_blog
