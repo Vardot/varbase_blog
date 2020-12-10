@@ -1,3 +1,4 @@
+uuid: 0e93e497-90bb-4576-8e50-6453342dcd4e
 langcode: en
 status: true
 dependencies:
@@ -7,6 +8,8 @@ dependencies:
     - media.type.remote_video
     - media.type.video
     - node.type.varbase_blog
+_core:
+  default_config_hash: wpQOj_NKHZKmKRwLr8wfFgef58MGsHQrEGV0giXa1HI
 id: node.varbase_blog.field_media
 field_name: field_media
 entity_type: node

@@ -1,3 +1,4 @@
+uuid: 2595910b-f5fe-4c1d-9dfd-f0574efbf477
 langcode: en
 status: true
 dependencies:
@@ -6,6 +7,8 @@ dependencies:
     - node.type.varbase_blog
   module:
     - metatag
+_core:
+  default_config_hash: mPonXPnyFYJAWO9v2WKpXdWlo2D-KO7Q0OAjFLv4uDs
 id: node.varbase_blog.field_meta_tags
 field_name: field_meta_tags
 entity_type: node

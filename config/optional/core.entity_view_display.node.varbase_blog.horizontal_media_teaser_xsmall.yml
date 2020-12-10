@@ -1,9 +1,9 @@
-uuid: 39752637-39da-4fe6-a995-ec0ffcc3a770
+uuid: null
 langcode: en
 status: true
 dependencies:
   config:
-    - core.entity_view_mode.node.horizontal_media_teaser_small
+    - core.entity_view_mode.node.horizontal_media_teaser_xsmall
     - field.field.node.varbase_blog.body
     - field.field.node.varbase_blog.field_blog_categories
     - field.field.node.varbase_blog.field_media
@@ -18,11 +18,12 @@ dependencies:
 third_party_settings:
   ds:
     layout:
-      id: horizontal_media_teaser_small
-      library: vmi/horizontal_media_teaser_small
+      id: horizontal_media_teaser_xsmall
+      library: vmi/horizontal_media_teaser_xsmall
       disable_css: false
       entity_classes: all_classes
       settings:
+        label: ''
         wrappers:
           left: div
           right: div
@@ -34,49 +35,85 @@ third_party_settings:
           layout_class: {  }
     regions:
       left:
-        - field_image
         - field_media
       right:
         - node_title
         - node_post_date
     fields:
+      node_post_date:
+        plugin_id: node_post_date
+        weight: 2
+        label: hidden
+        formatter: ds_post_date_short
       node_title:
         plugin_id: node_title
-        weight: 2
+        weight: 1
         label: hidden
         formatter: default
         settings:
           link: true
           wrapper: h3
           class: ''
-      node_post_date:
-        plugin_id: node_post_date
-        weight: 3
-        label: hidden
-        formatter: ds_post_date_short
-_core:
-  default_config_hash: cpM53WAvANZTB3KoNmWPCIOQCtPt6v2415IFkNChTbk
-id: node.varbase_blog.horizontal_media_teaser_small
+id: node.varbase_blog.horizontal_media_teaser_xsmall
 targetEntityType: node
 bundle: varbase_blog
-mode: horizontal_media_teaser_small
+mode: horizontal_media_teaser_xsmall
 content:
-  field_media:
+  field_image:
     type: entity_reference_entity_view
-    weight: 1
-    region: left
+    weight: 0
     label: hidden
     settings:
-      view_mode: s03_standard
+      view_mode: s02_standard
       link: false
     third_party_settings:
       ds:
         ft:
-          id: default
+          id: expert
           settings:
             lb: ''
+            prefix: ''
+            lbw-el: ''
+            lbw-cl: ''
+            lbw-at: ''
+            ow: true
+            ow-el: a
+            ow-cl: ''
+            ow-at: 'href="[node:url]"'
+            ow-def-at: true
+            ow-def-cl: true
+            fis-el: ''
+            fis-cl: ''
+            fis-at: ''
+            fis-def-at: true
+            fi-el: ''
+            fi-cl: ''
+            fi-at: ''
+            fi-def-at: true
+            suffix: ''
+            lbw: false
             lb-col: false
-            classes: {  }
+            fis: false
+            fi: false
+    region: left
+  field_media:
+    type: entity_reference_entity_view
+    weight: 0
+    label: hidden
+    settings:
+      view_mode: s02_standard
+      link: false
+    third_party_settings: {  }
+    region: left
+  field_video:
+    type: entity_reference_entity_view
+    weight: 0
+    label: hidden
+    settings:
+      view_mode: s02_standard
+      link: false
+    third_party_settings: {  }
+    region: left
 hidden:
   body: true
   content_moderation_control: true

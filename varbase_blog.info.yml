@@ -14,3 +14,5 @@ install:
   - length_indicator
   - advanced_text_formatter
   - maxlength
+  - varbase_layout_builder
+  - vlplb

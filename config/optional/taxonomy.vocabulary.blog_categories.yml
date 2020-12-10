@@ -1,8 +1,10 @@
+uuid: cf14ccc1-1ff7-4bad-b071-1640f1eb3580
 langcode: en
 status: true
 dependencies: {  }
+_core:
+  default_config_hash: kvfR8cqn5aFPUQKmUFinXKekelmgpklgz0Xhzf8CYAQ
 name: 'Blog Categories'
 vid: blog_categories
 description: ''
-hierarchy: 0
 weight: 0

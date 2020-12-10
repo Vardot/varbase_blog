@@ -1,0 +1,206 @@
+uuid: cf252674-ec78-421e-bb3c-a0ff57ff3e2f
+langcode: en
+status: true
+dependencies: {  }
+id: lead_media_1_column
+label: 'Lead media 1 column'
+targetEntityType: node
+targetBundle: varbase_blog
+layout:
+  -
+    layout_id: bs_1col
+    layout_settings:
+      vlb_section_config:
+        vlb_title: ''
+        vlb_width: full
+        vlb_gutter: '0'
+        vlb_background_color: _none
+        vlb_background_media: 0
+        vlb_background_edge2edge: 1
+        vlb_classes: ''
+        vlb_use_advanced: 0
+      layout:
+        wrapper: div
+        classes:
+          col-12: col-12
+        add_layout_class: 1
+        attributes: ''
+      regions:
+        main:
+          wrapper: div
+          classes:
+            col-sm-12: col-sm-12
+          add_region_classes: 1
+          attributes: ''
+      label: ''
+    components:
+      5c07b1a8-5848-46b0-9722-5522d3f897d1:
+        uuid: 5c07b1a8-5848-46b0-9722-5522d3f897d1
+        region: main
+        configuration:
+          id: 'field_block:node:varbase_blog:field_media'
+          label: 'Main media'
+          provider: layout_builder
+          label_display: '0'
+          formatter:
+            label: hidden
+            type: entity_reference_entity_view
+            settings:
+              view_mode: s12_standard
+            third_party_settings: {  }
+          context_mapping:
+            entity: layout_builder.entity
+            view_mode: view_mode
+        additional: {  }
+        weight: 0
+    third_party_settings: {  }
+  -
+    layout_id: bs_1col
+    layout_settings:
+      vlb_section_config:
+        vlb_title: ''
+        vlb_width: full
+        vlb_gutter: '0'
+        vlb_background_color: _none
+        vlb_background_media: 0
+        vlb_background_edge2edge: 1
+        vlb_classes: py-5
+        vlb_use_advanced: 0
+      layout:
+        wrapper: div
+        classes:
+          col-12: col-12
+        add_layout_class: 1
+        attributes: ''
+      regions:
+        main:
+          wrapper: div
+          classes:
+            col-sm-12: col-sm-12
+          add_region_classes: 1
+          attributes: ''
+      label: ''
+    components:
+      b7292c3d-8ce0-4387-a189-4fd73ba424ed:
+        uuid: b7292c3d-8ce0-4387-a189-4fd73ba424ed
+        region: main
+        configuration:
+          id: 'field_block:node:varbase_blog:body'
+          label: Body
+          provider: layout_builder
+          label_display: '0'
+          formatter:
+            label: hidden
+            type: text_default
+            settings: {  }
+            third_party_settings: {  }
+          context_mapping:
+            entity: layout_builder.entity
+            view_mode: view_mode
+        additional: {  }
+        weight: 0
+    third_party_settings: {  }
+  -
+    layout_id: bs_1col
+    layout_settings:
+      vlb_section_config:
+        vlb_title: ''
+        vlb_width: full
+        vlb_gutter: '1'
+        vlb_background_color: _none
+        vlb_background_media: 0
+        vlb_background_edge2edge: 1
+        vlb_classes: py-3
+        vlb_use_advanced: 0
+      layout:
+        wrapper: div
+        classes:
+          col-12: col-12
+        add_layout_class: 1
+        attributes: ''
+      regions:
+        main:
+          wrapper: div
+          classes:
+            col-sm-12: col-sm-12
+          add_region_classes: 1
+          attributes: ''
+      label: ''
+    components:
+      7aa7364f-0c7d-4097-82c6-c71cf2961a50:
+        uuid: 7aa7364f-0c7d-4097-82c6-c71cf2961a50
+        region: main
+        configuration:
+          id: 'field_block:node:varbase_blog:field_tags'
+          label: Tags
+          provider: layout_builder
+          label_display: visible
+          formatter:
+            label: hidden
+            type: entity_reference_label
+            settings:
+              link: true
+            third_party_settings: {  }
+          context_mapping:
+            entity: layout_builder.entity
+            view_mode: view_mode
+        additional:
+          component_attributes:
+            block_attributes:
+              id: ''
+              class: vb-tags
+              style: ''
+              data: ''
+            block_title_attributes:
+              id: ''
+              class: ''
+              style: ''
+              data: ''
+            block_content_attributes:
+              id: ''
+              class: ''
+              style: ''
+              data: ''
+        weight: 0
+    third_party_settings: {  }
+  -
+    layout_id: bs_1col
+    layout_settings:
+      vlb_section_config:
+        vlb_title: ''
+        vlb_width: full
+        vlb_gutter: '1'
+        vlb_background_color: _none
+        vlb_background_media: 0
+        vlb_background_edge2edge: 1
+        vlb_classes: ''
+        vlb_use_advanced: 0
+      layout:
+        wrapper: div
+        classes:
+          col-12: col-12
+        add_layout_class: 1
+        attributes: ''
+      regions:
+        main:
+          wrapper: div
+          classes:
+            col-sm-12: col-sm-12
+          add_region_classes: 1
+          attributes: ''
+      label: ''
+    components:
+      45c05709-2d20-482a-8f6f-c9268abb08fd:
+        uuid: 45c05709-2d20-482a-8f6f-c9268abb08fd
+        region: main
+        configuration:
+          id: 'views_block:varbase_blog-related_blog_posts_block'
+          label: ''
+          provider: views
+          label_display: visible
+          views_label: ''
+          items_per_page: none
+          context_mapping: {  }
+        additional: {  }
+        weight: 0
+    third_party_settings: {  }

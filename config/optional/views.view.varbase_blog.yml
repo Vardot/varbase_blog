@@ -1,8 +1,9 @@
+uuid: 026b347a-2f19-4e28-9049-9a42226ad223
 langcode: en
 status: true
 dependencies:
   config:
-    - core.entity_view_mode.node.horizontal_media_teaser_small
+    - core.entity_view_mode.node.horizontal_media_teaser_xsmall
     - core.entity_view_mode.node.text_teaser_small
     - core.entity_view_mode.node.vertical_media_teaser_medium
     - node.type.varbase_blog
@@ -15,6 +16,8 @@ dependencies:
     - taxonomy
     - user
     - views_bootstrap
+_core:
+  default_config_hash: NPHWCQ1FCFcScOTQfXTm4TgzLEwjtWZHIQMFiYA-QfA
 id: varbase_blog
 label: 'Varbase Blog'
 module: views
@@ -329,7 +332,7 @@ display:
             value: "<div class=\"jumbotron text-center\">\n  <p> There are no blog posts now! </p>\n  <a class=\"btn btn-primary hidden-anonymous visible-admin\" href=\"[site:url]/node/add/varbase_blog/\"> Add One Now </a>\n</div>"
             format: full_html
           plugin_id: text
-      css_class: 'blog-listing card-deck equal-height-sm container-fluid'
+      css_class: 'blog-listing card-deck equal-height-sm'
     cache_metadata:
       max-age: -1
       contexts:
@@ -458,7 +461,7 @@ display:
             value: "<div class=\"jumbotron text-center\">\n   <p>There are no blog posts in this category!</p>\n</div>"
             format: full_html
           plugin_id: text
-      css_class: 'blog-listing card-deck equal-height-sm container-fluid'
+      css_class: 'blog-listing card-deck equal-height-sm'
     cache_metadata:
       max-age: -1
       contexts:
@@ -588,7 +591,7 @@ display:
             value: "<div class=\"jumbotron text-center\">\n  <p>There are no blog posts tagged with this tag!</p>\n</div>"
             format: full_html
           plugin_id: text
-      css_class: 'blog-listing card-deck equal-height-sm container-fluid'
+      css_class: 'blog-listing card-deck equal-height-sm'
     cache_metadata:
       max-age: -1
       contexts:
@@ -691,7 +694,7 @@ display:
       use_more_text: 'View all blogs'
       link_display: custom_url
       link_url: blog
-      css_class: 'blog-listing card-deck equal-height-sm justify-content-center container-fluid'
+      css_class: 'blog-listing card-deck equal-height-sm justify-content-center'
       block_hide_empty: true
       empty:
         area:
@@ -858,7 +861,7 @@ display:
         type: 'ds_entity:node'
         options:
           relationship: none
-          view_mode: horizontal_media_teaser_small
+          view_mode: horizontal_media_teaser_xsmall
           alternating_fieldset:
             alternating: false
             allpages: false
@@ -867,6 +870,8 @@ display:
             item_2: teaser
           grouping_fieldset:
             group: false
+            group_field: node_counter|totalcount
+            group_field_function: ''
           advanced_fieldset:
             advanced: false
       fields:
@@ -1242,7 +1247,7 @@ display:
           offset: 0
       block_hide_empty: true
       empty: {  }
-      css_class: 'blog-listing card-deck equal-height-sm container-fluid'
+      css_class: 'blog-listing card-deck equal-height-sm'
     cache_metadata:
       max-age: -1
       contexts:

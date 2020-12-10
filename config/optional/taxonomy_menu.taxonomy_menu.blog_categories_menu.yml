@@ -1,9 +1,12 @@
+uuid: b96d4623-9c18-4e9d-985c-34c358af2ac9
 langcode: en
 status: true
 dependencies:
   config:
     - system.menu.blog-menu
     - taxonomy.vocabulary.blog_categories
+_core:
+  default_config_hash: T9HeW3kCsCrLQ1Ig9L2vqTPXFNNyv5LT_ZEo-Ir7TwA
 id: blog_categories_menu
 label: 'Blog categories Menu'
 vocabulary: blog_categories

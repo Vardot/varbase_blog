@@ -1,3 +1,4 @@
+uuid: 2870d241-de3b-4639-b1b5-8eac576b627e
 langcode: en
 status: true
 dependencies:
@@ -5,6 +6,8 @@ dependencies:
     - field.storage.node.field_tags
     - node.type.varbase_blog
     - taxonomy.vocabulary.tags
+_core:
+  default_config_hash: O1zWol-FscW_6CDAIgd7Vc0X4YmuyESV4S0OQaggJ84
 id: node.varbase_blog.field_tags
 field_name: field_tags
 entity_type: node

@@ -1,0 +1,21 @@
+uuid: d5e8c239-641c-4d70-84f7-1fe50fae1351
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.layout_selection
+    - node.type.varbase_blog
+id: node.varbase_blog.layout_selection
+field_name: layout_selection
+entity_type: node
+bundle: varbase_blog
+label: Layout
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: layout_library
+  handler_settings: {  }
+field_type: entity_reference

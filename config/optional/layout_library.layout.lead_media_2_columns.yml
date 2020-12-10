@@ -1,0 +1,271 @@
+uuid: bd164cd1-b443-472f-a52d-f1d5934e891d
+langcode: en
+status: true
+dependencies: {  }
+id: lead_media_2_columns
+label: 'Lead media 2 columns'
+targetEntityType: node
+targetBundle: varbase_blog
+layout:
+  -
+    layout_id: bs_1col
+    layout_settings:
+      vlb_section_config:
+        vlb_title: ''
+        vlb_width: full
+        vlb_gutter: '0'
+        vlb_background_color: _none
+        vlb_background_media: 0
+        vlb_background_edge2edge: 1
+        vlb_classes: ''
+        vlb_use_advanced: 0
+      layout:
+        wrapper: div
+        classes:
+          col-12: col-12
+        add_layout_class: 1
+        attributes: ''
+      regions:
+        main:
+          wrapper: div
+          classes:
+            col-sm-12: col-sm-12
+          add_region_classes: 1
+          attributes: ''
+      label: ''
+    components:
+      5c07b1a8-5848-46b0-9722-5522d3f897d1:
+        uuid: 5c07b1a8-5848-46b0-9722-5522d3f897d1
+        region: main
+        configuration:
+          id: 'field_block:node:varbase_blog:field_media'
+          label: 'Main media'
+          provider: layout_builder
+          label_display: '0'
+          formatter:
+            label: hidden
+            type: entity_reference_entity_view
+            settings:
+              view_mode: s12_standard
+            third_party_settings: {  }
+          context_mapping:
+            entity: layout_builder.entity
+            view_mode: view_mode
+        additional: {  }
+        weight: 0
+    third_party_settings: {  }
+  -
+    layout_id: bs_2col
+    layout_settings:
+      vlb_section_config:
+        vlb_title: ''
+        vlb_width: full
+        vlb_column_style_2: vlb_style_66_33
+        vlb_gutter: '1'
+        vlb_background_color: _none
+        vlb_background_media: 0
+        vlb_background_edge2edge: 1
+        vlb_classes: py-3
+        vlb_use_advanced: 0
+      layout:
+        wrapper: div
+        classes:
+          col-12: col-12
+        add_layout_class: 1
+        attributes: ''
+      regions:
+        left:
+          wrapper: div
+          classes:
+            col-lg-8: col-lg-8
+          add_region_classes: 1
+          attributes: ''
+        right:
+          wrapper: div
+          classes:
+            col-lg-4: col-lg-4
+          add_region_classes: 1
+          attributes: ''
+      label: ''
+    components:
+      27cf0942-cca5-40dc-85c2-3aec39a9f0a6:
+        uuid: 27cf0942-cca5-40dc-85c2-3aec39a9f0a6
+        region: right
+        configuration:
+          id: 'views_block:varbase_blog-most_popular_blog_posts_block'
+          label: ''
+          provider: views
+          label_display: visible
+          views_label: ''
+          items_per_page: none
+          context_mapping: {  }
+        additional:
+          component_attributes:
+            block_attributes:
+              id: ''
+              class: px-3
+              style: ''
+              data: ''
+            block_title_attributes:
+              id: ''
+              class: ''
+              style: ''
+              data: ''
+            block_content_attributes:
+              id: ''
+              class: ''
+              style: ''
+              data: ''
+        weight: 0
+      e73161ef-060b-48b2-abed-8207656ca70d:
+        uuid: e73161ef-060b-48b2-abed-8207656ca70d
+        region: right
+        configuration:
+          id: 'views_block:varbase_blog-most_recent_blog_posts_block'
+          label: ''
+          provider: views
+          label_display: visible
+          views_label: ''
+          items_per_page: none
+          context_mapping: {  }
+        additional:
+          component_attributes:
+            block_attributes:
+              id: ''
+              class: mt-5
+              style: ''
+              data: ''
+            block_title_attributes:
+              id: ''
+              class: ''
+              style: ''
+              data: ''
+            block_content_attributes:
+              id: ''
+              class: ''
+              style: ''
+              data: ''
+        weight: 1
+      e2ea69b4-ff0d-4b37-8590-b074a54b6843:
+        uuid: e2ea69b4-ff0d-4b37-8590-b074a54b6843
+        region: left
+        configuration:
+          id: 'field_block:node:varbase_blog:body'
+          label: Body
+          provider: layout_builder
+          label_display: '0'
+          formatter:
+            label: hidden
+            type: text_default
+            settings: {  }
+            third_party_settings: {  }
+          context_mapping:
+            entity: layout_builder.entity
+            view_mode: view_mode
+        additional: {  }
+        weight: 0
+    third_party_settings: {  }
+  -
+    layout_id: bs_1col
+    layout_settings:
+      vlb_section_config:
+        vlb_title: ''
+        vlb_width: full
+        vlb_gutter: '1'
+        vlb_background_color: _none
+        vlb_background_media: 0
+        vlb_background_edge2edge: 1
+        vlb_classes: py-3
+        vlb_use_advanced: 0
+      layout:
+        wrapper: div
+        classes:
+          col-12: col-12
+        add_layout_class: 1
+        attributes: ''
+      regions:
+        main:
+          wrapper: div
+          classes:
+            col-sm-12: col-sm-12
+          add_region_classes: 1
+          attributes: ''
+      label: ''
+    components:
+      84cfb2ac-a987-4e85-b3b8-374a0bece2c6:
+        uuid: 84cfb2ac-a987-4e85-b3b8-374a0bece2c6
+        region: main
+        configuration:
+          id: 'field_block:node:varbase_blog:field_tags'
+          label: Tags
+          provider: layout_builder
+          label_display: visible
+          formatter:
+            label: hidden
+            type: entity_reference_label
+            settings:
+              link: true
+            third_party_settings: {  }
+          context_mapping:
+            entity: layout_builder.entity
+            view_mode: view_mode
+        additional:
+          component_attributes:
+            block_attributes:
+              id: ''
+              class: vb-tags
+              style: ''
+              data: ''
+            block_title_attributes:
+              id: ''
+              class: ''
+              style: ''
+              data: ''
+            block_content_attributes:
+              id: ''
+              class: ''
+              style: ''
+              data: ''
+        weight: 0
+    third_party_settings: {  }
+  -
+    layout_id: bs_1col
+    layout_settings:
+      vlb_section_config:
+        vlb_title: ''
+        vlb_width: full
+        vlb_gutter: '1'
+        vlb_background_color: _none
+        vlb_background_media: 0
+        vlb_background_edge2edge: 1
+        vlb_classes: ''
+        vlb_use_advanced: 0
+      layout:
+        wrapper: div
+        classes:
+          col-12: col-12
+        add_layout_class: 1
+        attributes: ''
+      regions:
+        main:
+          wrapper: div
+          classes:
+            col-sm-12: col-sm-12
+          add_region_classes: 1
+          attributes: ''
+      label: ''
+    components:
+      45c05709-2d20-482a-8f6f-c9268abb08fd:
+        uuid: 45c05709-2d20-482a-8f6f-c9268abb08fd
+        region: main
+        configuration:
+          id: 'views_block:varbase_blog-related_blog_posts_block'
+          label: ''
+          provider: views
+          label_display: visible
+          views_label: ''
+          items_per_page: none
+          context_mapping: {  }
+        additional: {  }
+        weight: 0
+    third_party_settings: {  }

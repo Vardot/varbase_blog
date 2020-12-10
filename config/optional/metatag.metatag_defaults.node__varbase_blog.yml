@@ -1,6 +1,9 @@
+uuid: 1f55d86c-193e-42bd-adb7-4daea015018b
 langcode: en
 status: true
 dependencies: {  }
+_core:
+  default_config_hash: SWISm7-OpGkpcT4rjSd8eienfLkrQQ4eLFzfLvVYWVY
 id: node__varbase_blog
 label: 'Content: Blog post'
 tags:

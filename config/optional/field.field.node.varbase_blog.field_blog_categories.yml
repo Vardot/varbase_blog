@@ -1,3 +1,4 @@
+uuid: edc6a25b-0c09-4f38-85a9-82cb9db81e29
 langcode: en
 status: true
 dependencies:
@@ -5,6 +6,8 @@ dependencies:
     - field.storage.node.field_blog_categories
     - node.type.varbase_blog
     - taxonomy.vocabulary.blog_categories
+_core:
+  default_config_hash: ukM8MUJcg9YxQeXKpNBKYZjO10AKHuOxfy0__Yktgtc
 id: node.varbase_blog.field_blog_categories
 field_name: field_blog_categories
 entity_type: node

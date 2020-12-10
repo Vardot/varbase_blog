@@ -1,3 +1,4 @@
+uuid: 9a2ce410-3029-4c80-a2da-c27f956d1563
 langcode: en
 status: true
 dependencies:
@@ -8,6 +9,7 @@ dependencies:
     - field.field.node.varbase_blog.field_meta_tags
     - field.field.node.varbase_blog.field_tags
     - field.field.node.varbase_blog.field_yoast_seo
+    - field.field.node.varbase_blog.layout_selection
     - node.type.varbase_blog
     - workflows.workflow.varbase_simple_workflow
   module:
@@ -69,6 +71,8 @@ third_party_settings:
         classes: ''
       label: Categories
       region: content
+_core:
+  default_config_hash: v584GYUjalS6oc6AsBG3eyRySI5KvInpWqTcYHhS8yw
 id: node.varbase_blog.default
 targetEntityType: node
 bundle: varbase_blog
@@ -145,6 +149,12 @@ content:
     region: content
     settings:
       include_locked: true
+    third_party_settings: {  }
+  layout_selection:
+    type: options_select
+    region: content
+    weight: 26
+    settings: {  }
     third_party_settings: {  }
   moderation_state:
     type: moderation_state_default

@@ -1,0 +1,201 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: e016eb7f-7991-4ead-9248-ef9a3489e57d
+  bundle: landing_page_lb
+  default_langcode: en
+default:
+  revision_uid:
+    -
+      target_id: 1
+  revision_log:
+    -
+      value: 'Create Blog section Landing page (Layout Builder)'
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  title:
+    -
+      value: Blog
+  created:
+    -
+      value: 1603202282
+  promote:
+    -
+      value: false
+  sticky:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true
+  moderation_state:
+    -
+      value: published
+  path:
+    -
+      alias: /blog
+      langcode: en
+      pathauto: 1
+  publish_state:
+    -
+      value: published
+  unpublish_state:
+    -
+      value: archived
+  content_translation_source:
+    -
+      value: und
+  content_translation_outdated:
+    -
+      value: false
+  field_yoast_seo:
+    -
+      status: '0'
+      focus_keyword: ''
+  layout_builder__layout:
+    -
+      section:
+        layout_id: bs_1col
+        layout_settings:
+          vlb_section_config:
+            vlb_title: ''
+            vlb_width: full
+            vlb_gutter: '0'
+            vlb_background_color: _none
+            vlb_background_media: 0
+            vlb_background_edge2edge: 1
+            vlb_classes: ''
+            vlb_use_advanced: 0
+          layout:
+            wrapper: div
+            classes:
+              col-12: col-12
+            add_layout_class: 1
+            attributes: ''
+          regions:
+            main:
+              wrapper: div
+              classes:
+                col-sm-12: col-sm-12
+              add_region_classes: 1
+              attributes: ''
+          label: ''
+        components:
+          9059ac9b-9a7c-4c7c-9579-bf32316c22db:
+            uuid: 9059ac9b-9a7c-4c7c-9579-bf32316c22db
+            region: main
+            configuration:
+              id: 'extra_field_block:node:landing_page_lb:content_moderation_control'
+              label: 'Moderation control'
+              provider: layout_builder
+              label_display: 0
+              context_mapping:
+                entity: layout_builder.entity
+            additional: {  }
+            weight: 0
+        third_party_settings: {  }
+    -
+      section:
+        layout_id: bs_1col
+        layout_settings:
+          vlb_section_config:
+            vlb_title: ''
+            vlb_width: full
+            vlb_gutter: '0'
+            vlb_background_color: _none
+            vlb_background_media: 0
+            vlb_background_edge2edge: 1
+            vlb_classes: ''
+            vlb_use_advanced: 0
+          layout:
+            wrapper: div
+            classes:
+              col-12: col-12
+            add_layout_class: 1
+            attributes: ''
+          regions:
+            main:
+              wrapper: div
+              classes:
+                col-sm-12: col-sm-12
+              add_region_classes: 1
+              attributes: ''
+          label: ''
+        components:
+          089f9398-a7d7-4f2a-b801-f88c10806331:
+            uuid: 089f9398-a7d7-4f2a-b801-f88c10806331
+            region: main
+            configuration:
+              id: 'system_menu_block:blog-menu'
+              label: 'Blog menu'
+              provider: system
+              label_display: 0
+              level: '1'
+              depth: '0'
+              expand_all_items: 1
+              context_mapping: {  }
+            additional: {  }
+            weight: 0
+        third_party_settings: {  }
+    -
+      section:
+        layout_id: bs_1col
+        layout_settings:
+          vlb_section_config:
+            vlb_title: ''
+            vlb_width: full
+            vlb_gutter: '0'
+            vlb_background_color: _none
+            vlb_background_media: 0
+            vlb_background_edge2edge: 1
+            vlb_classes: ''
+            vlb_use_advanced: 0
+          layout:
+            wrapper: div
+            classes:
+              col-12: col-12
+            add_layout_class: 1
+            attributes: ''
+          regions:
+            main:
+              wrapper: div
+              classes:
+                col-sm-12: col-sm-12
+              add_region_classes: 1
+              attributes: ''
+          label: ''
+        components:
+          17c84127-1447-45aa-9ba9-7d89bc554952:
+            uuid: 17c84127-1447-45aa-9ba9-7d89bc554952
+            region: main
+            configuration:
+              id: 'views_block:varbase_blog-blog_listing_block'
+              label: ''
+              provider: views
+              label_display: 0
+              views_label: ''
+              items_per_page: none
+              context_mapping: {  }
+            additional:
+              component_attributes:
+                block_attributes:
+                  id: ''
+                  class: ''
+                  style: ''
+                  data: ''
+                block_title_attributes:
+                  id: ''
+                  class: ''
+                  style: ''
+                  data: ''
+                block_content_attributes:
+                  id: ''
+                  class: ''
+                  style: ''
+                  data: ''
+            weight: 0
+        third_party_settings: {  }
