@@ -4,8 +4,6 @@ _meta:
   uuid: a22d5eca-e8be-4626-a7d0-5acf9da3862d
   bundle: menu_link_content
   default_langcode: en
-  depends:
-    e016eb7f-7991-4ead-9248-ef9a3489e57d: node
 default:
   revision_user:
     -
@@ -24,15 +22,18 @@ default:
       value: main
   link:
     -
-      target_uuid: e016eb7f-7991-4ead-9248-ef9a3489e57d
+      uri: 'internal:/blog'
       title: ''
-      options: {  }
+      options:
+        attributes:
+          class:
+            - ''
   external:
     -
       value: false
   rediscover:
     -
-      value: false
+      value: true
   weight:
     -
       value: -49
