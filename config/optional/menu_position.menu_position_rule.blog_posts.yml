@@ -5,11 +5,7 @@ dependencies:
     - ctools
 id: blog_posts
 label: 'Blog posts'
-menu_name: main
-parent: 'menu_link_content:a22d5eca-e8be-4626-a7d0-5acf9da3862d'
-menu_link: 'menu_position_link:blog_posts'
 enabled: true
-weight: null
 conditions:
   'entity_bundle:node':
     id: 'entity_bundle:node'
@@ -18,3 +14,7 @@ conditions:
     negate: false
     context_mapping:
       node: '@node.node_route_context:node'
+menu_name: main
+parent: 'menu_link_content:a22d5eca-e8be-4626-a7d0-5acf9da3862d'
+menu_link: 'menu_position_link:blog_posts'
+weight: null
