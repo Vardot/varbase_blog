@@ -51,4 +51,8 @@ function varbase_blog_install() {
     }
   }
   // ---------------------------------------------------------------------------
+  $menu_position_blog_posts_config_file_content = file_get_contents($optional_install_path . '/menu_position.menu_position_rule.blog_posts.yml');
+  $menu_position_blog_posts_config_file_data = (array) Yaml::parse($menu_position_blog_posts_config_file_content);
+  $menu_position_blog_posts_config_factory = \Drupal::configFactory()->getEditable('menu_position.menu_position_rule.blog_posts');
+  $menu_position_blog_posts_config_factory->setData($menu_position_blog_posts_config_file_data)->save(TRUE);
 }
