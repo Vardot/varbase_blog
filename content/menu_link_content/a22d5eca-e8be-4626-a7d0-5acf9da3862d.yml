@@ -22,7 +22,7 @@ default:
       value: main
   link:
     -
-      uri: 'internal:/blog'
+      uri: 'internal:/blog/'
       title: ''
       options:
         attributes:
