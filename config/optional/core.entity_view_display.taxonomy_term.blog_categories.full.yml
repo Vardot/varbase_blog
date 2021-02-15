@@ -1,7 +1,9 @@
+uuid: 59deab06-0151-4b70-bdcf-45fea4c4b131
 langcode: en
 status: true
 dependencies:
   config:
+    - core.entity_view_mode.taxonomy_term.full
     - system.menu.blog-menu
     - taxonomy.vocabulary.blog_categories
     - views.view.varbase_blog
@@ -9,7 +11,7 @@ dependencies:
     - layout_builder
     - layout_builder_restrictions
     - layout_library
-    - menu_block
+    - system
     - text
     - views
 third_party_settings:
@@ -120,21 +122,17 @@ third_party_settings:
           layout_regions_classes: {  }
           remove_gutters: '0'
         components:
-          bc737ce7-db72-47ac-9a81-5c89d45cfd6f:
-            uuid: bc737ce7-db72-47ac-9a81-5c89d45cfd6f
+          fe8eeb44-0d99-45a0-bcbf-432dcc763d73:
+            uuid: fe8eeb44-0d99-45a0-bcbf-432dcc763d73
             region: blb_region_col_1
             configuration:
-              id: 'menu_block:blog-menu'
+              id: 'system_menu_block:blog-menu'
               label: 'Blog menu'
-              provider: menu_block
+              provider: system
               label_display: '0'
-              follow: false
-              follow_parent: child
               level: 1
               depth: 0
-              expand: false
-              parent: 'blog-menu:'
-              suggestion: blog_menu
+              expand_all_items: false
               context_mapping: {  }
             additional:
               bootstrap_styles:
@@ -326,8 +324,8 @@ third_party_settings:
           layout_regions_classes: {  }
           remove_gutters: '0'
         components:
-          8aab479d-7d7a-4d1c-b8f0-917213fb6342:
-            uuid: 8aab479d-7d7a-4d1c-b8f0-917213fb6342
+          6c15db82-b447-4b1f-9663-c4795b12300d:
+            uuid: 6c15db82-b447-4b1f-9663-c4795b12300d
             region: blb_region_col_1
             configuration:
               label_display: '0'
@@ -445,8 +443,8 @@ third_party_settings:
           layout_regions_classes: {  }
           remove_gutters: '0'
         components:
-          36518ce9-7c61-41e1-9909-f4bccc94168e:
-            uuid: 36518ce9-7c61-41e1-9909-f4bccc94168e
+          22f41342-4ee0-40d1-8008-c98bf6a635b0:
+            uuid: 22f41342-4ee0-40d1-8008-c98bf6a635b0
             region: blb_region_col_1
             configuration:
               id: 'views_block:varbase_blog-blog_listing_by_blog_category_block'
@@ -576,10 +574,10 @@ third_party_settings:
         - 'bootstrap_layout_builder:blb_col_4'
         - 'bootstrap_layout_builder:blb_col_5'
         - 'bootstrap_layout_builder:blb_col_6'
-id: taxonomy_term.blog_categories.default
+id: taxonomy_term.blog_categories.full
 targetEntityType: taxonomy_term
 bundle: blog_categories
-mode: default
+mode: full
 content:
   description:
     label: hidden

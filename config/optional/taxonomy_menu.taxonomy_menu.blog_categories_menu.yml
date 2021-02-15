@@ -7,6 +7,7 @@ dependencies:
 id: blog_categories_menu
 label: 'Blog categories Menu'
 vocabulary: blog_categories
+depth: 0
 menu: blog-menu
 expanded: false
 menu_parent: 'admin:node.add.varbase_blog'

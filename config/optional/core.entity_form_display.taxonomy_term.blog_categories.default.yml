@@ -2,7 +2,6 @@ langcode: en
 status: true
 dependencies:
   config:
-    - field.field.taxonomy_term.blog_categories.layout_selection
     - taxonomy.vocabulary.blog_categories
   module:
     - path
@@ -27,12 +26,6 @@ content:
     settings:
       include_locked: true
     third_party_settings: {  }
-  layout_selection:
-    type: options_select
-    region: content
-    weight: 101
-    settings: {  }
-    third_party_settings: {  }
   name:
     type: string_textfield
     weight: -5
@@ -54,4 +47,5 @@ content:
     weight: 100
     region: content
     third_party_settings: {  }
-hidden: {  }
+hidden:
+  layout_selection: true
