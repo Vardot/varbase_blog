@@ -1,3 +1,4 @@
+uuid: 7daa9db5-19a1-4acb-ae8d-a3c31563f86b
 langcode: en
 status: true
 dependencies:
@@ -356,7 +357,7 @@ third_party_settings:
                 class: null
           container_wrapper_bg_color_class: ''
           container_wrapper_bg_media: null
-          container: container
+          container: w-100
           section_classes: ''
           section_attributes: null
           regions_classes:
@@ -587,7 +588,7 @@ third_party_settings:
               padding_left:
                 class: _none
               padding_top:
-                class: _none
+                class: pt-3
               padding_right:
                 class: _none
               padding_bottom:
@@ -647,7 +648,7 @@ third_party_settings:
                 class: null
           container_wrapper_bg_color_class: ''
           container_wrapper_bg_media: null
-          container: container
+          container: container-fluid
           section_classes: ''
           section_attributes: null
           regions_classes:
@@ -810,7 +811,7 @@ third_party_settings:
               padding_left:
                 class: _none
               padding_top:
-                class: _none
+                class: pt-3
               padding_right:
                 class: _none
               padding_bottom:
@@ -1061,6 +1062,8 @@ third_party_settings:
         - 'bootstrap_layout_builder:blb_col_4'
         - 'bootstrap_layout_builder:blb_col_5'
         - 'bootstrap_layout_builder:blb_col_6'
+_core:
+  default_config_hash: X-KfroyN7BGgH-7msLe0rIvaCFHOYOykFAM-PLGYbqU
 id: node.varbase_blog.full
 targetEntityType: node
 bundle: varbase_blog
@@ -1135,7 +1138,6 @@ hidden:
   field_blog_categories: true
   field_meta_tags: true
   field_yoast_seo: true
-  langcode: true
   layout_selection: true
   links: true
   search_api_excerpt: true
