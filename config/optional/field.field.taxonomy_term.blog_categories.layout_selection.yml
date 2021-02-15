@@ -1,0 +1,20 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.layout_selection
+    - taxonomy.vocabulary.blog_categories
+id: taxonomy_term.blog_categories.layout_selection
+field_name: layout_selection
+entity_type: taxonomy_term
+bundle: blog_categories
+label: Layout
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: layout_library
+  handler_settings: {  }
+field_type: entity_reference
