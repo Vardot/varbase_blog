@@ -760,7 +760,7 @@ display:
           offset: 0
       link_display: custom_url
       link_url: /blog
-      css_class: blog-listing
+      css_class: 'blog-listing container'
       block_hide_empty: true
       filters:
         status:
@@ -1024,7 +1024,7 @@ display:
       style:
         type: default
         options:
-          row_class: ''
+          row_class: 'row '
           default_row_class: true
           uses_fields: false
       row:
@@ -1094,7 +1094,7 @@ display:
           entity_type: node
           entity_field: nid
           plugin_id: node_nid
-      css_class: blog-listing
+      css_class: 'blog-listing container'
       block_hide_empty: true
       use_ajax: true
     cache_metadata:

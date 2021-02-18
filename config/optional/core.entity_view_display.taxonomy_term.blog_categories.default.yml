@@ -589,5 +589,4 @@ content:
     settings: {  }
     third_party_settings: {  }
 hidden:
-  langcode: true
   search_api_excerpt: true

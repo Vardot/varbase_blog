@@ -140,13 +140,6 @@ content:
     third_party_settings: {  }
     type: yoast_seo_widget
     region: content
-  langcode:
-    type: language_select
-    weight: 0
-    region: content
-    settings:
-      include_locked: true
-    third_party_settings: {  }
   layout_selection:
     type: options_select
     region: content

@@ -10,314 +10,17 @@ dependencies:
     - field.field.node.varbase_blog.field_yoast_seo
     - field.field.node.varbase_blog.layout_selection
     - node.type.varbase_blog
-    - views.view.varbase_blog
   module:
-    - bootstrap_layouts
     - ds
     - layout_builder
     - layout_builder_restrictions
     - layout_library
+    - text
     - user
-    - views
 third_party_settings:
   layout_builder:
     allow_custom: false
-    enabled: true
-    sections:
-      -
-        layout_id: bs_1col
-        layout_settings:
-          vlb_section_config:
-            vlb_title: ''
-            vlb_width: full
-            vlb_gutter: '1'
-            vlb_background_color: _none
-            vlb_background_media: 0
-            vlb_background_edge2edge: 1
-            vlb_classes: ''
-            vlb_use_advanced: 0
-          layout:
-            wrapper: div
-            classes:
-              col-12: col-12
-            add_layout_class: 1
-            attributes: ''
-          regions:
-            main:
-              wrapper: div
-              classes:
-                col-sm-12: col-sm-12
-              add_region_classes: 1
-              attributes: ''
-          label: ''
-        components:
-          e9526373-eb64-4c06-9bef-72a6a0725fc7:
-            uuid: e9526373-eb64-4c06-9bef-72a6a0725fc7
-            region: main
-            configuration:
-              id: 'extra_field_block:node:varbase_blog:content_moderation_control'
-              label: 'Moderation control'
-              provider: layout_builder
-              label_display: '0'
-              context_mapping:
-                entity: layout_builder.entity
-            additional: {  }
-            weight: 0
-        third_party_settings: {  }
-      -
-        layout_id: bs_1col
-        layout_settings:
-          vlb_section_config:
-            vlb_title: ''
-            vlb_width: full
-            vlb_gutter: '1'
-            vlb_background_color: _none
-            vlb_background_media: 0
-            vlb_background_edge2edge: 1
-            vlb_classes: ''
-            vlb_use_advanced: 0
-          layout:
-            wrapper: div
-            classes:
-              col-12: col-12
-            add_layout_class: 1
-            attributes: ''
-          regions:
-            main:
-              wrapper: div
-              classes:
-                col-sm-12: col-sm-12
-              add_region_classes: 1
-              attributes: ''
-          label: ''
-        components:
-          a85b5af5-36eb-4004-a0ad-c0202818535d:
-            uuid: a85b5af5-36eb-4004-a0ad-c0202818535d
-            region: main
-            configuration:
-              id: 'field_block:node:varbase_blog:uid'
-              label: 'Authored by'
-              provider: layout_builder
-              label_display: '0'
-              formatter:
-                label: hidden
-                type: entity_reference_entity_view
-                settings:
-                  view_mode: compact
-                third_party_settings: {  }
-              context_mapping:
-                entity: layout_builder.entity
-                view_mode: view_mode
-            additional: {  }
-            weight: 0
-          c9936273-c600-4569-bf1b-26793e58e2e6:
-            uuid: c9936273-c600-4569-bf1b-26793e58e2e6
-            region: main
-            configuration:
-              id: 'field_block:node:varbase_blog:created'
-              label: 'Authored on'
-              provider: layout_builder
-              label_display: '0'
-              formatter:
-                label: hidden
-                type: timestamp
-                settings:
-                  date_format: short
-                  custom_date_format: ''
-                  timezone: ''
-                third_party_settings: {  }
-              context_mapping:
-                entity: layout_builder.entity
-                view_mode: view_mode
-            additional: {  }
-            weight: 1
-        third_party_settings: {  }
-      -
-        layout_id: bs_2col
-        layout_settings:
-          vlb_section_config:
-            vlb_title: ''
-            vlb_width: full
-            vlb_column_style_2: vlb_style_66_33
-            vlb_gutter: '1'
-            vlb_background_color: _none
-            vlb_background_media: 0
-            vlb_background_edge2edge: 1
-            vlb_classes: py-5
-            vlb_use_advanced: 0
-          layout:
-            wrapper: div
-            classes:
-              col-12: col-12
-            add_layout_class: 1
-            attributes: ''
-          regions:
-            left:
-              wrapper: div
-              classes:
-                col-lg-8: col-lg-8
-              add_region_classes: 1
-              attributes: ''
-            right:
-              wrapper: div
-              classes:
-                col-lg-4: col-lg-4
-              add_region_classes: 1
-              attributes: ''
-          label: ''
-        components:
-          c84d30ce-0d88-4287-b4a6-e40b658979f8:
-            uuid: c84d30ce-0d88-4287-b4a6-e40b658979f8
-            region: left
-            configuration:
-              id: 'field_block:node:varbase_blog:body'
-              label: Body
-              provider: layout_builder
-              label_display: '0'
-              formatter:
-                label: hidden
-                type: text_default
-                settings: {  }
-                third_party_settings: {  }
-              context_mapping:
-                entity: layout_builder.entity
-                view_mode: view_mode
-            additional: {  }
-            weight: -9
-          d48e64df-23f6-483f-b7e8-31c3f56e5e9f:
-            uuid: d48e64df-23f6-483f-b7e8-31c3f56e5e9f
-            region: left
-            configuration:
-              id: 'field_block:node:varbase_blog:field_media'
-              label: 'Main media'
-              provider: layout_builder
-              label_display: '0'
-              formatter:
-                label: hidden
-                type: entity_reference_entity_view
-                settings:
-                  view_mode: s12_standard
-                third_party_settings: {  }
-              context_mapping:
-                entity: layout_builder.entity
-                view_mode: view_mode
-            additional: {  }
-            weight: -10
-          ddb133e0-eb24-4860-aca0-f8468aaf03ac:
-            uuid: ddb133e0-eb24-4860-aca0-f8468aaf03ac
-            region: right
-            configuration:
-              id: 'views_block:varbase_blog-most_popular_blog_posts_block'
-              label: ''
-              provider: views
-              label_display: visible
-              views_label: ''
-              items_per_page: none
-              context_mapping: {  }
-            additional: {  }
-            weight: 0
-          76c4abee-11d9-46d4-a963-94fc9f2ed151:
-            uuid: 76c4abee-11d9-46d4-a963-94fc9f2ed151
-            region: right
-            configuration:
-              id: 'views_block:varbase_blog-most_recent_blog_posts_block'
-              label: ''
-              provider: views
-              label_display: visible
-              views_label: ''
-              items_per_page: none
-              context_mapping: {  }
-            additional: {  }
-            weight: 1
-        third_party_settings: {  }
-      -
-        layout_id: bs_1col
-        layout_settings:
-          vlb_section_config:
-            vlb_title: ''
-            vlb_width: full
-            vlb_gutter: '1'
-            vlb_background_color: _none
-            vlb_background_media: 0
-            vlb_background_edge2edge: 1
-            vlb_classes: py-3
-            vlb_use_advanced: 0
-          layout:
-            wrapper: div
-            classes:
-              col-12: col-12
-            add_layout_class: 1
-            attributes: ''
-          regions:
-            main:
-              wrapper: div
-              classes:
-                col-sm-12: col-sm-12
-              add_region_classes: 1
-              attributes: ''
-          label: ''
-        components:
-          bd981e94-e4f3-4fd5-9e92-0955d95b5ec0:
-            uuid: bd981e94-e4f3-4fd5-9e92-0955d95b5ec0
-            region: main
-            configuration:
-              id: 'field_block:node:varbase_blog:field_tags'
-              label: Tags
-              provider: layout_builder
-              label_display: visible
-              formatter:
-                label: hidden
-                type: entity_reference_label
-                settings:
-                  link: true
-                third_party_settings: {  }
-              context_mapping:
-                entity: layout_builder.entity
-                view_mode: view_mode
-            additional: {  }
-            weight: 0
-        third_party_settings: {  }
-      -
-        layout_id: bs_1col
-        layout_settings:
-          vlb_section_config:
-            vlb_title: ''
-            vlb_width: full
-            vlb_gutter: '1'
-            vlb_background_color: _none
-            vlb_background_media: 0
-            vlb_background_edge2edge: 1
-            vlb_classes: py-3
-            vlb_use_advanced: 0
-          layout:
-            wrapper: div
-            classes:
-              col-12: col-12
-            add_layout_class: 1
-            attributes: ''
-          regions:
-            main:
-              wrapper: div
-              classes:
-                col-sm-12: col-sm-12
-              add_region_classes: 1
-              attributes: ''
-          label: ''
-        components:
-          9c2f9a81-5330-40de-a9ce-1fed1c404700:
-            uuid: 9c2f9a81-5330-40de-a9ce-1fed1c404700
-            region: main
-            configuration:
-              id: 'views_block:varbase_blog-related_blog_posts_block'
-              label: ''
-              provider: views
-              label_display: visible
-              views_label: ''
-              items_per_page: none
-              context_mapping: {  }
-            additional: {  }
-            weight: 0
-        third_party_settings: {  }
+    enabled: false
   layout_library:
     enable: true
   layout_builder_restrictions:
@@ -325,28 +28,74 @@ third_party_settings:
     entity_view_mode_restriction:
       whitelisted_blocks: {  }
       blacklisted_blocks: {  }
-      allowed_layouts:
-        - 'bootstrap_layout_builder:blb_col_1'
-        - 'bootstrap_layout_builder:blb_col_2'
-        - 'bootstrap_layout_builder:blb_col_3'
-        - 'bootstrap_layout_builder:blb_col_4'
-        - 'bootstrap_layout_builder:blb_col_5'
-        - 'bootstrap_layout_builder:blb_col_6'
+      allowed_layouts: {  }
+  ds:
+    layout:
+      id: bs_1col
+      library: null
+      disable_css: false
+      entity_classes: all_classes
+      settings:
+        label: ''
+        layout:
+          wrapper: div
+          classes:
+            row: row
+          add_layout_class: 1
+          attributes: ''
+        regions:
+          main:
+            wrapper: div
+            classes:
+              col-sm-12: col-sm-12
+            add_region_classes: 1
+            attributes: ''
+    regions:
+      main:
+        - field_media
+        - node_author
+        - node_post_date
+        - field_blog_categories
+        - body
+        - field_tags
+    fields:
+      node_post_date:
+        plugin_id: node_post_date
+        weight: 2
+        label: hidden
+        formatter: ds_post_date_short
+      node_author:
+        plugin_id: node_author
+        weight: 1
+        label: hidden
+        formatter: author
 id: node.varbase_blog.default
 targetEntityType: node
 bundle: varbase_blog
 mode: default
 content:
-  content_moderation_control:
-    weight: -20
+  body:
+    type: text_default
+    weight: 4
+    region: main
+    label: hidden
     settings: {  }
     third_party_settings: {  }
-    region: content
-  field_media:
-    weight: 1
+  field_blog_categories:
+    type: entity_reference_label
+    weight: 3
+    region: main
     label: hidden
     settings:
-      view_mode: default
+      link: true
+    third_party_settings: {  }
+  field_media:
+    type: entity_reference_entity_view
+    weight: 0
+    region: main
+    label: hidden
+    settings:
+      view_mode: s12_standard
       link: false
     third_party_settings:
       ds:
@@ -356,15 +105,26 @@ content:
             lb: ''
             lb-col: false
             classes: {  }
-    type: entity_reference_entity_view
-    region: ds_content
+  field_tags:
+    type: entity_reference_label
+    weight: 5
+    region: main
+    label: above
+    settings:
+      link: true
+    third_party_settings:
+      ds:
+        ds_limit: ''
+        ft:
+          id: default
+          settings:
+            lb: ''
+            lb-col: false
+            classes: {  }
 hidden:
-  body: true
-  field_blog_categories: true
+  content_moderation_control: true
   field_meta_tags: true
-  field_tags: true
   field_yoast_seo: true
-  langcode: true
   layout_selection: true
   links: true
   search_api_excerpt: true

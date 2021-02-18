@@ -108,7 +108,7 @@ third_party_settings:
                 class: null
           container_wrapper_bg_color_class: ''
           container_wrapper_bg_media: null
-          container: container
+          container: container-fluid
           section_classes: ''
           section_attributes: null
           regions_classes:
@@ -227,7 +227,7 @@ third_party_settings:
                 class: null
           container_wrapper_bg_color_class: ''
           container_wrapper_bg_media: null
-          container: w-100
+          container: container-fluid
           section_classes: ''
           section_attributes: null
           regions_classes:
@@ -236,7 +236,7 @@ third_party_settings:
             blb_region_col_1: {  }
           breakpoints: {  }
           layout_regions_classes: {  }
-          remove_gutters: '1'
+          remove_gutters: '0'
         components:
           62ac6a33-9442-486e-90c3-2b16b9e90352:
             uuid: 62ac6a33-9442-486e-90c3-2b16b9e90352
@@ -363,5 +363,4 @@ content:
     settings: {  }
     third_party_settings: {  }
 hidden:
-  langcode: true
   search_api_excerpt: true

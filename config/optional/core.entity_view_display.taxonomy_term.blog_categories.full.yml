@@ -110,7 +110,7 @@ third_party_settings:
                 class: null
           container_wrapper_bg_color_class: ''
           container_wrapper_bg_media: null
-          container: container
+          container: container-fluid
           section_classes: ''
           section_attributes: null
           regions_classes:
@@ -312,7 +312,7 @@ third_party_settings:
                 class: null
           container_wrapper_bg_color_class: ''
           container_wrapper_bg_media: null
-          container: container
+          container: container-fluid
           section_classes: ''
           section_attributes: null
           regions_classes:
@@ -431,7 +431,7 @@ third_party_settings:
                 class: null
           container_wrapper_bg_color_class: ''
           container_wrapper_bg_media: null
-          container: container
+          container: container-fluid
           section_classes: ''
           section_attributes: null
           regions_classes:
@@ -586,5 +586,4 @@ content:
     settings: {  }
     third_party_settings: {  }
 hidden:
-  langcode: true
   search_api_excerpt: true

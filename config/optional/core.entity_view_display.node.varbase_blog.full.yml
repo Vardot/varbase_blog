@@ -1,4 +1,3 @@
-uuid: 7daa9db5-19a1-4acb-ae8d-a3c31563f86b
 langcode: en
 status: true
 dependencies:
@@ -541,7 +540,7 @@ third_party_settings:
               component_attributes:
                 block_attributes:
                   id: ''
-                  class: px-3
+                  class: ''
                   style: ''
                   data: ''
                 block_title_attributes:
@@ -871,7 +870,7 @@ third_party_settings:
                 class: null
           container_wrapper_bg_color_class: ''
           container_wrapper_bg_media: null
-          container: container
+          container: container-fluid
           section_classes: ''
           section_attributes: null
           regions_classes:
@@ -1062,8 +1061,6 @@ third_party_settings:
         - 'bootstrap_layout_builder:blb_col_4'
         - 'bootstrap_layout_builder:blb_col_5'
         - 'bootstrap_layout_builder:blb_col_6'
-_core:
-  default_config_hash: X-KfroyN7BGgH-7msLe0rIvaCFHOYOykFAM-PLGYbqU
 id: node.varbase_blog.full
 targetEntityType: node
 bundle: varbase_blog
