@@ -98,7 +98,7 @@ layout:
             class: null
       container_wrapper_bg_color_class: ''
       container_wrapper_bg_media: null
-      container: w-100
+      container: container-fluid
       section_classes: ''
       section_attributes: null
       regions_classes:
@@ -107,7 +107,7 @@ layout:
         blb_region_col_1: {  }
       breakpoints: {  }
       layout_regions_classes: {  }
-      remove_gutters: '1'
+      remove_gutters: '0'
     components:
       5c07b1a8-5848-46b0-9722-5522d3f897d1:
         uuid: 5c07b1a8-5848-46b0-9722-5522d3f897d1
@@ -221,7 +221,7 @@ layout:
             class: null
       container_wrapper_bg_color_class: ''
       container_wrapper_bg_media: null
-      container: w-100
+      container: container-fluid
       section_classes: ''
       section_attributes: null
       regions_classes:
@@ -230,7 +230,7 @@ layout:
         blb_region_col_1: {  }
       breakpoints: {  }
       layout_regions_classes: {  }
-      remove_gutters: '1'
+      remove_gutters: '0'
     components:
       f616da91-9f81-4bf1-aa68-cca92db86dc0:
         uuid: f616da91-9f81-4bf1-aa68-cca92db86dc0
@@ -427,7 +427,7 @@ layout:
             class: null
       container_wrapper_bg_color_class: ''
       container_wrapper_bg_media: null
-      container: w-100
+      container: container-fluid
       section_classes: ''
       section_attributes: null
       regions_classes:
@@ -436,7 +436,7 @@ layout:
         blb_region_col_1: {  }
       breakpoints: {  }
       layout_regions_classes: {  }
-      remove_gutters: '1'
+      remove_gutters: '0'
     components:
       7aa7364f-0c7d-4097-82c6-c71cf2961a50:
         uuid: 7aa7364f-0c7d-4097-82c6-c71cf2961a50
@@ -650,7 +650,7 @@ layout:
             class: null
       container_wrapper_bg_color_class: ''
       container_wrapper_bg_media: null
-      container: w-100
+      container: container-fluid
       section_classes: ''
       section_attributes: null
       regions_classes:
@@ -659,7 +659,7 @@ layout:
         blb_region_col_1: {  }
       breakpoints: {  }
       layout_regions_classes: {  }
-      remove_gutters: '1'
+      remove_gutters: '0'
     components:
       45c05709-2d20-482a-8f6f-c9268abb08fd:
         uuid: 45c05709-2d20-482a-8f6f-c9268abb08fd

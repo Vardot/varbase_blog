@@ -1244,7 +1244,7 @@ display:
           offset: 0
       block_hide_empty: true
       empty: {  }
-      css_class: 'blog-listing card-deck equal-height-sm'
+      css_class: 'blog-listing card-deck equal-height-sm container'
     cache_metadata:
       max-age: -1
       contexts:

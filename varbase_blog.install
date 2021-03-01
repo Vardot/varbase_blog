@@ -51,4 +51,20 @@ function varbase_blog_install() {
     }
   }
   // ---------------------------------------------------------------------------
+
+  // Forced configs import on install.
+  $forced_configs= [
+    'views.view.taxonomy_term',
+    'taxonomy.vocabulary.tags',
+    'core.entity_view_display.taxonomy_term.tags.default',
+    'core.entity_view_display.taxonomy_term.tags.full',
+  ];
+
+  foreach ($forced_configs as $config_name) {
+    $config_path = $optional_install_path . '/' . $config_name . '.yml';
+    $config_content = file_get_contents($config_path);
+    $config_data = (array) Yaml::parse($config_content);
+    $config_factory = \Drupal::configFactory()->getEditable($config_name);
+    $config_factory->setData($config_data)->save(TRUE);
+  }
 }

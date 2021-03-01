@@ -221,7 +221,7 @@ layout:
             class: null
       container_wrapper_bg_color_class: ''
       container_wrapper_bg_media: null
-      container: w-100
+      container: container-fluid
       section_classes: ''
       section_attributes: null
       regions_classes:
@@ -230,7 +230,7 @@ layout:
         blb_region_col_1: {  }
       breakpoints: {  }
       layout_regions_classes: {  }
-      remove_gutters: '1'
+      remove_gutters: '0'
     components:
       b7292c3d-8ce0-4387-a189-4fd73ba424ed:
         uuid: b7292c3d-8ce0-4387-a189-4fd73ba424ed
@@ -443,7 +443,7 @@ layout:
             class: null
       container_wrapper_bg_color_class: ''
       container_wrapper_bg_media: null
-      container: w-100
+      container: container-fluid
       section_classes: ''
       section_attributes: null
       regions_classes:
@@ -452,7 +452,7 @@ layout:
         blb_region_col_1: {  }
       breakpoints: {  }
       layout_regions_classes: {  }
-      remove_gutters: '1'
+      remove_gutters: '0'
     components:
       7aa7364f-0c7d-4097-82c6-c71cf2961a50:
         uuid: 7aa7364f-0c7d-4097-82c6-c71cf2961a50
@@ -582,7 +582,7 @@ layout:
             class: null
       container_wrapper_bg_color_class: ''
       container_wrapper_bg_media: null
-      container: w-100
+      container: container-fluid
       section_classes: ''
       section_attributes: null
       regions_classes:
@@ -591,7 +591,7 @@ layout:
         blb_region_col_1: {  }
       breakpoints: {  }
       layout_regions_classes: {  }
-      remove_gutters: '1'
+      remove_gutters: '0'
     components:
       45c05709-2d20-482a-8f6f-c9268abb08fd:
         uuid: 45c05709-2d20-482a-8f6f-c9268abb08fd
