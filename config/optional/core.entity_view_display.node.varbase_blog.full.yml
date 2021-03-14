@@ -135,9 +135,11 @@ third_party_settings:
                   class: _none
               scroll_effects:
                 class: null
+              section_title_alignment:
+                class: null
           container_wrapper_bg_color_class: ''
           container_wrapper_bg_media: null
-          container: container
+          container: container-fluid
           section_classes: ''
           section_attributes: null
           regions_classes:
@@ -147,6 +149,8 @@ third_party_settings:
           breakpoints: {  }
           layout_regions_classes: {  }
           remove_gutters: '0'
+          section_title: ''
+          gutters_between: null
         components:
           63c68acc-42b8-4337-b26a-077073e66808:
             uuid: 63c68acc-42b8-4337-b26a-077073e66808
@@ -275,7 +279,7 @@ third_party_settings:
               background:
                 background_type: color
               background_color:
-                class: null
+                class: _none
               background_media:
                 image:
                   media_id: null
@@ -286,7 +290,7 @@ third_party_settings:
                   background_repeat: no-repeat
                   background_attachment: not_fixed
                   background_size: cover
-              background_edgetoedge: 0
+              background_edgetoedge: 1
               text_color:
                 class: null
               text_alignment:
@@ -354,6 +358,8 @@ third_party_settings:
                   class: _none
               scroll_effects:
                 class: null
+              section_title_alignment:
+                class: null
           container_wrapper_bg_color_class: ''
           container_wrapper_bg_media: null
           container: container-fluid
@@ -366,25 +372,24 @@ third_party_settings:
             blb_region_col_1: null
             blb_region_col_2: null
           breakpoints:
-            breakpoint_xl: blb_col_8_4
             breakpoint_lg: blb_col_8_4
             breakpoint_md: blb_col_8_4
             breakpoint_sm: blb_col_12
             breakpoint_xs: blb_col_12
           layout_regions_classes:
             blb_region_col_1:
-              - col-xl-8
               - col-lg-8
               - col-md-8
               - col-sm-12
               - col-12
             blb_region_col_2:
-              - col-xl-4
               - col-lg-4
               - col-md-4
               - col-sm-12
               - col-12
-          remove_gutters: '0'
+          remove_gutters: '1'
+          section_title: ''
+          gutters_between: 1
         components:
           a94a1f90-4c1c-4ba0-8286-7af43086a25b:
             uuid: a94a1f90-4c1c-4ba0-8286-7af43086a25b
@@ -645,6 +650,8 @@ third_party_settings:
                   class: _none
               scroll_effects:
                 class: null
+              section_title_alignment:
+                class: null
           container_wrapper_bg_color_class: ''
           container_wrapper_bg_media: null
           container: container-fluid
@@ -656,7 +663,9 @@ third_party_settings:
             blb_region_col_1: {  }
           breakpoints: {  }
           layout_regions_classes: {  }
-          remove_gutters: '0'
+          remove_gutters: '1'
+          section_title: ''
+          gutters_between: null
         components:
           3795aef1-ede9-4bf7-91e0-7f1618b07f2a:
             uuid: 3795aef1-ede9-4bf7-91e0-7f1618b07f2a
@@ -868,6 +877,8 @@ third_party_settings:
                   class: _none
               scroll_effects:
                 class: null
+              section_title_alignment:
+                class: null
           container_wrapper_bg_color_class: ''
           container_wrapper_bg_media: null
           container: container-fluid
@@ -879,7 +890,9 @@ third_party_settings:
             blb_region_col_1: {  }
           breakpoints: {  }
           layout_regions_classes: {  }
-          remove_gutters: '0'
+          remove_gutters: '1'
+          section_title: ''
+          gutters_between: null
         components:
           4acbec76-bf80-4a08-b501-ee56407a046c:
             uuid: 4acbec76-bf80-4a08-b501-ee56407a046c
@@ -1135,6 +1148,7 @@ hidden:
   field_blog_categories: true
   field_meta_tags: true
   field_yoast_seo: true
+  layout_builder__layout: true
   layout_selection: true
   links: true
   search_api_excerpt: true

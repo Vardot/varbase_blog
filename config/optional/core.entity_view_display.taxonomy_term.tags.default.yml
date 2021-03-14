@@ -105,6 +105,8 @@ third_party_settings:
                   class: _none
               scroll_effects:
                 class: null
+              section_title_alignment:
+                class: null
           container_wrapper_bg_color_class: ''
           container_wrapper_bg_media: null
           container: container-fluid
@@ -117,6 +119,8 @@ third_party_settings:
           breakpoints: {  }
           layout_regions_classes: {  }
           remove_gutters: '0'
+          section_title: ''
+          gutters_between: null
         components:
           6d0ad7aa-cf48-427f-bd3f-db3c97134973:
             uuid: 6d0ad7aa-cf48-427f-bd3f-db3c97134973
@@ -224,6 +228,8 @@ third_party_settings:
                   class: _none
               scroll_effects:
                 class: null
+              section_title_alignment:
+                class: null
           container_wrapper_bg_color_class: ''
           container_wrapper_bg_media: null
           container: container-fluid
@@ -236,6 +242,8 @@ third_party_settings:
           breakpoints: {  }
           layout_regions_classes: {  }
           remove_gutters: '0'
+          section_title: ''
+          gutters_between: null
         components:
           0e7fde5d-2b65-45a7-9702-812ad331ab4a:
             uuid: 0e7fde5d-2b65-45a7-9702-812ad331ab4a
@@ -347,7 +355,6 @@ third_party_settings:
         - 'bootstrap_layout_builder:blb_col_2'
         - 'bootstrap_layout_builder:blb_col_3'
         - 'bootstrap_layout_builder:blb_col_4'
-        - 'bootstrap_layout_builder:blb_col_5'
         - 'bootstrap_layout_builder:blb_col_6'
 id: taxonomy_term.tags.default
 targetEntityType: taxonomy_term

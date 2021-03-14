@@ -107,9 +107,11 @@ third_party_settings:
                   class: _none
               scroll_effects:
                 class: null
+              section_title_alignment:
+                class: null
           container_wrapper_bg_color_class: ''
           container_wrapper_bg_media: null
-          container: container
+          container: container-fluid
           section_classes: ''
           section_attributes: null
           regions_classes:
@@ -119,6 +121,8 @@ third_party_settings:
           breakpoints: {  }
           layout_regions_classes: {  }
           remove_gutters: '0'
+          section_title: ''
+          gutters_between: null
         components:
           bc737ce7-db72-47ac-9a81-5c89d45cfd6f:
             uuid: bc737ce7-db72-47ac-9a81-5c89d45cfd6f
@@ -313,9 +317,11 @@ third_party_settings:
                   class: _none
               scroll_effects:
                 class: null
+              section_title_alignment:
+                class: null
           container_wrapper_bg_color_class: ''
           container_wrapper_bg_media: null
-          container: container
+          container: container-fluid
           section_classes: ''
           section_attributes: null
           regions_classes:
@@ -325,6 +331,8 @@ third_party_settings:
           breakpoints: {  }
           layout_regions_classes: {  }
           remove_gutters: '0'
+          section_title: ''
+          gutters_between: null
         components:
           8aab479d-7d7a-4d1c-b8f0-917213fb6342:
             uuid: 8aab479d-7d7a-4d1c-b8f0-917213fb6342
@@ -432,9 +440,11 @@ third_party_settings:
                   class: _none
               scroll_effects:
                 class: null
+              section_title_alignment:
+                class: null
           container_wrapper_bg_color_class: ''
           container_wrapper_bg_media: null
-          container: container
+          container: container-fluid
           section_classes: ''
           section_attributes: null
           regions_classes:
@@ -444,6 +454,8 @@ third_party_settings:
           breakpoints: {  }
           layout_regions_classes: {  }
           remove_gutters: '0'
+          section_title: ''
+          gutters_between: null
         components:
           36518ce9-7c61-41e1-9909-f4bccc94168e:
             uuid: 36518ce9-7c61-41e1-9909-f4bccc94168e
@@ -574,7 +586,6 @@ third_party_settings:
         - 'bootstrap_layout_builder:blb_col_2'
         - 'bootstrap_layout_builder:blb_col_3'
         - 'bootstrap_layout_builder:blb_col_4'
-        - 'bootstrap_layout_builder:blb_col_5'
         - 'bootstrap_layout_builder:blb_col_6'
 id: taxonomy_term.blog_categories.default
 targetEntityType: taxonomy_term
