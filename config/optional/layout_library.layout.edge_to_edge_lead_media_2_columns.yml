@@ -108,7 +108,6 @@ layout:
       breakpoints: {  }
       layout_regions_classes: {  }
       remove_gutters: '1'
-      section_title: ''
       gutters_between: null
     components:
       5c07b1a8-5848-46b0-9722-5522d3f897d1:
@@ -252,7 +251,6 @@ layout:
           - col-sm-12
           - col-12
       remove_gutters: '1'
-      section_title: ''
       gutters_between: 1
     components:
       e73161ef-060b-48b2-abed-8207656ca70d:
@@ -603,7 +601,6 @@ layout:
       breakpoints: {  }
       layout_regions_classes: {  }
       remove_gutters: '1'
-      section_title: ''
       gutters_between: null
     components:
       84cfb2ac-a987-4e85-b3b8-374a0bece2c6:
@@ -744,7 +741,6 @@ layout:
       breakpoints: {  }
       layout_regions_classes: {  }
       remove_gutters: '1'
-      section_title: ''
       gutters_between: null
     components:
       45c05709-2d20-482a-8f6f-c9268abb08fd:

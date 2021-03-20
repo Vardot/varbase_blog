@@ -3,7 +3,7 @@ _meta:
   entity_type: node
   uuid: e016eb7f-7991-4ead-9248-ef9a3489e57d
   bundle: landing_page_lb
-  default_langcode: en
+  default_langcode: und
 default:
   revision_uid:
     -
@@ -38,7 +38,7 @@ default:
   path:
     -
       alias: /blog
-      langcode: en
+      langcode: und
       pathauto: 1
   publish_state:
     -

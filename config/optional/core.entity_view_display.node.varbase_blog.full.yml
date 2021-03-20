@@ -150,7 +150,6 @@ third_party_settings:
           layout_regions_classes:
             section_header: null
           remove_gutters: '0'
-          section_title: ''
           gutters_between: null
         components:
           63c68acc-42b8-4337-b26a-077073e66808:
@@ -394,7 +393,6 @@ third_party_settings:
               - col-12
               - col-12
           remove_gutters: '1'
-          section_title: ''
           gutters_between: 1
         components:
           a94a1f90-4c1c-4ba0-8286-7af43086a25b:
@@ -671,7 +669,6 @@ third_party_settings:
           layout_regions_classes:
             section_header: null
           remove_gutters: '1'
-          section_title: ''
           gutters_between: null
         components:
           3795aef1-ede9-4bf7-91e0-7f1618b07f2a:
@@ -899,7 +896,6 @@ third_party_settings:
           layout_regions_classes:
             section_header: null
           remove_gutters: '1'
-          section_title: ''
           gutters_between: null
         components:
           4acbec76-bf80-4a08-b501-ee56407a046c:

@@ -105,8 +105,6 @@ third_party_settings:
                   class: _none
               scroll_effects:
                 class: null
-              section_title_alignment:
-                class: null
           container_wrapper_bg_color_class: ''
           container_wrapper_bg_media: null
           container: container-fluid
@@ -122,7 +120,6 @@ third_party_settings:
           layout_regions_classes:
             section_header: null
           remove_gutters: '1'
-          section_title: ''
           gutters_between: null
         components:
           6d0ad7aa-cf48-427f-bd3f-db3c97134973:
@@ -231,8 +228,6 @@ third_party_settings:
                   class: _none
               scroll_effects:
                 class: null
-              section_title_alignment:
-                class: null
           container_wrapper_bg_color_class: ''
           container_wrapper_bg_media: null
           container: container-fluid
@@ -248,7 +243,6 @@ third_party_settings:
           layout_regions_classes:
             section_header: null
           remove_gutters: '0'
-          section_title: ''
           gutters_between: null
         components:
           0e7fde5d-2b65-45a7-9702-812ad331ab4a:
