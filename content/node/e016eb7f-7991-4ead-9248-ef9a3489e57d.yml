@@ -46,12 +46,6 @@ default:
   unpublish_state:
     -
       value: archived
-  content_translation_source:
-    -
-      value: und
-  content_translation_outdated:
-    -
-      value: false
   field_yoast_seo:
     -
       status: '0'
@@ -150,16 +144,20 @@ default:
                 class: null
           container_wrapper_bg_color_class: ''
           container_wrapper_bg_media: null
-          container: container
+          container: container-fluid
           section_classes: ''
           section_attributes: null
           regions_classes:
             blb_region_col_1: ''
+            section_header: ''
           regions_attributes:
             blb_region_col_1: {  }
+            section_header: null
           breakpoints: {  }
-          layout_regions_classes: {  }
-          remove_gutters: '0'
+          layout_regions_classes:
+            section_header: null
+          remove_gutters: '1'
+          gutters_between: null
         components:
           1d173ee3-064d-4592-a1c2-bc1e6a0f47b6:
             uuid: 1d173ee3-064d-4592-a1c2-bc1e6a0f47b6
@@ -354,16 +352,20 @@ default:
                 class: null
           container_wrapper_bg_color_class: ''
           container_wrapper_bg_media: null
-          container: container
+          container: container-fluid
           section_classes: ''
           section_attributes: null
           regions_classes:
             blb_region_col_1: ''
+            section_header: ''
           regions_attributes:
             blb_region_col_1: {  }
+            section_header: null
           breakpoints: {  }
-          layout_regions_classes: {  }
-          remove_gutters: '0'
+          layout_regions_classes:
+            section_header: null
+          remove_gutters: '1'
+          gutters_between: null
         components:
           0aafe306-5410-47d5-9f22-699b32c800e1:
             uuid: 0aafe306-5410-47d5-9f22-699b32c800e1
@@ -561,16 +563,20 @@ default:
                 class: null
           container_wrapper_bg_color_class: ''
           container_wrapper_bg_media: null
-          container: container
+          container: container-fluid
           section_classes: ''
           section_attributes: null
           regions_classes:
             blb_region_col_1: ''
+            section_header: ''
           regions_attributes:
             blb_region_col_1: {  }
+            section_header: null
           breakpoints: {  }
-          layout_regions_classes: {  }
+          layout_regions_classes:
+            section_header: null
           remove_gutters: '0'
+          gutters_between: null
         components:
           58232022-9faa-4c4f-8039-e4552d457da7:
             uuid: 58232022-9faa-4c4f-8039-e4552d457da7

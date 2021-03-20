@@ -135,8 +135,6 @@ third_party_settings:
                   class: _none
               scroll_effects:
                 class: null
-              section_title_alignment:
-                class: null
           container_wrapper_bg_color_class: ''
           container_wrapper_bg_media: null
           container: container-fluid
@@ -144,10 +142,13 @@ third_party_settings:
           section_attributes: null
           regions_classes:
             blb_region_col_1: ''
+            section_header: ''
           regions_attributes:
             blb_region_col_1: {  }
+            section_header: null
           breakpoints: {  }
-          layout_regions_classes: {  }
+          layout_regions_classes:
+            section_header: null
           remove_gutters: '0'
           section_title: ''
           gutters_between: null
@@ -358,8 +359,6 @@ third_party_settings:
                   class: _none
               scroll_effects:
                 class: null
-              section_title_alignment:
-                class: null
           container_wrapper_bg_color_class: ''
           container_wrapper_bg_media: null
           container: container-fluid
@@ -368,9 +367,11 @@ third_party_settings:
           regions_classes:
             blb_region_col_1: ''
             blb_region_col_2: ''
+            section_header: ''
           regions_attributes:
             blb_region_col_1: null
             blb_region_col_2: null
+            section_header: null
           breakpoints:
             breakpoint_lg: blb_col_8_4
             breakpoint_md: blb_col_8_4
@@ -386,6 +387,11 @@ third_party_settings:
               - col-lg-4
               - col-md-4
               - col-sm-12
+              - col-12
+            section_header:
+              - col-12
+              - col-12
+              - col-12
               - col-12
           remove_gutters: '1'
           section_title: ''
@@ -650,8 +656,6 @@ third_party_settings:
                   class: _none
               scroll_effects:
                 class: null
-              section_title_alignment:
-                class: null
           container_wrapper_bg_color_class: ''
           container_wrapper_bg_media: null
           container: container-fluid
@@ -659,10 +663,13 @@ third_party_settings:
           section_attributes: null
           regions_classes:
             blb_region_col_1: ''
+            section_header: ''
           regions_attributes:
             blb_region_col_1: {  }
+            section_header: null
           breakpoints: {  }
-          layout_regions_classes: {  }
+          layout_regions_classes:
+            section_header: null
           remove_gutters: '1'
           section_title: ''
           gutters_between: null
@@ -877,8 +884,6 @@ third_party_settings:
                   class: _none
               scroll_effects:
                 class: null
-              section_title_alignment:
-                class: null
           container_wrapper_bg_color_class: ''
           container_wrapper_bg_media: null
           container: container-fluid
@@ -886,10 +891,13 @@ third_party_settings:
           section_attributes: null
           regions_classes:
             blb_region_col_1: ''
+            section_header: ''
           regions_attributes:
             blb_region_col_1: {  }
+            section_header: null
           breakpoints: {  }
-          layout_regions_classes: {  }
+          layout_regions_classes:
+            section_header: null
           remove_gutters: '1'
           section_title: ''
           gutters_between: null

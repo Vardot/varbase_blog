@@ -1,4 +1,3 @@
-uuid: 58a6a27b-4eab-4f73-9d37-f02550b36421
 langcode: en
 status: true
 dependencies:
@@ -118,11 +117,14 @@ third_party_settings:
           section_attributes: null
           regions_classes:
             blb_region_col_1: ''
+            section_header: ''
           regions_attributes:
             blb_region_col_1: {  }
+            section_header: null
           breakpoints: {  }
-          layout_regions_classes: {  }
-          remove_gutters: '0'
+          layout_regions_classes:
+            section_header: null
+          remove_gutters: '1'
           section_title: ''
           gutters_between: null
         components:
@@ -324,11 +326,14 @@ third_party_settings:
           section_attributes: null
           regions_classes:
             blb_region_col_1: ''
+            section_header: ''
           regions_attributes:
             blb_region_col_1: {  }
+            section_header: null
           breakpoints: {  }
-          layout_regions_classes: {  }
-          remove_gutters: '0'
+          layout_regions_classes:
+            section_header: null
+          remove_gutters: '1'
           section_title: ''
           gutters_between: null
         components:
@@ -447,10 +452,13 @@ third_party_settings:
           section_attributes: null
           regions_classes:
             blb_region_col_1: ''
+            section_header: ''
           regions_attributes:
             blb_region_col_1: {  }
+            section_header: null
           breakpoints: {  }
-          layout_regions_classes: {  }
+          layout_regions_classes:
+            section_header: null
           remove_gutters: '0'
           section_title: ''
           gutters_between: null
