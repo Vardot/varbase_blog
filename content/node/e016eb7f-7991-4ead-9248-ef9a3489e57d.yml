@@ -142,6 +142,10 @@ default:
                   class: _none
               scroll_effects:
                 class: null
+              horizontal_alignment:
+                class: null
+              vertical_alignment:
+                class: null
           container_wrapper_bg_color_class: ''
           container_wrapper_bg_media: null
           container: container-fluid
@@ -158,6 +162,8 @@ default:
             section_header: null
           remove_gutters: '1'
           gutters_between: null
+          container_width: ''
+          context_mapping: {  }
         components:
           1d173ee3-064d-4592-a1c2-bc1e6a0f47b6:
             uuid: 1d173ee3-064d-4592-a1c2-bc1e6a0f47b6
@@ -350,6 +356,10 @@ default:
                   class: _none
               scroll_effects:
                 class: null
+              horizontal_alignment:
+                class: null
+              vertical_alignment:
+                class: null
           container_wrapper_bg_color_class: ''
           container_wrapper_bg_media: null
           container: container-fluid
@@ -366,6 +376,8 @@ default:
             section_header: null
           remove_gutters: '1'
           gutters_between: null
+          container_width: ''
+          context_mapping: {  }
         components:
           0aafe306-5410-47d5-9f22-699b32c800e1:
             uuid: 0aafe306-5410-47d5-9f22-699b32c800e1
@@ -379,9 +391,11 @@ default:
               follow_parent: child
               level: '1'
               depth: '0'
-              expand: 0
+              expand_all_items: false
               parent: 'blog-menu:'
               suggestion: blog_menu
+              label_type: block
+              label_link: 0
               context_mapping: {  }
             additional:
               bootstrap_styles:
@@ -400,7 +414,7 @@ default:
                       background_repeat: no-repeat
                       background_attachment: not_fixed
                       background_size: cover
-                  background_edgetoedge: false
+                  background_edgetoedge: null
                   text_color:
                     class: null
                   text_alignment:
@@ -561,6 +575,10 @@ default:
                   class: _none
               scroll_effects:
                 class: null
+              horizontal_alignment:
+                class: null
+              vertical_alignment:
+                class: null
           container_wrapper_bg_color_class: ''
           container_wrapper_bg_media: null
           container: container-fluid
@@ -577,6 +595,8 @@ default:
             section_header: null
           remove_gutters: '0'
           gutters_between: null
+          container_width: ''
+          context_mapping: {  }
         components:
           58232022-9faa-4c4f-8039-e4552d457da7:
             uuid: 58232022-9faa-4c4f-8039-e4552d457da7
@@ -606,7 +626,7 @@ default:
                       background_repeat: no-repeat
                       background_attachment: not_fixed
                       background_size: cover
-                  background_edgetoedge: false
+                  background_edgetoedge: null
                   text_color:
                     class: null
                   text_alignment:

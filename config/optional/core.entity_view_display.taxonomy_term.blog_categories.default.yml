@@ -107,6 +107,10 @@ third_party_settings:
                   class: _none
               scroll_effects:
                 class: null
+              horizontal_alignment:
+                class: null
+              vertical_alignment:
+                class: null
           container_wrapper_bg_color_class: ''
           container_wrapper_bg_media: null
           container: container-fluid
@@ -123,6 +127,8 @@ third_party_settings:
             section_header: null
           remove_gutters: '1'
           gutters_between: null
+          container_width: ''
+          context_mapping: {  }
         components:
           bc737ce7-db72-47ac-9a81-5c89d45cfd6f:
             uuid: bc737ce7-db72-47ac-9a81-5c89d45cfd6f
@@ -136,9 +142,11 @@ third_party_settings:
               follow_parent: child
               level: 1
               depth: 0
-              expand: false
+              expand_all_items: false
               parent: 'blog-menu:'
               suggestion: blog_menu
+              label_type: block
+              label_link: false
               context_mapping: {  }
             additional:
               bootstrap_styles:
@@ -157,7 +165,7 @@ third_party_settings:
                       background_repeat: no-repeat
                       background_attachment: not_fixed
                       background_size: cover
-                  background_edgetoedge: false
+                  background_edgetoedge: null
                   text_color:
                     class: null
                   text_alignment:
@@ -317,6 +325,10 @@ third_party_settings:
                   class: _none
               scroll_effects:
                 class: null
+              horizontal_alignment:
+                class: null
+              vertical_alignment:
+                class: null
           container_wrapper_bg_color_class: ''
           container_wrapper_bg_media: null
           container: container-fluid
@@ -333,21 +345,110 @@ third_party_settings:
             section_header: null
           remove_gutters: '1'
           gutters_between: null
+          container_width: ''
+          context_mapping: {  }
         components:
           8aab479d-7d7a-4d1c-b8f0-917213fb6342:
             uuid: 8aab479d-7d7a-4d1c-b8f0-917213fb6342
             region: blb_region_col_1
             configuration:
-              label_display: '0'
-              context_mapping:
-                entity: layout_builder.entity
               id: 'field_block:taxonomy_term:blog_categories:description'
+              label: Description
+              provider: layout_builder
+              label_display: '0'
               formatter:
                 label: hidden
                 type: text_default
                 settings: {  }
                 third_party_settings: {  }
-            additional: {  }
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+            additional:
+              bootstrap_styles:
+                block_style:
+                  background:
+                    background_type: color
+                  background_color:
+                    class: null
+                  background_media:
+                    image:
+                      media_id: null
+                    video:
+                      media_id: null
+                    background_options:
+                      background_position: center
+                      background_repeat: no-repeat
+                      background_attachment: not_fixed
+                      background_size: cover
+                  background_edgetoedge: null
+                  text_color:
+                    class: null
+                  text_alignment:
+                    class: null
+                  padding:
+                    class: _none
+                  padding_left:
+                    class: _none
+                  padding_top:
+                    class: _none
+                  padding_right:
+                    class: _none
+                  padding_bottom:
+                    class: _none
+                  margin:
+                    class: _none
+                  margin_left:
+                    class: _none
+                  margin_top:
+                    class: _none
+                  margin_right:
+                    class: _none
+                  margin_bottom:
+                    class: _none
+                  border:
+                    border_style:
+                      class: null
+                    border_width:
+                      class: _none
+                    border_color:
+                      class: null
+                    rounded_corners:
+                      class: _none
+                    border_left_style:
+                      class: null
+                    border_left_width:
+                      class: _none
+                    border_left_color:
+                      class: null
+                    border_top_style:
+                      class: null
+                    border_top_width:
+                      class: _none
+                    border_top_color:
+                      class: null
+                    border_right_style:
+                      class: null
+                    border_right_width:
+                      class: _none
+                    border_right_color:
+                      class: null
+                    border_bottom_style:
+                      class: null
+                    border_bottom_width:
+                      class: _none
+                    border_bottom_color:
+                      class: null
+                    rounded_corner_top_left:
+                      class: _none
+                    rounded_corner_top_right:
+                      class: _none
+                    rounded_corner_bottom_left:
+                      class: _none
+                    rounded_corner_bottom_right:
+                      class: _none
+                  scroll_effects:
+                    class: null
             weight: 0
         third_party_settings: {  }
       -
@@ -440,6 +541,10 @@ third_party_settings:
                   class: _none
               scroll_effects:
                 class: null
+              horizontal_alignment:
+                class: null
+              vertical_alignment:
+                class: null
           container_wrapper_bg_color_class: ''
           container_wrapper_bg_media: null
           container: container-fluid
@@ -456,6 +561,8 @@ third_party_settings:
             section_header: null
           remove_gutters: '0'
           gutters_between: null
+          container_width: ''
+          context_mapping: {  }
         components:
           36518ce9-7c61-41e1-9909-f4bccc94168e:
             uuid: 36518ce9-7c61-41e1-9909-f4bccc94168e
@@ -485,7 +592,7 @@ third_party_settings:
                       background_repeat: no-repeat
                       background_attachment: not_fixed
                       background_size: cover
-                  background_edgetoedge: false
+                  background_edgetoedge: null
                   text_color:
                     class: null
                   text_alignment:
@@ -600,4 +707,5 @@ content:
     settings: {  }
     third_party_settings: {  }
 hidden:
+  langcode: true
   search_api_excerpt: true

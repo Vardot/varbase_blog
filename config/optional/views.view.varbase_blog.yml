@@ -326,7 +326,11 @@ display:
           empty: true
           tokenize: false
           content:
-            value: "<div class=\"jumbotron text-center\">\n  <p> There are no blog posts now! </p>\n  <a class=\"btn btn-primary hidden-anonymous visible-admin\" href=\"[site:url]/node/add/varbase_blog/\"> Add One Now </a>\n</div>"
+            value: |-
+              <div class="jumbotron text-center">
+                <p> There are no blog posts now! </p>
+                <a class="btn btn-primary hidden-anonymous visible-admin" href="[site:url]/node/add/varbase_blog/"> Add One Now </a>
+              </div>
             format: full_html
           plugin_id: text
       css_class: 'blog-listing card-deck equal-height-sm'
@@ -455,7 +459,10 @@ display:
           empty: true
           tokenize: false
           content:
-            value: "<div class=\"jumbotron text-center\">\n   <p>There are no blog posts in this category!</p>\n</div>"
+            value: |-
+              <div class="jumbotron text-center">
+                 <p>There are no blog posts in this category!</p>
+              </div>
             format: full_html
           plugin_id: text
       css_class: 'blog-listing card-deck equal-height-sm'
@@ -585,7 +592,10 @@ display:
           empty: true
           tokenize: false
           content:
-            value: "<div class=\"jumbotron text-center\">\n  <p>There are no blog posts tagged with this tag!</p>\n</div>"
+            value: |-
+              <div class="jumbotron text-center">
+                <p>There are no blog posts tagged with this tag!</p>
+              </div>
             format: full_html
           plugin_id: text
       css_class: 'blog-listing card-deck equal-height-sm'
@@ -704,7 +714,11 @@ display:
           empty: true
           tokenize: false
           content:
-            value: "<div class=\"jumbotron text-center\">\n  <p> There are no blog posts now! </p>\n  <a class=\"btn btn-primary hidden-anonymous visible-admin\" href=\"[site:url]/node/add/varbase_blog/\"> Add One Now </a>\n</div>"
+            value: |-
+              <div class="jumbotron text-center">
+                <p> There are no blog posts now! </p>
+                <a class="btn btn-primary hidden-anonymous visible-admin" href="[site:url]/node/add/varbase_blog/"> Add One Now </a>
+              </div>
             format: full_html
           plugin_id: text
       footer:
@@ -718,7 +732,10 @@ display:
           empty: true
           tokenize: false
           content:
-            value: "<div class=\"more-link form-group text-center pager\">\n  <a href=\"[site:url]/blog\" class=\"btn btn-link btn-lg\">View all blogs</a>\n</div>"
+            value: |-
+              <div class="more-link form-group text-center pager">
+                <a href="[site:url]/blog" class="btn btn-link btn-lg">View all blogs</a>
+              </div>
             format: full_html
           plugin_id: text
     cache_metadata:
