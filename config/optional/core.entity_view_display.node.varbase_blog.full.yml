@@ -1526,7 +1526,7 @@ third_party_settings:
             weight: 0
         third_party_settings: {  }
   layout_library:
-    enable: false
+    enable: true
   layout_builder_restrictions:
     allowed_block_categories:
       - '@entity'

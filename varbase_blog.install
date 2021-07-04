@@ -70,3 +70,20 @@ function varbase_blog_install() {
     }
   }
 }
+
+/**
+ * Issue #3222053: Fix to allow content editors to use stored selected layouts on the Full content display mode with layout builder
+ */
+function varbase_blog_update_9001() {
+  $config_factory = \Drupal::configFactory()->getEditable('core.entity_view_display.node.varbase_blog.full');
+  $varbase_blog_full_data = $config_factory->get();
+  if (isset($varbase_blog_full_data['third_party_settings'])
+    && isset($varbase_blog_full_data['third_party_settings']['layout_library'])
+    && isset($varbase_blog_full_data['third_party_settings']['layout_library']['enable'])
+    && $varbase_blog_full_data['third_party_settings']['layout_library']['enable'] == FALSE) {
+
+    $varbase_blog_full_data['third_party_settings']['layout_library']['enable'] = TRUE;
+    $config_factory->setData($varbase_blog_full_data)->save(TRUE);
+  }
+
+}
