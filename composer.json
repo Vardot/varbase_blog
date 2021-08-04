@@ -34,7 +34,7 @@
     "drupal/varbase_core": "^9 || 9.0.x-dev",
     "drupal/varbase_media": "^9 || 9.0.x-dev",
     "drupal/varbase_seo": "^9 || 9.0.x-dev",
-    "drupal/varbase_layout_builder": "^10 || 10.0.x-dev",
+    "drupal/varbase_layout_builder": "~9.0 || ~10.0",
     "drupal/taxonomy_menu": "3.x-dev",
     "drupal/length_indicator": "~1.0",
     "drupal/advanced_text_formatter": "~2.0",
