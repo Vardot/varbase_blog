@@ -16,11 +16,10 @@ third_party_settings:
     allow_custom: false
     enabled: true
     sections:
-      -
-        layout_id: 'bootstrap_layout_builder:blb_col_1'
+      - layout_id: "bootstrap_layout_builder:blb_col_1"
         layout_settings:
-          label: ''
-          container_wrapper_classes: ''
+          label: ""
+          container_wrapper_classes: ""
           container_wrapper_attributes: null
           container_wrapper:
             bootstrap_styles:
@@ -106,44 +105,43 @@ third_party_settings:
                   class: _none
               scroll_effects:
                 class: null
-          container_wrapper_bg_color_class: ''
+          container_wrapper_bg_color_class: ""
           container_wrapper_bg_media: null
           container: container-fluid
-          section_classes: ''
+          section_classes: ""
           section_attributes: null
           regions_classes:
-            blb_region_col_1: ''
-            section_header: ''
+            blb_region_col_1: ""
+            section_header: ""
           regions_attributes:
-            blb_region_col_1: {  }
+            blb_region_col_1: {}
             section_header: null
-          breakpoints: {  }
+          breakpoints: {}
           layout_regions_classes:
             section_header: null
-          remove_gutters: '1'
+          remove_gutters: "1"
           gutters_between: null
         components:
           98e82bbf-67db-4c2f-8ecb-629ff9388736:
             uuid: 98e82bbf-67db-4c2f-8ecb-629ff9388736
             region: blb_region_col_1
             configuration:
-              label_display: '0'
+              label_display: "0"
               context_mapping:
                 entity: layout_builder.entity
-              id: 'field_block:taxonomy_term:tags:description'
+              id: "field_block:taxonomy_term:tags:description"
               formatter:
                 label: hidden
                 type: text_default
-                settings: {  }
-                third_party_settings: {  }
-            additional: {  }
+                settings: {}
+                third_party_settings: {}
+            additional: {}
             weight: 0
-        third_party_settings: {  }
-      -
-        layout_id: 'bootstrap_layout_builder:blb_col_1'
+        third_party_settings: {}
+      - layout_id: "bootstrap_layout_builder:blb_col_1"
         layout_settings:
-          label: ''
-          container_wrapper_classes: ''
+          label: ""
+          container_wrapper_classes: ""
           container_wrapper_attributes: null
           container_wrapper:
             bootstrap_styles:
@@ -229,34 +227,34 @@ third_party_settings:
                   class: _none
               scroll_effects:
                 class: null
-          container_wrapper_bg_color_class: ''
+          container_wrapper_bg_color_class: ""
           container_wrapper_bg_media: null
           container: container-fluid
-          section_classes: ''
+          section_classes: ""
           section_attributes: null
           regions_classes:
-            blb_region_col_1: ''
-            section_header: ''
+            blb_region_col_1: ""
+            section_header: ""
           regions_attributes:
-            blb_region_col_1: {  }
+            blb_region_col_1: {}
             section_header: null
-          breakpoints: {  }
+          breakpoints: {}
           layout_regions_classes:
             section_header: null
-          remove_gutters: '0'
+          remove_gutters: "0"
           gutters_between: null
         components:
           62ac6a33-9442-486e-90c3-2b16b9e90352:
             uuid: 62ac6a33-9442-486e-90c3-2b16b9e90352
             region: blb_region_col_1
             configuration:
-              id: 'views_block:varbase_blog-blog_listing_by_tags_block'
-              label: ''
+              id: "views_block:varbase_blog-blog_listing_by_tags_block"
+              label: ""
               provider: views
-              label_display: '0'
-              views_label: ''
+              label_display: "0"
+              views_label: ""
               items_per_page: none
-              context_mapping: {  }
+              context_mapping: {}
             additional:
               bootstrap_styles:
                 block_style:
@@ -343,20 +341,20 @@ third_party_settings:
                   scroll_effects:
                     class: null
             weight: 0
-        third_party_settings: {  }
+        third_party_settings: {}
   layout_library:
     enable: false
   layout_builder_restrictions:
-    allowed_block_categories: {  }
+    allowed_block_categories: {}
     entity_view_mode_restriction:
-      whitelisted_blocks: {  }
-      blacklisted_blocks: {  }
+      whitelisted_blocks: {}
+      blacklisted_blocks: {}
       allowed_layouts:
-        - 'bootstrap_layout_builder:blb_col_1'
-        - 'bootstrap_layout_builder:blb_col_2'
-        - 'bootstrap_layout_builder:blb_col_3'
-        - 'bootstrap_layout_builder:blb_col_4'
-        - 'bootstrap_layout_builder:blb_col_6'
+        - "bootstrap_layout_builder:blb_col_1"
+        - "bootstrap_layout_builder:blb_col_2"
+        - "bootstrap_layout_builder:blb_col_3"
+        - "bootstrap_layout_builder:blb_col_4"
+        - "bootstrap_layout_builder:blb_col_6"
 id: taxonomy_term.tags.full
 targetEntityType: taxonomy_term
 bundle: tags
@@ -367,7 +365,7 @@ content:
     type: text_default
     weight: 0
     region: content
-    settings: {  }
-    third_party_settings: {  }
+    settings: {}
+    third_party_settings: {}
 hidden:
   search_api_excerpt: true

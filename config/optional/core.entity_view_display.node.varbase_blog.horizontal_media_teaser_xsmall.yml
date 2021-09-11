@@ -23,16 +23,16 @@ third_party_settings:
       disable_css: false
       entity_classes: all_classes
       settings:
-        label: ''
+        label: ""
         wrappers:
           left: div
           right: div
         outer_wrapper: article
-        attributes: ''
-        link_attribute: ''
-        link_custom: ''
+        attributes: ""
+        link_attribute: ""
+        link_custom: ""
         classes:
-          layout_class: {  }
+          layout_class: {}
     regions:
       left:
         - field_media
@@ -53,7 +53,7 @@ third_party_settings:
         settings:
           link: true
           wrapper: h3
-          class: ''
+          class: ""
 id: node.varbase_blog.horizontal_media_teaser_xsmall
 targetEntityType: node
 bundle: varbase_blog
@@ -71,26 +71,26 @@ content:
         ft:
           id: expert
           settings:
-            lb: ''
-            prefix: ''
-            lbw-el: ''
-            lbw-cl: ''
-            lbw-at: ''
+            lb: ""
+            prefix: ""
+            lbw-el: ""
+            lbw-cl: ""
+            lbw-at: ""
             ow: true
             ow-el: a
-            ow-cl: ''
+            ow-cl: ""
             ow-at: 'href="[node:url]"'
             ow-def-at: true
             ow-def-cl: true
-            fis-el: ''
-            fis-cl: ''
-            fis-at: ''
+            fis-el: ""
+            fis-cl: ""
+            fis-at: ""
             fis-def-at: true
-            fi-el: ''
-            fi-cl: ''
-            fi-at: ''
+            fi-el: ""
+            fi-cl: ""
+            fi-at: ""
             fi-def-at: true
-            suffix: ''
+            suffix: ""
             lbw: false
             lb-col: false
             fis: false
@@ -103,7 +103,7 @@ content:
     settings:
       view_mode: s02_standard
       link: false
-    third_party_settings: {  }
+    third_party_settings: {}
     region: left
   field_video:
     type: entity_reference_entity_view
@@ -112,7 +112,7 @@ content:
     settings:
       view_mode: s02_standard
       link: false
-    third_party_settings: {  }
+    third_party_settings: {}
     region: left
 hidden:
   body: true

@@ -26,13 +26,13 @@ third_party_settings:
       disable_css: false
       entity_classes: all_classes
       settings:
-        classes: {  }
+        classes: {}
         wrappers:
           ds_content: div
         outer_wrapper: div
-        attributes: ''
-        link_attribute: ''
-        link_custom: ''
+        attributes: ""
+        link_attribute: ""
+        link_custom: ""
     regions:
       ds_content:
         - body
@@ -52,8 +52,8 @@ content:
     weight: 0
     region: ds_content
     label: above
-    settings: {  }
-    third_party_settings: {  }
+    settings: {}
+    third_party_settings: {}
   field_blog_categories:
     type: entity_reference_label
     weight: 0
@@ -61,14 +61,14 @@ content:
     label: above
     settings:
       link: true
-    third_party_settings: {  }
+    third_party_settings: {}
   field_meta_tags:
     type: metatag_empty_formatter
     weight: 0
     region: ds_content
     label: above
-    settings: {  }
-    third_party_settings: {  }
+    settings: {}
+    third_party_settings: {}
   field_tags:
     type: entity_reference_label
     weight: 0
@@ -76,14 +76,14 @@ content:
     label: above
     settings:
       link: true
-    third_party_settings: {  }
+    third_party_settings: {}
   field_yoast_seo:
     type: yoastseo_formatter
     weight: 0
     region: ds_content
     label: above
-    settings: {  }
-    third_party_settings: {  }
+    settings: {}
+    third_party_settings: {}
 hidden:
   content_moderation_control: true
   field_media: true

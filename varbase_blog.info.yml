@@ -1,5 +1,5 @@
-name: 'Varbase Blog'
-description: 'Provides Blog post content type and related configuration. Use Blog to publish blog post by different authors in the Blog section of the site.'
+name: "Varbase Blog"
+description: "Provides Blog post content type and related configuration. Use Blog to publish blog post by different authors in the Blog section of the site."
 type: module
 package: Varbase
 core_version_requirement: ^9

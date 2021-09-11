@@ -1,62 +1,47 @@
 _meta:
-  version: '1.0'
+  version: "1.0"
   entity_type: node
   uuid: e016eb7f-7991-4ead-9248-ef9a3489e57d
   bundle: landing_page_lb
   default_langcode: und
 default:
   revision_uid:
-    -
-      target_id: 1
+    - target_id: 1
   revision_log:
-    -
-      value: 'Create Blog section Landing page (Layout Builder)'
+    - value: "Create Blog section Landing page (Layout Builder)"
   status:
-    -
-      value: true
+    - value: true
   uid:
-    -
-      target_id: 1
+    - target_id: 1
   title:
-    -
-      value: Blog
+    - value: Blog
   created:
-    -
-      value: 1603202282
+    - value: 1603202282
   promote:
-    -
-      value: false
+    - value: false
   sticky:
-    -
-      value: false
+    - value: false
   revision_translation_affected:
-    -
-      value: true
+    - value: true
   moderation_state:
-    -
-      value: published
+    - value: published
   path:
-    -
-      alias: /blog
+    - alias: /blog
       langcode: und
       pathauto: 1
   publish_state:
-    -
-      value: published
+    - value: published
   unpublish_state:
-    -
-      value: archived
+    - value: archived
   field_yoast_seo:
-    -
-      status: '0'
-      focus_keyword: ''
+    - status: "0"
+      focus_keyword: ""
   layout_builder__layout:
-    -
-      section:
-        layout_id: 'bootstrap_layout_builder:blb_col_1'
+    - section:
+        layout_id: "bootstrap_layout_builder:blb_col_1"
         layout_settings:
-          label: ''
-          container_wrapper_classes: ''
+          label: ""
+          container_wrapper_classes: ""
           container_wrapper_attributes: null
           container_wrapper:
             bootstrap_styles:
@@ -146,36 +131,36 @@ default:
                 class: null
               vertical_alignment:
                 class: null
-          container_wrapper_bg_color_class: ''
+          container_wrapper_bg_color_class: ""
           container_wrapper_bg_media: null
           container: container-fluid
-          section_classes: ''
+          section_classes: ""
           section_attributes: null
           regions_classes:
-            blb_region_col_1: ''
-            section_header: ''
+            blb_region_col_1: ""
+            section_header: ""
           regions_attributes:
-            blb_region_col_1: {  }
+            blb_region_col_1: {}
             section_header: null
-          breakpoints: {  }
+          breakpoints: {}
           layout_regions_classes:
             section_header: null
-          remove_gutters: '1'
+          remove_gutters: "1"
           gutters_between: null
-          container_width: ''
-          context_mapping: {  }
+          container_width: ""
+          context_mapping: {}
         components:
           1d173ee3-064d-4592-a1c2-bc1e6a0f47b6:
             uuid: 1d173ee3-064d-4592-a1c2-bc1e6a0f47b6
             region: blb_region_col_1
             configuration:
-              id: 'extra_field_block:node:landing_page_lb:content_moderation_control'
-              label: 'Moderation control'
+              id: "extra_field_block:node:landing_page_lb:content_moderation_control"
+              label: "Moderation control"
               provider: layout_builder
               label_display: 0
               formatter:
-                settings: {  }
-                third_party_settings: {  }
+                settings: {}
+                third_party_settings: {}
               context_mapping:
                 entity: layout_builder.entity
             additional:
@@ -264,13 +249,12 @@ default:
                   scroll_effects:
                     class: null
             weight: 0
-        third_party_settings: {  }
-    -
-      section:
-        layout_id: 'bootstrap_layout_builder:blb_col_1'
+        third_party_settings: {}
+    - section:
+        layout_id: "bootstrap_layout_builder:blb_col_1"
         layout_settings:
-          label: ''
-          container_wrapper_classes: ''
+          label: ""
+          container_wrapper_classes: ""
           container_wrapper_attributes: null
           container_wrapper:
             bootstrap_styles:
@@ -360,43 +344,43 @@ default:
                 class: null
               vertical_alignment:
                 class: null
-          container_wrapper_bg_color_class: ''
+          container_wrapper_bg_color_class: ""
           container_wrapper_bg_media: null
           container: container-fluid
-          section_classes: ''
+          section_classes: ""
           section_attributes: null
           regions_classes:
-            blb_region_col_1: ''
-            section_header: ''
+            blb_region_col_1: ""
+            section_header: ""
           regions_attributes:
-            blb_region_col_1: {  }
+            blb_region_col_1: {}
             section_header: null
-          breakpoints: {  }
+          breakpoints: {}
           layout_regions_classes:
             section_header: null
-          remove_gutters: '1'
+          remove_gutters: "1"
           gutters_between: null
-          container_width: ''
-          context_mapping: {  }
+          container_width: ""
+          context_mapping: {}
         components:
           0aafe306-5410-47d5-9f22-699b32c800e1:
             uuid: 0aafe306-5410-47d5-9f22-699b32c800e1
             region: blb_region_col_1
             configuration:
-              id: 'menu_block:blog-menu'
-              label: 'Blog menu'
+              id: "menu_block:blog-menu"
+              label: "Blog menu"
               provider: menu_block
               label_display: 0
               follow: 0
               follow_parent: child
-              level: '1'
-              depth: '0'
+              level: "1"
+              depth: "0"
               expand_all_items: false
-              parent: 'blog-menu:'
+              parent: "blog-menu:"
               suggestion: blog_menu
               label_type: block
               label_link: 0
-              context_mapping: {  }
+              context_mapping: {}
             additional:
               bootstrap_styles:
                 block_style:
@@ -483,13 +467,12 @@ default:
                   scroll_effects:
                     class: null
             weight: 0
-        third_party_settings: {  }
-    -
-      section:
-        layout_id: 'bootstrap_layout_builder:blb_col_1'
+        third_party_settings: {}
+    - section:
+        layout_id: "bootstrap_layout_builder:blb_col_1"
         layout_settings:
-          label: ''
-          container_wrapper_classes: ''
+          label: ""
+          container_wrapper_classes: ""
           container_wrapper_attributes: null
           container_wrapper:
             bootstrap_styles:
@@ -579,36 +562,36 @@ default:
                 class: null
               vertical_alignment:
                 class: null
-          container_wrapper_bg_color_class: ''
+          container_wrapper_bg_color_class: ""
           container_wrapper_bg_media: null
           container: container-fluid
-          section_classes: ''
+          section_classes: ""
           section_attributes: null
           regions_classes:
-            blb_region_col_1: ''
-            section_header: ''
+            blb_region_col_1: ""
+            section_header: ""
           regions_attributes:
-            blb_region_col_1: {  }
+            blb_region_col_1: {}
             section_header: null
-          breakpoints: {  }
+          breakpoints: {}
           layout_regions_classes:
             section_header: null
-          remove_gutters: '0'
+          remove_gutters: "0"
           gutters_between: null
-          container_width: ''
-          context_mapping: {  }
+          container_width: ""
+          context_mapping: {}
         components:
           58232022-9faa-4c4f-8039-e4552d457da7:
             uuid: 58232022-9faa-4c4f-8039-e4552d457da7
             region: blb_region_col_1
             configuration:
-              id: 'views_block:varbase_blog-blog_listing_block'
-              label: ''
+              id: "views_block:varbase_blog-blog_listing_block"
+              label: ""
               provider: views
               label_display: 0
-              views_label: ''
+              views_label: ""
               items_per_page: none
-              context_mapping: {  }
+              context_mapping: {}
             additional:
               bootstrap_styles:
                 block_style:
@@ -695,4 +678,4 @@ default:
                   scroll_effects:
                     class: null
             weight: 0
-        third_party_settings: {  }
+        third_party_settings: {}

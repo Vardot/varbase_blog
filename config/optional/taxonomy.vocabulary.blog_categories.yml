@@ -1,7 +1,7 @@
 langcode: en
 status: true
-dependencies: {  }
-name: 'Blog Categories'
+dependencies: {}
+name: "Blog Categories"
 vid: blog_categories
-description: ''
+description: ""
 weight: 0

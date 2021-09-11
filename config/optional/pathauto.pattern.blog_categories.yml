@@ -5,12 +5,12 @@ dependencies:
     - ctools
     - taxonomy
 id: blog_categories
-label: 'Blog categories'
-type: 'canonical_entities:taxonomy_term'
-pattern: 'blog/categories/[term:name]'
+label: "Blog categories"
+type: "canonical_entities:taxonomy_term"
+pattern: "blog/categories/[term:name]"
 selection_criteria:
   a352f2a3-fc08-4a3e-b764-1a8b8f5c05b7:
-    id: 'entity_bundle:taxonomy_term'
+    id: "entity_bundle:taxonomy_term"
     bundles:
       blog_categories: blog_categories
     negate: false
@@ -19,4 +19,4 @@ selection_criteria:
     uuid: a352f2a3-fc08-4a3e-b764-1a8b8f5c05b7
 selection_logic: and
 weight: -5
-relationships: {  }
+relationships: {}

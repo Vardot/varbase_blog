@@ -28,29 +28,28 @@ third_party_settings:
       children:
         - node_author
         - node_post_date
-      parent_name: ''
+      parent_name: ""
       weight: 0
       format_type: html_element
       format_settings:
         element: div
         show_label: false
         label_element: h3
-        attributes: ''
+        attributes: ""
         effect: none
         speed: fast
-        id: ''
+        id: ""
         classes: author-info
-      label: 'Author information'
+      label: "Author information"
       region: ds_content
   layout_builder:
     allow_custom: false
     enabled: true
     sections:
-      -
-        layout_id: 'bootstrap_layout_builder:blb_col_1'
+      - layout_id: "bootstrap_layout_builder:blb_col_1"
         layout_settings:
-          label: ''
-          container_wrapper_classes: ''
+          label: ""
+          container_wrapper_classes: ""
           container_wrapper_attributes: null
           container_wrapper:
             bootstrap_styles:
@@ -140,55 +139,55 @@ third_party_settings:
                 class: null
               vertical_alignment:
                 class: null
-          container_wrapper_bg_color_class: ''
+          container_wrapper_bg_color_class: ""
           container_wrapper_bg_media: null
           container: container-fluid
-          section_classes: ''
+          section_classes: ""
           section_attributes: null
           regions_classes:
-            blb_region_col_1: ''
-            section_header: ''
+            blb_region_col_1: ""
+            section_header: ""
           regions_attributes:
-            blb_region_col_1: {  }
+            blb_region_col_1: {}
             section_header: null
-          breakpoints: {  }
+          breakpoints: {}
           layout_regions_classes:
             section_header: null
-          remove_gutters: '0'
+          remove_gutters: "0"
           gutters_between: null
-          container_width: ''
-          context_mapping: {  }
+          container_width: ""
+          context_mapping: {}
         components:
           63c68acc-42b8-4337-b26a-077073e66808:
             uuid: 63c68acc-42b8-4337-b26a-077073e66808
             region: blb_region_col_1
             configuration:
-              id: 'extra_field_block:node:varbase_blog:content_moderation_control'
-              label: 'Moderation control'
+              id: "extra_field_block:node:varbase_blog:content_moderation_control"
+              label: "Moderation control"
               provider: layout_builder
-              label_display: '0'
+              label_display: "0"
               formatter:
-                settings: {  }
-                third_party_settings: {  }
+                settings: {}
+                third_party_settings: {}
               context_mapping:
                 entity: layout_builder.entity
             additional:
               component_attributes:
                 block_attributes:
-                  id: ''
-                  class: ''
-                  style: ''
-                  data: ''
+                  id: ""
+                  class: ""
+                  style: ""
+                  data: ""
                 block_title_attributes:
-                  id: ''
-                  class: ''
-                  style: ''
-                  data: ''
+                  id: ""
+                  class: ""
+                  style: ""
+                  data: ""
                 block_content_attributes:
-                  id: ''
-                  class: ''
-                  style: ''
-                  data: ''
+                  id: ""
+                  class: ""
+                  style: ""
+                  data: ""
               bootstrap_styles:
                 block_style:
                   background:
@@ -274,12 +273,11 @@ third_party_settings:
                   scroll_effects:
                     class: null
             weight: 0
-        third_party_settings: {  }
-      -
-        layout_id: 'bootstrap_layout_builder:blb_col_2'
+        third_party_settings: {}
+      - layout_id: "bootstrap_layout_builder:blb_col_2"
         layout_settings:
-          label: ''
-          container_wrapper_classes: ''
+          label: ""
+          container_wrapper_classes: ""
           container_wrapper_attributes: null
           container_wrapper:
             bootstrap_styles:
@@ -369,15 +367,15 @@ third_party_settings:
                 class: null
               vertical_alignment:
                 class: null
-          container_wrapper_bg_color_class: ''
+          container_wrapper_bg_color_class: ""
           container_wrapper_bg_media: null
           container: container-fluid
-          section_classes: ''
+          section_classes: ""
           section_attributes: null
           regions_classes:
-            blb_region_col_1: ''
-            blb_region_col_2: ''
-            section_header: ''
+            blb_region_col_1: ""
+            blb_region_col_2: ""
+            section_header: ""
           regions_attributes:
             blb_region_col_1: null
             blb_region_col_2: null
@@ -403,27 +401,27 @@ third_party_settings:
               - col-12
               - col-12
               - col-12
-          remove_gutters: '1'
+          remove_gutters: "1"
           gutters_between: 1
-          container_width: ''
-          context_mapping: {  }
+          container_width: ""
+          context_mapping: {}
         components:
           a94a1f90-4c1c-4ba0-8286-7af43086a25b:
             uuid: a94a1f90-4c1c-4ba0-8286-7af43086a25b
             region: blb_region_col_1
             configuration:
-              id: 'field_block:node:varbase_blog:created'
-              label: 'Authored on'
+              id: "field_block:node:varbase_blog:created"
+              label: "Authored on"
               provider: layout_builder
-              label_display: '0'
+              label_display: "0"
               formatter:
                 label: hidden
                 type: timestamp
                 settings:
                   date_format: medium
-                  custom_date_format: ''
-                  timezone: ''
-                third_party_settings: {  }
+                  custom_date_format: ""
+                  timezone: ""
+                third_party_settings: {}
               context_mapping:
                 entity: layout_builder.entity
                 view_mode: view_mode
@@ -517,16 +515,16 @@ third_party_settings:
             uuid: 4743138b-b560-4564-83a7-ea821bfa8a24
             region: blb_region_col_1
             configuration:
-              id: 'field_block:node:varbase_blog:uid'
-              label: 'Authored by'
+              id: "field_block:node:varbase_blog:uid"
+              label: "Authored by"
               provider: layout_builder
-              label_display: '0'
+              label_display: "0"
               formatter:
                 label: hidden
                 type: entity_reference_label
                 settings:
                   link: false
-                third_party_settings: {  }
+                third_party_settings: {}
               context_mapping:
                 entity: layout_builder.entity
                 view_mode: view_mode
@@ -620,36 +618,36 @@ third_party_settings:
             uuid: 229db6cb-f3b0-444d-99bf-016b41acf79c
             region: blb_region_col_1
             configuration:
-              id: 'field_block:node:varbase_blog:field_media'
-              label: 'Main media'
+              id: "field_block:node:varbase_blog:field_media"
+              label: "Main media"
               provider: layout_builder
-              label_display: '0'
+              label_display: "0"
               formatter:
                 label: hidden
                 type: entity_reference_entity_view
                 settings:
                   view_mode: s12_standard
-                third_party_settings: {  }
+                third_party_settings: {}
               context_mapping:
                 entity: layout_builder.entity
                 view_mode: view_mode
             additional:
               component_attributes:
                 block_attributes:
-                  id: ''
+                  id: ""
                   class: pb-3
-                  style: ''
-                  data: ''
+                  style: ""
+                  data: ""
                 block_title_attributes:
-                  id: ''
-                  class: ''
-                  style: ''
-                  data: ''
+                  id: ""
+                  class: ""
+                  style: ""
+                  data: ""
                 block_content_attributes:
-                  id: ''
-                  class: ''
-                  style: ''
-                  data: ''
+                  id: ""
+                  class: ""
+                  style: ""
+                  data: ""
               bootstrap_styles:
                 block_style:
                   background:
@@ -739,35 +737,35 @@ third_party_settings:
             uuid: 08f4ec90-392d-4dcd-a7f4-0bd0e7d8cda1
             region: blb_region_col_1
             configuration:
-              id: 'field_block:node:varbase_blog:body'
+              id: "field_block:node:varbase_blog:body"
               label: Body
               provider: layout_builder
-              label_display: '0'
+              label_display: "0"
               formatter:
                 label: hidden
                 type: text_default
-                settings: {  }
-                third_party_settings: {  }
+                settings: {}
+                third_party_settings: {}
               context_mapping:
                 entity: layout_builder.entity
                 view_mode: view_mode
             additional:
               component_attributes:
                 block_attributes:
-                  id: ''
+                  id: ""
                   class: py-3
-                  style: ''
-                  data: ''
+                  style: ""
+                  data: ""
                 block_title_attributes:
-                  id: ''
-                  class: ''
-                  style: ''
-                  data: ''
+                  id: ""
+                  class: ""
+                  style: ""
+                  data: ""
                 block_content_attributes:
-                  id: ''
-                  class: ''
-                  style: ''
-                  data: ''
+                  id: ""
+                  class: ""
+                  style: ""
+                  data: ""
               bootstrap_styles:
                 block_style:
                   background:
@@ -857,30 +855,30 @@ third_party_settings:
             uuid: 3d3c722d-76d5-4891-8a9b-d9215d7364f2
             region: blb_region_col_2
             configuration:
-              id: 'views_block:varbase_blog-most_recent_blog_posts_block'
-              label: ''
+              id: "views_block:varbase_blog-most_recent_blog_posts_block"
+              label: ""
               provider: views
               label_display: visible
-              views_label: ''
+              views_label: ""
               items_per_page: none
-              context_mapping: {  }
+              context_mapping: {}
             additional:
               component_attributes:
                 block_attributes:
-                  id: ''
+                  id: ""
                   class: pt-5
-                  style: ''
-                  data: ''
+                  style: ""
+                  data: ""
                 block_title_attributes:
-                  id: ''
-                  class: ''
-                  style: ''
-                  data: ''
+                  id: ""
+                  class: ""
+                  style: ""
+                  data: ""
                 block_content_attributes:
-                  id: ''
-                  class: ''
-                  style: ''
-                  data: ''
+                  id: ""
+                  class: ""
+                  style: ""
+                  data: ""
               bootstrap_styles:
                 block_style:
                   background:
@@ -970,31 +968,31 @@ third_party_settings:
             uuid: 6f07fde1-e8b2-44ba-a71e-4005c3db0640
             region: blb_region_col_2
             configuration:
-              id: 'views_block:varbase_blog-most_popular_blog_posts_block'
-              label: ''
+              id: "views_block:varbase_blog-most_popular_blog_posts_block"
+              label: ""
               provider: views
               label_display: visible
-              views_label: ''
+              views_label: ""
               items_per_page: none
               context_mapping:
                 nid: layout_builder.entity
             additional:
               component_attributes:
                 block_attributes:
-                  id: ''
-                  class: ''
-                  style: ''
-                  data: ''
+                  id: ""
+                  class: ""
+                  style: ""
+                  data: ""
                 block_title_attributes:
-                  id: ''
-                  class: ''
-                  style: ''
-                  data: ''
+                  id: ""
+                  class: ""
+                  style: ""
+                  data: ""
                 block_content_attributes:
-                  id: ''
-                  class: ''
-                  style: ''
-                  data: ''
+                  id: ""
+                  class: ""
+                  style: ""
+                  data: ""
               bootstrap_styles:
                 block_style:
                   background:
@@ -1080,12 +1078,11 @@ third_party_settings:
                   scroll_effects:
                     class: null
             weight: 0
-        third_party_settings: {  }
-      -
-        layout_id: 'bootstrap_layout_builder:blb_col_1'
+        third_party_settings: {}
+      - layout_id: "bootstrap_layout_builder:blb_col_1"
         layout_settings:
-          label: ''
-          container_wrapper_classes: ''
+          label: ""
+          container_wrapper_classes: ""
           container_wrapper_attributes: null
           container_wrapper:
             bootstrap_styles:
@@ -1175,30 +1172,30 @@ third_party_settings:
                 class: null
               vertical_alignment:
                 class: null
-          container_wrapper_bg_color_class: ''
+          container_wrapper_bg_color_class: ""
           container_wrapper_bg_media: null
           container: container-fluid
-          section_classes: ''
+          section_classes: ""
           section_attributes: null
           regions_classes:
-            blb_region_col_1: ''
-            section_header: ''
+            blb_region_col_1: ""
+            section_header: ""
           regions_attributes:
-            blb_region_col_1: {  }
+            blb_region_col_1: {}
             section_header: null
-          breakpoints: {  }
+          breakpoints: {}
           layout_regions_classes:
             section_header: null
-          remove_gutters: '1'
+          remove_gutters: "1"
           gutters_between: null
-          container_width: ''
-          context_mapping: {  }
+          container_width: ""
+          context_mapping: {}
         components:
           3795aef1-ede9-4bf7-91e0-7f1618b07f2a:
             uuid: 3795aef1-ede9-4bf7-91e0-7f1618b07f2a
             region: blb_region_col_1
             configuration:
-              id: 'field_block:node:varbase_blog:field_tags'
+              id: "field_block:node:varbase_blog:field_tags"
               label: Tags
               provider: layout_builder
               label_display: visible
@@ -1207,27 +1204,27 @@ third_party_settings:
                 type: entity_reference_label
                 settings:
                   link: true
-                third_party_settings: {  }
+                third_party_settings: {}
               context_mapping:
                 entity: layout_builder.entity
                 view_mode: view_mode
             additional:
               component_attributes:
                 block_attributes:
-                  id: ''
-                  class: 'pt-5 vb-tags'
-                  style: ''
-                  data: ''
+                  id: ""
+                  class: "pt-5 vb-tags"
+                  style: ""
+                  data: ""
                 block_title_attributes:
-                  id: ''
-                  class: ''
-                  style: ''
-                  data: ''
+                  id: ""
+                  class: ""
+                  style: ""
+                  data: ""
                 block_content_attributes:
-                  id: ''
-                  class: ''
-                  style: ''
-                  data: ''
+                  id: ""
+                  class: ""
+                  style: ""
+                  data: ""
               bootstrap_styles:
                 block_style:
                   background:
@@ -1313,12 +1310,11 @@ third_party_settings:
                   scroll_effects:
                     class: null
             weight: 0
-        third_party_settings: {  }
-      -
-        layout_id: 'bootstrap_layout_builder:blb_col_1'
+        third_party_settings: {}
+      - layout_id: "bootstrap_layout_builder:blb_col_1"
         layout_settings:
-          label: ''
-          container_wrapper_classes: ''
+          label: ""
+          container_wrapper_classes: ""
           container_wrapper_attributes: null
           container_wrapper:
             bootstrap_styles:
@@ -1408,36 +1404,36 @@ third_party_settings:
                 class: null
               vertical_alignment:
                 class: null
-          container_wrapper_bg_color_class: ''
+          container_wrapper_bg_color_class: ""
           container_wrapper_bg_media: null
           container: container-fluid
-          section_classes: ''
+          section_classes: ""
           section_attributes: null
           regions_classes:
-            blb_region_col_1: ''
-            section_header: ''
+            blb_region_col_1: ""
+            section_header: ""
           regions_attributes:
-            blb_region_col_1: {  }
+            blb_region_col_1: {}
             section_header: null
-          breakpoints: {  }
+          breakpoints: {}
           layout_regions_classes:
             section_header: null
-          remove_gutters: '1'
+          remove_gutters: "1"
           gutters_between: null
-          container_width: ''
-          context_mapping: {  }
+          container_width: ""
+          context_mapping: {}
         components:
           4acbec76-bf80-4a08-b501-ee56407a046c:
             uuid: 4acbec76-bf80-4a08-b501-ee56407a046c
             region: blb_region_col_1
             configuration:
-              id: 'views_block:varbase_blog-related_blog_posts_block'
-              label: ''
+              id: "views_block:varbase_blog-related_blog_posts_block"
+              label: ""
               provider: views
               label_display: visible
-              views_label: ''
+              views_label: ""
               items_per_page: none
-              context_mapping: {  }
+              context_mapping: {}
             additional:
               bootstrap_styles:
                 block_style:
@@ -1524,88 +1520,88 @@ third_party_settings:
                   scroll_effects:
                     class: null
             weight: 0
-        third_party_settings: {  }
+        third_party_settings: {}
   layout_library:
     enable: true
   layout_builder_restrictions:
     allowed_block_categories:
-      - '@entity'
-      - 'Chaos Tools'
-      - 'Content fields'
-      - 'Custom block types'
-      - 'Custom blocks'
+      - "@entity"
+      - "Chaos Tools"
+      - "Content fields"
+      - "Custom block types"
+      - "Custom blocks"
       - Dashboard
-      - 'Entity Block'
+      - "Entity Block"
       - Forms
       - Help
-      - 'Inline blocks'
-      - 'Lists (Views)'
+      - "Inline blocks"
+      - "Lists (Views)"
       - Menus
-      - 'Responsive Preview'
-      - 'Social Auth'
+      - "Responsive Preview"
+      - "Social Auth"
       - System
       - User
       - Webform
       - core
     entity_view_mode_restriction:
       whitelisted_blocks:
-        'Chaos Tools': {  }
-        'Custom block types':
+        "Chaos Tools": {}
+        "Custom block types":
           - basic
           - varbase_carousel_block
           - varbase_gallery_block
           - varbase_html_code_block
           - varbase_media_block
           - varbase_rich_text_block
-        Dashboard: {  }
-        'Entity Block': {  }
-        Forms: {  }
-        Help: {  }
-        'Inline blocks':
-          - 'inline_block:basic'
-          - 'inline_block:varbase_carousel_block'
-          - 'inline_block:varbase_gallery_block'
-          - 'inline_block:varbase_html_code_block'
-          - 'inline_block:varbase_media_block'
-          - 'inline_block:varbase_rich_text_block'
-        'Lists (Views)':
-          - 'views_block:varbase_blog-blog_listing_block'
-          - 'views_block:varbase_blog-blog_listing_by_blog_category_block'
-          - 'views_block:varbase_blog-blog_listing_by_tags_block'
-          - 'views_block:varbase_blog-homepage_blog_block'
-          - 'views_block:varbase_heroslider_media-varbase_heroslider_media'
-          - 'views_block:varbase_blog-most_popular_blog_posts_block'
-          - 'views_block:varbase_blog-most_recent_blog_posts_block'
-          - 'views_block:content_recent-block_1'
-          - 'views_block:varbase_blog-related_blog_posts_block'
-          - 'views_block:who_s_online-who_s_online_block'
-        Menus: {  }
-        'Responsive Preview': {  }
-        'Social Auth': {  }
-        System: {  }
-        User: {  }
-        Webform: {  }
-        core: {  }
+        Dashboard: {}
+        "Entity Block": {}
+        Forms: {}
+        Help: {}
+        "Inline blocks":
+          - "inline_block:basic"
+          - "inline_block:varbase_carousel_block"
+          - "inline_block:varbase_gallery_block"
+          - "inline_block:varbase_html_code_block"
+          - "inline_block:varbase_media_block"
+          - "inline_block:varbase_rich_text_block"
+        "Lists (Views)":
+          - "views_block:varbase_blog-blog_listing_block"
+          - "views_block:varbase_blog-blog_listing_by_blog_category_block"
+          - "views_block:varbase_blog-blog_listing_by_tags_block"
+          - "views_block:varbase_blog-homepage_blog_block"
+          - "views_block:varbase_heroslider_media-varbase_heroslider_media"
+          - "views_block:varbase_blog-most_popular_blog_posts_block"
+          - "views_block:varbase_blog-most_recent_blog_posts_block"
+          - "views_block:content_recent-block_1"
+          - "views_block:varbase_blog-related_blog_posts_block"
+          - "views_block:who_s_online-who_s_online_block"
+        Menus: {}
+        "Responsive Preview": {}
+        "Social Auth": {}
+        System: {}
+        User: {}
+        Webform: {}
+        core: {}
       blacklisted_blocks:
-        '@entity':
-          - 'entity_field:node:uid'
-          - 'entity_field:node:created'
-          - 'entity_field:node:body'
-          - 'entity_field:node:field_blog_categories'
-          - 'entity_field:node:changed'
-          - 'entity_field:node:field_media'
-          - 'entity_field:node:field_tags'
-          - 'entity_field:node:title'
-          - 'entity_field:user:name'
-          - 'entity_field:user:user_picture'
+        "@entity":
+          - "entity_field:node:uid"
+          - "entity_field:node:created"
+          - "entity_field:node:body"
+          - "entity_field:node:field_blog_categories"
+          - "entity_field:node:changed"
+          - "entity_field:node:field_media"
+          - "entity_field:node:field_tags"
+          - "entity_field:node:title"
+          - "entity_field:user:name"
+          - "entity_field:user:user_picture"
       allowed_layouts:
-        - 'bootstrap_layout_builder:blb_col_1'
-        - 'bootstrap_layout_builder:blb_col_2'
-        - 'bootstrap_layout_builder:blb_col_3'
-        - 'bootstrap_layout_builder:blb_col_4'
-        - 'bootstrap_layout_builder:blb_col_5'
-        - 'bootstrap_layout_builder:blb_col_6'
-      restricted_categories: {  }
+        - "bootstrap_layout_builder:blb_col_1"
+        - "bootstrap_layout_builder:blb_col_2"
+        - "bootstrap_layout_builder:blb_col_3"
+        - "bootstrap_layout_builder:blb_col_4"
+        - "bootstrap_layout_builder:blb_col_5"
+        - "bootstrap_layout_builder:blb_col_6"
+      restricted_categories: {}
 id: node.varbase_blog.full
 targetEntityType: node
 bundle: varbase_blog
@@ -1615,13 +1611,13 @@ content:
     label: hidden
     type: text_default
     weight: 3
-    settings: {  }
-    third_party_settings: {  }
+    settings: {}
+    third_party_settings: {}
     region: ds_content
   content_moderation_control:
     weight: -20
-    settings: {  }
-    third_party_settings: {  }
+    settings: {}
+    third_party_settings: {}
     region: content
   field_media:
     type: entity_reference_entity_view
@@ -1636,9 +1632,9 @@ content:
         ft:
           id: default
           settings:
-            lb: ''
+            lb: ""
             lb-col: false
-            classes: {  }
+            classes: {}
   field_tags:
     weight: 4
     label: above
@@ -1646,31 +1642,31 @@ content:
       link: true
     third_party_settings:
       ds:
-        ds_limit: ''
+        ds_limit: ""
         ft:
           id: expert
           settings:
-            lb: ''
-            prefix: ''
+            lb: ""
+            prefix: ""
             lbw: true
             lbw-el: h4
             lbw-cl: field--label
-            lbw-at: ''
+            lbw-at: ""
             ow: true
-            ow-el: ''
-            ow-cl: ''
-            ow-at: ''
+            ow-el: ""
+            ow-cl: ""
+            ow-at: ""
             ow-def-at: true
             ow-def-cl: true
             fis: true
             fis-el: ul
             fis-cl: vb-tags
-            fis-at: ''
+            fis-at: ""
             fi: true
             fi-el: li
-            fi-cl: ''
-            fi-at: ''
-            suffix: ''
+            fi-cl: ""
+            fi-at: ""
+            suffix: ""
             lb-col: false
             fis-def-at: false
             fi-def-at: false

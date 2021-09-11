@@ -11,14 +11,14 @@ id: node.varbase_blog.field_media
 field_name: field_media
 entity_type: node
 bundle: varbase_blog
-label: 'Main media'
-description: 'Select a lead image or video for this blog post.'
+label: "Main media"
+description: "Select a lead image or video for this blog post."
 required: false
 translatable: true
-default_value: {  }
-default_value_callback: ''
+default_value: {}
+default_value_callback: ""
 settings:
-  handler: 'default:media'
+  handler: "default:media"
   handler_settings:
     target_bundles:
       image: image

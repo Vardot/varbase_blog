@@ -25,11 +25,11 @@ third_party_settings:
   layout_library:
     enable: true
   layout_builder_restrictions:
-    allowed_block_categories: {  }
+    allowed_block_categories: {}
     entity_view_mode_restriction:
-      whitelisted_blocks: {  }
-      blacklisted_blocks: {  }
-      allowed_layouts: {  }
+      whitelisted_blocks: {}
+      blacklisted_blocks: {}
+      allowed_layouts: {}
   ds:
     layout:
       id: bs_1col
@@ -37,20 +37,20 @@ third_party_settings:
       disable_css: false
       entity_classes: all_classes
       settings:
-        label: ''
+        label: ""
         layout:
           wrapper: div
           classes:
             row: row
           add_layout_class: 1
-          attributes: ''
+          attributes: ""
         regions:
           main:
             wrapper: div
             classes:
               col-sm-12: col-sm-12
             add_region_classes: 1
-            attributes: ''
+            attributes: ""
     regions:
       main:
         - field_media
@@ -80,8 +80,8 @@ content:
     weight: 4
     region: main
     label: hidden
-    settings: {  }
-    third_party_settings: {  }
+    settings: {}
+    third_party_settings: {}
   field_blog_categories:
     type: entity_reference_label
     weight: 3
@@ -89,7 +89,7 @@ content:
     label: hidden
     settings:
       link: true
-    third_party_settings: {  }
+    third_party_settings: {}
   field_media:
     type: entity_reference_entity_view
     weight: 0
@@ -103,9 +103,9 @@ content:
         ft:
           id: default
           settings:
-            lb: ''
+            lb: ""
             lb-col: false
-            classes: {  }
+            classes: {}
   field_tags:
     type: entity_reference_label
     weight: 5
@@ -115,13 +115,13 @@ content:
       link: true
     third_party_settings:
       ds:
-        ds_limit: ''
+        ds_limit: ""
         ft:
           id: default
           settings:
-            lb: ''
+            lb: ""
             lb-col: false
-            classes: {  }
+            classes: {}
 hidden:
   content_moderation_control: true
   field_meta_tags: true

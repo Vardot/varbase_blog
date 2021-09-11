@@ -28,11 +28,11 @@ third_party_settings:
         wrappers:
           main: div
         outer_wrapper: article
-        attributes: ''
-        link_attribute: ''
-        link_custom: ''
+        attributes: ""
+        link_attribute: ""
+        link_custom: ""
         classes:
-          layout_class: {  }
+          layout_class: {}
     regions:
       main:
         - group_card
@@ -51,16 +51,16 @@ third_party_settings:
         label: hidden
         formatter: default
         settings:
-          'link text': 'Read more'
-          'link class': card-link
+          "link text": "Read more"
+          "link class": card-link
           wrapper: div
-          class: 'read-more pull-right'
+          class: "read-more pull-right"
         ft:
           id: minimal
           settings:
-            lb: ''
+            lb: ""
             lb-col: false
-            classes: {  }
+            classes: {}
       node_author:
         plugin_id: node_author
         weight: 10
@@ -69,22 +69,22 @@ third_party_settings:
         ft:
           id: expert
           settings:
-            lb: ''
-            prefix: ''
-            lbw-el: ''
-            lbw-cl: ''
-            lbw-at: ''
-            ow-el: ''
-            ow-cl: ''
-            ow-at: ''
-            fis-el: ''
-            fis-cl: ''
-            fis-at: ''
+            lb: ""
+            prefix: ""
+            lbw-el: ""
+            lbw-cl: ""
+            lbw-at: ""
+            ow-el: ""
+            ow-cl: ""
+            ow-at: ""
+            fis-el: ""
+            fis-cl: ""
+            fis-at: ""
             fi: true
             fi-el: span
             fi-cl: author-name
-            fi-at: ''
-            suffix: ''
+            fi-at: ""
+            suffix: ""
             lbw: false
             lb-col: false
             ow: false
@@ -105,9 +105,9 @@ third_party_settings:
         ft:
           id: default
           settings:
-            lb: ''
+            lb: ""
             lb-col: false
-            classes: {  }
+            classes: {}
       node_post_date:
         plugin_id: node_post_date
         weight: 11
@@ -116,22 +116,22 @@ third_party_settings:
         ft:
           id: expert
           settings:
-            lb: ''
-            prefix: ''
-            lbw-el: ''
-            lbw-cl: ''
-            lbw-at: ''
-            ow-el: ''
-            ow-cl: ''
-            ow-at: ''
-            fis-el: ''
-            fis-cl: ''
-            fis-at: ''
+            lb: ""
+            prefix: ""
+            lbw-el: ""
+            lbw-cl: ""
+            lbw-at: ""
+            ow-el: ""
+            ow-cl: ""
+            ow-at: ""
+            fis-el: ""
+            fis-cl: ""
+            fis-at: ""
             fi: true
             fi-el: span
             fi-cl: post-date
-            fi-at: ''
-            suffix: ''
+            fi-at: ""
+            suffix: ""
             lbw: false
             lb-col: false
             ow: false
@@ -155,10 +155,10 @@ third_party_settings:
         element: div
         show_label: false
         label_element: h3
-        attributes: ''
+        attributes: ""
         effect: none
         speed: fast
-        id: ''
+        id: ""
         classes: card-body
       label: Description
       region: hidden
@@ -170,22 +170,22 @@ third_party_settings:
       weight: 8
       format_type: html_element
       format_settings:
-        label: 'Author info'
+        label: "Author info"
         element: div
         show_label: false
         label_element: h3
-        attributes: ''
+        attributes: ""
         effect: none
         speed: fast
-        id: ''
-        classes: 'author-info small'
-      label: 'Author info'
+        id: ""
+        classes: "author-info small"
+      label: "Author info"
       region: hidden
     group_card:
       children:
         - field_media
         - group_description
-      parent_name: ''
+      parent_name: ""
       weight: 0
       format_type: html_element
       format_settings:
@@ -193,10 +193,10 @@ third_party_settings:
         element: div
         show_label: false
         label_element: h3
-        attributes: ''
+        attributes: ""
         effect: none
         speed: fast
-        id: ''
+        id: ""
         classes: card
       label: Card
       region: hidden
@@ -212,9 +212,9 @@ content:
     settings:
       trim_length: 30
       trim_type: words
-      trim_suffix: ' ...'
+      trim_suffix: " ..."
       wrap_class: trimmed
-      more_text: 'Read More'
+      more_text: "Read More"
       more_class: card-link
       summary_handler: full
       wrap_output: false
@@ -227,28 +227,28 @@ content:
         ft:
           id: expert
           settings:
-            lb: ''
-            prefix: ''
-            lbw-el: ''
-            lbw-cl: ''
-            lbw-at: ''
+            lb: ""
+            prefix: ""
+            lbw-el: ""
+            lbw-cl: ""
+            lbw-at: ""
             ow: true
-            ow-el: ''
-            ow-cl: ''
-            ow-at: ''
+            ow-el: ""
+            ow-cl: ""
+            ow-at: ""
             ow-def-at: true
             ow-def-cl: true
             fis: true
-            fis-el: ''
-            fis-cl: ''
-            fis-at: ''
+            fis-el: ""
+            fis-cl: ""
+            fis-at: ""
             fis-def-at: true
             fi: true
-            fi-el: ''
+            fi-el: ""
             fi-cl: card-text
-            fi-at: ''
+            fi-at: ""
             fi-def-at: true
-            suffix: ''
+            suffix: ""
             lbw: false
             lb-col: false
     region: main
@@ -265,24 +265,24 @@ content:
         ft:
           id: expert
           settings:
-            lb: ''
-            prefix: ''
-            lbw-el: ''
-            lbw-cl: ''
-            lbw-at: ''
+            lb: ""
+            prefix: ""
+            lbw-el: ""
+            lbw-cl: ""
+            lbw-at: ""
             ow: true
-            ow-el: ''
+            ow-el: ""
             ow-cl: card-top-image
-            ow-at: ''
+            ow-at: ""
             ow-def-at: true
             ow-def-cl: true
-            fis-el: ''
-            fis-cl: ''
-            fis-at: ''
-            fi-el: ''
-            fi-cl: ''
-            fi-at: ''
-            suffix: ''
+            fis-el: ""
+            fis-cl: ""
+            fis-at: ""
+            fi-el: ""
+            fi-cl: ""
+            fi-at: ""
+            suffix: ""
             lbw: false
             lb-col: false
             fis: false

@@ -50,10 +50,9 @@ function varbase_blog_install() {
       }
     }
   }
-  // ---------------------------------------------------------------------------
-
+  // ---------------------------------------------------------------------------.
   // Forced configs import on install.
-  $forced_configs= [
+  $forced_configs = [
     'views.view.taxonomy_term',
     'taxonomy.vocabulary.tags',
     'core.entity_view_display.taxonomy_term.tags.default',
@@ -72,7 +71,9 @@ function varbase_blog_install() {
 }
 
 /**
- * Issue #3222053: Fix to allow content editors to use stored selected layouts on the Full content display mode with layout builder
+ * Issue #3222053: Fix to allow content editors to use stored selected layouts.
+ *
+ * On the Full content display mode with layout builder.
  */
 function varbase_blog_update_9001() {
   $config_factory = \Drupal::configFactory()->getEditable('core.entity_view_display.node.varbase_blog.full');

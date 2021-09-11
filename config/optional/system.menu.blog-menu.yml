@@ -1,7 +1,7 @@
 langcode: en
 status: true
-dependencies: {  }
+dependencies: {}
 id: blog-menu
-label: 'Blog menu'
-description: ''
+label: "Blog menu"
+description: ""
 locked: false

@@ -10,13 +10,13 @@ field_name: field_blog_categories
 entity_type: node
 bundle: varbase_blog
 label: Categories
-description: ''
+description: ""
 required: false
 translatable: false
-default_value: {  }
-default_value_callback: ''
+default_value: {}
+default_value_callback: ""
 settings:
-  handler: 'default:taxonomy_term'
+  handler: "default:taxonomy_term"
   handler_settings:
     target_bundles:
       blog_categories: blog_categories

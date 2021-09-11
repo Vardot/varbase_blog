@@ -1,45 +1,34 @@
 _meta:
-  version: '1.0'
+  version: "1.0"
   entity_type: menu_link_content
   uuid: a22d5eca-e8be-4626-a7d0-5acf9da3862d
   bundle: menu_link_content
   default_langcode: en
 default:
   revision_user:
-    -
-      target_id: 1
+    - target_id: 1
   revision_log_message:
-    -
-      value: 'Created new Custom menu link'
+    - value: "Created new Custom menu link"
   enabled:
-    -
-      value: true
+    - value: true
   title:
-    -
-      value: Blog
+    - value: Blog
   menu_name:
-    -
-      value: main
+    - value: main
   link:
-    -
-      uri: 'internal:/blog/'
-      title: ''
+    - uri: "internal:/blog/"
+      title: ""
       options:
         attributes:
           class:
-            - ''
+            - ""
   external:
-    -
-      value: false
+    - value: false
   rediscover:
-    -
-      value: true
+    - value: true
   weight:
-    -
-      value: -49
+    - value: -49
   expanded:
-    -
-      value: false
+    - value: false
   revision_translation_affected:
-    -
-      value: true
+    - value: true
