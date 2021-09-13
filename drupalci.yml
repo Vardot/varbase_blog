@@ -18,21 +18,15 @@ build:
         - config --json extra.installer-paths.libraries\/jquery-ui-touch-punch '["bower-asset/jqueryui-touch-punch"]'
         - config --unset extra.installer-paths.libraries\/\{\$name\}
         - config --json extra.installer-paths.libraries\/\{\$name\} '["type:drupal-library", "type:bower-asset", "type:npm-asset"]'
-      container_command:
-        commands:
-          - cd ${SOURCE_DIR}
-          - rm composer.lock
-          - composer require npm-asset/dropzone:~4.0
-          - composer require npm-asset/blazy:~1.0
-          - composer require npm-asset/slick-carousel:~1.0 
-          - composer require bower-asset/objectfitpolyfill:~2.0
-          - composer require bower-asset/jqueryui-touch-punch:dev-master
-          - composer require npm-asset/imagesloaded:~4.0
-          - composer require npm-asset/ace-builds:~1.0
-          - composer require drupal/vartheme_bs4:9.0.x-dev
-          - composer require drupal/vartheme_claro:9.0.x-dev
-          - cat composer.json
-          - find ${SOURCE_DIR}/libraries | sed -e "s/[^-][^\/]*\//  |/g" -e "s/|\([^ ]\)/|-\1/"
+        - require npm-asset/dropzone:~4.0
+        - require npm-asset/blazy:~1.0
+        - require npm-asset/slick-carousel:~1.0 
+        - require bower-asset/objectfitpolyfill:~2.0
+        - require bower-asset/jqueryui-touch-punch:dev-master
+        - require npm-asset/imagesloaded:~4.0
+        - require npm-asset/ace-builds:~1.0
+        - require drupal/vartheme_bs4:9.0.x-dev
+        - require drupal/vartheme_claro:9.0.x-dev
       phplint: {  }
       csslint:
         halt-on-fail: false
