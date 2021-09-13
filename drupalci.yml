@@ -18,7 +18,6 @@ build:
           - composer config --json extra.installer-paths.libraries\/slick '["npm-asset/slick-carousel"]'
           - composer config --json extra.installer-paths.libraries\/ace '["npm-asset/ace-builds"]'
           - composer config --json extra.installer-paths.libraries\/jquery-ui-touch-punch '["bower-asset/jqueryui-touch-punch"]'
-          - composer config --json extra.installer-paths.libraries\/ace '["npm-asset/ace-builds"]'
           - composer config --unset extra.installer-paths.libraries\/\{\$name\}
           - composer config --json extra.installer-paths.libraries\/\{\$name\} '["type:drupal-library", "type:bower-asset", "type:npm-asset"]'
           - rm composer.lock
