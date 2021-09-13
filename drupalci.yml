@@ -1,6 +1,38 @@
 build:
   assessment:
     validate_codebase:
+      container_command:
+        commands:
+          - cd ${SOURCE_DIR}
+          - composer config minimum-stability dev
+          - composer config repositories.drupal composer https://packages.drupal.org/8
+          - composer config --unset repositories.0
+          - composer config repositories.assets composer https://asset-packagist.org
+          - composer require oomphinc/composer-installers-extender:~2.0
+          - composer require cweagans/composer-patches:~1.0
+          - composer config extra.enable-patching true
+          - composer config extra.composer-exit-on-patch-failure true
+          - composer require --dev phpspec/prophecy-phpunit:*
+          - composer require phpunit/phpunit:~9.0 --with-all-dependencies
+          - composer config --json extra.installer-types '["npm-asset", "bower-asset"]'
+          - composer config --json extra.installer-paths.libraries\/slick '["npm-asset/slick-carousel"]'
+          - composer config --json extra.installer-paths.libraries\/ace '["npm-asset/ace-builds"]'
+          - composer config --json extra.installer-paths.libraries\/jquery-ui-touch-punch '["bower-asset/jqueryui-touch-punch"]'
+          - composer config --json extra.installer-paths.libraries\/ace '["npm-asset/ace-builds"]'
+          - composer config --unset extra.installer-paths.libraries\/\{\$name\}
+          - composer config --json extra.installer-paths.libraries\/\{\$name\} '["type:drupal-library", "type:bower-asset", "type:npm-asset"]'
+          - rm composer.lock
+          - composer require npm-asset/dropzone:~4.0
+          - composer require npm-asset/blazy:~1.0
+          - composer require npm-asset/slick-carousel:~1.0 
+          - composer require bower-asset/objectfitpolyfill:~2.0
+          - composer require bower-asset/jqueryui-touch-punch:dev-master
+          - composer require npm-asset/imagesloaded:~4.0
+          - composer require npm-asset/ace-builds:~1.0
+          - composer require drupal/vartheme_bs4:9.0.x-dev
+          - composer require drupal/vartheme_claro:9.0.x-dev
+          - cat composer.json
+          - find ${SOURCE_DIR}/libraries | sed -e "s/[^-][^\/]*\//  |/g" -e "s/|\([^ ]\)/|-\1/"
       phplint: {  }
       csslint:
         halt-on-fail: false
@@ -12,4 +44,10 @@ build:
         sniff-all-files: false
         halt-on-fail: false
       phpstan:
+        halt-on-fail: false
+    testing:
+      run_tests.javascript:
+        types: 'PHPUnit-FunctionalJavascript'
+        testgroups: "varbase_blog"
+        suppress-deprecations: true
         halt-on-fail: false
