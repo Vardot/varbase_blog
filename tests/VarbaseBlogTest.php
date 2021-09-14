@@ -1,12 +1,12 @@
 <?php
 
-namespace Drupal\Tests\varbase_api\FunctionalJavascript;
+namespace Drupal\Tests\varbase_blog\FunctionalJavascript;
 
 use Drupal\FunctionalJavascriptTests\WebDriverTestBase;
 use Drupal\Core\StringTranslation\StringTranslationTrait;
 
 /**
- * Tests Varbase Blog .
+ * Tests Varbase Blog.
  *
  * @group varbase_blog
  */
