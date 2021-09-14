@@ -1,42 +1,45 @@
 build:
   assessment:
     validate_codebase:
-      container_composer:
-        - config minimum-stability dev
-        - config repositories.drupal composer https://packages.drupal.org/8
-        - config --unset repositories.0
-        - config repositories.assets composer https://asset-packagist.org
-        - require oomphinc/composer-installers-extender:~2.0
-        - require cweagans/composer-patches:~1.0
-        - config extra.enable-patching true
-        - config extra.composer-exit-on-patch-failure true
-        - require --dev phpspec/prophecy-phpunit:*
-        - require phpunit/phpunit:~9.0 --with-all-dependencies
-        - config --json extra.installer-types '["npm-asset", "bower-asset"]'
-        - config --json extra.installer-paths.libraries\/slick '["npm-asset/slick-carousel"]'
-        - config --json extra.installer-paths.libraries\/ace '["npm-asset/ace-builds"]'
-        - config --json extra.installer-paths.libraries\/jquery-ui-touch-punch '["bower-asset/jqueryui-touch-punch"]'
-        - config --unset extra.installer-paths.libraries\/\{\$name\}
-        - config --json extra.installer-paths.libraries\/\{\$name\} '["type:drupal-library", "type:bower-asset", "type:npm-asset"]'
       container_command:
         commands:
           - cd ${SOURCE_DIR}
-          - sudo -u www-data composer require npm-asset/dropzone:~4.0
-          - sudo -u www-data composer require npm-asset/blazy:~1.0
-          - sudo -u www-data composer require npm-asset/slick-carousel:~1.0 
-          - sudo -u www-data composer require bower-asset/objectfitpolyfill:~2.0
-          - sudo -u www-data composer require bower-asset/jqueryui-touch-punch:dev-master
-          - sudo -u www-data composer require npm-asset/imagesloaded:~4.0
-          - sudo -u www-data composer require npm-asset/ace-builds:~1.0
-          - sudo -u www-data composer require drupal/vartheme_bs4:9.0.x-dev
-          - sudo -u www-data composer require drupal/vartheme_claro:3.0.x-dev
-          - sudo -u www-data composer require drupal/varbase_core:9.0.x-dev
-          - sudo -u www-data composer require drupal/varbase_media:9.0.x-dev
-          - sudo -u www-data composer require drupal/varbase_seo:9.0.x-dev
-          - sudo -u www-data composer require drupal/varbase_editor:9.0.x-dev
-          - sudo -u www-data composer require drupal/varbase_layout_builder:10.0.x-dev
+          - composer config minimum-stability dev
+          - composer config repositories.drupal composer https://packages.drupal.org/8
+          - composer config --unset repositories.0
+          - composer config repositories.assets composer https://asset-packagist.org
+          - composer require oomphinc/composer-installers-extender:~2.0
+          - composer require cweagans/composer-patches:~1.0
+          - composer config extra.enable-patching true
+          - composer config extra.composer-exit-on-patch-failure true
+          - composer require --dev phpspec/prophecy-phpunit:*
+          - composer require phpunit/phpunit:~9.0 --with-all-dependencies
+          - composer config --json extra.installer-types '["npm-asset", "bower-asset"]'
+          - composer config --json extra.installer-paths.web\/libraries\/dropzone '["npm-asset/dropzone"]'
+          - composer config --json extra.installer-paths.web\/libraries\/blazy '["npm-asset/blazy"]'
+          - composer config --json extra.installer-paths.libraries\/slick '["npm-asset/slick-carousel"]'
+          - composer config --json extra.installer-paths.web\/libraries\/slick '["npm-asset/slick-carousel"]'
+          - composer config --json extra.installer-paths.web\/libraries\/ace '["npm-asset/ace-builds"]'
+          - composer config --json extra.installer-paths.web\/libraries\/jquery-ui-touch-punch '["bower-asset/jqueryui-touch-punch"]'
+          - composer config --json extra.installer-paths.web\/libraries\/objectfitpolyfill '["bower-asset/objectfitpolyfill"]'
+          - composer config --unset extra.installer-paths.libraries\/\{\$name\}
+          - composer config --json extra.installer-paths.libraries\/\{\$name\} '["type:drupal-library", "type:bower-asset", "type:npm-asset"]'
+          - composer require npm-asset/dropzone:~4.0
+          - composer require npm-asset/blazy:~1.0
+          - composer require npm-asset/slick-carousel:~1.0 
+          - composer require bower-asset/objectfitpolyfill:~2.0
+          - composer require bower-asset/jqueryui-touch-punch:dev-master
+          - composer require npm-asset/imagesloaded:~4.0
+          - composer require npm-asset/ace-builds:~1.0
+          - composer require drupal/vartheme_bs4:9.0.x-dev
+          - composer require drupal/vartheme_claro:3.0.x-dev
+          - composer require drupal/varbase_core:9.0.x-dev
+          - composer require drupal/varbase_media:9.0.x-dev
+          - composer require drupal/varbase_seo:9.0.x-dev
+          - composer require drupal/varbase_editor:9.0.x-dev
+          - composer require drupal/varbase_layout_builder:10.0.x-dev
           - cat composer.json
-          - find ${SOURCE_DIR}/libraries | sed -e "s/[^-][^\/]*\//  |/g" -e "s/|\([^ ]\)/|-\1/"
+          - ls -li ${SOURCE_DIR}/libraries
       phplint: {  }
       csslint:
         halt-on-fail: false
