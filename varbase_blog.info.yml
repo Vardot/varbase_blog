@@ -7,7 +7,6 @@ dependencies:
   - varbase_core:varbase_core
   - varbase_media:varbase_media
   - varbase_seo:varbase_seo
-  - varbase_editor:varbase_editor
   - vmi:vmi
   - taxonomy_menu:taxonomy_menu
 install:
@@ -15,5 +14,6 @@ install:
   - length_indicator
   - advanced_text_formatter
   - maxlength
+  - varbase_editor
   - varbase_layout_builder
   - vlplb

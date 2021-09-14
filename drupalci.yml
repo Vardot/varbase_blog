@@ -27,6 +27,7 @@ build:
         - require npm-asset/ace-builds:~1.0
         - require drupal/vartheme_bs4:9.0.x-dev
         - require drupal/vartheme_claro:9.0.x-dev
+        - require drupal/varbase_editor:9.0.x-dev
       phplint: {  }
       csslint:
         halt-on-fail: false
