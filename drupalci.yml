@@ -12,8 +12,6 @@ build:
           - composer require cweagans/composer-patches:~1.0
           - composer config extra.enable-patching true
           - composer config extra.composer-exit-on-patch-failure true
-          - composer require --dev phpspec/prophecy-phpunit:*
-          - composer require phpunit/phpunit:~9.0 --with-all-dependencies
           - composer config --json extra.installer-types '["npm-asset", "bower-asset"]'
           - composer config --json extra.installer-paths.web\/libraries\/dropzone '["npm-asset/dropzone"]'
           - composer config --json extra.installer-paths.web\/libraries\/blazy '["npm-asset/blazy"]'
@@ -24,6 +22,8 @@ build:
           - composer config --json extra.installer-paths.web\/libraries\/objectfitpolyfill '["bower-asset/objectfitpolyfill"]'
           - composer config --unset extra.installer-paths.libraries\/\{\$name\}
           - composer config --json extra.installer-paths.libraries\/\{\$name\} '["type:drupal-library", "type:bower-asset", "type:npm-asset"]'
+          - rm composer.lock
+          - composer drupal-phpunit-upgrade
           - composer require npm-asset/dropzone:~4.0
           - composer require npm-asset/blazy:~1.0
           - composer require npm-asset/slick-carousel:~1.0 
