@@ -30,36 +30,33 @@ class VarbaseBlogTest extends WebDriverTestBase {
   protected static $modules = [
     'varbase_core',
     'varbase_media',
-    'varbase_seo',
     'varbase_editor',
+    'varbase_admin',
+    'varbase_seo',
+    'varbase_workflow',
     'varbase_layout_builder',
+    'vlplb',
     'varbase_blog',
-    'node',
-    'taxonomy',
-    'media',
-    'user',
-    'block',
-    'block_content',
   ];
 
-  /**
+   /**
    * {@inheritdoc}
    */
   protected function setUp(): void {
     parent::setUp();
 
     // Insall the Claro admin theme.
-    $this->container->get('theme_installer')->install(['vartheme_claro']);
+    $this->container->get('theme_installer')->install(['claro']);
 
     // Set the Claro theme as the default admin theme.
-    $this->config('system.theme')->set('admin', 'vartheme_claro')->save();
+    $this->config('system.theme')->set('admin', 'claro')->save();
 
   }
 
   /**
-   * Check Varbase Blog content type and blog site section.
+   * Check Varbase Blog site section page.
    */
-  public function testCheckVarbaseBlog() {
+  public function testCheckVarbaseBlogSiteSection() {
 
     // Given that the root super user was logged in to the site.
     $this->drupalLogin($this->rootUser);

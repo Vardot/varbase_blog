@@ -30,12 +30,14 @@ build:
           - composer require npm-asset/imagesloaded:~4.0
           - composer require npm-asset/ace-builds:~1.0
           - composer require drupal/vartheme_bs4:9.0.x-dev
-          - composer require drupal/vartheme_claro:3.0.x-dev
           - composer require drupal/varbase_core:9.0.x-dev
           - composer require drupal/varbase_media:9.0.x-dev
           - composer require drupal/varbase_seo:9.0.x-dev
           - composer require drupal/varbase_editor:9.0.x-dev
+          - composer require drupal/varbase_workflow:2.0.x-dev
           - composer require drupal/varbase_layout_builder:10.0.x-dev
+          - sudo chmod 775 -R .
+          - sudo chown www-data:$USER -R .
           - cat composer.json
           - ls -li ${SOURCE_DIR}/libraries
       phplint: {  }
