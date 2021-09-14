@@ -54,28 +54,6 @@ class VarbaseBlogTest extends WebDriverTestBase {
   }
 
   /**
-   * Check Varbase Blog site section page.
-   */
-  public function testCheckVarbaseBlogSiteSection() {
-
-    // Given that the root super user was logged in to the site.
-    $this->drupalLogin($this->rootUser);
-
-    // Navigate to the Varbase Blog site section.
-    $this->drupalGet('blog');
-
-    $blog_text = $this->t('Blog');
-    $this->assertSession()->pageTextContains($blog_text);
-
-    $no_blog_posts_text = $this->t('There are no blog posts now!');
-    $this->assertSession()->pageTextContains($no_blog_posts_text);
-
-    $add_one_blog_post_now_text = $this->t('Add One Now');
-    $this->assertSession()->pageTextContains($add_one_blog_post_now_text);
-
-  }
-
-  /**
    * Check Varbase Blog content type.
    */
   public function testCheckVarbaseBlogContentType() {
