@@ -28,6 +28,11 @@ class VarbaseBlogTest extends WebDriverTestBase {
    * {@inheritdoc}
    */
   protected static $modules = [
+    'varbase_core',
+    'varbase_media',
+    'varbase_seo',
+    'varbase_editor',
+    'varbase_layout_builder',
     'varbase_blog',
     'node',
     'taxonomy',
