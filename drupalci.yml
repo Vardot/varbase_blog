@@ -25,7 +25,7 @@ build:
           - rm composer.lock
           - composer require --dev drupal/core-dev:~9.0
           - composer require --dev phpspec/prophecy-phpunit:*
-          - composer require --dev pphpunit/phpunit:~8.0 --with-all-dependencies
+          - composer require --dev phpunit/phpunit:~8.0 --with-all-dependencies
           - composer require npm-asset/dropzone:~4.0
           - composer require npm-asset/blazy:~1.0
           - composer require npm-asset/slick-carousel:~1.0 
