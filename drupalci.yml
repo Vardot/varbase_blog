@@ -23,7 +23,8 @@ build:
           - composer config --unset extra.installer-paths.libraries\/\{\$name\}
           - composer config --json extra.installer-paths.libraries\/\{\$name\} '["type:drupal-library", "type:bower-asset", "type:npm-asset"]'
           - rm composer.lock
-          - composer require drupal/core-dev:~9.0
+          - composer require --dev drupal/core-dev:~9.0
+          - composer require --dev phpspec/prophecy-phpunit:^2
           - composer require npm-asset/dropzone:~4.0
           - composer require npm-asset/blazy:~1.0
           - composer require npm-asset/slick-carousel:~1.0 
