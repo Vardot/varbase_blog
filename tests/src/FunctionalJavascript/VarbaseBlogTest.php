@@ -39,9 +39,9 @@ class VarbaseBlogTest extends WebDriverTestBase {
     'varbase_blog',
   ];
 
-   /**
-   * {@inheritdoc}
-   */
+  /**
+  * {@inheritdoc}
+  */
   protected function setUp(): void {
     parent::setUp();
 
