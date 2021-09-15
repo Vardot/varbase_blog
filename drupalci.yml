@@ -22,6 +22,7 @@ build:
           - composer config --json extra.installer-paths.web\/libraries\/objectfitpolyfill '["bower-asset/objectfitpolyfill"]'
           - composer config --unset extra.installer-paths.libraries\/\{\$name\}
           - composer config --json extra.installer-paths.libraries\/\{\$name\} '["type:drupal-library", "type:bower-asset", "type:npm-asset"]'
+          - rm composer.lock
           - composer require --dev phpspec/prophecy-phpunit:*
           - composer require phpunit/phpunit:~9.0 --with-all-dependencies
           - composer require npm-asset/dropzone:~4.0
