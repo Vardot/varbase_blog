@@ -34,22 +34,13 @@
     "drupal/varbase_core": "~8.0 || 8.8.x-dev",
     "drupal/varbase_media": "~7.0 || 8.7.x-dev",
     "drupal/varbase_seo": "~6.0 || 8.6.x-dev",
-    "drupal/taxonomy_menu": "3.4",
-    "drupal/length_indicator": "~1.0",
-    "drupal/advanced_text_formatter": "~2.0",
-    "drupal/maxlength": "~1.0"
+    "drupal/taxonomy_menu": "~3.0"
   },
   "extra": {
     "branch-alias": {
       "dev-8.x-8.x": "8.8.x-dev"
     },
     "enable-patching": true,
-    "composer-exit-on-patch-failure": true,
-    "patches": {
-      "drupal/taxonomy_menu": {
-        "Issue #2939143: Fixed Undefined method TaxonomyMenu::generateTaxonomyLinks()":
-        "https://www.drupal.org/files/issues/2018-12-23/2939143-10.patch"
-      }
-    }
+    "composer-exit-on-patch-failure": true
   }
 }
