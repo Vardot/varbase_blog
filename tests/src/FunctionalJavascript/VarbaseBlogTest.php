@@ -27,6 +27,11 @@ class VarbaseBlogTest extends WebDriverTestBase {
   /**
    * {@inheritdoc}
    */
+  protected $strictConfigSchema = FALSE;
+
+  /**
+   * {@inheritdoc}
+   */
   protected static $modules = [
     'varbase_core',
     'varbase_media',
