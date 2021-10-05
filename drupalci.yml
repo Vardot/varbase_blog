@@ -42,6 +42,7 @@ build:
           - composer require drupal/varbase_layout_builder:10.0.x-dev
           - sudo chmod 775 -R .
           - sudo chown www-data:$USER -R .
+          - rm -rf ${SOURCE_DIR}/modules/contrib/entity/tests/modules
           - cat composer.json
           - ls -li ${SOURCE_DIR}/libraries
       phplint: {  }
