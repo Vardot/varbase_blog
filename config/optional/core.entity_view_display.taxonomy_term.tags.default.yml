@@ -226,6 +226,10 @@ third_party_settings:
                   class: _none
               scroll_effects:
                 class: null
+              horizontal_alignment:
+                class: null
+              vertical_alignment:
+                class: null
           container_wrapper_bg_color_class: ""
           container_wrapper_bg_media: null
           container: container-fluid
@@ -240,8 +244,10 @@ third_party_settings:
           breakpoints: {}
           layout_regions_classes:
             section_header: null
-          remove_gutters: "0"
+          remove_gutters: "1"
           gutters_between: null
+          container_width: ""
+          context_mapping: {}
         components:
           0e7fde5d-2b65-45a7-9702-812ad331ab4a:
             uuid: 0e7fde5d-2b65-45a7-9702-812ad331ab4a
@@ -354,6 +360,7 @@ third_party_settings:
         - "bootstrap_layout_builder:blb_col_3"
         - "bootstrap_layout_builder:blb_col_4"
         - "bootstrap_layout_builder:blb_col_6"
+      restricted_categories: {}
 id: taxonomy_term.tags.default
 targetEntityType: taxonomy_term
 bundle: tags
@@ -367,4 +374,5 @@ content:
     settings: {}
     third_party_settings: {}
 hidden:
+  langcode: true
   search_api_excerpt: true

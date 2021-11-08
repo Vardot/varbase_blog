@@ -495,6 +495,10 @@ third_party_settings:
                 class: _none
               margin_bottom:
                 class: _none
+              horizontal_alignment:
+                class: null
+              vertical_alignment:
+                class: null
               border:
                 border_style:
                   class: null
@@ -538,10 +542,6 @@ third_party_settings:
                   class: _none
               scroll_effects:
                 class: null
-              horizontal_alignment:
-                class: null
-              vertical_alignment:
-                class: null
           container_wrapper_bg_color_class: ""
           container_wrapper_bg_media: null
           container: container-fluid
@@ -556,9 +556,9 @@ third_party_settings:
           breakpoints: {}
           layout_regions_classes:
             section_header: null
-          remove_gutters: "0"
-          gutters_between: null
           container_width: ""
+          remove_gutters: "1"
+          gutters_between: null
           context_mapping: {}
         components:
           36518ce9-7c61-41e1-9909-f4bccc94168e:
@@ -691,6 +691,7 @@ third_party_settings:
         - "bootstrap_layout_builder:blb_col_3"
         - "bootstrap_layout_builder:blb_col_4"
         - "bootstrap_layout_builder:blb_col_6"
+      restricted_categories: {}
 id: taxonomy_term.blog_categories.default
 targetEntityType: taxonomy_term
 bundle: blog_categories

@@ -551,7 +551,7 @@ third_party_settings:
           breakpoints: {}
           layout_regions_classes:
             section_header: null
-          remove_gutters: "0"
+          remove_gutters: "1"
           gutters_between: null
           container_width: ""
           context_mapping: {}
@@ -686,6 +686,7 @@ third_party_settings:
         - "bootstrap_layout_builder:blb_col_3"
         - "bootstrap_layout_builder:blb_col_4"
         - "bootstrap_layout_builder:blb_col_6"
+      restricted_categories: {}
 id: taxonomy_term.blog_categories.full
 targetEntityType: taxonomy_term
 bundle: blog_categories
