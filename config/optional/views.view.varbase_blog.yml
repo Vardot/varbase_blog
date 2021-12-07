@@ -921,7 +921,7 @@ display:
       style:
         type: default
         options:
-          row_class: "row gx-0"
+          row_class: ""
           default_row_class: true
           uses_fields: false
       row:
@@ -1094,7 +1094,7 @@ display:
       style:
         type: default
         options:
-          row_class: "row gx-0"
+          row_class: ""
           default_row_class: true
           uses_fields: false
       row:
@@ -1112,8 +1112,6 @@ display:
             group: false
             group_field: node_field_data|created
             group_field_function: ""
-          delta_fieldset:
-            delta_fields: {}
           advanced_fieldset:
             advanced: false
       block_description: "Most Recent blog posts"
