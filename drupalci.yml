@@ -33,13 +33,13 @@ build:
           - composer require bower-asset/jqueryui-touch-punch:dev-master
           - composer require npm-asset/imagesloaded:~4.0
           - composer require npm-asset/ace-builds:~1.0
-          - composer require drupal/vartheme_bs4:9.0.x-dev
-          - composer require drupal/varbase_core:9.0.x-dev
-          - composer require drupal/varbase_media:9.0.x-dev
+          - composer require drupal/vartheme_bs5:1.0.x-dev
+          - composer require drupal/varbase_core:9.1.x-dev
+          - composer require drupal/varbase_media:9.1.x-dev
           - composer require drupal/varbase_seo:9.0.x-dev
-          - composer require drupal/varbase_editor:9.0.x-dev
+          - composer require drupal/varbase_editor:9.1.x-dev
           - composer require drupal/varbase_workflow:2.0.x-dev
-          - composer require drupal/varbase_layout_builder:10.0.x-dev
+          - composer require drupal/varbase_layout_builder:10.1.x-dev
           - sudo chmod 775 -R .
           - sudo chown www-data:$USER -R .
           - rm -rf ${SOURCE_DIR}/modules/contrib/entity/tests/modules
