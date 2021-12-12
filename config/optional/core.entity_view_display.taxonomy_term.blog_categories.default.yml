@@ -556,9 +556,9 @@ third_party_settings:
           breakpoints: {}
           layout_regions_classes:
             section_header: null
-          container_width: ""
-          remove_gutters: "1"
+          remove_gutters: "0"
           gutters_between: null
+          container_width: ""
           context_mapping: {}
         components:
           36518ce9-7c61-41e1-9909-f4bccc94168e:
