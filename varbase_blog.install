@@ -21,6 +21,12 @@ function varbase_blog_install() {
   ModuleInstallerFactory::importConfigsFromScanedDirectory('varbase_blog', '/^field.storage.*\\.(yml)$/i');
   ModuleInstallerFactory::importConfigsFromScanedDirectory('varbase_blog', '/^.*(settings.yml)$/i');
 
+  // Entity updates to clear up any mismatched entity and/or field definitions
+  // And Fix changes were detected in the entity type and field definitions.
+  \Drupal::classResolver()
+    ->getInstanceFromDefinition(EntityDefinitionUpdateManager::class)
+    ->applyUpdates();
+
   // Forced configs import on install.
   $forced_configs = [
     'views.view.taxonomy_term',
