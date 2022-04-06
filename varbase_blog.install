@@ -57,3 +57,14 @@ function varbase_blog_update_9001() {
   }
 
 }
+
+/**
+ * Issue #3272207: Switch to use the Module Installer Factory.
+ *
+ * In the Varbase Blog (Corporate Blog) module.
+ */
+function varbase_blog_update_90002() {
+  // Set the weight of the module after installation of list of modules.
+  // To make sure that any hook or event subscriber workes after all used modules.
+  ModuleInstallerFactory::setModuleWeightAfterInstallation('varbase_blog');
+}
