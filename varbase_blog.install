@@ -6,6 +6,7 @@
  */
 
 use Drupal\Core\Config\InstallStorage;
+use Vardot\Entity\EntityDefinitionUpdateManager;
 use Vardot\Installer\ModuleInstallerFactory;
 
 /**
