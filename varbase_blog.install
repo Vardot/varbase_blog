@@ -5,10 +5,7 @@
  * Install, update and uninstall functions for the varbase blog module.
  */
 
-use Symfony\Component\Yaml\Yaml;
 use Drupal\Core\Config\InstallStorage;
-use Drupal\Core\Config\StorageInterface;
-use Drupal\Core\Config\FileStorage;
 use Vardot\Installer\ModuleInstallerFactory;
 
 /**
@@ -23,6 +20,12 @@ function varbase_blog_install() {
   // Install optional configs.
   ModuleInstallerFactory::importConfigsFromScanedDirectory('varbase_blog', '/^field.storage.*\\.(yml)$/i');
   ModuleInstallerFactory::importConfigsFromScanedDirectory('varbase_blog', '/^.*(settings.yml)$/i');
+
+  // Entity updates to clear up any mismatched entity and/or field definitions
+  // And Fix changes were detected in the entity type and field definitions.
+  \Drupal::classResolver()
+    ->getInstanceFromDefinition(EntityDefinitionUpdateManager::class)
+    ->applyUpdates();
 
   // Forced configs import on install.
   $forced_configs = [
