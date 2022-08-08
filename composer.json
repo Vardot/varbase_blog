@@ -27,14 +27,14 @@
     }
   },
   "require": {
-    "composer/installers": "~1.0 || ~2.0",
-    "oomphinc/composer-installers-extender": "~1.0 || ~2.0",
+    "composer/installers": "~2.0",
+    "oomphinc/composer-installers-extender": "~2.0",
     "cweagans/composer-patches": "~1.0",
-    "drupal/core": "~9.0",
+    "drupal/core": "~9.0 || ~10.0",
     "vardot/entity-definition-update-manager": "~1.0",
     "vardot/module-installer-factory": "~1.0",
-    "drupal/varbase_core": "~9.0.0 || 9.0.x-dev",
-    "drupal/varbase_media": "~9.0.0 || 9.0.x-dev",
+    "drupal/varbase_core": "~9.0 || 9.0.x-dev",
+    "drupal/varbase_media": "~9.0 || 9.0.x-dev",
     "drupal/varbase_seo": "^9 || 9.0.x-dev",
     "drupal/varbase_layout_builder": "~9.0 || 9.0.x-dev || ~10.0.0 || 10.0.x-dev",
     "drupal/taxonomy_menu": "~3.0"
