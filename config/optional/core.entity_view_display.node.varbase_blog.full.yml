@@ -617,7 +617,7 @@ third_party_settings:
                 type: entity_reference_entity_view
                 label: hidden
                 settings:
-                  view_mode: ratio_16_9
+                  view_mode: m16_09
                 third_party_settings: {  }
             weight: 1
             additional:
@@ -637,7 +637,7 @@ third_party_settings:
                       background_repeat: no-repeat
                       background_attachment: not_fixed
                       background_size: cover
-                  background_edgetoedge: null
+                  background_edgetoedge: false
                   text_color:
                     class: null
                   text_alignment:
@@ -662,6 +662,10 @@ third_party_settings:
                     class: _none
                   margin_bottom:
                     class: _none
+                  horizontal_alignment:
+                    class: null
+                  vertical_alignment:
+                    class: null
                   border:
                     border_style:
                       class: null
@@ -1513,8 +1517,6 @@ third_party_settings:
           - 'entity_field:node:title'
           - 'entity_field:user:name'
           - 'entity_field:user:user_picture'
-_core:
-  default_config_hash: JZ2xxOrIwps3gITc1irBkA-LIeuZGph09xeGgbUyLCs
 id: node.varbase_blog.full
 targetEntityType: node
 bundle: varbase_blog

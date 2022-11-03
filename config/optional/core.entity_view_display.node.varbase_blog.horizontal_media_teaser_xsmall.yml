@@ -40,6 +40,11 @@ third_party_settings:
         - node_title
         - node_post_date
     fields:
+      node_post_date:
+        plugin_id: node_post_date
+        weight: 2
+        label: hidden
+        formatter: ds_post_date_short
       node_title:
         plugin_id: node_title
         weight: 1
@@ -49,11 +54,6 @@ third_party_settings:
           link: true
           wrapper: h3
           class: ''
-      node_post_date:
-        plugin_id: node_post_date
-        weight: 2
-        label: hidden
-        formatter: ds_post_date_short
 id: node.varbase_blog.horizontal_media_teaser_xsmall
 targetEntityType: node
 bundle: varbase_blog
@@ -100,7 +100,7 @@ content:
     type: entity_reference_entity_view
     label: hidden
     settings:
-      view_mode: ratio_16_9
+      view_mode: i16_09
       link: false
     third_party_settings:
       ds:

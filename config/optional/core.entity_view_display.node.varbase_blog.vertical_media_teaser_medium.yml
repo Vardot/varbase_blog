@@ -1,4 +1,3 @@
-uuid: 929a653e-7037-4524-be56-b3d15a3f898e
 langcode: en
 status: true
 dependencies:
@@ -47,6 +46,38 @@ third_party_settings:
         - node_post_date
         - node_link
     fields:
+      node_author:
+        plugin_id: node_author
+        weight: 10
+        label: hidden
+        formatter: author
+        ft:
+          id: expert
+          settings:
+            lb: ''
+            lbw: false
+            lbw-el: ''
+            lbw-cl: ''
+            lbw-at: ''
+            lb-col: false
+            ow: false
+            ow-el: ''
+            ow-cl: ''
+            ow-at: ''
+            ow-def-at: false
+            ow-def-cl: false
+            fis: false
+            fis-el: ''
+            fis-cl: ''
+            fis-at: ''
+            fis-def-at: false
+            fi: true
+            fi-el: span
+            fi-cl: author-name
+            fi-at: ''
+            fi-def-at: false
+            prefix: ''
+            suffix: ''
       node_link:
         plugin_id: node_link
         weight: 11
@@ -59,21 +90,6 @@ third_party_settings:
           class: 'read-more pull-right'
         ft:
           id: minimal
-          settings:
-            lb: ''
-            lb-col: false
-            classes: {  }
-      node_title:
-        plugin_id: node_title
-        weight: 9
-        label: hidden
-        formatter: default
-        settings:
-          link: true
-          wrapper: h3
-          class: card-title
-        ft:
-          id: default
           settings:
             lb: ''
             lb-col: false
@@ -110,38 +126,21 @@ third_party_settings:
             fi-def-at: false
             prefix: ''
             suffix: ''
-      node_author:
-        plugin_id: node_author
-        weight: 10
+      node_title:
+        plugin_id: node_title
+        weight: 9
         label: hidden
-        formatter: author
+        formatter: default
+        settings:
+          link: true
+          wrapper: h3
+          class: card-title
         ft:
-          id: expert
+          id: default
           settings:
             lb: ''
-            lbw: false
-            lbw-el: ''
-            lbw-cl: ''
-            lbw-at: ''
             lb-col: false
-            ow: false
-            ow-el: ''
-            ow-cl: ''
-            ow-at: ''
-            ow-def-at: false
-            ow-def-cl: false
-            fis: false
-            fis-el: ''
-            fis-cl: ''
-            fis-at: ''
-            fis-def-at: false
-            fi: true
-            fi-el: span
-            fi-cl: author-name
-            fi-at: ''
-            fi-def-at: false
-            prefix: ''
-            suffix: ''
+            classes: {  }
   field_group:
     group_description:
       children:
@@ -199,8 +198,6 @@ third_party_settings:
         attributes: ''
         effect: none
         speed: fast
-_core:
-  default_config_hash: B6ipJfmV6qFd1eTX4-QM9-EouUiVRONtbJ1gdQberjA
 id: node.varbase_blog.vertical_media_teaser_medium
 targetEntityType: node
 bundle: varbase_blog
@@ -218,6 +215,7 @@ content:
       more_link: false
       more_class: card-link
       more_text: 'Read More'
+      more_aria_label: 'Read more about [node:title]'
       summary_handler: full
       trim_options:
         text: false
@@ -257,7 +255,7 @@ content:
     type: entity_reference_entity_view
     label: hidden
     settings:
-      view_mode: ratio_16_9
+      view_mode: i16_09
       link: false
     third_party_settings:
       ds:
@@ -272,7 +270,7 @@ content:
             lb-col: false
             ow: true
             ow-el: ''
-            ow-cl: card-top-image
+            ow-cl: card-img-top
             ow-at: ''
             ow-def-at: true
             ow-def-cl: true
