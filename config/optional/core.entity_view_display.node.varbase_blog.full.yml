@@ -617,7 +617,7 @@ third_party_settings:
                 type: entity_reference_entity_view
                 label: hidden
                 settings:
-                  view_mode: m16_09
+                  view_mode: media_16_09
                 third_party_settings: {  }
             weight: 1
             additional:

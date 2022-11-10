@@ -46,54 +46,6 @@ third_party_settings:
         - node_post_date
         - node_link
     fields:
-      node_author:
-        plugin_id: node_author
-        weight: 10
-        label: hidden
-        formatter: author
-        ft:
-          id: expert
-          settings:
-            lb: ''
-            lbw: false
-            lbw-el: ''
-            lbw-cl: ''
-            lbw-at: ''
-            lb-col: false
-            ow: false
-            ow-el: ''
-            ow-cl: ''
-            ow-at: ''
-            ow-def-at: false
-            ow-def-cl: false
-            fis: false
-            fis-el: ''
-            fis-cl: ''
-            fis-at: ''
-            fis-def-at: false
-            fi: true
-            fi-el: span
-            fi-cl: author-name
-            fi-at: ''
-            fi-def-at: false
-            prefix: ''
-            suffix: ''
-      node_link:
-        plugin_id: node_link
-        weight: 11
-        label: hidden
-        formatter: default
-        settings:
-          'link text': 'Read more'
-          'link class': card-link
-          wrapper: div
-          class: 'read-more pull-right'
-        ft:
-          id: minimal
-          settings:
-            lb: ''
-            lb-col: false
-            classes: {  }
       node_post_date:
         plugin_id: node_post_date
         weight: 11
@@ -126,6 +78,38 @@ third_party_settings:
             fi-def-at: false
             prefix: ''
             suffix: ''
+      node_author:
+        plugin_id: node_author
+        weight: 10
+        label: hidden
+        formatter: author
+        ft:
+          id: expert
+          settings:
+            lb: ''
+            lbw: false
+            lbw-el: ''
+            lbw-cl: ''
+            lbw-at: ''
+            lb-col: false
+            ow: false
+            ow-el: ''
+            ow-cl: ''
+            ow-at: ''
+            ow-def-at: false
+            ow-def-cl: false
+            fis: false
+            fis-el: ''
+            fis-cl: ''
+            fis-at: ''
+            fis-def-at: false
+            fi: true
+            fi-el: span
+            fi-cl: author-name
+            fi-at: ''
+            fi-def-at: false
+            prefix: ''
+            suffix: ''
       node_title:
         plugin_id: node_title
         weight: 9
@@ -137,6 +121,22 @@ third_party_settings:
           class: card-title
         ft:
           id: default
+          settings:
+            lb: ''
+            lb-col: false
+            classes: {  }
+      node_link:
+        plugin_id: node_link
+        weight: 11
+        label: hidden
+        formatter: default
+        settings:
+          'link text': 'Read more'
+          'link class': card-link
+          wrapper: div
+          class: 'read-more pull-right'
+        ft:
+          id: minimal
           settings:
             lb: ''
             lb-col: false
@@ -255,7 +255,7 @@ content:
     type: entity_reference_entity_view
     label: hidden
     settings:
-      view_mode: i16_09
+      view_mode: media_16_09
       link: false
     third_party_settings:
       ds:

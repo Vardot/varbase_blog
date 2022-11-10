@@ -60,16 +60,16 @@ third_party_settings:
         - body
         - field_tags
     fields:
-      node_author:
-        plugin_id: node_author
-        weight: 1
-        label: hidden
-        formatter: author
       node_post_date:
         plugin_id: node_post_date
         weight: 2
         label: hidden
         formatter: ds_post_date_short
+      node_author:
+        plugin_id: node_author
+        weight: 1
+        label: hidden
+        formatter: author
 id: node.varbase_blog.default
 targetEntityType: node
 bundle: varbase_blog
@@ -94,7 +94,7 @@ content:
     type: entity_reference_entity_view
     label: hidden
     settings:
-      view_mode: m16_09
+      view_mode: media_video_16_09
       link: false
     third_party_settings:
       ds:
