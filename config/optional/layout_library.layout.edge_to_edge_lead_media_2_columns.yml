@@ -9,7 +9,8 @@ layout:
   -
     layout_id: 'bootstrap_layout_builder:blb_col_1'
     layout_settings:
-      label: null
+      label: ''
+      context_mapping: {  }
       container_wrapper_classes: ''
       container_wrapper_attributes: null
       container_wrapper:
@@ -96,22 +97,28 @@ layout:
               class: _none
           scroll_effects:
             class: null
+          horizontal_alignment:
+            class: null
+          vertical_alignment:
+            class: null
       container_wrapper_bg_color_class: ''
       container_wrapper_bg_media: null
       container: w-100
-      section_classes: ''
+      section_classes: object-fit-media
       section_attributes: null
       regions_classes:
         blb_region_col_1: ''
         section_header: ''
       regions_attributes:
         blb_region_col_1: {  }
-        section_header: {  }
+        section_header: null
       breakpoints: {  }
-      layout_regions_classes: {  }
+      layout_regions_classes:
+        section_header: null
       container_wrapper_id: ''
       remove_gutters: '1'
       gutters_between: null
+      container_width: ''
     components:
       5c07b1a8-5848-46b0-9722-5522d3f897d1:
         uuid: 5c07b1a8-5848-46b0-9722-5522d3f897d1
