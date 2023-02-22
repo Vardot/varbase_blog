@@ -37,7 +37,7 @@
     "drupal/varbase_media": "~10.0 || 10.0.x-dev",
     "drupal/varbase_seo": "~10.0 || 10.0.x-dev",
     "drupal/varbase_layout_builder": "~10.1.0 || 10.1.x-dev",
-    "drupal/taxonomy_menu": "~3.0"
+    "drupal/taxonomy_menu": "3.x-dev"
   },
   "extra": {
     "enable-patching": true,
