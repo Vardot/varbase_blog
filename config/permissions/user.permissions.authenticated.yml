@@ -1,0 +1,4 @@
+id: authenticated
+permissions:
+  - 'delete own varbase_blog content'
+  - 'edit own varbase_blog content'
