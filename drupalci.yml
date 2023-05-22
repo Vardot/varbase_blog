@@ -29,8 +29,9 @@ build:
           - composer require bower-asset/jqueryui-touch-punch:dev-master
           - composer require npm-asset/imagesloaded:~4.0
           - composer require npm-asset/ace-builds:~1.0
-          - composer require drupal/vartheme_bs5:1.0.x-dev
+          - composer require drupal/vartheme_bs5:3.0.x-dev
           - composer require drupal/varbase_core:10.0.x-dev
+          - composer require drupal/varbase_components:2.0.x-dev
           - composer require drupal/varbase_media:10.0.x-dev
           - composer require drupal/varbase_seo:10.0.x-dev
           - composer require drupal/varbase_editor:10.0.x-dev

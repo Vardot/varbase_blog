@@ -22,18 +22,14 @@ class VarbaseBlogTest extends WebDriverTestBase {
   /**
    * {@inheritdoc}
    */
-  protected $defaultTheme = 'vartheme_bs4';
-
-  /**
-   * {@inheritdoc}
-   */
-  protected $strictConfigSchema = FALSE;
+  protected $defaultTheme = 'vartheme_bs5';
 
   /**
    * {@inheritdoc}
    */
   protected static $modules = [
     'varbase_core',
+    'varbase_components',
     'varbase_media',
     'varbase_editor',
     'varbase_admin',
