@@ -4,7 +4,7 @@ dependencies:
   config:
     - core.entity_view_mode.node.featured_card_xsmall
     - core.entity_view_mode.node.impressed_card_medium
-    -p-5 mb-4 bg-light rounded-3 core.entity_view_mode.node.text_card_small
+    - core.entity_view_mode.node.text_card_small
     - node.type.varbase_blog
     - taxonomy.vocabulary.blog_categories
     - taxonomy.vocabulary.tags
