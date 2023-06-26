@@ -1,0 +1,134 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.impressed_card_medium
+    - field.field.node.varbase_blog.body
+    - field.field.node.varbase_blog.field_image
+    - field.field.node.varbase_blog.field_video
+    - field.field.node.varbase_blog.field_media
+    - node.type.varbase_blog
+  module:
+    - ds
+    - smart_trim
+    - varbase_components
+third_party_settings:
+  ds:
+    layout:
+      id: pattern_card_impressed
+      library: null
+      disable_css: false
+      entity_classes: all_classes
+      settings:
+        pattern:
+          field_templates: default
+          settings:
+            style_size: medium
+            card_attributes: ''
+            content_attributes: ''
+            card_classes: ''
+            media_position: top
+    regions:
+      media:
+        - field_image
+        - field_video
+        - field_media
+      content:
+        - node_title
+        - body
+    fields:
+      node_title:
+        plugin_id: node_title
+        weight: 1
+        label: hidden
+        formatter: default
+        settings:
+          link: true
+          wrapper: h3
+          class: card-title
+        ft:
+          id: default
+          settings:
+            lb: ''
+            lb-col: false
+            classes: {  }
+id: node.varbase_blog.impressed_card_medium
+targetEntityType: node
+bundle: varbase_blog
+mode: impressed_card_medium
+content:
+  body:
+    type: smart_trim
+    label: hidden
+    settings:
+      trim_length: 30
+      trim_type: words
+      trim_suffix: ' ...'
+      summary_handler: full
+      trim_options:
+        text: true
+      more_link: '0'
+      more_text: More
+      more_class: more-link
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_image:
+    type: entity_reference_entity_view
+    label: hidden
+    settings:
+      view_mode: media_16_09
+      link: false
+    third_party_settings:
+      ds:
+        ft:
+          id: expert
+          settings:
+            lb: ''
+            lbw: false
+            lbw-el: ''
+            lbw-cl: ''
+            lbw-at: ''
+            lb-col: false
+            ow: true
+            ow-el: a
+            ow-cl: ''
+            ow-at: 'href="[node:url]"'
+            ow-def-at: true
+            ow-def-cl: true
+            fis: false
+            fis-el: ''
+            fis-cl: ''
+            fis-at: ''
+            fis-def-at: true
+            fi: false
+            fi-el: ''
+            fi-cl: ''
+            fi-at: ''
+            fi-def-at: true
+            prefix: ''
+            suffix: ''
+    weight: 0
+    region: media
+  field_video:
+    type: entity_reference_entity_view
+    label: hidden
+    settings:
+      view_mode: media_16_09
+      link: false
+    third_party_settings: {  }
+    weight: 0
+    region: media
+  field_media:
+    type: entity_reference_entity_view
+    label: hidden
+    settings:
+      view_mode: media_16_09
+      link: false
+    third_party_settings: {  }
+    weight: 0
+    region: media
+hidden:
+  content_moderation_control: true
+  langcode: true
+  links: true

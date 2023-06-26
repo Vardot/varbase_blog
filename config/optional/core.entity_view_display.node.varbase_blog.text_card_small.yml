@@ -1,0 +1,77 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.text_card_small
+    - node.type.varbase_blog
+  module:
+    - ds
+    - smart_trim
+    - varbase_components
+third_party_settings:
+  ds:
+    layout:
+      id: pattern_card_text
+      library: null
+      disable_css: false
+      entity_classes: all_classes
+      settings:
+        pattern:
+          field_templates: only_content
+          settings:
+            style_size: small
+            card_attributes: ''
+            content_attributes: ''
+            card_classes: ''
+            media_position: top
+    regions:
+      content:
+        - node_title
+        - body
+    fields:
+      node_title:
+        plugin_id: node_title
+        weight: 1
+        label: hidden
+        formatter: default
+        settings:
+          link: true
+          wrapper: h3
+          class: card-title
+        ft:
+          id: default
+          settings:
+            lb: ''
+            lb-col: false
+            classes: {  }
+id: node.varbase_blog.text_card_small
+targetEntityType: node
+bundle: varbase_blog
+mode: text_card_small
+content:
+  body:
+    type: smart_trim
+    label: hidden
+    settings:
+      trim_length: 20
+      trim_type: words
+      trim_suffix: ' ...'
+      wrap_output: false
+      wrap_class: trimmed
+      more:
+        display_link: false
+        target_blank: false
+        link_trim_only: false
+        class: more-link
+        text: More
+        aria_label: 'Read more about [node:title]'
+      summary_handler: full
+      trim_options:
+        text: true
+    third_party_settings: {  }
+    weight: 2
+    region: content
+hidden:
+  content_moderation_control: true
+  langcode: true
+  links: true

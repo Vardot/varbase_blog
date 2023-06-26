@@ -1,0 +1,124 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.featured_card_small
+    - field.field.node.varbase_blog.body
+    - field.field.node.varbase_blog.field_image
+    - field.field.node.varbase_blog.field_video
+    - field.field.node.varbase_blog.field_media
+    - node.type.varbase_blog
+  module:
+    - ds
+    - user
+    - varbase_components
+third_party_settings:
+  ds:
+    layout:
+      id: pattern_card_featured
+      library: null
+      disable_css: false
+      entity_classes: all_classes
+      settings:
+        pattern:
+          field_templates: default
+          settings:
+            style_size: small
+            card_attributes: ''
+            row_attributes: ''
+            left_column_attributes: ''
+            right_column_attributes: ''
+            columns_sm_size: '06_06'
+            columns_md_size: ''
+            columns_lg_size: ''
+            columns_xl_size: ''
+            columns_xxl_size: ''
+            media_position: start
+    regions:
+      media:
+        - field_image
+        - field_video
+        - field_media
+      content:
+        - node_title
+    fields:
+      node_title:
+        plugin_id: node_title
+        weight: 1
+        label: hidden
+        formatter: default
+        settings:
+          link: true
+          wrapper: h3
+          class: card-title
+        ft:
+          id: default
+          settings:
+            lb: ''
+            lb-col: false
+            classes: {  }
+id: node.varbase_blog.featured_card_small
+targetEntityType: node
+bundle: varbase_blog
+mode: featured_card_small
+content:
+  field_image:
+    type: entity_reference_entity_view
+    label: hidden
+    settings:
+      view_mode: media_16_09
+      link: false
+    third_party_settings:
+      ds:
+        ft:
+          id: expert
+          settings:
+            lb: ''
+            lbw: false
+            lbw-el: ''
+            lbw-cl: ''
+            lbw-at: ''
+            lb-col: false
+            ow: true
+            ow-el: a
+            ow-cl: ''
+            ow-at: 'href="[node:url]"'
+            ow-def-at: true
+            ow-def-cl: true
+            fis: false
+            fis-el: ''
+            fis-cl: ''
+            fis-at: ''
+            fis-def-at: true
+            fi: false
+            fi-el: ''
+            fi-cl: ''
+            fi-at: ''
+            fi-def-at: true
+            prefix: ''
+            suffix: ''
+    weight: 1
+    region: media
+  field_video:
+    type: entity_reference_entity_view
+    label: hidden
+    settings:
+      view_mode: media_16_09
+      link: false
+    third_party_settings: {  }
+    weight: 1
+    region: media
+  field_media:
+    type: entity_reference_entity_view
+    label: hidden
+    settings:
+      view_mode: media_16_09
+      link: false
+    third_party_settings: {  }
+    weight: 1
+    region: media
+hidden:
+  content_moderation_control: true
+  body: true
+  langcode: true
+  links: true
