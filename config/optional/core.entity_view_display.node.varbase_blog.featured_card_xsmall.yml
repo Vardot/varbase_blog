@@ -4,8 +4,6 @@ dependencies:
   config:
     - core.entity_view_mode.node.featured_card_xsmall
     - field.field.node.varbase_blog.body
-    - field.field.node.varbase_blog.field_image
-    - field.field.node.varbase_blog.field_video
     - field.field.node.varbase_blog.field_media
     - node.type.varbase_blog
   module:
@@ -36,8 +34,6 @@ third_party_settings:
             media_position: start
     regions:
       media:
-        - field_image
-        - field_video
         - field_media
       content:
         - node_title
