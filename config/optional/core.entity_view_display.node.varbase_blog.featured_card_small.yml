@@ -22,16 +22,20 @@ third_party_settings:
           field_templates: default
           settings:
             style_size: small
-            card_attributes: ''
-            row_attributes: ''
-            left_column_attributes: ''
-            right_column_attributes: ''
+            card_border: true
+            media_position: start
+            columns_xs_size: ''
             columns_sm_size: '06_06'
             columns_md_size: ''
             columns_lg_size: ''
             columns_xl_size: ''
             columns_xxl_size: ''
-            media_position: start
+            utility_classes: ''
+            card_attributes: ''
+            content_attributes: ''
+            row_attributes: ''
+            start_column_attributes: ''
+            end_column_attributes: ''
     regions:
       media:
         - field_media

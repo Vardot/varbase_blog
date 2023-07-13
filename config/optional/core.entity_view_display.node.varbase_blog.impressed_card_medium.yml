@@ -22,10 +22,11 @@ third_party_settings:
           field_templates: default
           settings:
             style_size: medium
+            card_border: true
+            media_position: top
+            utility_classes: ''
             card_attributes: ''
             content_attributes: ''
-            card_classes: ''
-            media_position: top
     regions:
       media:
         - field_media
