@@ -22,7 +22,7 @@ third_party_settings:
           field_templates: only_content
           settings:
             style_size: xsmall
-            card_border: true
+            card_border: false
             media_position: start
             columns_xs_size: ''
             columns_sm_size: '06_06'
@@ -30,7 +30,7 @@ third_party_settings:
             columns_lg_size: ''
             columns_xl_size: ''
             columns_xxl_size: ''
-            utility_classes: ''
+            utility_classes: 'mb-3'
             card_attributes: ''
             content_attributes: ''
             row_attributes: ''

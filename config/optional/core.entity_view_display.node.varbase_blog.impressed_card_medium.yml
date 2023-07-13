@@ -24,7 +24,7 @@ third_party_settings:
             style_size: medium
             card_border: true
             media_position: top
-            utility_classes: ''
+            utility_classes: 'mb-4'
             card_attributes: ''
             content_attributes: ''
     regions:

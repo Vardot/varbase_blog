@@ -20,8 +20,8 @@ third_party_settings:
           field_templates: only_content
           settings:
             style_size: small
-            card_border: true
-            utility_classes: ''
+            card_border: false
+            utility_classes: 'mb-3'
             card_attributes: ''
             content_attributes: ''
     regions:
