@@ -19,7 +19,7 @@ third_party_settings:
       entity_classes: all_classes
       settings:
         pattern:
-          field_templates: default
+          field_templates: only_content
           settings:
             style_size: xsmall
             card_border: true
