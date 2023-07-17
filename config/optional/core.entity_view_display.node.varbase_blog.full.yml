@@ -50,7 +50,6 @@ third_party_settings:
         layout_id: 'bootstrap_layout_builder:blb_col_1'
         layout_settings:
           label: ''
-          context_mapping: {  }
           container_wrapper_classes: ''
           container_wrapper_attributes: null
           container_wrapper:
@@ -156,6 +155,7 @@ third_party_settings:
           layout_regions_classes:
             section_header: null
           container_wrapper_id: ''
+          context_mapping: {  }
           remove_gutters: '0'
           gutters_between: null
           container_width: ''
@@ -264,7 +264,6 @@ third_party_settings:
         layout_id: 'bootstrap_layout_builder:blb_col_2'
         layout_settings:
           label: ''
-          context_mapping: {  }
           container_wrapper_classes: ''
           container_wrapper_attributes: null
           container_wrapper:
@@ -390,6 +389,7 @@ third_party_settings:
               - col-12
               - col-12
           container_wrapper_id: ''
+          context_mapping: {  }
           remove_gutters: '1'
           gutters_between: 1
           container_width: ''
@@ -412,6 +412,15 @@ third_party_settings:
                   date_format: medium
                   custom_date_format: ''
                   timezone: ''
+                  tooltip:
+                    date_format: ''
+                    custom_date_format: ''
+                  time_diff:
+                    enabled: false
+                    future_format: '@interval hence'
+                    past_format: '@interval ago'
+                    granularity: 2
+                    refresh: 60
                 third_party_settings: {  }
             weight: 3
             additional:
@@ -1011,7 +1020,6 @@ third_party_settings:
         layout_id: 'bootstrap_layout_builder:blb_col_1'
         layout_settings:
           label: ''
-          context_mapping: {  }
           container_wrapper_classes: ''
           container_wrapper_attributes: null
           container_wrapper:
@@ -1117,6 +1125,7 @@ third_party_settings:
           layout_regions_classes:
             section_header: null
           container_wrapper_id: ''
+          context_mapping: {  }
           remove_gutters: '1'
           gutters_between: null
           container_width: ''
@@ -1229,7 +1238,6 @@ third_party_settings:
         layout_id: 'bootstrap_layout_builder:blb_col_1'
         layout_settings:
           label: ''
-          context_mapping: {  }
           container_wrapper_classes: ''
           container_wrapper_attributes: null
           container_wrapper:
@@ -1335,6 +1343,7 @@ third_party_settings:
           layout_regions_classes:
             section_header: null
           container_wrapper_id: ''
+          context_mapping: {  }
           remove_gutters: '1'
           gutters_between: null
           container_width: ''
@@ -1591,7 +1600,6 @@ hidden:
   field_blog_categories: true
   field_meta_tags: true
   field_yoast_seo: true
-  langcode: true
   layout_builder__layout: true
   layout_selection: true
   links: true

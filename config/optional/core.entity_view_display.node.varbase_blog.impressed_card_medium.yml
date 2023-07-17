@@ -4,12 +4,18 @@ dependencies:
   config:
     - core.entity_view_mode.node.impressed_card_medium
     - field.field.node.varbase_blog.body
+    - field.field.node.varbase_blog.field_blog_categories
     - field.field.node.varbase_blog.field_media
+    - field.field.node.varbase_blog.field_meta_tags
+    - field.field.node.varbase_blog.field_tags
+    - field.field.node.varbase_blog.field_yoast_seo
+    - field.field.node.varbase_blog.layout_builder__layout
+    - field.field.node.varbase_blog.layout_selection
     - node.type.varbase_blog
   module:
     - ds
     - smart_trim
-    - varbase_components
+    - user
 third_party_settings:
   ds:
     layout:
@@ -22,9 +28,11 @@ third_party_settings:
           field_templates: only_content
           settings:
             style_size: medium
-            card_border: true
+            card_border: 1
+            equal_height: 1
+            anchor_all: 1
             media_position: top
-            utility_classes: 'mb-4'
+            utility_classes: mb-4
             card_attributes: ''
             content_attributes: ''
     regions:
@@ -61,12 +69,18 @@ content:
       trim_length: 30
       trim_type: words
       trim_suffix: ' ...'
+      wrap_output: false
+      wrap_class: trimmed
+      more:
+        display_link: false
+        target_blank: false
+        link_trim_only: false
+        class: more-link
+        text: More
+        aria_label: 'Read more about [node:title]'
       summary_handler: full
       trim_options:
         text: true
-      more_link: '0'
-      more_text: More
-      more_class: more-link
     third_party_settings: {  }
     weight: 2
     region: content
@@ -81,5 +95,11 @@ content:
     region: media
 hidden:
   content_moderation_control: true
-  langcode: true
+  field_blog_categories: true
+  field_meta_tags: true
+  field_tags: true
+  field_yoast_seo: true
+  layout_builder__layout: true
+  layout_selection: true
   links: true
+  search_api_excerpt: true

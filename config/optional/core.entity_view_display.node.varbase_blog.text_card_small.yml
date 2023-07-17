@@ -3,11 +3,19 @@ status: true
 dependencies:
   config:
     - core.entity_view_mode.node.text_card_small
+    - field.field.node.varbase_blog.body
+    - field.field.node.varbase_blog.field_blog_categories
+    - field.field.node.varbase_blog.field_media
+    - field.field.node.varbase_blog.field_meta_tags
+    - field.field.node.varbase_blog.field_tags
+    - field.field.node.varbase_blog.field_yoast_seo
+    - field.field.node.varbase_blog.layout_builder__layout
+    - field.field.node.varbase_blog.layout_selection
     - node.type.varbase_blog
   module:
     - ds
     - smart_trim
-    - varbase_components
+    - user
 third_party_settings:
   ds:
     layout:
@@ -20,8 +28,10 @@ third_party_settings:
           field_templates: only_content
           settings:
             style_size: small
-            card_border: false
-            utility_classes: 'mb-3'
+            card_border: 0
+            equal_height: 1
+            anchor_all: 0
+            utility_classes: mb-3
             card_attributes: ''
             content_attributes: ''
     regions:
@@ -73,5 +83,12 @@ content:
     region: content
 hidden:
   content_moderation_control: true
-  langcode: true
+  field_blog_categories: true
+  field_media: true
+  field_meta_tags: true
+  field_tags: true
+  field_yoast_seo: true
+  layout_builder__layout: true
+  layout_selection: true
   links: true
+  search_api_excerpt: true
