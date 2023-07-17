@@ -28,9 +28,9 @@ third_party_settings:
           field_templates: only_content
           settings:
             style_size: small
-            card_border: 0
-            equal_height: 1
-            anchor_all: 0
+            card_border: false
+            equal_height: true
+            anchor_all: false
             utility_classes: mb-3
             card_attributes: ''
             content_attributes: ''
