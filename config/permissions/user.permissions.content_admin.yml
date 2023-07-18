@@ -14,5 +14,3 @@ permissions:
   - 'edit terms in tags'
   - 'reorder terms in blog_categories'
   - 'reorder terms in tags'
-  - 'view terms in blog_categories'
-  - 'view terms in tags'

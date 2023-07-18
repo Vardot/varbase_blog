@@ -1,4 +1,7 @@
 id: authenticated
 permissions:
-  - 'delete own varbase_blog content'
-  - 'edit own varbase_blog content'
+  - 'access content'
+  - 'view term names in blog_categories'
+  - 'view term names in tags'
+  - 'view terms in blog_categories'
+  - 'view terms in tags'
