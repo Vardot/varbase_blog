@@ -24,7 +24,7 @@ third_party_settings:
       entity_classes: all_classes
       settings:
         pattern:
-          field_templates: only_content
+          field_templates: default
           settings:
             style_size: xsmall
             card_border: false
@@ -37,7 +37,7 @@ third_party_settings:
             columns_lg_size: ''
             columns_xl_size: ''
             columns_xxl_size: ''
-            utility_classes: mb-3
+            utility_classes: ''
             card_attributes: ''
             content_attributes: ''
             row_attributes: ''

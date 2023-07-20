@@ -1,3 +1,4 @@
+uuid: 84e87fc1-87a7-4821-b5da-156c5b171dd6
 langcode: en
 status: true
 dependencies:
@@ -15,6 +16,8 @@ dependencies:
     - taxonomy
     - user
     - views_bootstrap
+_core:
+  default_config_hash: eX0mOJIdGrykREwZeOoDW8gNrd_W-0xVaObeKwxKFvU
 id: varbase_blog
 label: 'Varbase Blog'
 module: views
@@ -222,13 +225,14 @@ display:
         type: views_bootstrap_grid
         options:
           row_class: ''
-          default_row_class: true
+          default_row_class: false
           uses_fields: false
           col_xs: none
           col_sm: col-sm-12
           col_md: col-md-4
           col_lg: col-lg-4
           col_xl: col-xl-4
+          col_xxl: none
       row:
         type: 'ds_entity:node'
         options:
@@ -299,7 +303,7 @@ display:
       style:
         type: views_bootstrap_grid
         options:
-          row_class: ''
+          row_class: 'gy-4 g-sm-4'
           default_row_class: true
           uses_fields: false
           col_xs: none
@@ -307,6 +311,7 @@ display:
           col_md: col-md-4
           col_lg: col-lg-4
           col_xl: col-xl-4
+          col_xxl: none
       row:
         type: 'ds_entity:node'
         options:
@@ -344,7 +349,7 @@ display:
         arguments: false
         filters: true
         filter_groups: true
-      css_class: 'blog-listing card-deck equal-height-sm'
+      css_class: blog-listing
       display_description: 'General blog listing'
       display_extenders:
         metatag_display_extender:
@@ -431,7 +436,7 @@ display:
       style:
         type: views_bootstrap_grid
         options:
-          row_class: ''
+          row_class: 'gy-4 g-sm-4'
           default_row_class: true
           uses_fields: false
           col_xs: none
@@ -439,6 +444,7 @@ display:
           col_md: col-md-4
           col_lg: col-lg-4
           col_xl: col-xl-4
+          col_xxl: none
       row:
         type: 'ds_entity:node'
         options:
@@ -477,7 +483,7 @@ display:
         style: false
         row: false
         arguments: false
-      css_class: 'blog-listing card-deck equal-height-sm'
+      css_class: blog-listing
       use_ajax: true
       display_description: 'To list blog posts which are under the same Blog Category'
       link_display: custom_url
@@ -568,7 +574,7 @@ display:
       style:
         type: views_bootstrap_grid
         options:
-          row_class: ''
+          row_class: 'gy-4 g-sm-4'
           default_row_class: true
           uses_fields: false
           col_xs: none
@@ -576,6 +582,7 @@ display:
           col_md: col-md-4
           col_lg: col-lg-4
           col_xl: col-xl-4
+          col_xxl: none
       row:
         type: 'ds_entity:node'
         options:
@@ -614,7 +621,7 @@ display:
         style: false
         row: false
         arguments: false
-      css_class: 'blog-listing card-deck equal-height-sm'
+      css_class: blog-listing
       use_ajax: true
       display_description: 'To list blog posts which are linked under the same tags terms'
       link_display: custom_url
@@ -696,7 +703,7 @@ display:
       style:
         type: views_bootstrap_grid
         options:
-          row_class: ''
+          row_class: 'gy-4 g-sm-4'
           default_row_class: true
           uses_fields: false
           col_xs: none
@@ -704,6 +711,7 @@ display:
           col_md: col-md-4
           col_lg: col-lg-4
           col_xl: col-xl-4
+          col_xxl: none
       row:
         type: 'ds_entity:node'
         options:
@@ -736,7 +744,7 @@ display:
         style: false
         row: false
         footer: false
-      css_class: 'blog-listing card-deck equal-height-sm justify-content-center'
+      css_class: blog-listing
       display_description: 'To list blog posts with style for the home page.'
       use_more: false
       use_more_always: false
@@ -1037,7 +1045,7 @@ display:
       style:
         type: default
         options:
-          row_class: ''
+          row_class: mb-4
           default_row_class: true
           uses_fields: false
       row:
@@ -1375,7 +1383,7 @@ display:
         filters: false
         filter_groups: false
       relationships: {  }
-      css_class: 'blog-listing card-deck equal-height-sm container'
+      css_class: blog-listing
       display_description: 'To list blog posts which are related the current blog post.'
       display_extenders:
         metatag_display_extender:

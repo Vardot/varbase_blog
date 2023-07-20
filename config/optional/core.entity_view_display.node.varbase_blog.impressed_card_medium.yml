@@ -25,14 +25,14 @@ third_party_settings:
       entity_classes: all_classes
       settings:
         pattern:
-          field_templates: only_content
+          field_templates: default
           settings:
             style_size: medium
             card_border: true
             equal_height: true
             anchor_all: true
             media_position: top
-            utility_classes: mb-4
+            utility_classes: ''
             card_attributes: ''
             content_attributes: ''
     regions:

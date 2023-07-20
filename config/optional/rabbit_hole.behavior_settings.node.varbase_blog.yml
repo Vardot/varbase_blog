@@ -3,9 +3,9 @@ status: true
 dependencies:
   config:
     - node.type.varbase_blog
-id: node_type_varbase_blog
-entity_type_id: node_type
-entity_id: varbase_blog
+id: node.varbase_blog
+targetEntityType: node
+bundle: varbase_blog
 action: display_page
 no_bypass: null
 bypass_message: null
