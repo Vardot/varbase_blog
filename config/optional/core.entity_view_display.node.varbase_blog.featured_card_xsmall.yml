@@ -48,7 +48,13 @@ third_party_settings:
         - field_media
       content:
         - node_title
+        - node_post_date
     fields:
+      node_post_date:
+        plugin_id: node_post_date
+        weight: 2
+        label: hidden
+        formatter: ds_post_date_short
       node_title:
         plugin_id: node_title
         weight: 1
@@ -76,7 +82,7 @@ content:
       view_mode: media_16_09
       link: false
     third_party_settings: {  }
-    weight: 1
+    weight: 0
     region: media
 hidden:
   body: true
@@ -85,6 +91,7 @@ hidden:
   field_meta_tags: true
   field_tags: true
   field_yoast_seo: true
+  langcode: true
   layout_builder__layout: true
   layout_selection: true
   links: true

@@ -1,4 +1,3 @@
-uuid: 84e87fc1-87a7-4821-b5da-156c5b171dd6
 langcode: en
 status: true
 dependencies:
@@ -16,8 +15,6 @@ dependencies:
     - taxonomy
     - user
     - views_bootstrap
-_core:
-  default_config_hash: eX0mOJIdGrykREwZeOoDW8gNrd_W-0xVaObeKwxKFvU
 id: varbase_blog
 label: 'Varbase Blog'
 module: views

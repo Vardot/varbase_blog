@@ -14,6 +14,7 @@ dependencies:
     - node.type.varbase_blog
   module:
     - ds
+    - field_group
     - smart_trim
     - user
 third_party_settings:
@@ -28,9 +29,9 @@ third_party_settings:
           field_templates: default
           settings:
             style_size: medium
-            card_border: true
-            equal_height: true
-            anchor_all: true
+            card_border: 1
+            equal_height: 1
+            anchor_all: 1
             media_position: top
             utility_classes: ''
             card_attributes: ''
@@ -39,12 +40,48 @@ third_party_settings:
       media:
         - field_media
       content:
+        - group_author_info
         - node_title
+        - node_author
         - body
+        - node_post_date
+        - node_link
     fields:
+      node_link:
+        plugin_id: node_link
+        weight: 4
+        label: hidden
+        formatter: default
+        settings:
+          'link text': 'Read more'
+          'link class': card-link
+          wrapper: div
+          class: 'read-more text-end'
+        ft:
+          id: reset
+          settings:
+            lb: ''
+      node_post_date:
+        plugin_id: node_post_date
+        weight: 4
+        label: hidden
+        formatter: ds_post_date_short
+        ft:
+          id: reset
+          settings:
+            lb: ''
+      node_author:
+        plugin_id: node_author
+        weight: 3
+        label: hidden
+        formatter: author
+        ft:
+          id: reset
+          settings:
+            lb: ''
       node_title:
         plugin_id: node_title
-        weight: 1
+        weight: 2
         label: hidden
         formatter: default
         settings:
@@ -57,6 +94,27 @@ third_party_settings:
             lb: ''
             lb-col: false
             classes: {  }
+  field_group:
+    group_author_info:
+      children:
+        - node_author
+        - node_post_date
+      label: 'Author info'
+      parent_name: ''
+      region: content
+      weight: 1
+      format_type: html_element
+      format_settings:
+        classes: 'card-author-info small'
+        show_empty_fields: false
+        id: ''
+        element: div
+        show_label: false
+        label_element: h3
+        label_element_classes: ''
+        attributes: ''
+        effect: none
+        speed: fast
 id: node.varbase_blog.impressed_card_medium
 targetEntityType: node
 bundle: varbase_blog
@@ -78,11 +136,21 @@ content:
         class: more-link
         text: More
         aria_label: 'Read more about [node:title]'
+        token_browser: ''
       summary_handler: full
       trim_options:
         text: true
-    third_party_settings: {  }
-    weight: 2
+        trim_zero: false
+        replace_tokens: false
+    third_party_settings:
+      ds:
+        ft:
+          id: default
+          settings:
+            lb: ''
+            lb-col: false
+            classes: {  }
+    weight: 3
     region: content
   field_media:
     type: entity_reference_entity_view
@@ -99,6 +167,7 @@ hidden:
   field_meta_tags: true
   field_tags: true
   field_yoast_seo: true
+  langcode: true
   layout_builder__layout: true
   layout_selection: true
   links: true

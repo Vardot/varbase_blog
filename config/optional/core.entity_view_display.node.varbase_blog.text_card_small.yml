@@ -1,3 +1,4 @@
+uuid: 841c3992-e630-47c2-904c-28655fa5ea83
 langcode: en
 status: true
 dependencies:
@@ -14,7 +15,6 @@ dependencies:
     - node.type.varbase_blog
   module:
     - ds
-    - smart_trim
     - user
 third_party_settings:
   ds:
@@ -28,20 +28,25 @@ third_party_settings:
           field_templates: default
           settings:
             style_size: small
-            card_border: false
-            equal_height: false
-            anchor_all: false
+            card_border: 0
+            equal_height: 0
+            anchor_all: 0
             utility_classes: ''
             card_attributes: ''
             content_attributes: ''
     regions:
       content:
         - node_title
-        - body
+        - node_post_date
     fields:
+      node_post_date:
+        plugin_id: node_post_date
+        weight: 1
+        label: hidden
+        formatter: ds_post_date_short
       node_title:
         plugin_id: node_title
-        weight: 1
+        weight: 0
         label: hidden
         formatter: default
         settings:
@@ -58,36 +63,16 @@ id: node.varbase_blog.text_card_small
 targetEntityType: node
 bundle: varbase_blog
 mode: text_card_small
-content:
-  body:
-    type: smart_trim
-    label: hidden
-    settings:
-      trim_length: 20
-      trim_type: words
-      trim_suffix: ' ...'
-      wrap_output: false
-      wrap_class: trimmed
-      more:
-        display_link: false
-        target_blank: false
-        link_trim_only: false
-        class: more-link
-        text: More
-        aria_label: 'Read more about [node:title]'
-      summary_handler: full
-      trim_options:
-        text: true
-    third_party_settings: {  }
-    weight: 2
-    region: content
+content: {  }
 hidden:
+  body: true
   content_moderation_control: true
   field_blog_categories: true
   field_media: true
   field_meta_tags: true
   field_tags: true
   field_yoast_seo: true
+  langcode: true
   layout_builder__layout: true
   layout_selection: true
   links: true
