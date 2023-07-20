@@ -576,7 +576,7 @@ default:
           breakpoints: {}
           layout_regions_classes:
             section_header: null
-          remove_gutters: "0"
+          remove_gutters: "1"
           gutters_between: null
           container_width: ""
           context_mapping: {}
