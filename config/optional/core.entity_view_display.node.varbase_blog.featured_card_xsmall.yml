@@ -31,6 +31,7 @@ third_party_settings:
             equal_height: true
             anchor_all: true
             media_position: start
+            gutters_between: small-end
             columns_xs_size: ''
             columns_sm_size: '06_06'
             columns_md_size: ''
