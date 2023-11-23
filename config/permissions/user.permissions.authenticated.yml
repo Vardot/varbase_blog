@@ -1,0 +1,7 @@
+id: authenticated
+permissions:
+  - 'access content'
+  - 'view term names in blog_categories'
+  - 'view term names in tags'
+  - 'view terms in blog_categories'
+  - 'view terms in tags'

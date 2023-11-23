@@ -14,7 +14,7 @@ use Vardot\Installer\ModuleInstallerFactory;
  */
 function varbase_blog_install() {
 
-  // Processer for install: in varbase_blog.info.yml file.
+  // Processor for install: in varbase_blog.info.yml file.
   // ---------------------------------------------------------------------------.
   ModuleInstallerFactory::installList('varbase_blog');
 
@@ -37,34 +37,10 @@ function varbase_blog_install() {
   ];
 
   ModuleInstallerFactory::importConfigsFromList('varbase_blog', $forced_configs, InstallStorage::CONFIG_OPTIONAL_DIRECTORY);
+
+  // Add permissions.
+  ModuleInstallerFactory::addPermissions('varbase_blog');
 }
 
-/**
- * Issue #3222053: Fix to allow content editors to use stored selected layouts.
- *
- * On the Full content display mode with layout builder.
- */
-function varbase_blog_update_9001() {
-  $config_factory = \Drupal::configFactory()->getEditable('core.entity_view_display.node.varbase_blog.full');
-  $varbase_blog_full_data = $config_factory->get();
-  if (isset($varbase_blog_full_data['third_party_settings'])
-    && isset($varbase_blog_full_data['third_party_settings']['layout_library'])
-    && isset($varbase_blog_full_data['third_party_settings']['layout_library']['enable'])
-    && $varbase_blog_full_data['third_party_settings']['layout_library']['enable'] == FALSE) {
-
-    $varbase_blog_full_data['third_party_settings']['layout_library']['enable'] = TRUE;
-    $config_factory->setData($varbase_blog_full_data)->save(TRUE);
-  }
-
-}
-
-/**
- * Issue #3272207: Switch to use the Module Installer Factory.
- *
- * In the Varbase Blog (Corporate Blog) module.
- */
-function varbase_blog_update_90002() {
-  // Set the weight of the module after installation of list of modules.
-  // To make sure that any hook or event subscriber workes after all used modules.
-  ModuleInstallerFactory::setModuleWeightAfterInstallation('varbase_blog');
-}
+// Load include all updates and apply them.
+\Drupal::moduleHandler()->loadInclude('varbase_blog', 'inc', 'include/updates/all');

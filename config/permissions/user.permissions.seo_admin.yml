@@ -1,0 +1,7 @@
+id: seo_admin
+permissions:
+  - 'create varbase_blog content'
+  - 'delete any varbase_blog content'
+  - 'edit any varbase_blog content'
+  - 'view varbase_blog revisions'
+  - 'view post access counter'

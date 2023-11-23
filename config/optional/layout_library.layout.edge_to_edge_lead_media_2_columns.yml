@@ -102,10 +102,8 @@ layout:
       section_attributes: null
       regions_classes:
         blb_region_col_1: ""
-        section_header: ""
       regions_attributes:
         blb_region_col_1: {}
-        section_header: {}
       breakpoints: {}
       layout_regions_classes: {}
       remove_gutters: "1"
@@ -117,24 +115,23 @@ layout:
         configuration:
           id: "field_block:node:varbase_blog:field_media"
           label: "Main media"
-          label_display: "0"
           provider: layout_builder
-          context_mapping:
-            entity: layout_builder.entity
-            view_mode: view_mode
+          label_display: "0"
           formatter:
-            type: entity_reference_entity_view
             label: hidden
+            type: entity_reference_entity_view
             settings:
               view_mode: se2e_4_1
             third_party_settings: {}
-        weight: 0
+          context_mapping:
+            entity: layout_builder.entity
+            view_mode: view_mode
         additional: {}
+        weight: 0
     third_party_settings: {}
   - layout_id: "bootstrap_layout_builder:blb_col_2"
     layout_settings:
-      label: ""
-      context_mapping: {}
+      label: null
       container_wrapper_classes: ""
       container_wrapper_attributes: null
       container_wrapper:
@@ -163,7 +160,7 @@ layout:
           padding_left:
             class: _none
           padding_top:
-            class: pt-5
+            class: pt-3
           padding_right:
             class: _none
           padding_bottom:
@@ -221,10 +218,6 @@ layout:
               class: _none
           scroll_effects:
             class: null
-          horizontal_alignment:
-            class: null
-          vertical_alignment:
-            class: null
       container_wrapper_bg_color_class: ""
       container_wrapper_bg_media: null
       container: container-fluid
@@ -233,35 +226,30 @@ layout:
       regions_classes:
         blb_region_col_1: ""
         blb_region_col_2: ""
-        section_header: ""
       regions_attributes:
         blb_region_col_1: null
         blb_region_col_2: null
-        section_header: null
       breakpoints:
+        breakpoint_xl: blb_col_8_4
         breakpoint_lg: blb_col_8_4
         breakpoint_md: blb_col_8_4
         breakpoint_sm: blb_col_12
         breakpoint_xs: blb_col_12
       layout_regions_classes:
         blb_region_col_1:
+          - col-xl-8
           - col-lg-8
           - col-md-8
           - col-sm-12
           - col-12
         blb_region_col_2:
+          - col-xl-4
           - col-lg-4
           - col-md-4
           - col-sm-12
           - col-12
-        section_header:
-          - col-12
-          - col-12
-          - col-12
-          - col-12
       remove_gutters: "1"
       gutters_between: 1
-      container_width: ""
     components:
       e73161ef-060b-48b2-abed-8207656ca70d:
         uuid: e73161ef-060b-48b2-abed-8207656ca70d
@@ -269,12 +257,11 @@ layout:
         configuration:
           id: "views_block:varbase_blog-most_recent_blog_posts_block"
           label: ""
-          label_display: visible
           provider: views
-          context_mapping: {}
+          label_display: visible
           views_label: ""
           items_per_page: none
-        weight: 1
+          context_mapping: {}
         additional:
           component_attributes:
             block_attributes:
@@ -376,37 +363,37 @@ layout:
                   class: _none
               scroll_effects:
                 class: null
+        weight: 1
       e2ea69b4-ff0d-4b37-8590-b074a54b6843:
         uuid: e2ea69b4-ff0d-4b37-8590-b074a54b6843
         region: blb_region_col_1
         configuration:
           id: "field_block:node:varbase_blog:body"
           label: Body
-          label_display: "0"
           provider: layout_builder
+          label_display: "0"
+          formatter:
+            label: hidden
+            type: text_default
+            settings: {}
+            third_party_settings: {}
           context_mapping:
             entity: layout_builder.entity
             view_mode: view_mode
-          formatter:
-            type: text_default
-            label: hidden
-            settings: {}
-            third_party_settings: {}
-        weight: 0
         additional: {}
+        weight: 0
       27cf0942-cca5-40dc-85c2-3aec39a9f0a6:
         uuid: 27cf0942-cca5-40dc-85c2-3aec39a9f0a6
         region: blb_region_col_2
         configuration:
           id: "views_block:varbase_blog-most_popular_blog_posts_block"
           label: ""
-          label_display: visible
           provider: views
-          context_mapping:
-            nid: layout_builder.entity
+          label_display: visible
           views_label: ""
           items_per_page: none
-        weight: 0
+          context_mapping:
+            nid: layout_builder.entity
         additional:
           component_attributes:
             block_attributes:
@@ -508,6 +495,7 @@ layout:
                   class: _none
               scroll_effects:
                 class: null
+        weight: 0
     third_party_settings: {}
   - layout_id: "bootstrap_layout_builder:blb_col_1"
     layout_settings:
@@ -605,10 +593,8 @@ layout:
       section_attributes: null
       regions_classes:
         blb_region_col_1: ""
-        section_header: ""
       regions_attributes:
         blb_region_col_1: {}
-        section_header: {}
       breakpoints: {}
       layout_regions_classes: {}
       remove_gutters: "1"
@@ -620,18 +606,17 @@ layout:
         configuration:
           id: "field_block:node:varbase_blog:field_tags"
           label: Tags
-          label_display: visible
           provider: layout_builder
-          context_mapping:
-            entity: layout_builder.entity
-            view_mode: view_mode
+          label_display: visible
           formatter:
-            type: entity_reference_label
             label: hidden
+            type: entity_reference_label
             settings:
               link: true
             third_party_settings: {}
-        weight: 0
+          context_mapping:
+            entity: layout_builder.entity
+            view_mode: view_mode
         additional:
           component_attributes:
             block_attributes:
@@ -649,6 +634,7 @@ layout:
               class: ""
               style: ""
               data: ""
+        weight: 0
     third_party_settings: {}
   - layout_id: "bootstrap_layout_builder:blb_col_1"
     layout_settings:
@@ -746,10 +732,8 @@ layout:
       section_attributes: null
       regions_classes:
         blb_region_col_1: ""
-        section_header: ""
       regions_attributes:
         blb_region_col_1: {}
-        section_header: {}
       breakpoints: {}
       layout_regions_classes: {}
       remove_gutters: "1"
@@ -761,11 +745,11 @@ layout:
         configuration:
           id: "views_block:varbase_blog-related_blog_posts_block"
           label: ""
-          label_display: visible
           provider: views
-          context_mapping: {}
+          label_display: visible
           views_label: ""
           items_per_page: none
-        weight: 0
+          context_mapping: {}
         additional: {}
+        weight: 0
     third_party_settings: {}
