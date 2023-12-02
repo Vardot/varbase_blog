@@ -9,6 +9,10 @@ use Drupal\Core\Config\InstallStorage;
 use Vardot\Entity\EntityDefinitionUpdateManager;
 use Vardot\Installer\ModuleInstallerFactory;
 
+// Include all helpers and updates.
+include_once __DIR__ . '/includes/helpers.inc';
+include_once __DIR__ . '/includes/updates.inc';
+
 /**
  * Implements hook_install().
  */
@@ -40,6 +44,3 @@ function varbase_blog_install() {
   // Add permissions.
   ModuleInstallerFactory::addPermissions('varbase_blog');
 }
-
-// Load include all updates and apply them.
-\Drupal::moduleHandler()->loadInclude('varbase_blog', 'inc', 'include/updates/all');
