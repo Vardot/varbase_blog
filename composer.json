@@ -27,10 +27,8 @@
     }
   },
   "require": {
-    "composer/installers": "~2",
-    "oomphinc/composer-installers-extender": "~2",
-    "cweagans/composer-patches": "~1",
     "drupal/core": "~10",
+    "vardot/varbase-patches": "~10.0.0",
     "vardot/entity-definition-update-manager": "~1",
     "vardot/module-installer-factory": "~1",
     "drupal/varbase_core": "~10",
@@ -38,10 +36,5 @@
     "drupal/varbase_seo": "~10",
     "drupal/varbase_layout_builder": "~10.1.0",
     "drupal/taxonomy_menu": "~3"
-  },
-  "extra": {
-    "enable-patching": true,
-    "composer-exit-on-patch-failure": true,
-    "patches": {  }
   }
 }
