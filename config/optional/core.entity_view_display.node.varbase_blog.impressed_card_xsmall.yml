@@ -1,0 +1,71 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.impressed_card_xsmall
+    - field.field.node.varbase_blog.body
+    - field.field.node.varbase_blog.field_media
+    - node.type.varbase_blog
+  module:
+    - ds
+    - smart_trim
+    - varbase_components
+third_party_settings:
+  ds:
+    layout:
+      id: pattern_card_impressed
+      library: null
+      disable_css: false
+      entity_classes: all_classes
+      settings:
+        pattern:
+          field_templates: default
+          settings:
+            style_size: xsmall
+            card_border: false
+            equal_height: true
+            anchor_all: false
+            media_position: top
+            utility_classes: ''
+            media_utility_classes: ''
+            content_utility_classes: ''
+    regions:
+      media:
+        - field_media
+      content:
+        - node_title
+    fields:
+      node_title:
+        plugin_id: node_title
+        weight: 1
+        label: hidden
+        formatter: default
+        settings:
+          link: true
+          wrapper: h3
+          class: card-title
+        ft:
+          id: default
+          settings:
+            lb: ''
+            lb-col: false
+            classes: {  }
+id: node.varbase_blog.impressed_card_xsmall
+targetEntityType: node
+bundle: varbase_blog
+mode: impressed_card_xsmall
+content:
+  field_media:
+    type: entity_reference_entity_view
+    label: hidden
+    settings:
+      view_mode: media_16_09
+      link: false
+    third_party_settings: {  }
+    weight: 0
+    region: media
+hidden:
+  content_moderation_control: true
+  body: true
+  langcode: true
+  links: true

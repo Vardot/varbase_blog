@@ -2,7 +2,7 @@ langcode: en
 status: true
 dependencies:
   config:
-    - core.entity_view_mode.node.text_card_small
+    - core.entity_view_mode.node.text_card_medium
     - field.field.node.varbase_blog.body
     - field.field.node.varbase_blog.field_blog_categories
     - field.field.node.varbase_blog.field_media
@@ -27,16 +27,15 @@ third_party_settings:
         pattern:
           field_templates: default
           settings:
-            style_size: small
+            style_size: medium
             card_border: 1
             padded: 1
-            equal_height: 0
+            equal_height: 1
             anchor_all: 0
             utility_classes: ''
             content_utility_classes: ''
     regions:
       content:
-        - node_post_date
         - node_title
         - body
     fields:
@@ -55,25 +54,18 @@ third_party_settings:
             lb: ''
             lb-col: false
             classes: {  }
-      node_post_date:
-        plugin_id: node_post_date
-        weight: 0
-        label: hidden
-        formatter: ds_post_date_short_date
-_core:
-  default_config_hash: kRHJ9WYeXJhI5KXliRWkWwmAUMeAx2X9UsXPEp4dK7k
-id: node.varbase_blog.text_card_small
+id: node.varbase_blog.text_card_medium
 targetEntityType: node
 bundle: varbase_blog
-mode: text_card_small
+mode: text_card_medium
 content:
   body:
     type: smart_trim
     label: hidden
     settings:
-      trim_length: 65
-      trim_type: chars
-      trim_suffix: ...
+      trim_length: 30
+      trim_type: words
+      trim_suffix: ' ...'
       wrap_output: false
       wrap_class: trimmed
       more:
@@ -83,19 +75,10 @@ content:
         class: more-link
         text: More
         aria_label: 'Read more about [node:title]'
-      summary_handler: trim
+      summary_handler: full
       trim_options:
         text: true
-        trim_zero: true
-        replace_tokens: false
-    third_party_settings:
-      ds:
-        ft:
-          id: default
-          settings:
-            lb: ''
-            lb-col: false
-            classes: {  }
+    third_party_settings: {  }
     weight: 2
     region: content
 hidden:

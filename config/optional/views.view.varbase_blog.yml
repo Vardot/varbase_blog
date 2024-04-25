@@ -2,9 +2,11 @@ langcode: en
 status: true
 dependencies:
   config:
+    - core.entity_view_mode.node.featured_card_medium
     - core.entity_view_mode.node.featured_card_xsmall
     - core.entity_view_mode.node.impressed_card_medium
     - core.entity_view_mode.node.text_card_small
+    - field.storage.node.body
     - node.type.varbase_blog
     - taxonomy.vocabulary.blog_categories
     - taxonomy.vocabulary.tags
@@ -13,6 +15,7 @@ dependencies:
     - node
     - statistics
     - taxonomy
+    - text
     - user
     - views_bootstrap
 id: varbase_blog
@@ -221,20 +224,20 @@ display:
       style:
         type: views_bootstrap_grid
         options:
-          row_class: ''
+          row_class: mb-2
           default_row_class: false
           uses_fields: false
-          col_xs: none
-          col_sm: col-sm-12
-          col_md: col-md-4
-          col_lg: col-lg-4
-          col_xl: col-xl-4
+          col_xs: col-12
+          col_sm: none
+          col_md: none
+          col_lg: none
+          col_xl: none
           col_xxl: none
       row:
         type: 'ds_entity:node'
         options:
           relationship: none
-          view_mode: impressed_card_medium
+          view_mode: text_card_small
           alternating_fieldset:
             alternating: false
             allpages: false
@@ -278,6 +281,142 @@ display:
     position: 1
     display_options:
       title: 'Blog Listing'
+      fields:
+        title:
+          id: title
+          table: node_field_data
+          field: title
+          relationship: none
+          group_type: group
+          admin_label: ''
+          plugin_id: field
+          label: ''
+          exclude: false
+          alter:
+            alter_text: false
+            text: ''
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: false
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          click_sort_column: value
+          type: string
+          settings:
+            link_to_entity: false
+          group_column: value
+          group_columns: {  }
+          group_rows: true
+          delta_limit: 0
+          delta_offset: 0
+          delta_reversed: false
+          delta_first_last: false
+          multi_type: separator
+          separator: ', '
+          field_api_classes: false
+        body:
+          id: body
+          table: node__body
+          field: body
+          relationship: none
+          group_type: group
+          admin_label: ''
+          plugin_id: field
+          label: ''
+          exclude: false
+          alter:
+            alter_text: false
+            text: ''
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: false
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          click_sort_column: value
+          type: text_default
+          settings: {  }
+          group_column: value
+          group_columns: {  }
+          group_rows: true
+          delta_limit: 0
+          delta_offset: 0
+          delta_reversed: false
+          delta_first_last: false
+          multi_type: separator
+          separator: ', '
+          field_api_classes: false
+      exposed_form:
+        type: basic
+        options:
+          submit_button: Filter
+          reset_button: true
+          reset_button_label: Clear
+          exposed_sorts_label: 'Sort by'
+          expose_sort_order: true
+          sort_asc_label: Asc
+          sort_desc_label: Desc
       empty:
         area:
           id: area
@@ -297,23 +436,95 @@ display:
             format: full_html
           tokenize: false
       arguments: {  }
+      filters:
+        status:
+          id: status
+          table: node_field_data
+          field: status
+          entity_type: node
+          entity_field: status
+          plugin_id: boolean
+          value: '1'
+          group: 1
+          expose:
+            operator: ''
+            operator_limit_selection: false
+            operator_list: {  }
+        type:
+          id: type
+          table: node_field_data
+          field: type
+          entity_type: node
+          entity_field: type
+          plugin_id: bundle
+          value:
+            varbase_blog: varbase_blog
+          expose:
+            operator_limit_selection: false
+            operator_list: {  }
+        langcode:
+          id: langcode
+          table: node_field_data
+          field: langcode
+          relationship: none
+          group_type: group
+          admin_label: ''
+          entity_type: node
+          entity_field: langcode
+          plugin_id: language
+          operator: in
+          value:
+            '***LANGUAGE_language_interface***': '***LANGUAGE_language_interface***'
+          group: 1
+          exposed: false
+          expose:
+            operator_id: ''
+            label: ''
+            description: ''
+            use_operator: false
+            operator: ''
+            operator_limit_selection: false
+            operator_list: {  }
+            identifier: ''
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+            reduce: false
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+      filter_groups:
+        operator: AND
+        groups:
+          1: AND
       style:
         type: views_bootstrap_grid
         options:
-          row_class: 'gy-4 g-sm-4'
+          row_class: mb-4
           default_row_class: true
           uses_fields: false
-          col_xs: none
-          col_sm: col-sm-12
-          col_md: col-md-4
-          col_lg: col-lg-4
-          col_xl: col-xl-4
+          col_xs: col-12
+          col_sm: none
+          col_md: none
+          col_lg: none
+          col_xl: none
           col_xxl: none
       row:
         type: 'ds_entity:node'
         options:
           relationship: none
-          view_mode: impressed_card_medium
+          view_mode: featured_card_medium
           alternating_fieldset:
             alternating: false
             allpages: false
@@ -341,11 +552,13 @@ display:
         empty: false
         title: false
         css_class: false
+        exposed_form: false
         style: false
         row: false
+        fields: false
         arguments: false
-        filters: true
-        filter_groups: true
+        filters: false
+        filter_groups: false
       css_class: blog-listing
       display_description: 'General blog listing'
       display_extenders:
@@ -362,7 +575,8 @@ display:
         - url.query_args
         - 'user.node_grants:view'
         - user.permissions
-      tags: {  }
+      tags:
+        - 'config:field.storage.node.body'
   blog_listing_by_blog_category_block:
     id: blog_listing_by_blog_category_block
     display_title: 'Listing by Blog Category'
@@ -411,7 +625,6 @@ display:
             vids:
               blog_categories: blog_categories
             anyall: ','
-          default_argument_skip_url: false
           summary_options:
             base_path: ''
             count: true
@@ -433,20 +646,20 @@ display:
       style:
         type: views_bootstrap_grid
         options:
-          row_class: 'gy-4 g-sm-4'
+          row_class: ''
           default_row_class: true
           uses_fields: false
-          col_xs: none
-          col_sm: col-sm-12
-          col_md: col-md-4
-          col_lg: col-lg-4
-          col_xl: col-xl-4
+          col_xs: col-12
+          col_sm: none
+          col_md: none
+          col_lg: none
+          col_xl: none
           col_xxl: none
       row:
         type: 'ds_entity:node'
         options:
           relationship: none
-          view_mode: impressed_card_medium
+          view_mode: featured_card_medium
           alternating_fieldset:
             alternating: false
             allpages: false
@@ -549,7 +762,6 @@ display:
             vids:
               tags: tags
             anyall: ','
-          default_argument_skip_url: false
           summary_options:
             base_path: ''
             count: true
@@ -571,20 +783,20 @@ display:
       style:
         type: views_bootstrap_grid
         options:
-          row_class: 'gy-4 g-sm-4'
+          row_class: ''
           default_row_class: true
           uses_fields: false
-          col_xs: none
-          col_sm: col-sm-12
-          col_md: col-md-4
-          col_lg: col-lg-4
-          col_xl: col-xl-4
+          col_xs: col-12
+          col_sm: none
+          col_md: none
+          col_lg: none
+          col_xl: none
           col_xxl: none
       row:
         type: 'ds_entity:node'
         options:
           relationship: none
-          view_mode: impressed_card_medium
+          view_mode: featured_card_medium
           alternating_fieldset:
             alternating: false
             allpages: false
@@ -759,10 +971,7 @@ display:
           plugin_id: text
           empty: true
           content:
-            value: |-
-              <div class="more-link form-group text-center pager">
-                <a href="[site:url]/blog" class="btn btn-link btn-lg">View all blogs</a>
-              </div>
+            value: "<div class=\"mt-5\">\r\n  <a href=\"[site:url]/blog\" class=\"btn btn-primary btn-lg\">View All Articles</a>\r\n</div>"
             format: full_html
           tokenize: false
       display_extenders:
@@ -771,6 +980,15 @@ display:
           tokenize: false
       block_description: 'Homepage blog'
       block_hide_empty: true
+      allow:
+        items_per_page: true
+        offset: offset
+        pager: pager
+        hide_fields: hide_fields
+        sort_fields: sort_fields
+        configure_filters: configure_filters
+        disable_filters: disable_filters
+        configure_sorts: configure_sorts
     cache_metadata:
       max-age: -1
       contexts:
@@ -945,7 +1163,6 @@ display:
           title: ''
           default_argument_type: node
           default_argument_options: {  }
-          default_argument_skip_url: false
           summary_options:
             base_path: ''
             count: true
@@ -1128,7 +1345,6 @@ display:
           title: ''
           default_argument_type: node
           default_argument_options: {  }
-          default_argument_skip_url: false
           summary_options:
             base_path: ''
             count: true
@@ -1211,7 +1427,7 @@ display:
     display_plugin: block
     position: 5
     display_options:
-      title: 'Related blogs'
+      title: Related
       pager:
         type: some
         options:
@@ -1243,7 +1459,6 @@ display:
               blog_categories: blog_categories
               tags: tags
             anyall: +
-          default_argument_skip_url: false
           summary_options:
             base_path: ''
             count: true
@@ -1281,7 +1496,6 @@ display:
           title: ''
           default_argument_type: node
           default_argument_options: {  }
-          default_argument_skip_url: false
           summary_options:
             base_path: ''
             count: true
@@ -1379,9 +1593,24 @@ display:
         arguments: false
         filters: false
         filter_groups: false
+        footer: false
       relationships: {  }
       css_class: blog-listing
       display_description: 'To list blog posts which are related the current blog post.'
+      footer:
+        area:
+          id: area
+          table: views
+          field: area
+          relationship: none
+          group_type: group
+          admin_label: ''
+          plugin_id: text
+          empty: false
+          content:
+            value: '<a href="[site:url]/blog">View All Articles</a>'
+            format: full_html
+          tokenize: false
       display_extenders:
         metatag_display_extender:
           metatags: {  }

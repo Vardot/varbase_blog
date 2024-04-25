@@ -2,12 +2,11 @@ langcode: en
 status: true
 dependencies:
   module:
-    - ctools
     - taxonomy
 id: blog_tags
-label: "Blog tags"
-type: "canonical_entities:taxonomy_term"
-pattern: "blog/tags/[term:name]"
+label: 'Blog tags'
+type: 'canonical_entities:taxonomy_term'
+pattern: 'blog/tags/[term:name]'
 selection_criteria:
   67880970-a48e-46f6-b026-9017543029a5:
     id: 'entity_bundle:taxonomy_term'
@@ -19,4 +18,4 @@ selection_criteria:
     uuid: 67880970-a48e-46f6-b026-9017543029a5
 selection_logic: and
 weight: -5
-relationships: {}
+relationships: {  }

@@ -147,7 +147,7 @@ content:
     region: content
     settings:
       include_locked: true
-    third_party_settings: {}
+    third_party_settings: {  }
   layout_selection:
     type: options_select
     region: content

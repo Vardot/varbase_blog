@@ -1,8 +1,9 @@
+uuid: null
 langcode: en
 status: true
 dependencies:
   config:
-    - core.entity_view_mode.node.impressed_card_medium
+    - core.entity_view_mode.node.featured_card_medium
     - field.field.node.varbase_blog.body
     - field.field.node.varbase_blog.field_blog_categories
     - field.field.node.varbase_blog.field_media
@@ -20,7 +21,7 @@ dependencies:
 third_party_settings:
   ds:
     layout:
-      id: pattern_card_impressed
+      id: pattern_card_featured
       library: null
       disable_css: false
       entity_classes: all_classes
@@ -33,7 +34,15 @@ third_party_settings:
             padded: 1
             equal_height: 1
             anchor_all: 1
-            media_position: top
+            media_position: start
+            content_vertical_alignment: center
+            gutters_between: 'no'
+            columns_xs_size: '04_08'
+            columns_sm_size: ''
+            columns_md_size: ''
+            columns_lg_size: ''
+            columns_xl_size: ''
+            columns_xxl_size: ''
             utility_classes: ''
             media_utility_classes: ''
             content_utility_classes: ''
@@ -55,13 +64,15 @@ third_party_settings:
         formatter: default
         settings:
           'link text': 'Read Article'
-          'link class': card-link
-          wrapper: div
-          class: 'read-more text-start mt-3'
+          'link class': mt-5
+          wrapper: ''
+          class: ''
         ft:
-          id: reset
+          id: default
           settings:
             lb: ''
+            lb-col: false
+            classes: {  }
       node_title:
         plugin_id: node_title
         weight: 4
@@ -85,9 +96,11 @@ third_party_settings:
         label: hidden
         formatter: ds_post_date_short_date
         ft:
-          id: reset
+          id: minimal
           settings:
             lb: ''
+            lb-col: false
+            classes: {  }
   field_group:
     group_card_header:
       children:
@@ -109,10 +122,10 @@ third_party_settings:
         attributes: ''
         effect: none
         speed: fast
-id: node.varbase_blog.impressed_card_medium
+id: node.varbase_blog.featured_card_medium
 targetEntityType: node
 bundle: varbase_blog
-mode: impressed_card_medium
+mode: featured_card_medium
 content:
   body:
     type: smart_trim
@@ -130,20 +143,10 @@ content:
         class: more-link
         text: More
         aria_label: 'Read more about [node:title]'
-        token_browser: ''
       summary_handler: full
       trim_options:
         text: true
-        trim_zero: false
-        replace_tokens: false
-    third_party_settings:
-      ds:
-        ft:
-          id: default
-          settings:
-            lb: ''
-            lb-col: false
-            classes: {  }
+    third_party_settings: {  }
     weight: 5
     region: content
   field_blog_categories:
@@ -189,7 +192,14 @@ content:
     settings:
       view_mode: media_16_09
       link: false
-    third_party_settings: {  }
+    third_party_settings:
+      ds:
+        ft:
+          id: default
+          settings:
+            lb: ''
+            lb-col: false
+            classes: {  }
     weight: 0
     region: media
 hidden:

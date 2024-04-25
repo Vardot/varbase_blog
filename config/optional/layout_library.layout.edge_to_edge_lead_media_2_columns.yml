@@ -10,15 +10,14 @@ layout:
     layout_id: 'bootstrap_layout_builder:blb_col_1'
     layout_settings:
       label: ''
-      context_mapping: {  }
       container_wrapper_classes: ''
       container_wrapper_attributes: null
       container_wrapper:
         bootstrap_styles:
           background:
-            background_type: color
+            background_type: null
           background_color:
-            class: _none
+            class: null
           background_media:
             image:
               media_id: null
@@ -29,10 +28,7 @@ layout:
               background_repeat: no-repeat
               background_attachment: not_fixed
               background_size: cover
-          background_edgetoedge: 1
           text_color:
-            class: null
-          text_alignment:
             class: null
           padding:
             class: _none
@@ -97,6 +93,356 @@ layout:
               class: _none
           scroll_effects:
             class: null
+          text_alignment:
+            class: null
+          background_edgetoedge: 1
+          horizontal_alignment:
+            class: null
+          vertical_alignment:
+            class: null
+          box_shadow:
+            class: null
+      container_wrapper_bg_color_class: ''
+      container_wrapper_bg_media: null
+      container: container-fluid
+      section_classes: ''
+      section_attributes: null
+      regions_classes:
+        blb_region_col_1: ''
+        section_header: 'd-flex justify-content-start'
+      regions_attributes:
+        blb_region_col_1: {  }
+        section_header: null
+      breakpoints: {  }
+      layout_regions_classes:
+        section_header: null
+      remove_gutters: '1'
+      container_wrapper_id: ''
+      container_width: ''
+      gutters_between: null
+      context_mapping: {  }
+    components:
+      8e392877-bf9a-4cb4-ae0d-20e88c870255:
+        uuid: 8e392877-bf9a-4cb4-ae0d-20e88c870255
+        region: section_header
+        configuration:
+          id: 'field_block:node:varbase_blog:field_blog_categories'
+          label: Categories
+          label_display: '0'
+          provider: layout_builder
+          context_mapping:
+            entity: layout_builder.entity
+            view_mode: view_mode
+          formatter:
+            type: entity_reference_label
+            label: hidden
+            settings:
+              link: false
+            third_party_settings: {  }
+        weight: 0
+        additional:
+          bootstrap_styles:
+            block_style:
+              background:
+                background_type: null
+              background_color:
+                class: null
+              background_media:
+                image:
+                  media_id: null
+                video:
+                  media_id: null
+                background_options:
+                  background_position: center
+                  background_repeat: no-repeat
+                  background_attachment: not_fixed
+                  background_size: cover
+              background_edgetoedge: false
+              text_color:
+                class: null
+              text_alignment:
+                class: null
+              padding:
+                class: _none
+              padding_left:
+                class: _none
+              padding_top:
+                class: pt-2
+              padding_right:
+                class: _none
+              padding_bottom:
+                class: pb-2
+              margin:
+                class: _none
+              margin_left:
+                class: _none
+              margin_top:
+                class: _none
+              margin_right:
+                class: _none
+              margin_bottom:
+                class: _none
+              horizontal_alignment:
+                class: null
+              vertical_alignment:
+                class: null
+              border:
+                border_style:
+                  class: null
+                border_width:
+                  class: _none
+                border_color:
+                  class: null
+                rounded_corners:
+                  class: _none
+                border_left_style:
+                  class: null
+                border_left_width:
+                  class: _none
+                border_left_color:
+                  class: null
+                border_top_style:
+                  class: null
+                border_top_width:
+                  class: _none
+                border_top_color:
+                  class: null
+                border_right_style:
+                  class: null
+                border_right_width:
+                  class: _none
+                border_right_color:
+                  class: null
+                border_bottom_style:
+                  class: null
+                border_bottom_width:
+                  class: _none
+                border_bottom_color:
+                  class: null
+                rounded_corner_top_left:
+                  class: _none
+                rounded_corner_top_right:
+                  class: _none
+                rounded_corner_bottom_left:
+                  class: _none
+                rounded_corner_bottom_right:
+                  class: _none
+              box_shadow:
+                class: null
+              scroll_effects:
+                class: null
+      58b9f826-9f14-48a4-b566-13b07bd3aa91:
+        uuid: 58b9f826-9f14-48a4-b566-13b07bd3aa91
+        region: section_header
+        configuration:
+          id: 'field_block:node:varbase_blog:created'
+          label: 'Authored on'
+          label_display: '0'
+          provider: layout_builder
+          context_mapping:
+            entity: layout_builder.entity
+            view_mode: view_mode
+          formatter:
+            type: timestamp
+            label: hidden
+            settings:
+              date_format: short_date
+              custom_date_format: ''
+              timezone: ''
+              tooltip:
+                date_format: long
+                custom_date_format: ''
+              time_diff:
+                enabled: false
+                future_format: '@interval hence'
+                past_format: '@interval ago'
+                granularity: 2
+                refresh: 60
+                description: ''
+            third_party_settings: {  }
+        weight: 1
+        additional:
+          bootstrap_styles:
+            block_style:
+              background:
+                background_type: null
+              background_color:
+                class: null
+              background_media:
+                image:
+                  media_id: null
+                video:
+                  media_id: null
+                background_options:
+                  background_position: center
+                  background_repeat: no-repeat
+                  background_attachment: not_fixed
+                  background_size: cover
+              background_edgetoedge: false
+              text_color:
+                class: null
+              text_alignment:
+                class: null
+              padding:
+                class: _none
+              padding_left:
+                class: ps-1
+              padding_top:
+                class: pt-2
+              padding_right:
+                class: _none
+              padding_bottom:
+                class: pb-2
+              margin:
+                class: _none
+              margin_left:
+                class: _none
+              margin_top:
+                class: _none
+              margin_right:
+                class: _none
+              margin_bottom:
+                class: _none
+              horizontal_alignment:
+                class: null
+              vertical_alignment:
+                class: null
+              border:
+                border_style:
+                  class: null
+                border_width:
+                  class: _none
+                border_color:
+                  class: null
+                rounded_corners:
+                  class: _none
+                border_left_style:
+                  class: null
+                border_left_width:
+                  class: _none
+                border_left_color:
+                  class: null
+                border_top_style:
+                  class: null
+                border_top_width:
+                  class: _none
+                border_top_color:
+                  class: null
+                border_right_style:
+                  class: null
+                border_right_width:
+                  class: _none
+                border_right_color:
+                  class: null
+                border_bottom_style:
+                  class: null
+                border_bottom_width:
+                  class: _none
+                border_bottom_color:
+                  class: null
+                rounded_corner_top_left:
+                  class: _none
+                rounded_corner_top_right:
+                  class: _none
+                rounded_corner_bottom_left:
+                  class: _none
+                rounded_corner_bottom_right:
+                  class: _none
+              box_shadow:
+                class: null
+              scroll_effects:
+                class: null
+    third_party_settings: {  }
+  -
+    layout_id: 'bootstrap_layout_builder:blb_col_1'
+    layout_settings:
+      label: ''
+      container_wrapper_classes: ''
+      container_wrapper_attributes: null
+      container_wrapper:
+        bootstrap_styles:
+          background:
+            background_type: color
+          background_color:
+            class: _none
+          background_media:
+            image:
+              media_id: null
+            video:
+              media_id: null
+            background_options:
+              background_position: center
+              background_repeat: no-repeat
+              background_attachment: not_fixed
+              background_size: cover
+          text_color:
+            class: null
+          padding:
+            class: _none
+          padding_left:
+            class: _none
+          padding_top:
+            class: _none
+          padding_right:
+            class: _none
+          padding_bottom:
+            class: _none
+          margin:
+            class: _none
+          margin_left:
+            class: _none
+          margin_top:
+            class: _none
+          margin_right:
+            class: _none
+          margin_bottom:
+            class: _none
+          border:
+            border_style:
+              class: null
+            border_width:
+              class: _none
+            border_color:
+              class: null
+            rounded_corners:
+              class: _none
+            border_left_style:
+              class: null
+            border_left_width:
+              class: _none
+            border_left_color:
+              class: null
+            border_top_style:
+              class: null
+            border_top_width:
+              class: _none
+            border_top_color:
+              class: null
+            border_right_style:
+              class: null
+            border_right_width:
+              class: _none
+            border_right_color:
+              class: null
+            border_bottom_style:
+              class: null
+            border_bottom_width:
+              class: _none
+            border_bottom_color:
+              class: null
+            rounded_corner_top_left:
+              class: _none
+            rounded_corner_top_right:
+              class: _none
+            rounded_corner_bottom_left:
+              class: _none
+            rounded_corner_bottom_right:
+              class: _none
+          scroll_effects:
+            class: null
+          text_alignment:
+            class: null
+          background_edgetoedge: 1
           horizontal_alignment:
             class: null
           vertical_alignment:
@@ -115,8 +461,9 @@ layout:
       breakpoints: {  }
       layout_regions_classes:
         section_header: null
-      container_wrapper_id: ''
       remove_gutters: '1'
+      container_wrapper_id: ''
+      context_mapping: {  }
       gutters_between: null
       container_width: ''
     components:
@@ -232,7 +579,6 @@ layout:
     layout_id: 'bootstrap_layout_builder:blb_col_2'
     layout_settings:
       label: ''
-      context_mapping: {  }
       container_wrapper_classes: ''
       container_wrapper_attributes: null
       container_wrapper:
@@ -251,10 +597,7 @@ layout:
               background_repeat: no-repeat
               background_attachment: not_fixed
               background_size: cover
-          background_edgetoedge: 0
           text_color:
-            class: null
-          text_alignment:
             class: null
           padding:
             class: _none
@@ -319,9 +662,14 @@ layout:
               class: _none
           scroll_effects:
             class: null
+          text_alignment:
+            class: null
+          background_edgetoedge: 0
           horizontal_alignment:
             class: null
           vertical_alignment:
+            class: null
+          box_shadow:
             class: null
       container_wrapper_bg_color_class: ''
       container_wrapper_bg_media: null
@@ -337,19 +685,19 @@ layout:
         blb_region_col_2: null
         section_header: null
       breakpoints:
-        breakpoint_lg: blb_col_8_4
-        breakpoint_md: blb_col_8_4
+        breakpoint_lg: blb_col_9_3
+        breakpoint_md: blb_col_9_3
         breakpoint_sm: blb_col_12
         breakpoint_xs: blb_col_12
       layout_regions_classes:
         blb_region_col_1:
-          - col-lg-8
-          - col-md-8
+          - col-lg-9
+          - col-md-9
           - col-sm-12
           - col-12
         blb_region_col_2:
-          - col-lg-4
-          - col-md-4
+          - col-lg-3
+          - col-md-3
           - col-sm-12
           - col-12
         section_header:
@@ -357,124 +705,12 @@ layout:
           - col-12
           - col-12
           - col-12
-      container_wrapper_id: ''
       remove_gutters: '1'
+      container_wrapper_id: ''
+      context_mapping: {  }
       gutters_between: 1
       container_width: ''
     components:
-      e73161ef-060b-48b2-abed-8207656ca70d:
-        uuid: e73161ef-060b-48b2-abed-8207656ca70d
-        region: blb_region_col_2
-        configuration:
-          id: 'views_block:varbase_blog-most_recent_blog_posts_block'
-          label: ''
-          label_display: visible
-          provider: views
-          context_mapping: {  }
-          views_label: ''
-          items_per_page: none
-        weight: 1
-        additional:
-          component_attributes:
-            block_attributes:
-              id: ''
-              class: ''
-              style: ''
-              data: ''
-            block_title_attributes:
-              id: ''
-              class: ''
-              style: ''
-              data: ''
-            block_content_attributes:
-              id: ''
-              class: ''
-              style: ''
-              data: ''
-          bootstrap_styles:
-            block_style:
-              background:
-                background_type: color
-              background_color:
-                class: null
-              background_media:
-                image:
-                  media_id: null
-                video:
-                  media_id: null
-                background_options:
-                  background_position: center
-                  background_repeat: no-repeat
-                  background_attachment: not_fixed
-                  background_size: cover
-              background_edgetoedge: false
-              text_color:
-                class: null
-              text_alignment:
-                class: null
-              padding:
-                class: _none
-              padding_left:
-                class: _none
-              padding_top:
-                class: pt-3
-              padding_right:
-                class: _none
-              padding_bottom:
-                class: _none
-              margin:
-                class: _none
-              margin_left:
-                class: _none
-              margin_top:
-                class: _none
-              margin_right:
-                class: _none
-              margin_bottom:
-                class: _none
-              border:
-                border_style:
-                  class: null
-                border_width:
-                  class: _none
-                border_color:
-                  class: null
-                rounded_corners:
-                  class: _none
-                border_left_style:
-                  class: null
-                border_left_width:
-                  class: _none
-                border_left_color:
-                  class: null
-                border_top_style:
-                  class: null
-                border_top_width:
-                  class: _none
-                border_top_color:
-                  class: null
-                border_right_style:
-                  class: null
-                border_right_width:
-                  class: _none
-                border_right_color:
-                  class: null
-                border_bottom_style:
-                  class: null
-                border_bottom_width:
-                  class: _none
-                border_bottom_color:
-                  class: null
-                rounded_corner_top_left:
-                  class: _none
-                rounded_corner_top_right:
-                  class: _none
-                rounded_corner_bottom_left:
-                  class: _none
-                rounded_corner_bottom_right:
-                  class: _none
-              scroll_effects:
-                class: null
       e2ea69b4-ff0d-4b37-8590-b074a54b6843:
         uuid: e2ea69b4-ff0d-4b37-8590-b074a54b6843
         region: blb_region_col_1
@@ -493,120 +729,19 @@ layout:
             third_party_settings: {  }
         weight: 0
         additional: {  }
-      27cf0942-cca5-40dc-85c2-3aec39a9f0a6:
-        uuid: 27cf0942-cca5-40dc-85c2-3aec39a9f0a6
+      45c05709-2d20-482a-8f6f-c9268abb08fd:
+        uuid: 45c05709-2d20-482a-8f6f-c9268abb08fd
         region: blb_region_col_2
         configuration:
-          id: 'views_block:varbase_blog-most_popular_blog_posts_block'
+          id: 'views_block:varbase_blog-related_blog_posts_block'
           label: ''
           label_display: visible
           provider: views
-          context_mapping:
-            nid: layout_builder.entity
+          context_mapping: {  }
           views_label: ''
           items_per_page: none
         weight: 0
-        additional:
-          component_attributes:
-            block_attributes:
-              id: ''
-              class: ''
-              style: ''
-              data: ''
-            block_title_attributes:
-              id: ''
-              class: ''
-              style: ''
-              data: ''
-            block_content_attributes:
-              id: ''
-              class: ''
-              style: ''
-              data: ''
-          bootstrap_styles:
-            block_style:
-              background:
-                background_type: color
-              background_color:
-                class: null
-              background_media:
-                image:
-                  media_id: null
-                video:
-                  media_id: null
-                background_options:
-                  background_position: center
-                  background_repeat: no-repeat
-                  background_attachment: not_fixed
-                  background_size: cover
-              background_edgetoedge: false
-              text_color:
-                class: null
-              text_alignment:
-                class: null
-              padding:
-                class: _none
-              padding_left:
-                class: _none
-              padding_top:
-                class: _none
-              padding_right:
-                class: _none
-              padding_bottom:
-                class: _none
-              margin:
-                class: _none
-              margin_left:
-                class: _none
-              margin_top:
-                class: _none
-              margin_right:
-                class: _none
-              margin_bottom:
-                class: _none
-              border:
-                border_style:
-                  class: null
-                border_width:
-                  class: _none
-                border_color:
-                  class: null
-                rounded_corners:
-                  class: _none
-                border_left_style:
-                  class: null
-                border_left_width:
-                  class: _none
-                border_left_color:
-                  class: null
-                border_top_style:
-                  class: null
-                border_top_width:
-                  class: _none
-                border_top_color:
-                  class: null
-                border_right_style:
-                  class: null
-                border_right_width:
-                  class: _none
-                border_right_color:
-                  class: null
-                border_bottom_style:
-                  class: null
-                border_bottom_width:
-                  class: _none
-                border_bottom_color:
-                  class: null
-                rounded_corner_top_left:
-                  class: _none
-                rounded_corner_top_right:
-                  class: _none
-                rounded_corner_bottom_left:
-                  class: _none
-                rounded_corner_bottom_right:
-                  class: _none
-              scroll_effects:
-                class: null
+        additional: {  }
     third_party_settings: {  }
   -
     layout_id: 'bootstrap_layout_builder:blb_col_1'
@@ -630,10 +765,7 @@ layout:
               background_repeat: no-repeat
               background_attachment: not_fixed
               background_size: cover
-          background_edgetoedge: 0
           text_color:
-            class: null
-          text_alignment:
             class: null
           padding:
             class: _none
@@ -698,6 +830,9 @@ layout:
               class: _none
           scroll_effects:
             class: null
+          text_alignment:
+            class: null
+          background_edgetoedge: 0
       container_wrapper_bg_color_class: ''
       container_wrapper_bg_media: null
       container: container-fluid
@@ -711,8 +846,8 @@ layout:
         section_header: {  }
       breakpoints: {  }
       layout_regions_classes: {  }
-      container_wrapper_id: ''
       remove_gutters: '1'
+      container_wrapper_id: ''
       gutters_between: null
     components:
       84cfb2ac-a987-4e85-b3b8-374a0bece2c6:
@@ -750,125 +885,4 @@ layout:
               class: ''
               style: ''
               data: ''
-    third_party_settings: {  }
-  -
-    layout_id: 'bootstrap_layout_builder:blb_col_1'
-    layout_settings:
-      label: null
-      container_wrapper_classes: ''
-      container_wrapper_attributes: null
-      container_wrapper:
-        bootstrap_styles:
-          background:
-            background_type: color
-          background_color:
-            class: null
-          background_media:
-            image:
-              media_id: null
-            video:
-              media_id: null
-            background_options:
-              background_position: center
-              background_repeat: no-repeat
-              background_attachment: not_fixed
-              background_size: cover
-          background_edgetoedge: 0
-          text_color:
-            class: null
-          text_alignment:
-            class: null
-          padding:
-            class: _none
-          padding_left:
-            class: _none
-          padding_top:
-            class: pt-3
-          padding_right:
-            class: _none
-          padding_bottom:
-            class: _none
-          margin:
-            class: _none
-          margin_left:
-            class: _none
-          margin_top:
-            class: _none
-          margin_right:
-            class: _none
-          margin_bottom:
-            class: _none
-          border:
-            border_style:
-              class: null
-            border_width:
-              class: _none
-            border_color:
-              class: null
-            rounded_corners:
-              class: _none
-            border_left_style:
-              class: null
-            border_left_width:
-              class: _none
-            border_left_color:
-              class: null
-            border_top_style:
-              class: null
-            border_top_width:
-              class: _none
-            border_top_color:
-              class: null
-            border_right_style:
-              class: null
-            border_right_width:
-              class: _none
-            border_right_color:
-              class: null
-            border_bottom_style:
-              class: null
-            border_bottom_width:
-              class: _none
-            border_bottom_color:
-              class: null
-            rounded_corner_top_left:
-              class: _none
-            rounded_corner_top_right:
-              class: _none
-            rounded_corner_bottom_left:
-              class: _none
-            rounded_corner_bottom_right:
-              class: _none
-          scroll_effects:
-            class: null
-      container_wrapper_bg_color_class: ''
-      container_wrapper_bg_media: null
-      container: container-fluid
-      section_classes: ''
-      section_attributes: null
-      regions_classes:
-        blb_region_col_1: ''
-        section_header: ''
-      regions_attributes:
-        blb_region_col_1: {  }
-        section_header: {  }
-      breakpoints: {  }
-      layout_regions_classes: {  }
-      container_wrapper_id: ''
-      remove_gutters: '1'
-      gutters_between: null
-    components:
-      45c05709-2d20-482a-8f6f-c9268abb08fd:
-        uuid: 45c05709-2d20-482a-8f6f-c9268abb08fd
-        region: blb_region_col_1
-        configuration:
-          id: 'views_block:varbase_blog-related_blog_posts_block'
-          label: ''
-          label_display: visible
-          provider: views
-          context_mapping: {  }
-          views_label: ''
-          items_per_page: none
-        weight: 0
-        additional: {  }
     third_party_settings: {  }
