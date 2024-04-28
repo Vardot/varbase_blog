@@ -101,7 +101,7 @@ display:
         type: full
         options:
           offset: 0
-          items_per_page: 12
+          items_per_page: 10
           total_pages: null
           id: 0
           tags:
@@ -646,7 +646,7 @@ display:
       style:
         type: views_bootstrap_grid
         options:
-          row_class: ''
+          row_class: mb-4
           default_row_class: true
           uses_fields: false
           col_xs: col-12
@@ -783,7 +783,7 @@ display:
       style:
         type: views_bootstrap_grid
         options:
-          row_class: ''
+          row_class: mb-4
           default_row_class: true
           uses_fields: false
           col_xs: col-12

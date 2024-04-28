@@ -152,8 +152,8 @@ third_party_settings:
           breakpoints: {  }
           layout_regions_classes:
             section_header: null
-          remove_gutters: '0'
           container_wrapper_id: ''
+          remove_gutters: '0'
           context_mapping: {  }
           gutters_between: null
           container_width: ''
@@ -368,8 +368,8 @@ third_party_settings:
           breakpoints: {  }
           layout_regions_classes:
             section_header: null
-          remove_gutters: '1'
           container_wrapper_id: ''
+          remove_gutters: '1'
           container_width: ''
           gutters_between: null
           context_mapping: {  }
@@ -824,8 +824,8 @@ third_party_settings:
           breakpoints: {  }
           layout_regions_classes:
             section_header: null
-          remove_gutters: '1'
           container_wrapper_id: ''
+          remove_gutters: '1'
           container_width: ''
           gutters_between: null
           context_mapping: {  }
@@ -1041,8 +1041,8 @@ third_party_settings:
           breakpoints: {  }
           layout_regions_classes:
             section_header: null
-          remove_gutters: '1'
           container_wrapper_id: ''
+          remove_gutters: '1'
           context_mapping: {  }
           gutters_between: null
           container_width: ''
@@ -1231,8 +1231,6 @@ third_party_settings:
           - 'entity_field:node:title'
           - 'entity_field:user:name'
           - 'entity_field:user:user_picture'
-_core:
-  default_config_hash: 1bI8lBlrQ88IdVr9o8B4nA1T0eJykr-cRZSZV2ezNZU
 id: node.varbase_blog.full
 targetEntityType: node
 bundle: varbase_blog

@@ -693,8 +693,6 @@ third_party_settings:
         - 'bootstrap_layout_builder:blb_col_4'
         - 'bootstrap_layout_builder:blb_col_6'
       restricted_categories: {  }
-_core:
-  default_config_hash: lCIzUbLKnEkCtUFPcM5kN8eL2rhdN2oI1yDbx1fJSC4
 id: taxonomy_term.blog_categories.full
 targetEntityType: taxonomy_term
 bundle: blog_categories

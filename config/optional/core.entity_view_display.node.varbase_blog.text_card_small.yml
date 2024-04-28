@@ -60,8 +60,6 @@ third_party_settings:
         weight: 0
         label: hidden
         formatter: ds_post_date_short_date
-_core:
-  default_config_hash: kRHJ9WYeXJhI5KXliRWkWwmAUMeAx2X9UsXPEp4dK7k
 id: node.varbase_blog.text_card_small
 targetEntityType: node
 bundle: varbase_blog
