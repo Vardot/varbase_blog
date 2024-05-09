@@ -41,30 +41,25 @@ third_party_settings:
       media:
         - field_media
       content:
-        - group_card_header
+        - group_content_header
         - field_blog_categories
         - node_post_date
         - node_title
         - body
         - node_link
     fields:
-      node_link:
-        plugin_id: node_link
-        weight: 6
+      node_post_date:
+        plugin_id: node_post_date
+        weight: 3
         label: hidden
-        formatter: default
-        settings:
-          'link text': 'Read Article'
-          'link class': card-link
-          wrapper: div
-          class: 'read-more text-start mt-3'
+        formatter: ds_post_date_short_date
         ft:
           id: reset
           settings:
             lb: ''
       node_title:
         plugin_id: node_title
-        weight: 4
+        weight: 3
         label: hidden
         formatter: default
         settings:
@@ -79,27 +74,32 @@ third_party_settings:
             lb: ''
             lb-col: false
             classes: {  }
-      node_post_date:
-        plugin_id: node_post_date
-        weight: 3
+      node_link:
+        plugin_id: node_link
+        weight: 5
         label: hidden
-        formatter: ds_post_date_short_date
+        formatter: default
+        settings:
+          'link text': 'Read Article'
+          'link class': card-link
+          wrapper: div
+          class: 'read-more text-start mt-4 fw-bold'
         ft:
           id: reset
           settings:
             lb: ''
   field_group:
-    group_card_header:
+    group_content_header:
       children:
         - field_blog_categories
         - node_post_date
-      label: 'card header'
+      label: 'Content header'
       parent_name: ''
       region: content
-      weight: 1
+      weight: 2
       format_type: html_element
       format_settings:
-        classes: 'd-flex justify-content-between'
+        classes: 'content-header d-flex justify-content-between mb-3'
         show_empty_fields: false
         id: ''
         element: div
@@ -144,7 +144,7 @@ content:
             lb: ''
             lb-col: false
             classes: {  }
-    weight: 5
+    weight: 4
     region: content
   field_blog_categories:
     type: entity_reference_label

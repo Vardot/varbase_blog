@@ -1,6 +1,5 @@
 langcode: en
 status: true
-dependencies: {  }
 id: edge_to_edge_lead_media_2_columns
 label: 'Edge to Edge lead media 2 columns'
 targetEntityType: node
@@ -231,6 +230,22 @@ layout:
                 class: null
               scroll_effects:
                 class: null
+          component_attributes:
+            block_attributes:
+              id: ''
+              class: ''
+              style: ''
+              data: ''
+            block_title_attributes:
+              id: ''
+              class: ''
+              style: ''
+              data: ''
+            block_content_attributes:
+              id: ''
+              class: 'text-uppercase fw-bold'
+              style: ''
+              data: ''
       58b9f826-9f14-48a4-b566-13b07bd3aa91:
         uuid: 58b9f826-9f14-48a4-b566-13b07bd3aa91
         region: section_header
@@ -352,6 +367,22 @@ layout:
                 class: null
               scroll_effects:
                 class: null
+          component_attributes:
+            block_attributes:
+              id: ''
+              class: ''
+              style: ''
+              data: ''
+            block_title_attributes:
+              id: ''
+              class: ''
+              style: ''
+              data: ''
+            block_content_attributes:
+              id: ''
+              class: ms-1
+              style: ''
+              data: ''
     third_party_settings: {  }
   -
     layout_id: 'bootstrap_layout_builder:blb_col_1'

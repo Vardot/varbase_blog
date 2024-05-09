@@ -338,6 +338,22 @@ layout:
                 class: null
               scroll_effects:
                 class: null
+          component_attributes:
+            block_attributes:
+              id: ''
+              class: ''
+              style: ''
+              data: ''
+            block_title_attributes:
+              id: ''
+              class: ''
+              style: ''
+              data: ''
+            block_content_attributes:
+              id: ''
+              class: 'text-uppercase fw-bold'
+              style: ''
+              data: ''
       44476820-44b5-4856-a30a-e78fabc28b89:
         uuid: 44476820-44b5-4856-a30a-e78fabc28b89
         region: section_header
@@ -459,6 +475,22 @@ layout:
                 class: null
               scroll_effects:
                 class: null
+          component_attributes:
+            block_attributes:
+              id: ''
+              class: ''
+              style: ''
+              data: ''
+            block_title_attributes:
+              id: ''
+              class: ''
+              style: ''
+              data: ''
+            block_content_attributes:
+              id: ''
+              class: ms-1
+              style: ''
+              data: ''
     third_party_settings: {  }
   -
     layout_id: 'bootstrap_layout_builder:blb_col_1'

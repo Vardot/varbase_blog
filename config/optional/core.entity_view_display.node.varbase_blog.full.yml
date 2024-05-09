@@ -152,8 +152,8 @@ third_party_settings:
           breakpoints: {  }
           layout_regions_classes:
             section_header: null
-          container_wrapper_id: ''
           remove_gutters: '0'
+          container_wrapper_id: ''
           context_mapping: {  }
           gutters_between: null
           container_width: ''
@@ -368,8 +368,8 @@ third_party_settings:
           breakpoints: {  }
           layout_regions_classes:
             section_header: null
-          container_wrapper_id: ''
           remove_gutters: '1'
+          container_wrapper_id: ''
           container_width: ''
           gutters_between: null
           context_mapping: {  }
@@ -592,6 +592,22 @@ third_party_settings:
                     class: null
                   scroll_effects:
                     class: null
+              component_attributes:
+                block_attributes:
+                  id: ''
+                  class: ''
+                  style: ''
+                  data: ''
+                block_title_attributes:
+                  id: ''
+                  class: ''
+                  style: ''
+                  data: ''
+                block_content_attributes:
+                  id: ''
+                  class: 'text-uppercase fw-bold'
+                  style: ''
+                  data: ''
           a94a1f90-4c1c-4ba0-8286-7af43086a25b:
             uuid: a94a1f90-4c1c-4ba0-8286-7af43086a25b
             region: section_header
@@ -713,6 +729,22 @@ third_party_settings:
                     class: null
                   scroll_effects:
                     class: null
+              component_attributes:
+                block_attributes:
+                  id: ''
+                  class: ''
+                  style: ''
+                  data: ''
+                block_title_attributes:
+                  id: ''
+                  class: ''
+                  style: ''
+                  data: ''
+                block_content_attributes:
+                  id: ''
+                  class: ms-1
+                  style: ''
+                  data: ''
         third_party_settings: {  }
       -
         layout_id: 'bootstrap_layout_builder:blb_col_1'
@@ -824,8 +856,8 @@ third_party_settings:
           breakpoints: {  }
           layout_regions_classes:
             section_header: null
-          container_wrapper_id: ''
           remove_gutters: '1'
+          container_wrapper_id: ''
           container_width: ''
           gutters_between: null
           context_mapping: {  }
@@ -1041,8 +1073,8 @@ third_party_settings:
           breakpoints: {  }
           layout_regions_classes:
             section_header: null
-          container_wrapper_id: ''
           remove_gutters: '1'
+          container_wrapper_id: ''
           context_mapping: {  }
           gutters_between: null
           container_width: ''

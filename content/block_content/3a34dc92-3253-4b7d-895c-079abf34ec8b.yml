@@ -37,7 +37,7 @@ default:
       value: 1713866756
   body:
     -
-      value: "<p>With Varbase, you won't spend much time creating new view modes and configuring each to use a responsive image style! It comes ready for you.</p>"
+      value: "<p>With Varbase, you won't spend much time creating new view modes and configuring each to use a responsive image style! It comes ready for you, streamlining your process seamlessly and efficiently from start to end, enabling hassle-free development.</p>"
       format: full_html
       summary: ''
   field_buttons:

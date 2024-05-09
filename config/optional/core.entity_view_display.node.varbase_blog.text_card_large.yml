@@ -14,6 +14,7 @@ dependencies:
     - node.type.varbase_blog
   module:
     - ds
+    - field_group
     - smart_trim
     - user
 third_party_settings:
@@ -28,19 +29,32 @@ third_party_settings:
           field_templates: default
           settings:
             style_size: large
-            card_border: false
-            equal_height: false
-            anchor_all: false
+            card_border: 0
+            padded: 0
+            equal_height: 0
+            anchor_all: 0
             utility_classes: ''
             content_utility_classes: ''
     regions:
       content:
+        - group_content_header
+        - field_blog_categories
+        - node_post_date
         - node_title
         - body
     fields:
+      node_post_date:
+        plugin_id: node_post_date
+        weight: 2
+        label: hidden
+        formatter: ds_post_date_short_date
+        ft:
+          id: reset
+          settings:
+            lb: ''
       node_title:
         plugin_id: node_title
-        weight: 1
+        weight: 3
         label: hidden
         formatter: default
         settings:
@@ -53,6 +67,27 @@ third_party_settings:
             lb: ''
             lb-col: false
             classes: {  }
+  field_group:
+    group_content_header:
+      children:
+        - field_blog_categories
+        - node_post_date
+      label: 'Content header'
+      parent_name: ''
+      region: content
+      weight: 0
+      format_type: html_element
+      format_settings:
+        classes: 'content-header d-flex justify-content-between mb-3'
+        show_empty_fields: false
+        id: ''
+        element: div
+        show_label: false
+        label_element: h3
+        label_element_classes: ''
+        attributes: ''
+        effect: none
+        speed: fast
 id: node.varbase_blog.text_card_large
 targetEntityType: node
 bundle: varbase_blog
@@ -78,11 +113,47 @@ content:
       trim_options:
         text: true
     third_party_settings: {  }
-    weight: 2
+    weight: 4
+    region: content
+  field_blog_categories:
+    type: entity_reference_label
+    label: hidden
+    settings:
+      link: false
+    third_party_settings:
+      ds:
+        ds_limit: ''
+        ft:
+          id: expert
+          settings:
+            lb: ''
+            lbw: false
+            lbw-el: ''
+            lbw-cl: ''
+            lbw-at: ''
+            lb-col: false
+            ow: false
+            ow-el: ''
+            ow-cl: ''
+            ow-at: ''
+            ow-def-at: false
+            ow-def-cl: false
+            fis: false
+            fis-el: ''
+            fis-cl: ''
+            fis-at: ''
+            fis-def-at: false
+            fi: true
+            fi-el: ''
+            fi-cl: 'text-uppercase fw-bold'
+            fi-at: ''
+            fi-def-at: true
+            prefix: ''
+            suffix: ''
+    weight: 1
     region: content
 hidden:
   content_moderation_control: true
-  field_blog_categories: true
   field_media: true
   field_meta_tags: true
   field_tags: true

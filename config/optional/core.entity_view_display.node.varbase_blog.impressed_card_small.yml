@@ -14,7 +14,6 @@ dependencies:
     - node.type.varbase_blog
   module:
     - ds
-    - smart_trim
     - user
 third_party_settings:
   ds:
@@ -28,9 +27,10 @@ third_party_settings:
           field_templates: default
           settings:
             style_size: small
-            card_border: false
-            equal_height: true
-            anchor_all: true
+            card_border: 0
+            padded: 0
+            equal_height: 1
+            anchor_all: 1
             media_position: top
             utility_classes: ''
             media_utility_classes: ''
@@ -40,8 +40,17 @@ third_party_settings:
         - field_media
       content:
         - node_title
-        - body
+        - node_post_date
     fields:
+      node_post_date:
+        plugin_id: node_post_date
+        weight: 2
+        label: hidden
+        formatter: ds_post_date_short_date
+        ft:
+          id: reset
+          settings:
+            lb: ''
       node_title:
         plugin_id: node_title
         weight: 1
@@ -62,22 +71,6 @@ targetEntityType: node
 bundle: varbase_blog
 mode: impressed_card_small
 content:
-  body:
-    type: smart_trim
-    label: hidden
-    settings:
-      trim_length: 20
-      trim_type: words
-      trim_suffix: ...
-      summary_handler: full
-      trim_options:
-        text: true
-      more_link: '0'
-      more_text: More
-      more_class: more-link
-    third_party_settings: {  }
-    weight: 2
-    region: content
   field_media:
     type: entity_reference_entity_view
     label: hidden
@@ -88,6 +81,7 @@ content:
     weight: 0
     region: media
 hidden:
+  body: true
   content_moderation_control: true
   field_blog_categories: true
   field_meta_tags: true

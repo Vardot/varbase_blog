@@ -44,12 +44,12 @@ third_party_settings:
             columns_xxl_size: ''
             utility_classes: ''
             media_utility_classes: ''
-            content_utility_classes: ''
+            content_utility_classes: ' pt-0 pb-0'
     regions:
       media:
         - field_media
       content:
-        - group_card_header
+        - group_content_header
         - field_blog_categories
         - node_post_date
         - node_title
@@ -67,25 +67,9 @@ third_party_settings:
             lb: ''
             lb-col: false
             classes: {  }
-      node_link:
-        plugin_id: node_link
-        weight: 6
-        label: hidden
-        formatter: default
-        settings:
-          'link text': 'Read Article'
-          'link class': mt-5
-          wrapper: ''
-          class: ''
-        ft:
-          id: default
-          settings:
-            lb: ''
-            lb-col: false
-            classes: {  }
       node_title:
         plugin_id: node_title
-        weight: 4
+        weight: 3
         label: hidden
         formatter: default
         settings:
@@ -100,18 +84,32 @@ third_party_settings:
             lb: ''
             lb-col: false
             classes: {  }
+      node_link:
+        plugin_id: node_link
+        weight: 5
+        label: hidden
+        formatter: default
+        settings:
+          'link text': 'Read Article'
+          'link class': card-link
+          wrapper: div
+          class: 'read-more text-start mt-4 fw-bold'
+        ft:
+          id: reset
+          settings:
+            lb: ''
   field_group:
-    group_card_header:
+    group_content_header:
       children:
         - field_blog_categories
         - node_post_date
-      label: 'card header'
+      label: 'Content header'
       parent_name: ''
       region: content
-      weight: 1
+      weight: 2
       format_type: html_element
       format_settings:
-        classes: 'd-flex justify-content-between'
+        classes: 'content-header d-flex justify-content-between mb-3'
         show_empty_fields: false
         id: ''
         element: div
@@ -146,7 +144,7 @@ content:
       trim_options:
         text: true
     third_party_settings: {  }
-    weight: 5
+    weight: 4
     region: content
   field_blog_categories:
     type: entity_reference_label
