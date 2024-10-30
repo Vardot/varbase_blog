@@ -30,7 +30,7 @@
     "drupal/varbase_core": "~10",
     "drupal/varbase_media": "~10",
     "drupal/varbase_seo": "~10",
-    "drupal/varbase_layout_builder": "~10.1.0",
+    "drupal/varbase_layout_builder": "~10.2.0 || 10.2.x-dev",
     "drupal/taxonomy_menu": "~3"
   }
 }
