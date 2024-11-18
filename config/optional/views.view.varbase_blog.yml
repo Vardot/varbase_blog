@@ -101,6 +101,7 @@ display:
         type: full
         options:
           offset: 0
+          pagination_heading_level: h4
           items_per_page: 10
           total_pages: null
           id: 0
@@ -915,10 +916,11 @@ display:
           row_class: 'gy-4 g-sm-4'
           default_row_class: true
           uses_fields: false
-          col_xs: none
-          col_sm: col-sm-12
-          col_md: col-md-12
-          col_lg: col-lg-4
+          grid_class: ''
+          col_xs: col-12
+          col_sm: none
+          col_md: none
+          col_lg: none
           col_xl: col-xl-4
           col_xxl: none
       row:
