@@ -17,7 +17,6 @@ function varbase_blog_update_100001() {
     'row_class' => 'gy-4 g-sm-4',
     'default_row_class' => true,
     'uses_fields' => false,
-    'grid_class' => '',
     'col_xs' => 'none',
     'col_sm' => 'col-sm-12',
     'col_md' => 'col-md-4',
@@ -34,7 +33,7 @@ function varbase_blog_update_100001() {
     $homepage_blog_block_config = $current_block_config->get();
 
     // Update specific values in the new configuration.
-    $homepage_blog_block_config['display']['homepage_blog_block']['display_options']['style']['options']['col_md'] = [
+    $homepage_blog_block_config['display']['homepage_blog_block']['display_options']['style']['options'] = [
       'row_class' => 'gy-4 g-sm-4',
       'default_row_class' => true,
       'uses_fields' => false,
