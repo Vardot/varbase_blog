@@ -17,6 +17,7 @@ function varbase_blog_update_100001() {
     'row_class' => 'gy-4 g-sm-4',
     'default_row_class' => true,
     'uses_fields' => false,
+    'grid_class' => '',
     'col_xs' => 'none',
     'col_sm' => 'col-sm-12',
     'col_md' => 'col-md-4',
@@ -30,12 +31,23 @@ function varbase_blog_update_100001() {
 
   // Check if the current configuration matches the defined old configuration.
   if ($old_config_array === $current_config_array) {
-    $new_config_array = $current_block_config->get();
+    $homepage_blog_block_config = $current_block_config->get();
 
     // Update specific values in the new configuration.
-    $new_config_array['display']['homepage_blog_block']['display_options']['style']['options']['col_md'] = 'col-md-12';
+    $homepage_blog_block_config['display']['homepage_blog_block']['display_options']['style']['options']['col_md'] = [
+      'row_class' => 'gy-4 g-sm-4',
+      'default_row_class' => true,
+      'uses_fields' => false,
+      'grid_class' => '',
+      'col_xs' => 'col-12',
+      'col_sm' => 'none',
+      'col_md' => 'none',
+      'col_lg' => 'none',
+      'col_xl' => 'col-xl-4',
+      'col_xxl' => 'none'
+    ];
 
     // Set and save the new configuration.
-    $current_block_config->setData($new_config_array)->save();
+    $current_block_config->setData($homepage_blog_block_config)->save();
   }
 }
