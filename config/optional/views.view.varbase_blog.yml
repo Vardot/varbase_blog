@@ -917,7 +917,7 @@ display:
           uses_fields: false
           col_xs: none
           col_sm: col-sm-12
-          col_md: col-md-4
+          col_md: col-md-12
           col_lg: col-lg-4
           col_xl: col-xl-4
           col_xxl: none
