@@ -19,21 +19,51 @@ dependencies:
 third_party_settings:
   ds:
     layout:
-      id: pattern_card_text
+      id: 'ui_patterns:varbase_components:card_text'
       library: null
       disable_css: false
       entity_classes: all_classes
       settings:
-        pattern:
-          field_templates: default
-          settings:
-            style_size: small
-            card_border: 1
-            padded: 1
-            equal_height: 0
-            anchor_all: 0
-            utility_classes: ''
-            content_utility_classes: ''
+        label: ''
+        ui_patterns:
+          component_id: 'varbase_components:card-text'
+          variant_id: null
+          props:
+            attributes:
+              source_id: attributes
+              source:
+                value: ''
+            style_size:
+              source_id: select
+              source:
+                value: small
+            card_border:
+              source_id: checkbox
+              source:
+                value: 1
+            padded:
+              source_id: checkbox
+              source:
+                value: 1
+            equal_height:
+              source_id: checkbox
+              source:
+                value: 0
+            anchor_all:
+              source_id: checkbox
+              source:
+                value: 0
+            card_attributes:
+              source_id: attributes
+              source:
+                value: ''
+            content_attributes:
+              source_id: attributes
+              source:
+                value: ''
+            card_text_utility_classes: {  }
+            card_text_content_utility_classes: {  }
+          slots: {  }
     regions:
       content:
         - node_post_date

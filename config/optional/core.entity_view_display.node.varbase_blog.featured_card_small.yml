@@ -18,31 +18,104 @@ dependencies:
 third_party_settings:
   ds:
     layout:
-      id: pattern_card_featured
+      id: 'ui_patterns:varbase_components:card_featured'
       library: null
       disable_css: false
       entity_classes: all_classes
       settings:
-        pattern:
-          field_templates: default
-          settings:
-            style_size: small
-            card_border: 0
-            padded: 0
-            equal_height: 1
-            anchor_all: 1
-            media_position: start
-            content_vertical_alignment: center
-            gutters_between: small-end
-            columns_xs_size: ''
-            columns_sm_size: '06_06'
-            columns_md_size: ''
-            columns_lg_size: ''
-            columns_xl_size: ''
-            columns_xxl_size: ''
-            utility_classes: ''
-            media_utility_classes: ''
-            content_utility_classes: ''
+        label: ''
+        ui_patterns:
+          component_id: 'varbase_components:card-featured'
+          variant_id: null
+          props:
+            attributes:
+              source_id: attributes
+              source:
+                value: ''
+            style_size:
+              source_id: select
+              source:
+                value: small
+            card_border:
+              source_id: checkbox
+              source:
+                value: 0
+            padded:
+              source_id: checkbox
+              source:
+                value: 0
+            equal_height:
+              source_id: checkbox
+              source:
+                value: '1'
+            anchor_all:
+              source_id: checkbox
+              source:
+                value: 0
+            media_position:
+              source_id: select
+              source:
+                value: start
+            content_vertical_alignment:
+              source_id: select
+              source:
+                value: center
+            gutters_between:
+              source_id: select
+              source:
+                value: large
+            columns_xs_size:
+              source_id: select
+              source:
+                value: ''
+            columns_sm_size:
+              source_id: select
+              source:
+                value: '06_06'
+            columns_md_size:
+              source_id: select
+              source:
+                value: ''
+            columns_lg_size:
+              source_id: select
+              source:
+                value: ''
+            columns_xl_size:
+              source_id: select
+              source:
+                value: ''
+            columns_xxl_size:
+              source_id: select
+              source:
+                value: ''
+            card_attributes:
+              source_id: attributes
+              source:
+                value: ''
+            media_attributes:
+              source_id: attributes
+              source:
+                value: ''
+            content_attributes:
+              source_id: attributes
+              source:
+                value: ''
+            row_attributes:
+              source_id: attributes
+              source:
+                value: ''
+            start_column_attributes:
+              source_id: attributes
+              source:
+                value: ''
+            end_column_attributes:
+              source_id: attributes
+              source:
+                value: ''
+            card_featured_utility_classes: {  }
+            card_featured_media_utility_classes: {  }
+            card_featured_content_utility_classes: {  }
+          slots: {  }
     regions:
       media:
         - field_media
