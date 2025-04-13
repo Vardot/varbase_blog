@@ -14,7 +14,6 @@ dependencies:
   - vmi:vmi
   - taxonomy_menu:taxonomy_menu
 install:
-  - statistics
   - length_indicator
   - advanced_text_formatter
   - maxlength

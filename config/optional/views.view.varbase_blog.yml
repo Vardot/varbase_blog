@@ -13,7 +13,6 @@ dependencies:
   module:
     - ds
     - node
-    - statistics
     - taxonomy
     - text
     - user
@@ -999,7 +998,6 @@ display:
         - 'user.node_grants:view'
         - user.permissions
       tags: {  }
-  most_popular_blog_posts_block:
     id: most_popular_blog_posts_block
     display_title: 'Most popular'
     display_plugin: block
