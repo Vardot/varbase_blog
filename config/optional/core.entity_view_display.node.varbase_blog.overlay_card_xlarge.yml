@@ -120,11 +120,6 @@ content:
     third_party_settings: {  }
     weight: 2
     region: content
-  content_moderation_control:
-    settings: {  }
-    third_party_settings: {  }
-    weight: -20
-    region: content
   field_media:
     type: entity_reference_entity_view
     label: hidden
@@ -135,6 +130,7 @@ content:
     weight: 0
     region: media
 hidden:
+  content_moderation_control: true
   body: true
   field_blog_categories: true
   field_meta_tags: true

@@ -108,8 +108,8 @@ content:
     weight: 0
     region: media
 hidden:
-  body: true
   content_moderation_control: true
+  body: true
   field_blog_categories: true
   field_meta_tags: true
   field_tags: true
