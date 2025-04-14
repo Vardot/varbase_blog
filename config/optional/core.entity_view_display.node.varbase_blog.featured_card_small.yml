@@ -88,6 +88,18 @@ third_party_settings:
               source_id: select
               source:
                 value: ''
+            card_featured_utility_classes:
+              source_id: list_textarea
+              source:
+                value: ''
+            card_featured_media_utility_classes:
+              source_id: list_textarea
+              source:
+                value: ''
+            card_featured_content_utility_classes:
+              source_id: list_textarea
+              source:
+                value: ''
             card_attributes:
               source_id: attributes
               source:
@@ -112,9 +124,6 @@ third_party_settings:
               source_id: attributes
               source:
                 value: ''
-            card_featured_utility_classes: {  }
-            card_featured_media_utility_classes: {  }
-            card_featured_content_utility_classes: {  }
           slots: {  }
     regions:
       media:
@@ -162,8 +171,8 @@ content:
     weight: 0
     region: media
 hidden:
-  content_moderation_control: true
   body: true
+  content_moderation_control: true
   field_blog_categories: true
   field_meta_tags: true
   field_tags: true

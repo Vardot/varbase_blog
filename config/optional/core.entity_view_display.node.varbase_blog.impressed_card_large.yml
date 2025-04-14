@@ -58,6 +58,18 @@ third_party_settings:
               source_id: select
               source:
                 value: top
+            card_impressed_utility_classes:
+              source_id: list_textarea
+              source:
+                value: ''
+            card_impressed_media_utility_classes:
+              source_id: list_textarea
+              source:
+                value: ''
+            card_impressed_content_utility_classes:
+              source_id: list_textarea
+              source:
+                value: ''
             card_attributes:
               source_id: attributes
               source:
@@ -70,9 +82,6 @@ third_party_settings:
               source_id: attributes
               source:
                 value: ''
-            card_impressed_utility_classes: {  }
-            card_impressed_media_utility_classes: {  }
-            card_impressed_content_utility_classes: {  }
           slots: {  }
     regions:
       media:

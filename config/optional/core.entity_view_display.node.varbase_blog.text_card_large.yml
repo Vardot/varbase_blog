@@ -54,6 +54,14 @@ third_party_settings:
               source_id: checkbox
               source:
                 value: 0
+            card_text_utility_classes:
+              source_id: list_textarea
+              source:
+                value: ''
+            card_text_content_utility_classes:
+              source_id: list_textarea
+              source:
+                value: ''
             card_attributes:
               source_id: attributes
               source:
@@ -62,8 +70,6 @@ third_party_settings:
               source_id: attributes
               source:
                 value: ''
-            card_text_utility_classes: {  }
-            card_text_content_utility_classes: {  }
           slots: {  }
     regions:
       content:

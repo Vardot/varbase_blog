@@ -37,23 +37,23 @@ third_party_settings:
             style_size:
               source_id: select
               source:
-                value: small
+                value: medium
             card_border:
               source_id: checkbox
               source:
-                value: 0
+                value: '1'
             padded:
               source_id: checkbox
               source:
-                value: 0
+                value: '1'
             equal_height:
               source_id: checkbox
               source:
-                value: 1
+                value: '1'
             anchor_all:
               source_id: checkbox
               source:
-                value: 1
+                value: '1'
             media_position:
               source_id: select
               source:
@@ -65,7 +65,7 @@ third_party_settings:
             gutters_between:
               source_id: select
               source:
-                value: small-end
+                value: 'no'
             columns_xs_size:
               source_id: select
               source:
@@ -73,7 +73,7 @@ third_party_settings:
             columns_sm_size:
               source_id: select
               source:
-                value: 06_06
+                value: ''
             columns_md_size:
               source_id: select
               source:
@@ -81,7 +81,7 @@ third_party_settings:
             columns_lg_size:
               source_id: select
               source:
-                value: ''
+                value: '04_08'
             columns_xl_size:
               source_id: select
               source:
@@ -90,6 +90,18 @@ third_party_settings:
               source_id: select
               source:
                 value: ''
+            card_featured_utility_classes:
+              source_id: list_textarea
+              source:
+                value: ''
+            card_featured_media_utility_classes:
+              source_id: list_textarea
+              source:
+                value: ''
+            card_featured_content_utility_classes:
+              source_id: list_textarea
+              source:
+                value: "pt-0\r\npb-0"
             card_attributes:
               source_id: attributes
               source:
@@ -114,9 +126,6 @@ third_party_settings:
               source_id: attributes
               source:
                 value: ''
-            card_featured_utility_classes: {  }
-            card_featured_media_utility_classes: {  }
-            card_featured_content_utility_classes: {  }
           slots: {  }
     regions:
       media:

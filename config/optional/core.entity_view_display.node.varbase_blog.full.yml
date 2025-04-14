@@ -152,8 +152,8 @@ third_party_settings:
           breakpoints: {  }
           layout_regions_classes:
             section_header: null
-          remove_gutters: '0'
           container_wrapper_id: ''
+          remove_gutters: '0'
           context_mapping: {  }
           gutters_between: null
           container_width: ''
@@ -368,8 +368,8 @@ third_party_settings:
           breakpoints: {  }
           layout_regions_classes:
             section_header: null
-          remove_gutters: '1'
           container_wrapper_id: ''
+          remove_gutters: '1'
           container_width: ''
           gutters_between: null
           context_mapping: {  }
@@ -856,8 +856,8 @@ third_party_settings:
           breakpoints: {  }
           layout_regions_classes:
             section_header: null
-          remove_gutters: '1'
           container_wrapper_id: ''
+          remove_gutters: '1'
           container_width: ''
           gutters_between: null
           context_mapping: {  }
@@ -1073,8 +1073,8 @@ third_party_settings:
           breakpoints: {  }
           layout_regions_classes:
             section_header: null
-          remove_gutters: '1'
           container_wrapper_id: ''
+          remove_gutters: '1'
           context_mapping: {  }
           gutters_between: null
           container_width: ''
