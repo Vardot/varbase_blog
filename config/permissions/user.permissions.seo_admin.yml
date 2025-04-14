@@ -4,4 +4,3 @@ permissions:
   - 'delete any varbase_blog content'
   - 'edit any varbase_blog content'
   - 'view varbase_blog revisions'
-  - 'view post access counter'
