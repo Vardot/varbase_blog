@@ -3,7 +3,6 @@ status: true
 dependencies:
   config:
     - core.entity_view_mode.node.featured_card_medium
-    - core.entity_view_mode.node.featured_card_xsmall
     - core.entity_view_mode.node.impressed_card_medium
     - core.entity_view_mode.node.text_card_small
     - field.storage.node.body
@@ -15,7 +14,10 @@ dependencies:
     - node
     - taxonomy
     - text
+    - ui_patterns
+    - ui_patterns_views
     - user
+    - varbase_components
     - views_bootstrap
 id: varbase_blog
 label: 'Varbase Blog'
@@ -509,45 +511,69 @@ display:
         groups:
           1: AND
       style:
-        type: views_bootstrap_grid
+        type: ui_patterns
         options:
-          row_class: mb-4
-          default_row_class: true
           uses_fields: false
-          col_xs: col-12
-          col_sm: none
-          col_md: none
-          col_lg: none
-          col_xl: none
-          col_xxl: none
+          ui_patterns:
+            ui_patterns:
+              component_id: 'varbase_components:views-view-grid'
+              variant_id: null
+              props:
+                attributes:
+                  source_id: attributes
+                  source:
+                    value: ''
+                col_xs:
+                  source_id: selects
+                  source:
+                    value:
+                      - col-12
+                col_sm:
+                  source_id: selects
+                  source:
+                    value:
+                      - ''
+                col_md:
+                  source_id: selects
+                  source:
+                    value:
+                      - ''
+                col_lg:
+                  source_id: selects
+                  source:
+                    value:
+                      - ''
+                col_xl:
+                  source_id: selects
+                  source:
+                    value:
+                      - ''
+                col_xxl:
+                  source_id: selects
+                  source:
+                    value:
+                      - ''
+                grid_utility_classes:
+                  source_id: list_textarea
+                  source:
+                    value: ''
+                column_utility_classes:
+                  source_id: list_textarea
+                  source:
+                    value: mb-4
+              slots:
+                rows:
+                  sources:
+                    -
+                      source_id: view_rows
+                      source:
+                        ui_patterns_views_field: ''
+                      _weight: '0'
       row:
-        type: 'ds_entity:node'
+        type: 'entity:node'
         options:
           relationship: none
           view_mode: featured_card_medium
-          alternating_fieldset:
-            alternating: false
-            allpages: false
-            item_0: teaser
-            item_1: teaser
-            item_2: teaser
-            item_3: teaser
-            item_4: teaser
-            item_5: teaser
-            item_6: teaser
-            item_7: teaser
-            item_8: teaser
-            item_9: teaser
-            item_10: teaser
-            item_11: teaser
-          grouping_fieldset:
-            group: false
-            group_field: node_field_data|created
-            group_field_function: ''
-          advanced_fieldset:
-            advanced: false
-          delta_fieldset:
-            delta_fields: {  }
       defaults:
         empty: false
         title: false
@@ -644,45 +670,69 @@ display:
           require_value: false
           reduce_duplicates: false
       style:
-        type: views_bootstrap_grid
+        type: ui_patterns
         options:
-          row_class: mb-4
-          default_row_class: true
           uses_fields: false
-          col_xs: col-12
-          col_sm: none
-          col_md: none
-          col_lg: none
-          col_xl: none
-          col_xxl: none
+          ui_patterns:
+            ui_patterns:
+              component_id: 'varbase_components:views-view-grid'
+              variant_id: null
+              props:
+                attributes:
+                  source_id: attributes
+                  source:
+                    value: ''
+                col_xs:
+                  source_id: selects
+                  source:
+                    value:
+                      - col-12
+                col_sm:
+                  source_id: selects
+                  source:
+                    value:
+                      - ''
+                col_md:
+                  source_id: selects
+                  source:
+                    value:
+                      - ''
+                col_lg:
+                  source_id: selects
+                  source:
+                    value:
+                      - ''
+                col_xl:
+                  source_id: selects
+                  source:
+                    value:
+                      - ''
+                col_xxl:
+                  source_id: selects
+                  source:
+                    value:
+                      - ''
+                grid_utility_classes:
+                  source_id: list_textarea
+                  source:
+                    value: ''
+                column_utility_classes:
+                  source_id: list_textarea
+                  source:
+                    value: mb-4
+              slots:
+                rows:
+                  sources:
+                    -
+                      source_id: view_rows
+                      source:
+                        ui_patterns_views_field: ''
+                      _weight: '0'
       row:
-        type: 'ds_entity:node'
+        type: 'entity:node'
         options:
           relationship: none
           view_mode: featured_card_medium
-          alternating_fieldset:
-            alternating: false
-            allpages: false
-            item_0: teaser
-            item_1: teaser
-            item_2: teaser
-            item_3: teaser
-            item_4: teaser
-            item_5: teaser
-            item_6: teaser
-            item_7: teaser
-            item_8: teaser
-            item_9: teaser
-            item_10: teaser
-            item_11: teaser
-          grouping_fieldset:
-            group: false
-            group_field: node_field_data|created
-            group_field_function: ''
-          advanced_fieldset:
-            advanced: false
-          delta_fieldset:
-            delta_fields: {  }
       defaults:
         empty: false
         title: false
@@ -781,45 +831,69 @@ display:
           require_value: false
           reduce_duplicates: false
       style:
-        type: views_bootstrap_grid
+        type: ui_patterns
         options:
-          row_class: mb-4
-          default_row_class: true
           uses_fields: false
-          col_xs: col-12
-          col_sm: none
-          col_md: none
-          col_lg: none
-          col_xl: none
-          col_xxl: none
+          ui_patterns:
+            ui_patterns:
+              component_id: 'varbase_components:views-view-grid'
+              variant_id: null
+              props:
+                attributes:
+                  source_id: attributes
+                  source:
+                    value: ''
+                col_xs:
+                  source_id: selects
+                  source:
+                    value:
+                      - col-12
+                col_sm:
+                  source_id: selects
+                  source:
+                    value:
+                      - ''
+                col_md:
+                  source_id: selects
+                  source:
+                    value:
+                      - ''
+                col_lg:
+                  source_id: selects
+                  source:
+                    value:
+                      - ''
+                col_xl:
+                  source_id: selects
+                  source:
+                    value:
+                      - ''
+                col_xxl:
+                  source_id: selects
+                  source:
+                    value:
+                      - ''
+                grid_utility_classes:
+                  source_id: list_textarea
+                  source:
+                    value: ''
+                column_utility_classes:
+                  source_id: list_textarea
+                  source:
+                    value: mb-4
+              slots:
+                rows:
+                  sources:
+                    -
+                      source_id: view_rows
+                      source:
+                        ui_patterns_views_field: ''
+                      _weight: '0'
       row:
-        type: 'ds_entity:node'
+        type: 'entity:node'
         options:
           relationship: none
           view_mode: featured_card_medium
-          alternating_fieldset:
-            alternating: false
-            allpages: false
-            item_0: teaser
-            item_1: teaser
-            item_2: teaser
-            item_3: teaser
-            item_4: teaser
-            item_5: teaser
-            item_6: teaser
-            item_7: teaser
-            item_8: teaser
-            item_9: teaser
-            item_10: teaser
-            item_11: teaser
-          grouping_fieldset:
-            group: false
-            group_field: node_field_data|created
-            group_field_function: ''
-          advanced_fieldset:
-            advanced: false
-          delta_fieldset:
-            delta_fields: {  }
       defaults:
         empty: false
         title: false
@@ -910,37 +984,69 @@ display:
             format: full_html
           tokenize: false
       style:
-        type: views_bootstrap_grid
+        type: ui_patterns
         options:
-          row_class: 'gy-4 g-sm-4'
-          default_row_class: true
           uses_fields: false
-          grid_class: ''
-          col_xs: col-12
-          col_sm: none
-          col_md: none
-          col_lg: none
-          col_xl: col-xl-4
-          col_xxl: none
+          ui_patterns:
+            ui_patterns:
+              component_id: 'varbase_components:views-view-grid'
+              variant_id: null
+              props:
+                attributes:
+                  source_id: attributes
+                  source:
+                    value: ''
+                col_xs:
+                  source_id: selects
+                  source:
+                    value:
+                      - col-12
+                col_sm:
+                  source_id: selects
+                  source:
+                    value:
+                      - ''
+                col_md:
+                  source_id: selects
+                  source:
+                    value:
+                      - ''
+                col_lg:
+                  source_id: selects
+                  source:
+                    value:
+                      - ''
+                col_xl:
+                  source_id: selects
+                  source:
+                    value:
+                      - col-xl-4
+                col_xxl:
+                  source_id: selects
+                  source:
+                    value:
+                      - ''
+                grid_utility_classes:
+                  source_id: list_textarea
+                  source:
+                    value: ''
+                column_utility_classes:
+                  source_id: list_textarea
+                  source:
+                    value: "gy-4\r\ng-sm-4"
+              slots:
+                rows:
+                  sources:
+                    -
+                      source_id: view_rows
+                      source:
+                        ui_patterns_views_field: ''
+                      _weight: '0'
       row:
-        type: 'ds_entity:node'
+        type: 'entity:node'
         options:
           relationship: none
           view_mode: impressed_card_medium
-          alternating_fieldset:
-            alternating: false
-            allpages: false
-            item_0: teaser
-            item_1: teaser
-            item_2: teaser
-          grouping_fieldset:
-            group: false
-            group_field: node_field_data|created
-            group_field_function: ''
-          advanced_fieldset:
-            advanced: false
-          delta_fieldset:
-            delta_fields: {  }
       defaults:
         empty: false
         title: false
@@ -1052,30 +1158,36 @@ display:
           break_phrase: false
           not: true
       style:
-        type: default
+        type: ui_patterns
         options:
-          row_class: ''
-          default_row_class: true
           uses_fields: false
+          ui_patterns:
+            ui_patterns:
+              component_id: 'varbase_components:views-view-unformatted'
+              variant_id: null
+              props:
+                attributes:
+                  source_id: attributes
+                  source:
+                    value: ''
+                content:
+                  source_id: textfield
+                  source:
+                    value: ''
+              slots:
+                rows:
+                  sources:
+                    -
+                      source_id: view_rows
+                      source:
+                        ui_patterns_views_field: ''
+                      _weight: '0'
+                empty: {  }
       row:
-        type: 'ds_entity:node'
+        type: 'entity:node'
         options:
           relationship: none
           view_mode: text_card_small
-          alternating_fieldset:
-            alternating: false
-            allpages: false
-            item_0: teaser
-            item_1: teaser
-            item_2: teaser
-          grouping_fieldset:
-            group: false
-            group_field: node_field_data|created
-            group_field_function: ''
-          advanced_fieldset:
-            advanced: false
-          delta_fieldset:
-            delta_fields: {  }
       defaults:
         title: false
         css_class: false
@@ -1269,11 +1381,77 @@ display:
         operator: AND
         groups:
           1: AND
+      style:
+        type: ui_patterns
+        options:
+          uses_fields: false
+          ui_patterns:
+            ui_patterns:
+              component_id: 'varbase_components:views-view-grid'
+              variant_id: null
+              props:
+                attributes:
+                  source_id: attributes
+                  source:
+                    value: ''
+                col_xs:
+                  source_id: selects
+                  source:
+                    value:
+                      - col-12
+                col_sm:
+                  source_id: selects
+                  source:
+                    value:
+                      - ''
+                col_md:
+                  source_id: selects
+                  source:
+                    value:
+                      - ''
+                col_lg:
+                  source_id: selects
+                  source:
+                    value:
+                      - ''
+                col_xl:
+                  source_id: selects
+                  source:
+                    value:
+                      - ''
+                col_xxl:
+                  source_id: selects
+                  source:
+                    value:
+                      - ''
+                grid_utility_classes:
+                  source_id: list_textarea
+                  source:
+                    value: ''
+                column_utility_classes:
+                  source_id: list_textarea
+                  source:
+                    value: mb-2
+              slots:
+                rows:
+                  sources:
+                    -
+                      source_id: view_rows
+                      source:
+                        ui_patterns_views_field: ''
+                      _weight: '0'
+      row:
+        type: 'entity:node'
+        options:
+          relationship: none
+          view_mode: text_card_small
       defaults:
         empty: false
         title: false
         css_class: false
         pager: false
+        style: false
+        row: false
         relationships: false
         arguments: false
         filters: false
