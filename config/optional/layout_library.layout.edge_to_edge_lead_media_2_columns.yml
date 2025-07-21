@@ -1,5 +1,6 @@
 langcode: en
 status: true
+dependencies: {  }
 id: edge_to_edge_lead_media_2_columns
 label: 'Edge to Edge lead media 2 columns'
 targetEntityType: node
@@ -115,8 +116,8 @@ layout:
       breakpoints: {  }
       layout_regions_classes:
         section_header: null
-      remove_gutters: '1'
       container_wrapper_id: ''
+      remove_gutters: '1'
       container_width: ''
       gutters_between: null
       context_mapping: {  }
@@ -492,8 +493,8 @@ layout:
       breakpoints: {  }
       layout_regions_classes:
         section_header: null
-      remove_gutters: '1'
       container_wrapper_id: ''
+      remove_gutters: '1'
       context_mapping: {  }
       gutters_between: null
       container_width: ''
@@ -736,8 +737,8 @@ layout:
           - col-12
           - col-12
           - col-12
-      remove_gutters: '1'
       container_wrapper_id: ''
+      remove_gutters: '1'
       context_mapping: {  }
       gutters_between: 1
       container_width: ''
@@ -877,8 +878,8 @@ layout:
         section_header: {  }
       breakpoints: {  }
       layout_regions_classes: {  }
-      remove_gutters: '1'
       container_wrapper_id: ''
+      remove_gutters: '1'
       gutters_between: null
     components:
       84cfb2ac-a987-4e85-b3b8-374a0bece2c6:

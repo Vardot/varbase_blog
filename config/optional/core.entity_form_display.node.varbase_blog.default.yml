@@ -14,7 +14,6 @@ dependencies:
     - workflows.workflow.varbase_simple_workflow
   module:
     - advanced_text_formatter
-    - autocomplete_deluxe
     - content_moderation
     - field_group
     - length_indicator
@@ -25,6 +24,7 @@ dependencies:
     - path
     - scheduler
     - scheduler_content_moderation_integration
+    - tagify
     - text
     - yoast_seo
 third_party_settings:
@@ -33,44 +33,44 @@ third_party_settings:
       children:
         - group_basic_information
         - group_categories
+      label: Tabs
+      region: content
       parent_name: ''
       weight: 3
       format_type: tabs
       format_settings:
-        id: ''
         classes: ''
+        id: ''
         direction: horizontal
-      label: Tabs
-      region: content
     group_basic_information:
       children:
         - body
+      label: 'Basic information'
+      region: content
       parent_name: group_tabs
       weight: 15
       format_type: tab
       format_settings:
-        id: ''
         classes: ''
+        id: ''
         formatter: open
         description: ''
         required_fields: true
-      label: 'Basic information'
-      region: content
     group_categories:
       children:
         - field_blog_categories
         - field_tags
+      label: Categories
+      region: content
       parent_name: group_tabs
       weight: 16
       format_type: tab
       format_settings:
-        description: ''
-        formatter: closed
-        required_fields: true
-        id: ''
         classes: ''
-      label: Categories
-      region: content
+        id: ''
+        formatter: closed
+        description: ''
+        required_fields: true
 id: node.varbase_blog.default
 targetEntityType: node
 bundle: varbase_blog
@@ -79,13 +79,13 @@ content:
   body:
     type: text_textarea_with_summary
     weight: 9
+    region: content
     settings:
       rows: 9
       summary_rows: 3
       placeholder: ''
       show_summary: false
     third_party_settings: {  }
-    region: content
   created:
     type: datetime_timestamp
     weight: 10
@@ -93,13 +93,15 @@ content:
     settings: {  }
     third_party_settings: {  }
   field_blog_categories:
+    type: options_select
     weight: 4
+    region: content
     settings: {  }
     third_party_settings: {  }
-    type: options_select
-    region: content
   field_media:
+    type: media_library_widget
     weight: 2
+    region: content
     settings:
       media_types:
         - image
@@ -108,39 +110,37 @@ content:
     third_party_settings:
       media_library_edit:
         show_edit: '1'
-    type: media_library_widget
-    region: content
   field_meta_tags:
+    type: metatag_firehose
     weight: 6
+    region: content
     settings:
       sidebar: true
+      use_details: true
     third_party_settings: {  }
-    type: metatag_firehose
-    region: content
   field_tags:
-    weight: 5
+    type: tagify_entity_reference_autocomplete_widget
+    weight: 27
+    region: content
     settings:
       match_operator: CONTAINS
-      size: 60
-      autocomplete_route_name: autocomplete_deluxe.autocomplete
-      selection_handler: default
-      limit: 10
-      min_length: 0
-      delimiter: ''
-      not_found_message_allow: false
-      not_found_message: "The term '@term' will be added"
-      new_terms: false
-      no_empty_message: 'No terms could be found. Please type in order to add a new term.'
+      match_limit: 10
+      placeholder: ''
+      suggestions_dropdown: 1
+      show_entity_id: 0
+      show_info_label: 0
+      info_label: ''
     third_party_settings: {  }
-    type: autocomplete_deluxe
-    region: content
   field_yoast_seo:
-    weight: 5
-    settings:
-      body: body
-    third_party_settings: {  }
     type: yoast_seo_widget
+    weight: 5
     region: content
+    settings:
+      edit_title: false
+      edit_description: false
+      render_theme: null
+      render_view_mode: default
+    third_party_settings: {  }
   langcode:
     type: language_select
     weight: 2
@@ -150,15 +150,15 @@ content:
     third_party_settings: {  }
   layout_selection:
     type: options_select
-    region: content
     weight: 26
+    region: content
     settings: {  }
     third_party_settings: {  }
   moderation_state:
     type: moderation_state_default
     weight: 16
-    settings: {  }
     region: content
+    settings: {  }
     third_party_settings: {  }
   path:
     type: path
@@ -178,12 +178,17 @@ content:
     region: content
     settings: {  }
     third_party_settings: {  }
+  simple_sitemap:
+    weight: 10
+    region: content
+    settings: {  }
+    third_party_settings: {  }
   status:
     type: boolean_checkbox
-    settings:
-      display_label: true
     weight: 11
     region: content
+    settings:
+      display_label: true
     third_party_settings: {  }
   title:
     type: string_textfield

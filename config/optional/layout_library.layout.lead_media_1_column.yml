@@ -116,8 +116,8 @@ layout:
       breakpoints: {  }
       layout_regions_classes:
         section_header: null
-      remove_gutters: '1'
       container_wrapper_id: ''
+      remove_gutters: '1'
       gutters_between: null
       container_width: ''
       context_mapping: {  }
@@ -600,8 +600,8 @@ layout:
       breakpoints: {  }
       layout_regions_classes:
         section_header: null
-      remove_gutters: '1'
       container_wrapper_id: ''
+      remove_gutters: '1'
       context_mapping: {  }
       gutters_between: null
       container_width: ''
@@ -812,8 +812,8 @@ layout:
         section_header: {  }
       breakpoints: {  }
       layout_regions_classes: {  }
-      remove_gutters: '1'
       container_wrapper_id: ''
+      remove_gutters: '1'
       gutters_between: null
     components:
       7aa7364f-0c7d-4097-82c6-c71cf2961a50:
