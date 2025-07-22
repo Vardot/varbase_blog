@@ -17,7 +17,6 @@ dependencies:
     - ui_patterns
     - ui_patterns_views
     - user
-    - varbase_components
     - views_bootstrap
 id: varbase_blog
 label: 'Varbase Blog'
@@ -516,7 +515,7 @@ display:
           uses_fields: false
           ui_patterns:
             ui_patterns:
-              component_id: 'varbase_components:views-view-grid'
+              component_id: 'vartheme_bs5:views-view-grid'
               variant_id: null
               props:
                 attributes:
@@ -675,7 +674,7 @@ display:
           uses_fields: false
           ui_patterns:
             ui_patterns:
-              component_id: 'varbase_components:views-view-grid'
+              component_id: 'vartheme_bs5:views-view-grid'
               variant_id: null
               props:
                 attributes:
@@ -836,7 +835,7 @@ display:
           uses_fields: false
           ui_patterns:
             ui_patterns:
-              component_id: 'varbase_components:views-view-grid'
+              component_id: 'vartheme_bs5:views-view-grid'
               variant_id: null
               props:
                 attributes:
@@ -989,7 +988,7 @@ display:
           uses_fields: false
           ui_patterns:
             ui_patterns:
-              component_id: 'varbase_components:views-view-grid'
+              component_id: 'vartheme_bs5:views-view-grid'
               variant_id: null
               props:
                 attributes:
@@ -1163,7 +1162,7 @@ display:
           uses_fields: false
           ui_patterns:
             ui_patterns:
-              component_id: 'varbase_components:views-view-unformatted'
+              component_id: 'vartheme_bs5:views-view-unformatted'
               variant_id: null
               props:
                 attributes:
@@ -1387,7 +1386,7 @@ display:
           uses_fields: false
           ui_patterns:
             ui_patterns:
-              component_id: 'varbase_components:views-view-grid'
+              component_id: 'vartheme_bs5:views-view-grid'
               variant_id: null
               props:
                 attributes:

@@ -20,14 +20,14 @@ dependencies:
 third_party_settings:
   ds:
     layout:
-      id: 'ui_patterns:varbase_components:card_text'
+      id: 'ui_patterns:vartheme_bs5:card_text'
       library: null
       disable_css: false
       entity_classes: all_classes
       settings:
         label: ''
         ui_patterns:
-          component_id: 'varbase_components:card-text'
+          component_id: 'vartheme_bs5:card-text'
           variant_id: null
           props:
             attributes:
