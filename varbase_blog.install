@@ -31,6 +31,13 @@ function varbase_blog_install() {
     ->getInstanceFromDefinition(EntityDefinitionUpdateManager::class)
     ->applyUpdates();
 
+  // Clear plugin caches to ensure field_block plugins are available
+  // for optional configurations that reference them.
+  \Drupal::service('plugin.cache_clearer')->clearCachedDefinitions();
+  if (\Drupal::hasService('plugin.manager.block')) {
+    \Drupal::service('plugin.manager.block')->clearCachedDefinitions();
+  }
+
   // Forced configs import on install.
   $forced_configs = [
     'views.view.taxonomy_term',
