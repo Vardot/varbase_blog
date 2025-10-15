@@ -116,8 +116,8 @@ layout:
       breakpoints: {  }
       layout_regions_classes:
         section_header: null
-      container_wrapper_id: ''
       remove_gutters: '1'
+      container_wrapper_id: ''
       container_width: ''
       gutters_between: null
       context_mapping: {  }
@@ -493,8 +493,8 @@ layout:
       breakpoints: {  }
       layout_regions_classes:
         section_header: null
-      container_wrapper_id: ''
       remove_gutters: '1'
+      container_wrapper_id: ''
       context_mapping: {  }
       gutters_between: null
       container_width: ''
@@ -737,8 +737,8 @@ layout:
           - col-12
           - col-12
           - col-12
-      container_wrapper_id: ''
       remove_gutters: '1'
+      container_wrapper_id: ''
       context_mapping: {  }
       gutters_between: 1
       container_width: ''
@@ -748,8 +748,8 @@ layout:
         region: blb_region_col_1
         configuration:
           id: 'field_block:node:varbase_blog:body'
-          label: Body
-          label_display: '0'
+          label: 'Main Content'
+          label_display: visible
           provider: layout_builder
           context_mapping:
             entity: layout_builder.entity
@@ -760,7 +760,113 @@ layout:
             settings: {  }
             third_party_settings: {  }
         weight: 0
-        additional: {  }
+        additional:
+          bootstrap_styles:
+            block_style:
+              background:
+                background_type: null
+              background_color:
+                class: null
+              background_media:
+                image:
+                  media_id: null
+                video:
+                  media_id: null
+                background_options:
+                  background_position: center
+                  background_repeat: no-repeat
+                  background_attachment: not_fixed
+                  background_size: cover
+              background_edgetoedge: false
+              text_color:
+                class: null
+              text_alignment:
+                class: null
+              padding:
+                class: _none
+              padding_left:
+                class: _none
+              padding_top:
+                class: _none
+              padding_right:
+                class: _none
+              padding_bottom:
+                class: _none
+              margin:
+                class: _none
+              margin_left:
+                class: _none
+              margin_top:
+                class: _none
+              margin_right:
+                class: _none
+              margin_bottom:
+                class: _none
+              horizontal_alignment:
+                class: null
+              vertical_alignment:
+                class: null
+              border:
+                border_style:
+                  class: null
+                border_width:
+                  class: _none
+                border_color:
+                  class: null
+                rounded_corners:
+                  class: _none
+                border_left_style:
+                  class: null
+                border_left_width:
+                  class: _none
+                border_left_color:
+                  class: null
+                border_top_style:
+                  class: null
+                border_top_width:
+                  class: _none
+                border_top_color:
+                  class: null
+                border_right_style:
+                  class: null
+                border_right_width:
+                  class: _none
+                border_right_color:
+                  class: null
+                border_bottom_style:
+                  class: null
+                border_bottom_width:
+                  class: _none
+                border_bottom_color:
+                  class: null
+                rounded_corner_top_left:
+                  class: _none
+                rounded_corner_top_right:
+                  class: _none
+                rounded_corner_bottom_left:
+                  class: _none
+                rounded_corner_bottom_right:
+                  class: _none
+              box_shadow:
+                class: null
+              scroll_effects:
+                class: null
+          component_attributes:
+            block_attributes:
+              id: ''
+              class: ''
+              style: ''
+              data: ''
+            block_title_attributes:
+              id: ''
+              class: visually-hidden
+              style: ''
+              data: ''
+            block_content_attributes:
+              id: ''
+              class: ''
+              style: ''
+              data: ''
       45c05709-2d20-482a-8f6f-c9268abb08fd:
         uuid: 45c05709-2d20-482a-8f6f-c9268abb08fd
         region: blb_region_col_2
@@ -771,7 +877,7 @@ layout:
           provider: views
           context_mapping: {  }
           views_label: ''
-          items_per_page: none
+          items_per_page: 0
         weight: 0
         additional: {  }
     third_party_settings: {  }
@@ -878,8 +984,8 @@ layout:
         section_header: {  }
       breakpoints: {  }
       layout_regions_classes: {  }
-      container_wrapper_id: ''
       remove_gutters: '1'
+      container_wrapper_id: ''
       gutters_between: null
     components:
       84cfb2ac-a987-4e85-b3b8-374a0bece2c6:

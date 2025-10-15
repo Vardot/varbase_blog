@@ -152,8 +152,8 @@ third_party_settings:
           breakpoints: {  }
           layout_regions_classes:
             section_header: null
-          container_wrapper_id: ''
           remove_gutters: '0'
+          container_wrapper_id: ''
           context_mapping: {  }
           gutters_between: null
           container_width: ''
@@ -368,8 +368,8 @@ third_party_settings:
           breakpoints: {  }
           layout_regions_classes:
             section_header: null
-          container_wrapper_id: ''
           remove_gutters: '1'
+          container_wrapper_id: ''
           container_width: ''
           gutters_between: null
           context_mapping: {  }
@@ -856,8 +856,8 @@ third_party_settings:
           breakpoints: {  }
           layout_regions_classes:
             section_header: null
-          container_wrapper_id: ''
           remove_gutters: '1'
+          container_wrapper_id: ''
           container_width: ''
           gutters_between: null
           context_mapping: {  }
@@ -868,14 +868,14 @@ third_party_settings:
             configuration:
               id: 'field_block:node:varbase_blog:body'
               label: Body
-              label_display: '0'
+              label_display: visible
               provider: layout_builder
               context_mapping:
                 entity: layout_builder.entity
                 view_mode: view_mode
               formatter:
                 type: text_default
-                label: hidden
+                label: visually_hidden
                 settings: {  }
                 third_party_settings: {  }
             weight: 0
@@ -896,7 +896,7 @@ third_party_settings:
                       background_repeat: no-repeat
                       background_attachment: not_fixed
                       background_size: cover
-                  background_edgetoedge: null
+                  background_edgetoedge: false
                   text_color:
                     class: null
                   text_alignment:
@@ -921,6 +921,10 @@ third_party_settings:
                     class: _none
                   margin_bottom:
                     class: _none
+                  horizontal_alignment:
+                    class: null
+                  vertical_alignment:
+                    class: null
                   border:
                     border_style:
                       class: null
@@ -962,8 +966,26 @@ third_party_settings:
                       class: _none
                     rounded_corner_bottom_right:
                       class: _none
+                  box_shadow:
+                    class: null
                   scroll_effects:
                     class: null
+              component_attributes:
+                block_attributes:
+                  id: ''
+                  class: ''
+                  style: ''
+                  data: ''
+                block_title_attributes:
+                  id: ''
+                  class: visually-hidden
+                  style: ''
+                  data: ''
+                block_content_attributes:
+                  id: ''
+                  class: ''
+                  style: ''
+                  data: ''
         third_party_settings: {  }
       -
         layout_id: 'bootstrap_layout_builder:blb_col_1'
@@ -1073,8 +1095,8 @@ third_party_settings:
           breakpoints: {  }
           layout_regions_classes:
             section_header: null
-          container_wrapper_id: ''
           remove_gutters: '1'
+          container_wrapper_id: ''
           context_mapping: {  }
           gutters_between: null
           container_width: ''

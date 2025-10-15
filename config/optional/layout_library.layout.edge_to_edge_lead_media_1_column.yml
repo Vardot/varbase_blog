@@ -116,8 +116,8 @@ layout:
       breakpoints: {  }
       layout_regions_classes:
         section_header: null
-      container_wrapper_id: ''
       remove_gutters: '1'
+      container_wrapper_id: ''
       container_width: ''
       gutters_between: null
       context_mapping: {  }
@@ -493,8 +493,8 @@ layout:
       breakpoints: {  }
       layout_regions_classes:
         section_header: null
-      container_wrapper_id: ''
       remove_gutters: '1'
+      container_wrapper_id: ''
       context_mapping: {  }
       gutters_between: null
       container_width: ''
@@ -715,8 +715,8 @@ layout:
       breakpoints: {  }
       layout_regions_classes:
         section_header: null
-      container_wrapper_id: ''
       remove_gutters: '1'
+      container_wrapper_id: ''
       context_mapping: {  }
       gutters_between: null
       container_width: ''
@@ -726,8 +726,8 @@ layout:
         region: blb_region_col_1
         configuration:
           id: 'field_block:node:varbase_blog:body'
-          label: Body
-          label_display: '0'
+          label: 'Main Content'
+          label_display: visible
           provider: layout_builder
           context_mapping:
             entity: layout_builder.entity
@@ -747,7 +747,7 @@ layout:
               data: ''
             block_title_attributes:
               id: ''
-              class: ''
+              class: visually-hidden
               style: ''
               data: ''
             block_content_attributes:
@@ -796,6 +796,10 @@ layout:
                 class: _none
               margin_bottom:
                 class: _none
+              horizontal_alignment:
+                class: null
+              vertical_alignment:
+                class: null
               border:
                 border_style:
                   class: null
@@ -837,6 +841,8 @@ layout:
                   class: _none
                 rounded_corner_bottom_right:
                   class: _none
+              box_shadow:
+                class: null
               scroll_effects:
                 class: null
     third_party_settings: {  }
@@ -943,8 +949,8 @@ layout:
         section_header: {  }
       breakpoints: {  }
       layout_regions_classes: {  }
-      container_wrapper_id: ''
       remove_gutters: '1'
+      container_wrapper_id: ''
       gutters_between: null
     components:
       7aa7364f-0c7d-4097-82c6-c71cf2961a50:
