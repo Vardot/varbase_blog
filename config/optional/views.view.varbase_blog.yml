@@ -18,6 +18,8 @@ dependencies:
     - ui_patterns_views
     - user
     - views_bootstrap
+  theme:
+    - vartheme_bs5
 id: varbase_blog
 label: 'Varbase Blog'
 module: views
@@ -584,8 +586,21 @@ display:
         arguments: false
         filters: false
         filter_groups: false
+        header: false
       css_class: blog-listing
       display_description: 'General blog listing'
+      header:
+        area_text_custom:
+          id: area_text_custom
+          table: views
+          field: area_text_custom
+          relationship: none
+          group_type: group
+          admin_label: ''
+          plugin_id: text_custom
+          empty: false
+          content: '<h2 class="visually-hidden">Blog Listing</h2>'
+          tokenize: false
       display_extenders:
         metatag_display_extender:
           metatags: {  }
