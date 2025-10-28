@@ -8,8 +8,6 @@ include:
 composer:
   variables:
     _LENIENT_ALLOW_LIST: "select2, styleguide"
-  artifacts:
-    when: never
   script:
     - composer config minimum-stability dev
     - composer config repositories.drupal composer https://packages.drupal.org/8
@@ -22,6 +20,10 @@ composer:
     - composer require --no-update drupal/core:~10
     - composer require --no-update vardot/varbase-replaces:~10.0.0
     - composer install --no-interaction --prefer-dist
+  artifacts:
+    paths:
+      - vendor/
+      - web/
 composer-lint:
   allow_failure: true
 cspell:
