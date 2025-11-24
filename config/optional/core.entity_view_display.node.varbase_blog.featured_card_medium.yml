@@ -173,13 +173,55 @@ third_party_settings:
         formatter: default
         settings:
           'link text': 'Read Article'
-          'link class': card-link
-          wrapper: div
-          class: 'read-more text-start mt-4 fw-bold'
+          'link class': ''
+          wrapper: ''
+          class: ''
         ft:
-          id: reset
+          id: ui_pattern_ds_component
           settings:
-            lb: ''
+            component_id: 'vartheme_bs5:link'
+            variant_id: null
+            props:
+              attributes:
+                source_id: attributes
+                source:
+                  value: 'aria-label="Read the full article of [node:title]" target="_parent"'
+              url:
+                source_id: token
+                source:
+                  value: '[node:url:relative]'
+              color:
+                source_id: select
+                source:
+                  value: ''
+              opacity:
+                source_id: select
+                source:
+                  value: ''
+              underline_color:
+                source_id: select
+                source:
+                  value: ''
+              underline_offset:
+                source_id: select
+                source:
+                  value: ''
+              underline_opacity:
+                source_id: select
+                source:
+                  value: ''
+              link_utility_classes:
+                source_id: list_textarea
+                source:
+                  value: "card-link\r\nread-more\r\ntext-start\r\nmt-4\r\nfw-bold"
+            slots:
+              content:
+                sources:
+                  -
+                    source_id: token
+                    source:
+                      value: 'Read Article'
+                    _weight: '0'
   field_group:
     group_content_header:
       children:
