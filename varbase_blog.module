@@ -5,16 +5,13 @@
  * Contains varbase_blog.module.
  */
 
+use Drupal\Core\Hook\Attribute\LegacyHook;
+use Drupal\varbase_blog\Hook\VarbaseBlogHooks;
+
 /**
  * Implements hook_preprocess_HOOK() for menu.html.twig.
  */
+#[LegacyHook]
 function varbase_blog_preprocess_menu(&$variables) {
-  if (isset($variables['menu_name']) && $variables['menu_name'] == 'blog-menu') {
-    $variables['attributes']['class'] = [
-      'nav-pills',
-      'list-inline',
-      'center-block',
-      'justify-content-center',
-    ];
-  }
+  \Drupal::service(VarbaseBlogHooks::class)->preprocessMenu($variables);
 }

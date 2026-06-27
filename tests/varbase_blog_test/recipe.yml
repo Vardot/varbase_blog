@@ -1,0 +1,5 @@
+name: 'Varbase Blog Test'
+description: 'Provisions a site for the Varbase Blog automated tests: installs Varbase Blog (and its Varbase dependencies) so the Blog post content type and listing are available.'
+type: 'Testing'
+install:
+  - varbase_blog

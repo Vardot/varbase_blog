@@ -1,0 +1,30 @@
+{
+  "css": {
+    "varbase api settings form": "form#varbase-api-settings-form",
+    "varbase api entity json checkbox": "#edit-entity-json",
+    "varbase api bundle docs checkbox": "#edit-bundle-docs",
+    "varbase api entity types wrapper": "#edit-auto-enabled-entity-types--wrapper",
+    "varbase api entity type node": "#edit-auto-enabled-entity-types-node",
+    "varbase api entity type user": "#edit-auto-enabled-entity-types-user",
+    "varbase api entity type taxonomy term": "#edit-auto-enabled-entity-types-taxonomy-term",
+    "varbase api settings save button": "#edit-submit",
+
+    "varbase api keys form": "form#oauth-key-form",
+    "varbase api keys destination": "#edit-dir",
+    "varbase api keys advanced": "#edit-advanced",
+    "varbase api keys private key": "#edit-private-key",
+    "varbase api keys public key": "#edit-public-key",
+    "varbase api keys generate button": "#edit-generate",
+
+    "varbase api settings menu link": "a[href$='/admin/config/system/varbase/api']",
+    "varbase api keys menu link": "a[href$='/admin/config/system/varbase/api/keys']",
+
+    "jsonapi entry document": "body",
+
+    "drupal page heading": "h1",
+    "drupal status messages": ".messages--status",
+    "drupal error messages": ".messages--error",
+    "drupal access denied heading": "h1:has-text('Access denied')"
+  },
+  "xpath": {}
+}

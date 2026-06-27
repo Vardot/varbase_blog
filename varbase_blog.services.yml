@@ -1,0 +1,4 @@
+services:
+  Drupal\varbase_blog\Hook\VarbaseBlogHooks:
+    class: Drupal\varbase_blog\Hook\VarbaseBlogHooks
+    autowire: true

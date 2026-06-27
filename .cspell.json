@@ -54,6 +54,19 @@
     "heroslider",
     "ctools",
     "totalcount",
-    "MQNAY"
+    "MQNAY",
+    "webship",
+    "cucumber",
+    "playwright",
+    "contentinfo",
+    "dropbutton",
+    "phar",
+    "phpstan",
+    "artefacts",
+    "infobars",
+    "domcontentloaded",
+    "networkidle",
+    "editoruser",
+    "normaluser"
   ]
 }
