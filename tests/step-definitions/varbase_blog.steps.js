@@ -135,11 +135,18 @@ When(/^(?:I |we )?create a blog post titled "([^"]*)"$/, async function (title) 
   await attempt(async () => {
     await gotoUrl(this.page, `${this.parameters.launchUrl}/node/add/varbase_blog`);
     await this.page.locator('#edit-title-0-value').fill(title);
-    const body = this.page.locator('.ck-editor__editable').first();
-    if (await body.count()) {
-      await body.click();
-      await body.fill('Automated blog body content for the Varbase Blog tests.');
-    }
+    // Fill the body via the CKEditor 5 instance (robust); fall back to the
+    // underlying textarea if the editor did not initialize.
+    await this.page.evaluate((bodyText) => {
+      const el = document.querySelector('.ck-editor__editable');
+      const ed = el && el.ckeditorInstance;
+      if (ed) {
+        ed.setData('<p>' + bodyText + '</p>');
+      } else {
+        const ta = document.querySelector('#edit-body-0-value');
+        if (ta) { ta.value = bodyText; ta.dispatchEvent(new Event('change', { bubbles: true })); }
+      }
+    }, 'Automated blog body content for the Varbase Blog tests.');
     await this.page.locator('#edit-submit').click();
     await settle(this.page);
   }, `Could not create a blog post titled "${title}"`);

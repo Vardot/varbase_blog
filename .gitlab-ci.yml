@@ -26,6 +26,35 @@ variables:
   # refuse to create one. Allow lockfile creation in CI for every job.
   YARN_ENABLE_IMMUTABLE_INSTALLS: "false"
 
+# Allow the Varbase stack Composer plugins in the CI build (allow-plugins lives
+# in the varbase_project template, not in modules; vardot/drupal-core-patches is
+# a metapackage, not a plugin, so it is intentionally not listed here).
+composer:
+  before_script:
+    - composer config --no-plugins allow-plugins.composer/installers true || true
+    - composer config --no-plugins allow-plugins.cweagans/composer-patches true || true
+    - composer config --no-plugins allow-plugins.oomphinc/composer-installers-extender true || true
+    - composer config --no-plugins allow-plugins.drupal/core-composer-scaffold true || true
+    - composer config --no-plugins allow-plugins.drupal/core-project-message true || true
+    - composer config --no-plugins allow-plugins.dealerdirect/phpcodesniffer-composer-installer true || true
+    - composer config --no-plugins allow-plugins.phpstan/extension-installer true || true
+    - composer config --no-plugins allow-plugins.php-http/discovery true || true
+    - composer config --no-plugins allow-plugins.tbachert/spi true || true
+    - composer config --no-plugins allow-plugins.composer/installers true || true
+    - composer config --no-plugins allow-plugins.cweagans/composer-patches true || true
+    - composer config --no-plugins allow-plugins.oomphinc/composer-installers-extender true || true
+    - composer config --no-plugins allow-plugins.drupal/core-composer-scaffold true || true
+    - composer config --no-plugins allow-plugins.drupal/core-project-message true || true
+    - composer config --no-plugins allow-plugins.dealerdirect/phpcodesniffer-composer-installer true || true
+    - composer config --no-plugins allow-plugins.phpstan/extension-installer true || true
+    - composer config --no-plugins allow-plugins.php-http/discovery true || true
+    - composer config --no-plugins allow-plugins.tbachert/spi true || true
+    - composer config --no-plugins allow-plugins.vardot/varbase-patches true || true
+    # Pull the Varbase stack patches (layout_library isSupported #3561874, etc.) so
+    # the full-stack build installs on Drupal 11. varbase-patches stays out of the
+    # module composer.json (project concern); it is required only for the CI build.
+    - composer require --no-update vardot/varbase-patches:~9.2.0
+
 # = Validate stage (all blocking) =
 composer-lint:
   allow_failure: false
@@ -96,6 +125,9 @@ webship-js-test:
     - mkdir -p $CI_PROJECT_DIR/$_WEB_ROOT/libraries/dropzone/dist/min
     - curl -sSL https://cdn.jsdelivr.net/npm/dropzone@5.9.3/dist/min/dropzone.min.js -o $CI_PROJECT_DIR/$_WEB_ROOT/libraries/dropzone/dist/min/dropzone.min.js
     - cp $CI_PROJECT_DIR/$_WEB_ROOT/libraries/dropzone/dist/min/dropzone.min.js $CI_PROJECT_DIR/$_WEB_ROOT/libraries/dropzone/dropzone-min.js
+    # Ace library for the CKEditor source editor (ace_editor) used by the blog body field.
+    - mkdir -p $CI_PROJECT_DIR/$_WEB_ROOT/libraries/ace
+    - curl -sSL https://registry.npmjs.org/ace-builds/-/ace-builds-1.43.5.tgz -o /tmp/ace.tgz && tar -xzf /tmp/ace.tgz -C /tmp && cp -r /tmp/package/src-min-noconflict $CI_PROJECT_DIR/$_WEB_ROOT/libraries/ace/ && cp -r /tmp/package/src-noconflict $CI_PROJECT_DIR/$_WEB_ROOT/libraries/ace/ || true
     - chmod -R 777 $CI_PROJECT_DIR/$_WEB_ROOT/sites/default/files || true
     # Install Varbase Blog via the module installer API (bypasses the interactive
     # focal_point requirements gate that aborts a non-interactive drush pm:install).

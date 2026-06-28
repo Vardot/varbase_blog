@@ -11,7 +11,6 @@ dependencies:
   module:
     - ds
     - node
-    - statistics
     - taxonomy
     - user
     - views_bootstrap
@@ -863,19 +862,7 @@ display:
         operator: AND
         groups:
           1: AND
-      sorts:
-        totalcount:
-          id: totalcount
-          table: node_counter
-          field: totalcount
-          relationship: none
-          group_type: group
-          admin_label: ""
-          order: DESC
-          exposed: false
-          expose:
-            label: ""
-          plugin_id: standard
+      sorts: {}
       arguments:
         nid:
           id: nid
@@ -937,7 +924,7 @@ display:
             item_2: teaser
           grouping_fieldset:
             group: false
-            group_field: node_counter|totalcount
+            group_field: ''
             group_field_function: ""
           advanced_fieldset:
             advanced: false
@@ -1005,63 +992,6 @@ display:
           multi_type: separator
           separator: ", "
           field_api_classes: false
-        totalcount:
-          id: totalcount
-          table: node_counter
-          field: totalcount
-          relationship: none
-          group_type: group
-          admin_label: ""
-          label: ""
-          exclude: false
-          alter:
-            alter_text: false
-            text: ""
-            make_link: false
-            path: ""
-            absolute: false
-            external: false
-            replace_spaces: false
-            path_case: none
-            trim_whitespace: false
-            alt: ""
-            rel: ""
-            link_class: ""
-            prefix: ""
-            suffix: ""
-            target: ""
-            nl2br: false
-            max_length: 0
-            word_boundary: true
-            ellipsis: true
-            more_link: false
-            more_link_text: ""
-            more_link_path: ""
-            strip_tags: false
-            trim: false
-            preserve_tags: ""
-            html: false
-          element_type: ""
-          element_class: ""
-          element_label_type: ""
-          element_label_class: ""
-          element_label_colon: false
-          element_wrapper_type: ""
-          element_wrapper_class: ""
-          element_default_classes: true
-          empty: ""
-          hide_empty: false
-          empty_zero: false
-          hide_alter_empty: true
-          set_precision: false
-          precision: 0
-          decimal: .
-          separator: ","
-          format_plural: false
-          format_plural_string: !!binary MQNAY291bnQ=
-          prefix: ""
-          suffix: ""
-          plugin_id: statistics_numeric
     cache_metadata:
       max-age: -1
       contexts:
