@@ -8,6 +8,9 @@
 use Drupal\Core\Config\InstallStorage;
 use Vardot\Entity\EntityDefinitionUpdateManager;
 use Vardot\Installer\ModuleInstallerFactory;
+use Drupal\Core\DefaultContent\Finder;
+use Drupal\Core\DefaultContent\Importer;
+use Drupal\Core\DefaultContent\Existing;
 
 // Include all helpers and updates.
 include_once __DIR__ . '/includes/helpers.inc';
@@ -41,6 +44,19 @@ function varbase_blog_install() {
   ];
 
   ModuleInstallerFactory::importConfigsFromList('varbase_blog', $forced_configs, InstallStorage::CONFIG_OPTIONAL_DIRECTORY);
+
+  // Import the starter content (Blog landing page + menu link) via Drupal core
+  // Default Content (replaces the contrib default_content module). Guarded: in a
+  // minimal environment some referenced config may be absent.
+  if (is_dir(__DIR__ . '/content')) {
+    try {
+      $finder = new Finder(__DIR__ . '/content');
+      \Drupal::service(Importer::class)->importContent($finder, Existing::Skip);
+    }
+    catch (\Exception $e) {
+      \Drupal::logger('varbase_blog')->warning('Skipped some default content: @m', ['@m' => $e->getMessage()]);
+    }
+  }
 
   // Add permissions.
   ModuleInstallerFactory::addPermissions('varbase_blog');
