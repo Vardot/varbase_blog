@@ -1,27 +1,39 @@
 {
-  "name": "drupal/varbase_blog",
-  "description": "Provides Blog post content type and related configuration. Use Blog to publish blog post by different authors in the Blog section of the site.",
-  "type": "drupal-module",
-  "homepage": "https://www.drupal.org/project/varbase_blog",
-  "license": "GPL-2.0-or-later",
-  "authors": [
-    {
-      "name": "Vardot",
-      "homepage": "https://www.drupal.org/vardot",
-      "role": "Maintainer"
+    "name": "drupal/varbase_blog",
+    "description": "Provides Blog post content type and related configuration. Use Blog to publish blog post by different authors in the Blog section of the site.",
+    "type": "drupal-module",
+    "homepage": "https://www.drupal.org/project/varbase_blog",
+    "license": "GPL-2.0-or-later",
+    "authors": [
+        {
+            "name": "Vardot",
+            "homepage": "https://www.drupal.org/vardot",
+            "role": "Maintainer"
+        }
+    ],
+    "support": {
+        "issues": "https://www.drupal.org/project/issues/varbase_blog",
+        "source": "http://cgit.drupalcode.org/varbase_blog"
+    },
+    "require": {
+        "drupal/core": "~11.4.0",
+        "vardot/varbase-patches": "~10.1.0",
+        "vardot/module-installer-factory": "~1.0",
+        "vardot/entity-definition-update-manager": "~1",
+        "drupal/varbase_core": "~10.1.0",
+        "drupal/varbase_media": "~10.1.0",
+        "drupal/varbase_seo": "~10.1.0",
+        "drupal/varbase_layout_builder": "~10.2.0",
+        "drupal/taxonomy_menu": "~3"
+    },
+    "config": {
+        "allow-plugins": {
+            "symfony/runtime": true,
+            "vardot/varbase-patches": true,
+            "cweagans/composer-patches": true,
+            "composer/installers": true,
+            "drupal/core-composer-scaffold": true,
+            "oomphinc/composer-installers-extender": true
+        }
     }
-  ],
-  "support": {
-    "issues": "https://www.drupal.org/project/issues/varbase_blog",
-    "source": "http://cgit.drupalcode.org/varbase_blog"
-  },
-  "require": {
-    "drupal/core": "~11.3.0",
-    "vardot/varbase-patches": "~10.1.0",
-    "drupal/varbase_core": "~10.1.0",
-    "drupal/varbase_media": "~10.1.0",
-    "drupal/varbase_seo": "~10.1.0",
-    "drupal/varbase_layout_builder": "~10.2.0",
-    "drupal/taxonomy_menu": "~3"
-  }
 }

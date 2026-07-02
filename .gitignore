@@ -4,3 +4,14 @@ node_modules
 
 # Ignore Yarn
 .yarn/
+
+# Ignore gitlab-ci-local runner artifacts.
+.gitlab-ci-local/
+
+# Ignore generated test artifacts (keep the .gitkeep placeholders).
+/tests/reports/*
+!/tests/reports/.gitkeep
+/tests/screenshots/*
+!/tests/screenshots/.gitkeep
+/tests/videos/*
+!/tests/videos/.gitkeep

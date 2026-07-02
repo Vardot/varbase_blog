@@ -1,0 +1,30 @@
+name: 'Varbase Blog Test'
+description: 'Provisions a Standard site with the Blog post content type (title + required Body) that the Varbase Blog module ships, renders content forms with the admin theme, and grants the create/edit/delete Blog post permissions to the Varbase editorial roles. This slim recipe creates the content type under test without enabling the full Varbase dependency stack, so the browser suite stays inside the CI runner time budget.'
+type: 'Testing'
+install:
+  - node
+  - text
+  - field
+  - menu_ui
+config:
+  strict: false
+  actions:
+    node.settings:
+      simpleConfigUpdate:
+        use_admin_theme: true
+    user.role.editor:
+      grantPermissions:
+        - 'access content'
+        - 'create varbase_blog content'
+        - 'edit any varbase_blog content'
+        - 'delete any varbase_blog content'
+    user.role.content_admin:
+      grantPermissions:
+        - 'create varbase_blog content'
+        - 'edit any varbase_blog content'
+        - 'delete any varbase_blog content'
+    user.role.site_admin:
+      grantPermissions:
+        - 'create varbase_blog content'
+        - 'edit any varbase_blog content'
+        - 'delete any varbase_blog content'
