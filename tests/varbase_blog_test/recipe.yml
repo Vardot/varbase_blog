@@ -1,5 +1,21 @@
 name: 'Varbase Blog Test'
-description: 'Provisions a site for the Varbase Blog automated tests: installs Varbase Blog (and its Varbase dependencies) so the Blog post content type and listing are available.'
+description: 'Provisions a Standard site with the Blog post content type, its fields (Body, Main media, Tags, Categories), displays and the blog view, and grants the create-blog permission to the Varbase roles, for the automated tests. The Varbase dependencies are installed separately in CI.'
 type: 'Testing'
-install:
-  - varbase_blog
+config:
+  strict: false
+  actions:
+    node.settings:
+      simpleConfigUpdate:
+        use_admin_theme: true
+    user.role.editor:
+      grantPermissions:
+        - 'create varbase_blog content'
+        - 'edit any varbase_blog content'
+    user.role.content_admin:
+      grantPermissions:
+        - 'create varbase_blog content'
+        - 'edit any varbase_blog content'
+        - 'delete any varbase_blog content'
+    user.role.site_admin:
+      grantPermissions:
+        - 'create varbase_blog content'

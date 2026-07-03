@@ -1,0 +1,7 @@
+langcode: en
+status: true
+dependencies: {}
+name: Tags
+vid: tags
+description: "Tags vocabulary used across content."
+weight: 0

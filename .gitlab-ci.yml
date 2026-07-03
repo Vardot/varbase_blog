@@ -4,11 +4,13 @@
 # Two halves:
 #   1. The standard Drupal CI validation jobs (composer-lint, cspell, eslint,
 #      phpcs, phpstan, phpunit) provided by the drupalci templates. phpunit
-#      runs the module's tests/src Kernel + Functional tests on Drupal ~11.3.
+#      runs the module's tests/src Unit tests on Drupal ~11.4.
 #   2. A webship-js BDD browser-test job (Playwright + Cucumber-js) that runs
 #      the tests/features/drupal/** suite against a freshly installed Drupal
-#      Standard site provisioned by the tests/varbase_blog_test recipe (which
-#      installs Varbase Blog and grants the administration permission).
+#      Standard site. The full Varbase media stack is installed with drush
+#      (no PHP provisioning), and the tests/varbase_blog_test recipe creates
+#      the Blog post content type, its fields, displays and the blog view, and
+#      grants the create-blog permission to the Varbase roles.
 ################################################################################
 
 include:
@@ -30,6 +32,11 @@ variables:
 # in the varbase_project template, not in modules; vardot/drupal-core-patches is
 # a metapackage, not a plugin, so it is intentionally not listed here).
 composer:
+  variables:
+    # Drupal 11.4.0 released 2026-07-01; the pinned templates ref $CORE_STABLE
+    # is still 11.3.
+    DRUPAL_CORE: "11.4.0"
+    IGNORE_PROJECT_DRUPAL_CORE_VERSION: "1"
   before_script:
     - composer config --no-plugins allow-plugins.composer/installers true || true
     - composer config --no-plugins allow-plugins.cweagans/composer-patches true || true
@@ -40,20 +47,14 @@ composer:
     - composer config --no-plugins allow-plugins.phpstan/extension-installer true || true
     - composer config --no-plugins allow-plugins.php-http/discovery true || true
     - composer config --no-plugins allow-plugins.tbachert/spi true || true
-    - composer config --no-plugins allow-plugins.composer/installers true || true
-    - composer config --no-plugins allow-plugins.cweagans/composer-patches true || true
-    - composer config --no-plugins allow-plugins.oomphinc/composer-installers-extender true || true
-    - composer config --no-plugins allow-plugins.drupal/core-composer-scaffold true || true
-    - composer config --no-plugins allow-plugins.drupal/core-project-message true || true
-    - composer config --no-plugins allow-plugins.dealerdirect/phpcodesniffer-composer-installer true || true
-    - composer config --no-plugins allow-plugins.phpstan/extension-installer true || true
-    - composer config --no-plugins allow-plugins.php-http/discovery true || true
-    - composer config --no-plugins allow-plugins.tbachert/spi true || true
     - composer config --no-plugins allow-plugins.vardot/varbase-patches true || true
-    # Pull the Varbase stack patches (layout_library isSupported #3561874, etc.) so
-    # the full-stack build installs on Drupal 11. varbase-patches stays out of the
-    # module composer.json (project concern); it is required only for the CI build.
-    - composer require --no-update vardot/varbase-patches:~9.2.0
+    # Pull the Varbase stack patches so the full-stack build installs on Drupal
+    # 11. varbase-patches stays out of the module composer.json (project
+    # concern); it is required only for the CI build.
+    - composer require --no-update vardot/varbase-patches:9.2.x-dev
+    # Pin the Varbase stack to its 9.2.x/10.0.x dev branches (all already require
+    # Drupal ~11.4) so Composer resolves them without composer-drupal-lenient.
+    - composer require --no-update drupal/varbase_core:9.2.x-dev drupal/varbase_media:9.2.x-dev drupal/varbase_seo:9.2.x-dev drupal/varbase_layout_builder:10.0.x-dev
 
 # = Validate stage (all blocking) =
 composer-lint:
@@ -118,9 +119,11 @@ webship-js-test:
     - $CI_PROJECT_DIR/vendor/bin/drush --root=$CI_PROJECT_DIR/$_WEB_ROOT site:install standard
         --db-url=$SIMPLETEST_DB --account-name=webmaster --account-pass=dD.123123ddd
         --site-name="Varbase Blog Test" -y
-    # Varbase Blog config references the Varbase roles (editor, content_admin,
-    # site_admin, seo_admin) that the Standard profile does not have; create them.
-    - $CI_PROJECT_DIR/vendor/bin/drush --root=$CI_PROJECT_DIR/$_WEB_ROOT php:eval 'foreach (["editor","content_admin","site_admin","seo_admin"] as $r) { \Drupal\user\Entity\Role::create(["id" => $r, "label" => ucfirst($r)])->save(); }'
+    # CI-only: varbase_layout_builder 10.0.x main declares Drupal ~11.4 but its
+    # submodules (vlplb, etc.) still declare ~11.3; bump them so the full stack
+    # installs on Drupal 11.4. Temporary until varbase_layout_builder 10.0.x
+    # ships 11.4-compatible submodules.
+    - find $CI_PROJECT_DIR/$_WEB_ROOT/modules -path '*/varbase_layout_builder/*.info.yml' -exec sed -i 's/~10\.6\.0 || ~11\.3\.0/~10.6.0 || ~11.4.0/' {} +
     # Dropzone JS library for the varbase_media upload widget.
     - mkdir -p $CI_PROJECT_DIR/$_WEB_ROOT/libraries/dropzone/dist/min
     - curl -sSL https://cdn.jsdelivr.net/npm/dropzone@5.9.3/dist/min/dropzone.min.js -o $CI_PROJECT_DIR/$_WEB_ROOT/libraries/dropzone/dist/min/dropzone.min.js
@@ -128,24 +131,38 @@ webship-js-test:
     # Ace library for the CKEditor source editor (ace_editor) used by the blog body field.
     - mkdir -p $CI_PROJECT_DIR/$_WEB_ROOT/libraries/ace
     - curl -sSL https://registry.npmjs.org/ace-builds/-/ace-builds-1.43.5.tgz -o /tmp/ace.tgz && tar -xzf /tmp/ace.tgz -C /tmp && cp -r /tmp/package/src-min-noconflict $CI_PROJECT_DIR/$_WEB_ROOT/libraries/ace/ && cp -r /tmp/package/src-noconflict $CI_PROJECT_DIR/$_WEB_ROOT/libraries/ace/ || true
+    # Standard has no media; install it first so media.settings exists, then
+    # satisfy varbase_media's icon-directory requirement.
+    - $CI_PROJECT_DIR/vendor/bin/drush --root=$CI_PROJECT_DIR/$_WEB_ROOT pm:install media media_library -y
+    - $CI_PROJECT_DIR/vendor/bin/drush --root=$CI_PROJECT_DIR/$_WEB_ROOT config:set media.settings icon_base_uri 'public://media-icons/generic' -y
+    - mkdir -p $CI_PROJECT_DIR/$_WEB_ROOT/sites/default/files/media-icons/generic
     - chmod -R 777 $CI_PROJECT_DIR/$_WEB_ROOT/sites/default/files || true
-    # Install Varbase Blog via the module installer API (bypasses the interactive
-    # focal_point requirements gate that aborts a non-interactive drush pm:install).
-    - $CI_PROJECT_DIR/vendor/bin/drush --root=$CI_PROJECT_DIR/$_WEB_ROOT php:eval '\Drupal::service("module_installer")->install(["varbase_blog"]);' || true
-    # Force the optional config import so the Blog post content type is created.
-    - $CI_PROJECT_DIR/vendor/bin/drush --root=$CI_PROJECT_DIR/$_WEB_ROOT php:script $CI_PROJECT_DIR/tests/scripts/import_optional_config.php || true
-    # Grant the create-blog permission to the Varbase roles and create test
-    # users for the create-access permission scenarios.
-    - $CI_PROJECT_DIR/vendor/bin/drush --root=$CI_PROJECT_DIR/$_WEB_ROOT role:perm:add editor 'create varbase_blog content' || true
-    - $CI_PROJECT_DIR/vendor/bin/drush --root=$CI_PROJECT_DIR/$_WEB_ROOT role:perm:add content_admin 'create varbase_blog content' || true
-    - $CI_PROJECT_DIR/vendor/bin/drush --root=$CI_PROJECT_DIR/$_WEB_ROOT role:perm:add site_admin 'create varbase_blog content' || true
-    - $CI_PROJECT_DIR/vendor/bin/drush --root=$CI_PROJECT_DIR/$_WEB_ROOT php:eval '$u = \Drupal\user\Entity\User::create(["name" => "normaluser", "pass" => "dD.123123ddd", "mail" => "normaluser@example.test", "status" => 1]); $u->save(); $e = \Drupal\user\Entity\User::create(["name" => "editoruser", "pass" => "dD.123123ddd", "mail" => "editoruser@example.test", "status" => 1]); $e->addRole("editor"); $e->save();' || true
-    # Varbase Blog uses Layout Builder / Bootstrap layouts, so use the Varbase
-    # theme vartheme_bs4 as default (core Claro stays as the admin theme). CI/test only.
-    - composer config --no-plugins allow-plugins.vardot/varbase-patches true || true
-    - composer --working-dir=$CI_PROJECT_DIR require "drupal/vartheme_bs4:9.0.x-dev" --no-interaction || true
-    - $CI_PROJECT_DIR/vendor/bin/drush --root=$CI_PROJECT_DIR/$_WEB_ROOT theme:install vartheme_bs4 -y || true
-    - $CI_PROJECT_DIR/vendor/bin/drush --root=$CI_PROJECT_DIR/$_WEB_ROOT config:set system.theme default vartheme_bs4 -y || true
+    # Varbase roles that the blog config grants to (create before install; plain drush, no PHP).
+    - $CI_PROJECT_DIR/vendor/bin/drush --root=$CI_PROJECT_DIR/$_WEB_ROOT role:create editor 'Editor' || true
+    - $CI_PROJECT_DIR/vendor/bin/drush --root=$CI_PROJECT_DIR/$_WEB_ROOT role:create content_admin 'Content admin' || true
+    - $CI_PROJECT_DIR/vendor/bin/drush --root=$CI_PROJECT_DIR/$_WEB_ROOT role:create site_admin 'Site admin' || true
+    - $CI_PROJECT_DIR/vendor/bin/drush --root=$CI_PROJECT_DIR/$_WEB_ROOT role:create seo_admin 'SEO admin' || true
+    # Install focal_point and entity_embed first so the varbase_media install
+    # does not stop on their interactive requirements, then each module in its
+    # own command so a single optional-config error cannot roll back the whole set.
+    - $CI_PROJECT_DIR/vendor/bin/drush --root=$CI_PROJECT_DIR/$_WEB_ROOT pm:install focal_point -y
+    - $CI_PROJECT_DIR/vendor/bin/drush --root=$CI_PROJECT_DIR/$_WEB_ROOT pm:install entity_embed embed -y
+    - $CI_PROJECT_DIR/vendor/bin/drush --root=$CI_PROJECT_DIR/$_WEB_ROOT pm:install varbase_media -y
+    - $CI_PROJECT_DIR/vendor/bin/drush --root=$CI_PROJECT_DIR/$_WEB_ROOT pm:install varbase_seo -y
+    # varbase_blog pulls varbase_layout_builder + vlplb; a benign invalid-permission
+    # ("clone script entity") notice makes drush return non-zero, so guard it,
+    # then ensure the layout-builder submodules are enabled.
+    - $CI_PROJECT_DIR/vendor/bin/drush --root=$CI_PROJECT_DIR/$_WEB_ROOT pm:install varbase_blog -y || true
+    - $CI_PROJECT_DIR/vendor/bin/drush --root=$CI_PROJECT_DIR/$_WEB_ROOT pm:install varbase_layout_builder vlplb -y || true
+    # Apply the test recipe: creates the Blog post content type, its fields
+    # (Body, Main media, Tags, Categories), the form/view displays and the blog
+    # view, and grants the create-blog permission to the Varbase roles. The
+    # `drush recipe` command is removed on Drupal 11.4; use the core `dr` script.
+    - php $CI_PROJECT_DIR/vendor/bin/dr recipe $CI_PROJECT_DIR/tests/varbase_blog_test
+    # Test users for the create-access matrix (plain drush, no PHP).
+    - $CI_PROJECT_DIR/vendor/bin/drush --root=$CI_PROJECT_DIR/$_WEB_ROOT user:create normaluser --mail="normaluser@example.test" --password="dD.123123ddd" || true
+    - $CI_PROJECT_DIR/vendor/bin/drush --root=$CI_PROJECT_DIR/$_WEB_ROOT user:create editoruser --mail="editoruser@example.test" --password="dD.123123ddd" || true
+    - $CI_PROJECT_DIR/vendor/bin/drush --root=$CI_PROJECT_DIR/$_WEB_ROOT user:role:add editor editoruser || true
     - $CI_PROJECT_DIR/vendor/bin/drush --root=$CI_PROJECT_DIR/$_WEB_ROOT cache:rebuild
     - !reference [.fragments, node_playwright]
   script:
