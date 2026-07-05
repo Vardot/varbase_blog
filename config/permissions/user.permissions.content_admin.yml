@@ -5,7 +5,6 @@ permissions:
   - "edit any varbase_blog content"
   - "revert varbase_blog revisions"
   - "view varbase_blog revisions"
-  - "view post access counter"
   - "create terms in blog_categories"
   - "create terms in tags"
   - "delete terms in blog_categories"
