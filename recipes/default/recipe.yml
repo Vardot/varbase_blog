@@ -1,0 +1,70 @@
+name: Varbase Blog - Default
+description: A recipe to manage default installed modules, configs and permissions.
+type: install
+config:
+  actions:
+    user.role.anonymous:
+      grantPermissions:
+        - 'access content'
+        - 'view term names in blog_categories'
+        - 'view term names in tags'
+        - 'view terms in blog_categories'
+        - 'view terms in tags'
+    user.role.authenticated:
+      grantPermissions:
+        - 'access content'
+        - 'view term names in blog_categories'
+        - 'view term names in tags'
+        - 'view terms in blog_categories'
+        - 'view terms in tags'
+    user.role.editor:
+      grantPermissions:
+        - 'create varbase_blog content'
+        - 'delete any varbase_blog content'
+        - 'edit any varbase_blog content'
+        - 'view varbase_blog revisions'
+        - 'create terms in blog_categories'
+        - 'create terms in tags'
+        - 'delete terms in blog_categories'
+        - 'delete terms in tags'
+        - 'edit terms in blog_categories'
+        - 'edit terms in tags'
+        - 'reorder terms in blog_categories'
+        - 'reorder terms in tags'
+    user.role.content_admin:
+      grantPermissions:
+        - 'create varbase_blog content'
+        - 'delete any varbase_blog content'
+        - 'edit any varbase_blog content'
+        - 'revert varbase_blog revisions'
+        - 'view varbase_blog revisions'
+        - 'create terms in blog_categories'
+        - 'create terms in tags'
+        - 'delete terms in blog_categories'
+        - 'delete terms in tags'
+        - 'edit terms in blog_categories'
+        - 'edit terms in tags'
+        - 'reorder terms in blog_categories'
+        - 'reorder terms in tags'
+    user.role.seo_admin:
+      grantPermissions:
+        - 'create varbase_blog content'
+        - 'delete any varbase_blog content'
+        - 'edit any varbase_blog content'
+        - 'view varbase_blog revisions'
+    user.role.site_admin:
+      grantPermissions:
+        - 'create varbase_blog content'
+        - 'delete any varbase_blog content'
+        - 'edit any varbase_blog content'
+        - 'revert varbase_blog revisions'
+        - 'view varbase_blog revisions'
+        - 'create terms in blog_categories'
+        - 'create terms in tags'
+        - 'delete terms in blog_categories'
+        - 'delete terms in tags'
+        - 'edit terms in blog_categories'
+        - 'edit terms in tags'
+        - 'administer blog-menu menu items'
+        - 'reorder terms in blog_categories'
+        - 'reorder terms in tags'
