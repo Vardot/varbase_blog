@@ -31,6 +31,13 @@ variables:
 # Allow the Varbase stack Composer plugins in the CI build (allow-plugins lives
 # in the varbase_project template, not in modules; vardot/drupal-core-patches is
 # a metapackage, not a plugin, so it is intentionally not listed here).
+# Run for merge requests, branch pushes, and tags.
+workflow:
+  rules:
+    - if: $CI_PIPELINE_SOURCE == "merge_request_event"
+    - if: $CI_COMMIT_BRANCH
+    - if: $CI_COMMIT_TAG
+
 composer:
   variables:
     # Drupal 11.4.0 released 2026-07-01; the pinned templates ref $CORE_STABLE
