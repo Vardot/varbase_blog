@@ -8,7 +8,7 @@ use Drupal\varbase_blog\Hook\VarbaseBlogHooks;
 /**
  * Unit tests for the Varbase Blog object-oriented hooks.
  *
- * Functional/browser coverage lives in the webship-js suite
+ * Functional/browser coverage lives in the varbase-e2e suite
  * (tests/features/drupal). These PHP tests only exercise unit-testable logic.
  *
  * @coversDefaultClass \Drupal\varbase_blog\Hook\VarbaseBlogHooks

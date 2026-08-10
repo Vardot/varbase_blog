@@ -1,17 +1,21 @@
 'use strict';
 
+// The Varbase login and wait steps ship as built-ins in @vardot/varbase-e2e
+// (varbase.steps.js / drupal-core.steps.js) - the local copies were removed to
+// keep every matching scenario unambiguous.
+
 /**
  * @file
  * Custom step definitions for the Varbase API module test suite.
  *
- * The bulk of the suite reuses the step definitions that ship with webship-js
+ * The bulk of the suite reuses the step definitions that ship with varbase-e2e
  * (navigation, form, web-first assertions, accessibility). Only two
  * module-specific helpers live here:
  *
  *   - logging in as a named user from cucumber.js worldParameters.users, and
  *   - dropping back to an anonymous session for the access-control scenario.
  *
- * Navigation and waiting reuse webship-js's own helpers - gotoUrl (friendly
+ * Navigation and waiting reuse varbase-e2e's own helpers - gotoUrl (friendly
  * navigation errors) and waitForPageLoad (smart-settle: DOM ready, network
  * idle, no pending AJAX/timers) - instead of raw Playwright waits, and
  * failures are wrapped with friendly().
@@ -20,7 +24,7 @@
 const { Given, When } = require('@cucumber/cucumber');
 const {
   friendly,
-} = require('webship-js/tests/step-definitions/webship');
+} = require('@vardot/varbase-e2e/tests/step-definitions/varbase-e2e');
 
 /**
  * Navigate with domcontentloaded only — heavy front-end themes (Bootstrap/AOS)
@@ -55,35 +59,6 @@ async function attempt(body, message) {
     throw friendly(message, err);
   }
 }
-
-/**
- * Log in as a named test user defined in cucumber.js worldParameters.users.
- *
- * The Webmaster row is the site-install super-admin.
- *
- * Example #1: Given I am a logged in user with the "Webmaster" user
- * Example #2: Given I am a logged in user with the "Webmaster"
- * Example #3: Given I am a logged in user with the username "Webmaster" user
- */
-Given(/^I am a logged in user with( the)*( username)* "([^"]*)?"( user)?$/, async function (theCase, usernameCase, key, userCase) {
-  const users = this.parameters.users || {};
-  if (!(key in users)) {
-    throw new Error(`No user named "${key}" in cucumber.js worldParameters.users`);
-  }
-  const { username, password } = users[key];
-  if (!username || !password) {
-    throw new Error(`User "${key}" is missing username or password in worldParameters.users`);
-  }
-  await attempt(async () => {
-    await this.context.clearCookies();
-    await gotoUrl(this.page, `${this.parameters.launchUrl}/user/login`);
-    // Use Drupal's stable field IDs so the step is theme-independent.
-    await this.page.locator('#edit-name').fill(username);
-    await this.page.locator('#edit-pass').fill(password);
-    await this.page.locator('#edit-submit').click();
-    await settle(this.page);
-  }, `Could not log in as "${key}"`);
-});
 
 /**
  * Drop back to an anonymous session by clearing every cookie.
