@@ -59,6 +59,10 @@ composer:
     # 11. varbase-patches stays out of the module composer.json (project
     # concern); it is required only for the CI build.
     - composer require --no-update vardot/varbase-patches:9.2.x-dev
+    # Temporary (#3625753): Twig 3.30.0 compiles Drupal core's drupal_escape
+    # filter into a direct EscaperRuntime::escape() call, so every page render
+    # is a fatal TypeError. Keep the build below 3.30 until a fixed Twig is out.
+    - composer require --dev --no-update "twig/twig:<3.30"
     # Pin the Varbase stack to its 9.2.x/10.0.x dev branches (all already require
     # Drupal ~11.4) so Composer resolves them without composer-drupal-lenient.
     - composer require --no-update drupal/varbase_core:9.2.x-dev drupal/varbase_media:9.2.x-dev drupal/varbase_seo:9.2.x-dev drupal/varbase_layout_builder:10.0.x-dev
